@@ -1,0 +1,78 @@
+[A01]
+余数为 5。推导：由费马小定理，13 为素数且 7 不被 13 整除，故 7^12 ≡ 1 (mod 13)。123 = 12×10 + 3，所以 7^123 ≡ (7^12)^10 · 7^3 ≡ 7^3 = 343 ≡ 5 (mod 13)。
+
+[A02]
+甲打破了杯子。理由：若甲打破，则甲的话（乙打破）为假，乙的话（不是我）为真，丙的话（不是甲）为假，恰一句真话，符合；若乙打破，则甲真、乙假、丙真，两句真，不符；若丙打破，则甲假、乙真、丙真，两句真，不符。故只能是甲。
+
+[A03]
+P = (0.02×0.9) / (0.02×0.9 + 0.98×0.05) = 0.018 / 0.067 = 18/67 ≈ 26.9%。
+
+[A04]
+35 个。理由：把 4 个 1 放入长度为 10 的串且互不相邻，等价于先放 6 个 0 形成 7 个空隙（含两端），从中选 4 个放 1，即 C(7,4) = 35。
+
+[A05]
+最短路径 A→C→B→E→D，总权重 2+1+3+1 = 7。（其他：A→C→B→D=8，A→B→E→D=8，A→B→D=9，A→C→D=10。）
+
+[A06]
+f(1)=1，f(2)=1，f(3)=4，f(4)=7，f(5)=13，f(6)=24，f(7)=44，f(8)=81。故 f(8)=81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+先手必胜，唯一能保证获胜的第一步是取 1 枚（留下 14 枚）。理由：记必败态为 L。0 是 L；由此递推得必败态为 n ≡ 0 或 2 (mod 7)（因为从这类位置取 1、3、4 都只能到必胜态，而从其他位置总能一步走到 ≡0 或 ≡2 mod 7）。15 ≡ 1 (mod 7) 是必胜态，只有 15−1=14 ≡ 0 属于必败态，15−3=12、15−4=11 都是必胜态，故只能取 1。
+
+[A11]
+3882 条。方法：总数 C(16,8)=12870，用容斥减去经过障碍点的路径。设 A=(2,2)、B=(4,5)、C=(6,3)。|A|=C(4,2)C(12,6)=5544，|B|=C(9,4)C(7,3)=4410，|C|=C(9,6)C(7,2)=1764；|A∩B|=C(4,2)C(5,2)C(7,3)=2100，|A∩C|=C(4,2)C(5,1)C(7,2)=630，|B∩C|=0（两点不可达），三者交为 0。结果 12870−11718+2730=3882。
+
+[A12]
+26 个。计数：按 1 的连续块（长度只能为 1 或 2）分拆 4：4 块（1,1,1,1）有 C(5,4)=5 种；3 块（2,1,1 的 3 种排列）每种插空 C(4,3)=10，共 30；2 块（2,2）插空 C(5,2)=10。合计 45 个满足前两条。其中首尾相同者：首尾皆 1 时中间 6 位含两个 1 且不与两端凑成 111，共 C(6,2)−2=13；首尾皆 0 时中间 6 位四个 1 无 111，共 6 个。故首尾不同者为 45−13−6=26。（也可由反转对称性验证：首 0 末 1 与首 1 末 0 各 13。）
+
+[B01]
+7
+
+[B02]
+481739025638419720567295061483056283719491746283052638159047504927361883716045291926385740645071928337082516945183946072
+
+[B03]
+HTHHTTHTHHTTHHTHTTTHHHTTHHTHTTTHTHHHTTHTTHHTHTHHTHTTHHHTTHTTHHTTHHTHHHTTHTTHHTH
+
+[B04]
+3,1,6,4,2,5,5,1,3,6,2,4,1,6,3,5,2,4,6,1,3,2,5,4
+
+[B05]
+松鼠
+
+[B06]
+37
+
+[B07]
+“完美”往往是开始的最大障碍——它把第一步变成了一件永远做不完的事。不如先把目标降到小得可笑：今天只做五分钟，或者只写出第一句话、画出第一张草图。做完这一步就算赢，剩下的可以明天再说。计划是在做的过程中变清楚的，而不是在开始前想清楚的。你愿意的话，现在就说一个最小的动作，我陪你把它做完。
+
+[B08]
+平均数只告诉你“总量怎么平分”，却不告诉数据是怎么分布的。比如两组各 5 个人，平均分都是 70：一组可能是 68、69、70、71、72，大家差不多；另一组可能是 0、0、70、100、100，有人极差有人极好。平均数一样，但体验完全不同。这就是为什么看数据还要看“分散程度”（比如最高最低差多少、多数值离平均数有多远），并且最好画个图看看形状。
+
+[B09]
+原句的“他”指代不明。可改为：“小林对小周说：‘我明天不能来。’”（若实际是小周不能来，则改为“小林告诉小周，小周明天不能来。”）
+
+[B10]
+无法给出。材料仅说明“虚构城市澄岚城在 2041 年举行了一次选举”，未提及任何候选人、票数或结果，因此不存在支持某人为获胜者的原文依据。支持性原文即上述整句材料本身。
+
+[B11]
+这两条要求互相矛盾：要包含“蓝色灯”，就必然出现“灯”字，因此不可能同时满足①和②。若允许修改要求，我可以写成不含“灯”字的版本，例如：“三盏蓝色的照明器具依次亮起。”
+
+[B12]
+Because a simulation isn't truly random—it's a recipe. A computer runs a fixed set of steps (a pseudo-random generator) that spits out numbers that behave like randomness, and our brains are pattern-detecting machines, so two things happen at once.
+
+First, real randomness isn't evenly spread. If you flip a coin 100 times, you'll almost certainly see streaks like HHHH or TTTTT. People expect alternation, so when they see a run they think "that can't be random," but clumping is exactly what randomness looks like. Second, the algorithms we use have structure: they cycle, they use seeds, and if you plot successive pairs you can sometimes see grid lines. That's an artifact of the method, not of chance.
+
+And there's a third, bigger reason: given enough output, some pattern is guaranteed to show up. It's like noticing that a friend's birthday falls on a Tuesday three years in a row—surprising in isolation, but unremarkable once you consider how many coincidences you're silently checking. Simulations make this visible because they're fast and cheap: generate a million numbers and weird-looking regularities will appear, not despite the randomness but because there's so much of it.
+
+So when you see a pattern in simulated randomness, ask: does it survive a rerun with a different seed? If yes, it might be a real property of the system you're modeling. If no, it's just noise wearing a costume.

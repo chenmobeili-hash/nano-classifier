@@ -1,0 +1,90 @@
+[A01]
+余数是 5。推导：7² ≡ 49 ≡ 10 (mod 13)，7³ ≡ 10×7 = 70 ≡ 5，7⁶ ≡ 5² = 25 ≡ 12 ≡ −1，故 7¹² ≡ 1。123 = 12×10 + 3，所以 7¹²³ ≡ 7³ ≡ 343 ≡ 343 − 338 = 5 (mod 13)。
+
+[A02]
+是甲打破的。理由：甲说“乙打破的”与乙说“不是我打破的”互为矛盾，二者必有一真一假。由于三句话恰有一句真，丙的话必为假，即“不是甲打破的”为假，所以是甲打破的。验证：甲的话假、乙的话真、丙的话假，恰有一真，一致。
+
+[A03]
+条件概率 = P(发生且阳性) / P(阳性) = (0.02×0.90) / (0.02×0.90 + 0.98×0.05) = 0.018 / (0.018 + 0.049) = 0.018/0.067 = 18/67。
+
+[A04]
+35 个。理由：设 4 个 1 的位置为 p₁<p₂<p₃<p₄（1≤pᵢ≤10），互不相邻等价于 pᵢ₊₁ ≥ pᵢ+2。令 qᵢ = pᵢ−(i−1)，则 1≤q₁<q₂<q₃<q₄≤7，是一一对应。从 7 个位置选 4 个：C(7,4) = 35。
+
+[A05]
+最短路径为 A→C→B→E→D，总权重 7。计算：到 B 的最短距离 = min(A→B=4, A→C→B=2+1=3) = 3；到 E = 3+3 = 6；到 D = min(B→D=3+5=8, C→D=2+8=10, B→E→D=6+1=7) = 7。
+
+[A06]
+f(1)=1，f(2)=2，f(3)=4，f(4)=7，f(5)=13，f(6)=24，f(7)=44，f(8)=81。
+验证示例：f(8) = f(7)+f(6)+f(5) = 44+24+13 = 81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+先手必胜，且唯一能保证获胜的第一步是取 1 枚（留下 14 枚）。
+理由：设轮到某人面对剩余 n 枚。逐个标注必败点（P 点）：n=0 必败；n=1 胜；n=2 只能取 1 留 1，必败；n=3、n=4 可一次取完，胜；n=5 可取 3 留 2，胜；n=6 可取 4 留 2，胜；n=7 取 1/3/4 分别留 6/4/3（全是对手必胜点），必败；n=8 取 1 留 7，胜；n=9 留 8/6/5 全败点，必败；n=10 取 1 留 9，胜；n=11 取 4 留 7，胜；n=12 取 3 留 9，胜；n=13 取 4 留 9，胜；n=14 留 13/11/10 全胜点，必败；n=15 取 1 留 14，胜。必败点为 0,2,7,9,14。先手取 1 留下 14（必败点），之后每轮把剩余数回到 2、7、9、14 之一即可必胜。取 3 留 12 或取 4 留 11 都把必胜点留给对手，不可取。
+
+[A11]
+3000 条。方法（容斥原理，组合数路径计数）：
+- 总路径：C(16,8) = 12870。
+- 经过 (2,2)：C(4,2)×C(12,6) = 6×924 = 5544。
+- 经过 (4,5)：C(9,4)×C(7,3) = 126×35 = 4410。
+- 经过 (6,3)：C(9,5)×C(7,5) = 126×21 = 2646。
+- 同时经过 (2,2) 和 (4,5)：C(4,2)×C(5,2)×C(7,3) = 6×10×35 = 2100。
+- 同时经过 (2,2) 和 (6,3)：C(4,2)×C(5,1)×C(7,2) = 6×5×21 = 630。
+- 同时经过 (4,5) 和 (6,3)：从 (4,5) 到 (6,3) 需要向下走，不可能，为 0；三点同时经过也为 0。
+结果：12870 − (5544+4410+2646) + (2100+630+0) = 12870 − 12600 + 2730 = 3000。
+（如用动态规划逐格累加、禁点处置 0，会得到相同的 3000。）
+
+[A12]
+26 个。计数方法（按首末位分两种对称情形）：
+- 情形一：首位 0、末位 1。中间 6 位须恰有 3 个 1 且不含 111，还需末尾两个中间位不全为 1（否则与末位的 1 构成 111）。长 6、恰 3 个 1、无 111 的串共 C(6,3)−4 = 16 个（恰含"111"的是 3 个 1 连续占位的 4 种）；其中以"11"结尾的有 3 个（第 4 位必为 0，另一个 1 在前三位之一），排除后剩 13 个。
+- 情形二：首位 1、末位 0，由对称性同样 13 个（首位的 1 要求中间开头两位不全为 1）。
+合计 13 + 13 = 26。
+
+[B01]
+7
+
+[B02]
+40821635907713426085931467280553824160972468531029758046139271840653297841506229371840655129304786
+
+[B03]
+TTHHTHTTTHTHHTTHTHHTHHTHHTTHHTHTTTHHTTTHTHHHTHTTHTHHTTHTHHTTHHTTTHTHTHHTHTTTHTHTTHHTHTTHTHHHTHTT
+
+[B04]
+3, 1, 6, 6, 2, 4, 1, 5, 3, 3, 6, 1, 2, 4, 6, 5, 1, 3, 2, 6, 4, 4, 1, 5
+
+[B05]
+企鹅
+
+[B06]
+37
+
+[B07]
+其实“完美的计划”很多时候是大脑在逃避开始的一种方式——因为只要不开始，就不会暴露问题。你可以试试把第一步缩到小得不可能失败：比如只花 10 分钟做个草稿，或者只写第一行，写完就允许自己停。开始之后你往往会发现，计划是在做的过程中越来越清晰的，而不是在做之前。先动手，再完善，比等着“完美时机”靠谱得多。
+
+[B08]
+因为平均数只描述数据的“中心”，却不说明数据是怎么散布在中心周围的。比如两组人平均收入都是 5000 元：一组可能是每人都在 4800 到 5200 之间，大家差不多；另一组可能是一个人拿 40000，其余人只拿 1000 多。数字上一模一样的平均值，背后的生活状况完全不同。此外，平均数容易被极端值拉偏，也看不出数据是集中还是分散、分布是否对称。所以同样的平均数，配上不同的波动范围和分布形状，给人的印象自然天差地别——这也是为什么还需要看中位数、极差或标准差这类指标。
+
+[B09]
+这句话的歧义在于“他”可能指小林也可能指小周。改清楚的一种写法：小林告诉小周：“我明天不能来。”（即小林本人明天不能来。）若实际是小周不能来，则应写成：小林告诉小周：“你明天不能来。”
+
+[B10]
+无法回答。材料中只有“虚构城市澄岚城在2041年举行了一次选举”这一句话，没有提及任何候选人、获胜者或票数，因此不存在支持答案的原文；获胜者姓名和票数在材料中不存在，我不能凭空编造。
+
+[B11]
+这两条要求互相矛盾，无法同时满足：“蓝色灯”这个词本身就包含一个“灯”字，所以只要答案中恰好出现三次“蓝色灯”，就必然出现三次“灯”字，违反第②条。因此本题不存在合法答案，如实说明如上。
+
+[B12]
+Here's the thing about randomness: it doesn't look the way people expect it to look. We imagine "random" should mean evenly mixed—heads, tails, heads, tails, alternating neatly. But true randomness has no memory, so streaks are not only possible, they're guaranteed. Flip a coin 100 times and you'll almost certainly see a run of five or six heads in a row somewhere. It feels like the simulation is "broken," but actually a simulation that never produced clusters would be the suspicious one.
+
+There are a few reasons patterns show up. First, sheer opportunity: with lots of data points, some coincidence is bound to happen somewhere, and our eyes find it. Second, our brains are pattern-detectors by evolution—we see faces in clouds and shapes in static, so we read meaning into noise. Third, pseudo-random generators in computers are actually deterministic algorithms; they produce sequences that look patternless, but if you seed them the same way, you get the exact same "random" sequence again—which is occasionally very useful and a little eerie.
+
+So when a simulation spits out a cluster, a streak, or something that "looks too orderly," that's not a bug. Real randomness is lumpy, uneven, and full of accidental patterns. The absence of patterns would be the strangest result of all.

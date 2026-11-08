@@ -1,0 +1,81 @@
+[A01]
+余数为 5。由费马小定理，\(7^{12}\equiv1\pmod{13}\)。因为 \(123=12\times10+3\)，所以
+\[
+7^{123}\equiv7^3=343\equiv5\pmod{13}.
+\]
+[A02]
+甲打破了杯子。甲、乙的话互为否定，其中恰有一句为真。要使三句话恰有一句为真，丙的话必须为假，因此杯子是甲打破的。此时只有乙的话为真。
+[A03]
+\[
+P(\text{发生}\mid\text{阳性})
+=\frac{0.02\times0.90}{0.02\times0.90+0.98\times0.05}
+=\frac{18}{67}.
+\]
+[A04]
+35个。6个0形成7个空隙，包括两端。为使1互不相邻，每个空隙至多放一个1，选择其中4个空隙即可：
+\[
+\binom74=35.
+\]
+[A05]
+最短路径为 A→C→B→E→D，总权重为 \(2+1+3+1=\mathbf7\)。
+[A06]
+\(f(1)=1,\ f(2)=2,\ f(3)=4,\ f(4)=7,\ f(5)=13,\ f(6)=24,\ f(7)=44,\ f(8)=81\)。
+因此，\(f(8)=81\)。
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+[A08]
+{"items":["pear","apple","banana","kiwi"]}
+[A09]
+[1,3]
+[A10]
+先手必胜，唯一能保证获胜的第一步是取1枚，留下14枚。
+把0枚视为轮到行动者的必败局面，递推规则为：能一步到达必败局面则必胜，否则必败。由此得到0至14枚中的必败局面为 0、2、7、9、14。取3枚或4枚分别留下12枚、11枚，都是对手的必胜局面。
+[A11]
+3882条。
+从一个点走到另一个点，若需向右 \(a\) 步、向上 \(b\) 步，路径数为 \(\binom{a+b}{a}\)。用容斥法：
+\[
+\begin{aligned}
+N={}&12870-6\times924-126\times35-84\times21\\
+&+6\times10\times35+6\times5\times21\\
+={}&3882.
+\end{aligned}
+\]
+其中12870是总路径数；三个减项分别统计经过三个禁点的路径；两个加项分别统计同时经过(2,2)与另一个禁点的路径。(4,5)和(6,3)无法被同一条向右、向上的路径经过，因此其交集及三点交集均为0。
+[A12]
+26个。
+先统计首位为1、末位为0的情况。若有 \(r\) 段连续的1，每段长度只能为1或2；4个1要求 \(r=2,3,4\)，其中长度为2的段数为 \(4-r\)。4个0也恰好分成 \(r\) 个非空段，因此数量为
+\[
+\sum_{r=2}^{4}\binom r{4-r}\binom3{r-1}
+=3+9+1=13.
+\]
+把字符串反转，即一一对应到首位为0、末位为1的情况，所以共有 \(2\times13=26\) 个。
+[B01]
+8
+[B02]
+390628771408223591496617003852814992506130544817207728613994028536604891924770035468122846200905137748365198607348092215
+[B03]
+HTTHHHHTHTTTHHTTTHTTHHHTHHTHHHTHTTTTHHHTHTHHTHHTTTHHHTTTHTHHTTHHHHTHTHHTTTHTHHHT
+[B04]
+4,1,6,6,2,5,3,6,1,4,4,2,6,5,1,3,3,6,2,1,5,4,6,2
+[B05]
+水豚
+[B06]
+63
+[B07]
+你很在乎这件事，所以总想准备得更好，这可以理解。今天先给自己十分钟，只做一个粗糙的开头，比如写下第一段，哪怕只有三句话。时间到了就可以停，也先别急着修改。等手里有了点东西，再决定下一步，通常会比一直琢磨完整计划容易。
+[B08]
+平均数把所有数加起来再平分，却没有告诉我们这些数之间相差多大。
+比如，一组成绩是50、50、50、50分，另一组是0、0、100、100分，平均数都是50分。第一组的人水平相近，第二组却分成了两个差距很大的群体。所以，同样的平均数，可能藏着完全不同的情况。
+[B09]
+如果“他”指小林：小林对小周说：“我明天不能来。”
+如果“他”指小周：小林对小周说：“你明天不能来。”
+[B10]
+获胜者姓名：无法确定。票数：无法确定。材料没有提供这两项信息，也没有支持它们的原文。
+材料原文是：“虚构城市澄岚城在2041年举行了一次选举”。它只说明选举的地点和年份。
+[B11]
+无法同时满足：第一条强制包含的第三个字，被第二条明确禁止。
+[B12]
+Randomness doesn’t promise an evenly mixed result. If a fair coin lands heads four times in a row, the next flip still has a 50% chance of being heads. The coin has no memory and no need to “make up” for the streak.
+Patterns can happen by chance. Any particular sequence of ten fair flips has the same probability, but a sequence like ten heads grabs our attention much more than an ordinary-looking jumble. Run enough simulations, and you give surprising patterns plenty of opportunities to appear.
+Computer simulations usually use pseudorandom numbers produced by an algorithm. A good generator can still produce streaks and clusters. To judge its quality, we look for systematic departures from what chance predicts across many results; one striking pattern alone tells us very little.

@@ -1,0 +1,15 @@
+{
+  "role": "post-fit diagnosis on full-data model; not a validation metric",
+  "parameter_l2_norms": {
+    "kernel": 1.2910062616590288,
+    "hidden_bias": 0.0009078256526606447,
+    "gate": 1.6091377878884469e-06,
+    "gate_bias": 8.27442655309915e-06,
+    "W": 0.004040269436240388,
+    "b": 0.5398267655493199
+  },
+  "gate_min_valid": 0.500001969316948,
+  "gate_max_valid": 0.5000021666751642,
+  "max_abs_local_head_term_before_tanh": 6.7471626199378e-05,
+  "max_abs_output_bias_before_tanh": 0.342824616677093
+}

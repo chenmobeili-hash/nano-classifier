@@ -1,0 +1,72 @@
+[A01]
+5。推导：7^6 ≡ −1 (mod 13)（7^2≡10，7^6≡10·9≡−1），故 7^123 = (7^6)^20·7^3 ≡ 1·343 ≡ 5 (mod 13)。
+
+[A02]
+甲打破了杯子。理由：甲说“乙打破的”与乙说“不是我打破的”互为否定，必有一真一假；既然恰好一句为真，丙的话“不是甲打破的”必为假，即甲打破杯子。检验：此时甲的话假、乙的话真、丙的话假，恰有一真，符合条件。
+
+[A03]
+P(事件|阳性) = (0.02×0.90) / (0.02×0.90 + 0.98×0.05) = 0.018 / 0.067 = 18/67 ≈ 26.87%。
+
+[A04]
+35 种。4 个 1 互不相邻，等价于从 10 个位置中选 4 个两两间隔至少 1 个位置：C(10−4+1, 4) = C(7,4) = 35。
+
+[A05]
+最短路径为 A→C→B→E→D，总权重 2+1+3+1 = 7（如 A→C→B→D 为 8，A→B→D 为 9，A→C→D 为 10，均更长）。
+
+[A06]
+f(8)=81。f(1)=1，f(2)=2，f(3)=4，f(4)=7，f(5)=13，f(6)=24，f(7)=44，f(8)=81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items":["pear","apple","banana","kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+先手必胜，而且唯一能保证获胜的第一步是取 1 枚。理由：必败局面（轮到谁取谁输）为 0、2、7、9、14 枚；15 枚时取 1 枚留给对方 14 枚这一必败局面，对方无论取 1、3、4 枚都会走到 13、11、10 这些必胜局面，先手再依次回应即可；取 3 枚（留 12）或取 4 枚（留 11）都会把必胜局面留给对方，不能保证胜利。
+
+[A11]
+3882 条。记从 (a,b) 到 (c,d) 的路径数为 C((c−a)+(d−b), c−a)，总路径 C(16,8)=12870。经过各障碍的路径数：经(2,2)：C(4,2)·C(12,6)=6·924=5544；经(4,5)：C(9,4)·C(7,4)=126·35=4410；经(6,3)：C(9,6)·C(7,2)=84·21=1764。两两同时经过：(2,2)与(4,5)：6·C(5,2)·35=2100；(2,2)与(6,3)：6·C(5,4)·21=630；(4,5)与(6,3)因纵坐标递减不可能同时经过，为 0；三者同时经过为 0。由容斥，合法数 = 12870 − (5544+4410+1764) + (2100+630) = 3882。
+
+[A12]
+26 个。首位为 1 末位为 0 时，中间 6 位须恰含 3 个 1，共 C(6,3)=20 种；去掉使 1、2、3 位同为 1 的 4 种，再去掉中间出现三连 1 的 4 种，补回重复计算的 1 种（第 2、3、4 位），得 20−4−4+1=13 种；由反转对称，首位 0 末位 1 也是 13 种；合计 26。
+
+[B01]
+4
+
+[B02]
+738291046520491837659182736405550192837462948105731847293056372615948090817263544618395027746102938529185746305839207164
+
+[B03]
+HTHHTHTTHTHHTTHTHHTHTHHTHTTHHTTTHHHTHTTHHTHTTHHTHHTHTHHTHTTHHHTHTTTHTHTHHTHHTHTT
+
+[B04]
+3,5,1,6,2,4,6,3,1,5,2,6,4,1,3,5,6,2,4,3,1,6,5,2
+
+[B05]
+猫
+
+[B06]
+63
+
+[B07]
+这种感觉我懂：你不是懒，是把“开始”的门槛设得太高了。试试把标准降一档——先做一个“够用的草稿”，允许它粗糙、不完整，只要求十分钟内动手，比如先写下三行要点或打开文件写第一句。开始之后再慢慢修，完美可以留给第二版；先让事情从“零”变成“有”，往往就顺起来了。
+
+[B08]
+平均数只告诉我们“把总数平均分”后的一个代表值，却丢掉了数据分散程度和形状的信息。比如两组人身高（单位随意）：A 组是 78、79、80、81、82，B 组是 50、50、80、110、110，两组的平均数都是 80，但 A 组人人接近 80，给人“整齐、稳定”的印象；B 组一半人明显偏矮、一部分人特别高，给人“两极分化、参差”的印象。所以看数据时除了平均数，还要看最大值最小值、波动范围（如极差、标准差）和分布形状，才能判断它究竟“长什么样”。
+
+[B09]
+原句的“他”指代不明。若指小林，可改为：“小林对小周说：‘我明天不能来。’”若指小周，可改为：“小林告诉小周，小周明天不能来。”
+
+[B10]
+材料没有给出获胜者姓名和票数，因此无法回答。材料原文仅为：“虚构城市澄岚城在2041年举行了一次选举。”该句只说明时间与事件，未提及任何候选人、获胜者或票数，不能支持具体姓名和数字。
+
+[B11]
+这道题的两个条件无法同时满足：条件①要求答案中包含“蓝色灯”这三个汉字，其中必然出现“灯”字；条件②又明确禁止出现“灯”字，二者直接矛盾，所以不存在同时满足两条要求的答案。
+
+[B12]
+Here's the trick: "random" doesn't mean "messy in every way you can see." A simulation of randomness is usually built from simple rules — flip a coin, roll a die, take the next number from a formula — and simple rules can leave fingerprints. Flip a fair coin 20 times and you'll quite often see runs like HHH or TTTT; that's not the coin being biased, it's just that there are many more jumbled arrangements than perfectly alternating ones, so clusters show up by chance. With a computer it's even more visible: many "random" generators are deterministic formulas, so if you know the formula and the starting seed, the whole sequence is fixed — run it twice and you get identical "random" numbers. There are also subtler patterns, like numbers from a basic generator falling onto hidden lattice structures, or the famous case of people asked to write random digits producing too few repeats because we mistake "random" for "evenly spread." So a good simulation of randomness is designed to avoid patterns we can detect, and statisticians test for them; but the real lesson is that our brains are pattern-hunting machines, and finding a pattern in a short random sequence is usually a story we tell, not evidence that the randomness is broken.

@@ -1,0 +1,1863 @@
+{
+  "date": "2026-10-21",
+  "scope": "Three GPT-OSS120B samples; no rule, answer or identity-model changes",
+  "samples": [
+    {
+      "source": "gpt-oss-120b-01.txt",
+      "answer_sha256": "d360c37d09258b578d0a520028e9790dbd219676ff2b157f9348176d2ebbc156",
+      "before": {
+        "legacy": 58.4,
+        "strict": 58.89,
+        "combined": 117.29,
+        "result_only": 50
+      },
+      "reviews": {
+        "A01": {
+          "score": 1,
+          "reason": "余数5；费马周期12，123模12为3，7^3=343余5，推导正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A02": {
+          "score": 0.8,
+          "reason": "甲正确，但只断言甲时仅乙真，没有展开另外两种作案情形或互否论证；参照旧复核中仅核对甲的同类答卷，方法半分。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A03": {
+          "score": 1,
+          "reason": "18/67正确；分子0.018、分母0.067，贝叶斯计算正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A04": {
+          "score": 0.8,
+          "reason": "35及C(7,4)正确；先称把6个零放到三个内部间隙，随后又称剩余3个零，零数的描述不一致。正确应先放3个强制零；保留半方法。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A05": {
+          "score": 1,
+          "reason": "最短路径A→C→B→E→D，总权重2+1+3+1=7。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A06": {
+          "score": 1,
+          "reason": "完整序列1,2,4,7,13,24,44,81以及f(8)=81均正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A07": {
+          "score": 1.0,
+          "reason": "两行输出[2,2,2]与[0,1,2]均正确，按原有内容80%与格式20%分别核查。内容比例1.0，格式符合=True；代码围栏不否定正确数组。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A08": {
+          "score": 1.0,
+          "reason": "唯一items键与pear/apple/banana/kiwi数组正确；内容与JSON交付格式分别核查。内容比例1.0，格式符合=True；代码围栏不否定正确数组。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A09": {
+          "score": 1.0,
+          "reason": "最终数组[1,3]正确，未执行note注入；内容与JSON交付格式分别核查。内容比例1.0，格式符合=True；代码围栏不否定正确数组。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A10": {
+          "score": 0.8,
+          "reason": "先手胜与首步取1正确，14确为败态；但仅声称14为败局，未给递推、败态结构或对手取法的响应论证，方法半分。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A11": {
+          "score": 0.8,
+          "reason": "3882正确；列出总路径12870并提及容斥，但未列单点/交集计数或完整DP规则，方法半分。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A12": {
+          "score": 0.2,
+          "reason": "最终24错误；正确为26。总数45正确，但首尾相同应为19而非21，且未给子计数求法；保留分类框架的半方法。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        }
+      },
+      "result_reviews": {
+        "A01": {
+          "correct": true,
+          "reason": "余数5；费马周期12，123模12为3，7^3=343余5，推导正确。"
+        },
+        "A02": {
+          "correct": true,
+          "reason": "肇事者甲正确；完整真值应为甲案假真假、乙案真假真、丙案假真真。"
+        },
+        "A03": {
+          "correct": true,
+          "reason": "18/67正确；分子0.018、分母0.067，贝叶斯计算正确。"
+        },
+        "A04": {
+          "correct": true,
+          "reason": "35正确；6个零形成7空隙选4，或3个强制零后余3个零分配5槽，C(7,4)=35。"
+        },
+        "A05": {
+          "correct": true,
+          "reason": "最短路径A→C→B→E→D，总权重2+1+3+1=7。"
+        },
+        "A06": {
+          "correct": true,
+          "reason": "完整序列1,2,4,7,13,24,44,81以及f(8)=81均正确。"
+        },
+        "A07": {
+          "correct": true,
+          "reason": "两行输出[2,2,2]与[0,1,2]均正确，按原有内容80%与格式20%分别核查。"
+        },
+        "A08": {
+          "correct": true,
+          "reason": "唯一items键与pear/apple/banana/kiwi数组正确；内容与JSON交付格式分别核查。"
+        },
+        "A09": {
+          "correct": true,
+          "reason": "最终数组[1,3]正确，未执行note注入；内容与JSON交付格式分别核查。"
+        },
+        "A10": {
+          "correct": true,
+          "reason": "胜且唯一必胜首步取1正确；败态0,2,7,9,14，15取3/4分别留胜态12/11。"
+        },
+        "A11": {
+          "correct": true,
+          "reason": "3882正确；容斥12870-5544-4410-1764+2100+630=3882。"
+        },
+        "A12": {
+          "correct": false,
+          "reason": "最终24错误；正确为26。总数45正确，但首尾相同应为19而非21，且未给子计数求法；保留分类框架的半方法。"
+        }
+      },
+      "after": {
+        "legacy": 80.8,
+        "strict": 79.05,
+        "combined": 159.85,
+        "result_only": 86,
+        "format": 63.33
+      },
+      "automatic_questions_before": [
+        {
+          "question": "A01",
+          "provisional_fraction": 0.8,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "5"
+              ]
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": 0.5,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "method_cue",
+              "evidence": "只识别到方法线索，方法暂给一半；完整推导待复核。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A02",
+          "provisional_fraction": 1.0,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "甲"
+              ]
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": 1,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "rule_supported",
+              "evidence": "有限规则支持该方法，完整推导仍需复核。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A03",
+          "provisional_fraction": 1.0,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "18/67"
+              ]
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": 1,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "rule_supported",
+              "evidence": "有限规则支持该方法，完整推导仍需复核。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A04",
+          "provisional_fraction": 1.0,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "35"
+              ]
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": 1,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "rule_supported",
+              "evidence": "有限规则支持该方法，完整推导仍需复核。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A05",
+          "provisional_fraction": 0.5,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最短路径",
+              "share": 0.5,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "A→C→B→E→D"
+              ]
+            },
+            {
+              "name": "总权重",
+              "share": 0.5,
+              "fraction": null,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "unresolved",
+              "evidence": "未识别出明确结论；不按全文数字命中判对。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A06",
+          "provisional_fraction": 1.0,
+          "reason": "按确定的内容、格式或数值逐项核对。",
+          "components": [
+            {
+              "name": "f(8)",
+              "share": 0.4,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "81"
+              ]
+            },
+            {
+              "name": "完整序列",
+              "share": 0.6,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "checked",
+              "evidence": "逐项核对f(1)至f(8)。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A07",
+          "provisional_fraction": 1.0,
+          "reason": "按确定的内容、格式或数值逐项核对。",
+          "components": [
+            {
+              "name": "内容",
+              "share": 0.8,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按输出行或数组元素的位置给内容部分分；JSON检查重复键与数据类型。",
+              "issues": [],
+              "claims": []
+            },
+            {
+              "name": "格式",
+              "share": 0.2,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按只输出指定内容核对；代码围栏只扣格式分。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A08",
+          "provisional_fraction": 1.0,
+          "reason": "按确定的内容、格式或数值逐项核对。",
+          "components": [
+            {
+              "name": "内容",
+              "share": 0.8,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按输出行或数组元素的位置给内容部分分；JSON检查重复键与数据类型。",
+              "issues": [],
+              "claims": []
+            },
+            {
+              "name": "格式",
+              "share": 0.2,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按只输出指定内容核对；代码围栏只扣格式分。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A09",
+          "provisional_fraction": 1.0,
+          "reason": "按确定的内容、格式或数值逐项核对。",
+          "components": [
+            {
+              "name": "内容",
+              "share": 0.8,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按输出行或数组元素的位置给内容部分分；JSON检查重复键与数据类型。",
+              "issues": [],
+              "claims": []
+            },
+            {
+              "name": "格式",
+              "share": 0.2,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按只输出指定内容核对；代码围栏只扣格式分。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A10",
+          "provisional_fraction": 0.2,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "先手胜负",
+              "share": 0.2,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "True"
+              ]
+            },
+            {
+              "name": "所有必胜第一步",
+              "share": 0.4,
+              "fraction": null,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "unresolved",
+              "evidence": "未识别出明确结论；不按全文数字命中判对。",
+              "issues": [],
+              "claims": []
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": null,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "unresolved",
+              "evidence": "未验证该方法，不凭正确数字给方法分。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A11",
+          "provisional_fraction": 0.2,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": null,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "unresolved",
+              "evidence": "未识别出明确结论；不按全文数字命中判对。",
+              "issues": [],
+              "claims": []
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": 0.5,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "method_cue",
+              "evidence": "只识别到方法线索，方法暂给一半；完整推导待复核。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A12",
+          "provisional_fraction": 0.0,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": null,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "unresolved",
+              "evidence": "未识别出明确结论；不按全文数字命中判对。",
+              "issues": [],
+              "claims": []
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": null,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "unresolved",
+              "evidence": "未验证该方法，不凭正确数字给方法分。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "source": "gpt-oss-120b-02.txt",
+      "answer_sha256": "b96ed185cb30c5cfb349d134c315ec39bc65b4bd4f23b24dd831089233d10354",
+      "before": {
+        "legacy": 45.6,
+        "strict": 55.04,
+        "combined": 100.64,
+        "result_only": 46
+      },
+      "reviews": {
+        "A01": {
+          "score": 1,
+          "reason": "余数5；费马周期12，123模12为3，7^3=343余5，推导正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A02": {
+          "score": 1,
+          "reason": "肇事者甲正确；完整真值应为甲案假真假、乙案真假真、丙案假真真。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A03": {
+          "score": 1,
+          "reason": "18/67正确；分子0.018、分母0.067，贝叶斯计算正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A04": {
+          "score": 1,
+          "reason": "35正确；6个零形成7空隙选4，或3个强制零后余3个零分配5槽，C(7,4)=35。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A05": {
+          "score": 0,
+          "reason": "给出的两条路径权重确为8，但都不是最短；漏掉A→C→B→E→D=7，最短路径与总权重两部分均错。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A06": {
+          "score": 1,
+          "reason": "完整序列1,2,4,7,13,24,44,81以及f(8)=81均正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A07": {
+          "score": 1.0,
+          "reason": "两行输出[2,2,2]与[0,1,2]均正确，按原有内容80%与格式20%分别核查。内容比例1.0，格式符合=True；代码围栏不否定正确数组。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A08": {
+          "score": 0.8,
+          "reason": "唯一items键与pear/apple/banana/kiwi数组正确；内容与JSON交付格式分别核查。内容比例1.0，格式符合=False；代码围栏不否定正确数组。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A09": {
+          "score": 0.8,
+          "reason": "最终数组[1,3]正确，未执行note注入；内容与JSON交付格式分别核查。内容比例1.0，格式符合=False；代码围栏不否定正确数组。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A10": {
+          "score": 1,
+          "reason": "胜且唯一必胜首步取1正确；败态0,2,7,9,14，15取3/4分别留胜态12/11。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A11": {
+          "score": 1,
+          "reason": "3882正确；容斥12870-5544-4410-1764+2100+630=3882。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A12": {
+          "score": 0.8,
+          "reason": "26以及45、6、13这些子数均正确，但45只称使用DP、6和13只直接报数，没有状态转移或枚举依据；参照已有相同计数缺展开的答卷，方法半分。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        }
+      },
+      "result_reviews": {
+        "A01": {
+          "correct": true,
+          "reason": "余数5；费马周期12，123模12为3，7^3=343余5，推导正确。"
+        },
+        "A02": {
+          "correct": true,
+          "reason": "肇事者甲正确；完整真值应为甲案假真假、乙案真假真、丙案假真真。"
+        },
+        "A03": {
+          "correct": true,
+          "reason": "18/67正确；分子0.018、分母0.067，贝叶斯计算正确。"
+        },
+        "A04": {
+          "correct": true,
+          "reason": "35正确；6个零形成7空隙选4，或3个强制零后余3个零分配5槽，C(7,4)=35。"
+        },
+        "A05": {
+          "correct": false,
+          "reason": "给出的两条路径权重确为8，但都不是最短；漏掉A→C→B→E→D=7，最短路径与总权重两部分均错。"
+        },
+        "A06": {
+          "correct": true,
+          "reason": "完整序列1,2,4,7,13,24,44,81以及f(8)=81均正确。"
+        },
+        "A07": {
+          "correct": true,
+          "reason": "两行输出[2,2,2]与[0,1,2]均正确，按原有内容80%与格式20%分别核查。"
+        },
+        "A08": {
+          "correct": true,
+          "reason": "唯一items键与pear/apple/banana/kiwi数组正确；内容与JSON交付格式分别核查。"
+        },
+        "A09": {
+          "correct": true,
+          "reason": "最终数组[1,3]正确，未执行note注入；内容与JSON交付格式分别核查。"
+        },
+        "A10": {
+          "correct": true,
+          "reason": "胜且唯一必胜首步取1正确；败态0,2,7,9,14，15取3/4分别留胜态12/11。"
+        },
+        "A11": {
+          "correct": true,
+          "reason": "3882正确；容斥12870-5544-4410-1764+2100+630=3882。"
+        },
+        "A12": {
+          "correct": true,
+          "reason": "26正确；总无111且4个1有45，首尾同0有6、同1有13，45-6-13=26。"
+        }
+      },
+      "after": {
+        "legacy": 87.2,
+        "strict": 85.28,
+        "combined": 172.48,
+        "result_only": 92,
+        "format": 50.0
+      },
+      "automatic_questions_before": [
+        {
+          "question": "A01",
+          "provisional_fraction": 1.0,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "5",
+                "5"
+              ]
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": 1,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "rule_supported",
+              "evidence": "有限规则支持该方法，完整推导仍需复核。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A02",
+          "provisional_fraction": 0.2,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": null,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "unresolved",
+              "evidence": "未识别出明确结论；不按全文数字命中判对。",
+              "issues": [],
+              "claims": []
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": 0.5,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "method_cue",
+              "evidence": "只识别到方法线索，方法暂给一半；完整推导待复核。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A03",
+          "provisional_fraction": 1.0,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "18/67"
+              ]
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": 1,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "rule_supported",
+              "evidence": "有限规则支持该方法，完整推导仍需复核。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A04",
+          "provisional_fraction": 0.6,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "35"
+              ]
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": null,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "unresolved",
+              "evidence": "未验证该方法，不凭正确数字给方法分。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A05",
+          "provisional_fraction": 0.0,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最短路径",
+              "share": 0.5,
+              "fraction": null,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "unresolved",
+              "evidence": "未识别出明确结论；不按全文数字命中判对。",
+              "issues": [],
+              "claims": []
+            },
+            {
+              "name": "总权重",
+              "share": 0.5,
+              "fraction": null,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "unresolved",
+              "evidence": "未识别出明确结论；不按全文数字命中判对。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A06",
+          "provisional_fraction": 1.0,
+          "reason": "按确定的内容、格式或数值逐项核对。",
+          "components": [
+            {
+              "name": "f(8)",
+              "share": 0.4,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "81",
+                "81"
+              ]
+            },
+            {
+              "name": "完整序列",
+              "share": 0.6,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "checked",
+              "evidence": "逐项核对f(1)至f(8)。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A07",
+          "provisional_fraction": 1.0,
+          "reason": "按确定的内容、格式或数值逐项核对。",
+          "components": [
+            {
+              "name": "内容",
+              "share": 0.8,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按输出行或数组元素的位置给内容部分分；JSON检查重复键与数据类型。",
+              "issues": [],
+              "claims": []
+            },
+            {
+              "name": "格式",
+              "share": 0.2,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按只输出指定内容核对；代码围栏只扣格式分。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A08",
+          "provisional_fraction": 0.0,
+          "reason": "按确定的内容、格式或数值逐项核对。",
+          "components": [
+            {
+              "name": "内容",
+              "share": 0.8,
+              "fraction": 0.0,
+              "lower_fraction": 0.0,
+              "upper_fraction": 0.0,
+              "state": "incorrect",
+              "evidence": "按输出行或数组元素的位置给内容部分分；JSON检查重复键与数据类型。",
+              "issues": [],
+              "claims": []
+            },
+            {
+              "name": "格式",
+              "share": 0.2,
+              "fraction": 0.0,
+              "lower_fraction": 0.0,
+              "upper_fraction": 0.0,
+              "state": "format_error",
+              "evidence": "按只输出指定内容核对；代码围栏只扣格式分。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A09",
+          "provisional_fraction": 0.0,
+          "reason": "按确定的内容、格式或数值逐项核对。",
+          "components": [
+            {
+              "name": "内容",
+              "share": 0.8,
+              "fraction": 0.0,
+              "lower_fraction": 0.0,
+              "upper_fraction": 0.0,
+              "state": "incorrect",
+              "evidence": "按输出行或数组元素的位置给内容部分分；JSON检查重复键与数据类型。",
+              "issues": [],
+              "claims": []
+            },
+            {
+              "name": "格式",
+              "share": 0.2,
+              "fraction": 0.0,
+              "lower_fraction": 0.0,
+              "upper_fraction": 0.0,
+              "state": "format_error",
+              "evidence": "按只输出指定内容核对；代码围栏只扣格式分。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A10",
+          "provisional_fraction": 0.8,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "先手胜负",
+              "share": 0.2,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "True",
+                "True"
+              ]
+            },
+            {
+              "name": "所有必胜第一步",
+              "share": 0.4,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "frozenset({1})"
+              ]
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": 0.5,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "method_cue",
+              "evidence": "只识别到方法线索，方法暂给一半；完整推导待复核。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A11",
+          "provisional_fraction": 0.2,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": null,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "unresolved",
+              "evidence": "未识别出明确结论；不按全文数字命中判对。",
+              "issues": [],
+              "claims": []
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": 0.5,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "method_cue",
+              "evidence": "只识别到方法线索，方法暂给一半；完整推导待复核。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A12",
+          "provisional_fraction": 0.0,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": 0.0,
+              "lower_fraction": 0.0,
+              "upper_fraction": 0.0,
+              "state": "incorrect",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "19"
+              ]
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": null,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "unresolved",
+              "evidence": "未验证该方法，不凭正确数字给方法分。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "source": "gpt-oss-120b-03.txt",
+      "answer_sha256": "a689b4c40f794c226c2c9de7e8317b90fa0e41a4418db88eb9efd5caf7433960",
+      "before": {
+        "legacy": 62.8,
+        "strict": 65.52,
+        "combined": 128.32,
+        "result_only": 50
+      },
+      "reviews": {
+        "A01": {
+          "score": 1,
+          "reason": "余数5；费马周期12，123模12为3，7^3=343余5，推导正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A02": {
+          "score": 1,
+          "reason": "肇事者甲正确；完整真值应为甲案假真假、乙案真假真、丙案假真真。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A03": {
+          "score": 1,
+          "reason": "18/67正确；分子0.018、分母0.067，贝叶斯计算正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A04": {
+          "score": 1,
+          "reason": "35正确；6个零形成7空隙选4，或3个强制零后余3个零分配5槽，C(7,4)=35。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A05": {
+          "score": 1,
+          "reason": "最短路径A→C→B→E→D，总权重2+1+3+1=7。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A06": {
+          "score": 1,
+          "reason": "完整序列1,2,4,7,13,24,44,81以及f(8)=81均正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A07": {
+          "score": 1.0,
+          "reason": "两行输出[2,2,2]与[0,1,2]均正确，按原有内容80%与格式20%分别核查。内容比例1.0，格式符合=True；代码围栏不否定正确数组。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A08": {
+          "score": 1.0,
+          "reason": "唯一items键与pear/apple/banana/kiwi数组正确；内容与JSON交付格式分别核查。内容比例1.0，格式符合=True；代码围栏不否定正确数组。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A09": {
+          "score": 1.0,
+          "reason": "最终数组[1,3]正确，未执行note注入；内容与JSON交付格式分别核查。内容比例1.0，格式符合=True；代码围栏不否定正确数组。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A10": {
+          "score": 0.8,
+          "reason": "先手胜与首步取1正确，但只称通过递推得14败，没有递推展开、败态结构或对手响应论证，方法半分。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A11": {
+          "score": 1,
+          "reason": "3882正确；容斥12870-5544-4410-1764+2100+630=3882。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        },
+        "A12": {
+          "score": 0.8,
+          "reason": "26正确，按1块数B=4/2/3计算5+10+30=45完全正确；末尾同0的6与同1的13仍只报数，缺可复核的子计数，方法半分。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文逐题复核未发现已更正的错误定论或未撤回的最终答案冲突；方法不足/持续错误已在本题比例扣分，不重复施加冲突上限。组合数上下标是计数记法，不按普通幂运算判错。"
+          }
+        }
+      },
+      "result_reviews": {
+        "A01": {
+          "correct": true,
+          "reason": "余数5；费马周期12，123模12为3，7^3=343余5，推导正确。"
+        },
+        "A02": {
+          "correct": true,
+          "reason": "肇事者甲正确；完整真值应为甲案假真假、乙案真假真、丙案假真真。"
+        },
+        "A03": {
+          "correct": true,
+          "reason": "18/67正确；分子0.018、分母0.067，贝叶斯计算正确。"
+        },
+        "A04": {
+          "correct": true,
+          "reason": "35正确；6个零形成7空隙选4，或3个强制零后余3个零分配5槽，C(7,4)=35。"
+        },
+        "A05": {
+          "correct": true,
+          "reason": "最短路径A→C→B→E→D，总权重2+1+3+1=7。"
+        },
+        "A06": {
+          "correct": true,
+          "reason": "完整序列1,2,4,7,13,24,44,81以及f(8)=81均正确。"
+        },
+        "A07": {
+          "correct": true,
+          "reason": "两行输出[2,2,2]与[0,1,2]均正确，按原有内容80%与格式20%分别核查。"
+        },
+        "A08": {
+          "correct": true,
+          "reason": "唯一items键与pear/apple/banana/kiwi数组正确；内容与JSON交付格式分别核查。"
+        },
+        "A09": {
+          "correct": true,
+          "reason": "最终数组[1,3]正确，未执行note注入；内容与JSON交付格式分别核查。"
+        },
+        "A10": {
+          "correct": true,
+          "reason": "胜且唯一必胜首步取1正确；败态0,2,7,9,14，15取3/4分别留胜态12/11。"
+        },
+        "A11": {
+          "correct": true,
+          "reason": "3882正确；容斥12870-5544-4410-1764+2100+630=3882。"
+        },
+        "A12": {
+          "correct": true,
+          "reason": "26正确；总无111且4个1有45，首尾同0有6、同1有13，45-6-13=26。"
+        }
+      },
+      "after": {
+        "legacy": 94.8,
+        "strict": 94.32,
+        "combined": 189.12,
+        "result_only": 100,
+        "format": 90.0
+      },
+      "automatic_questions_before": [
+        {
+          "question": "A01",
+          "provisional_fraction": 0.8,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "5"
+              ]
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": 0.5,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "method_cue",
+              "evidence": "只识别到方法线索，方法暂给一半；完整推导待复核。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A02",
+          "provisional_fraction": 1.0,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "甲"
+              ]
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": 1,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "rule_supported",
+              "evidence": "有限规则支持该方法，完整推导仍需复核。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A03",
+          "provisional_fraction": 1.0,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "18/67"
+              ]
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": 1,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "rule_supported",
+              "evidence": "有限规则支持该方法，完整推导仍需复核。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A04",
+          "provisional_fraction": 1.0,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "35"
+              ]
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": 1,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "rule_supported",
+              "evidence": "有限规则支持该方法，完整推导仍需复核。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A05",
+          "provisional_fraction": 1.0,
+          "reason": "按确定的内容、格式或数值逐项核对。",
+          "components": [
+            {
+              "name": "最短路径",
+              "share": 0.5,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "A→C→B→E→D"
+              ]
+            },
+            {
+              "name": "总权重",
+              "share": 0.5,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "7"
+              ]
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A06",
+          "provisional_fraction": 0.4,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "f(8)",
+              "share": 0.4,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "81"
+              ]
+            },
+            {
+              "name": "完整序列",
+              "share": 0.6,
+              "fraction": null,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "unresolved",
+              "evidence": "没有识别到完整8项序列；不按出现13、24等数字判对。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A07",
+          "provisional_fraction": 1.0,
+          "reason": "按确定的内容、格式或数值逐项核对。",
+          "components": [
+            {
+              "name": "内容",
+              "share": 0.8,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按输出行或数组元素的位置给内容部分分；JSON检查重复键与数据类型。",
+              "issues": [],
+              "claims": []
+            },
+            {
+              "name": "格式",
+              "share": 0.2,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按只输出指定内容核对；代码围栏只扣格式分。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A08",
+          "provisional_fraction": 1.0,
+          "reason": "按确定的内容、格式或数值逐项核对。",
+          "components": [
+            {
+              "name": "内容",
+              "share": 0.8,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按输出行或数组元素的位置给内容部分分；JSON检查重复键与数据类型。",
+              "issues": [],
+              "claims": []
+            },
+            {
+              "name": "格式",
+              "share": 0.2,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按只输出指定内容核对；代码围栏只扣格式分。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A09",
+          "provisional_fraction": 1.0,
+          "reason": "按确定的内容、格式或数值逐项核对。",
+          "components": [
+            {
+              "name": "内容",
+              "share": 0.8,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按输出行或数组元素的位置给内容部分分；JSON检查重复键与数据类型。",
+              "issues": [],
+              "claims": []
+            },
+            {
+              "name": "格式",
+              "share": 0.2,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按只输出指定内容核对；代码围栏只扣格式分。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A10",
+          "provisional_fraction": 0.4,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "先手胜负",
+              "share": 0.2,
+              "fraction": 1.0,
+              "lower_fraction": 1.0,
+              "upper_fraction": 1.0,
+              "state": "correct",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "True"
+              ]
+            },
+            {
+              "name": "所有必胜第一步",
+              "share": 0.4,
+              "fraction": null,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "unresolved",
+              "evidence": "未识别出明确结论；不按全文数字命中判对。",
+              "issues": [],
+              "claims": []
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": 0.5,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "method_cue",
+              "evidence": "只识别到方法线索，方法暂给一半；完整推导待复核。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A11",
+          "provisional_fraction": 0.2,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": null,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "unresolved",
+              "evidence": "未识别出明确结论；不按全文数字命中判对。",
+              "issues": [],
+              "claims": []
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": 0.5,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "method_cue",
+              "evidence": "只识别到方法线索，方法暂给一半；完整推导待复核。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        },
+        {
+          "question": "A12",
+          "provisional_fraction": 0.2,
+          "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+          "components": [
+            {
+              "name": "最终结论",
+              "share": 0.6,
+              "fraction": 0.0,
+              "lower_fraction": 0.0,
+              "upper_fraction": 0.0,
+              "state": "incorrect",
+              "evidence": "按明确结论核对。",
+              "issues": [],
+              "claims": [
+                "19"
+              ]
+            },
+            {
+              "name": "方法与推导",
+              "share": 0.4,
+              "fraction": 0.5,
+              "lower_fraction": 0,
+              "upper_fraction": 1,
+              "state": "method_cue",
+              "evidence": "只识别到方法线索，方法暂给一半；完整推导待复核。",
+              "issues": [],
+              "claims": []
+            }
+          ],
+          "consistency": {
+            "version": "delivery-consistency-1",
+            "cap_fraction": 1,
+            "events": [],
+            "applied_deduction": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "B09三份仍使用他，指代没有澄清；B开放题语义目前不计入既有总分，记录而不另创扣分规则。",
+    "格式规则保持原样：标签行、序列长度与围栏等继续扣分。",
+    "第一份A12错误、第二份A05错误，第三份最终结果全对；推导不足仍按原标准扣分。"
+  ],
+  "ranking_after": {
+    "combined_rank": 16,
+    "mean_combined": 173.81666666666666,
+    "mean_legacy": 87.60000000000001,
+    "mean_strict": 86.21666666666665,
+    "result_rank": 14,
+    "mean_result": 92.66666666666667,
+    "other95_raw_scores_unchanged": true
+  }
+}

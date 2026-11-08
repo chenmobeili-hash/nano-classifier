@@ -1,0 +1,81 @@
+[A01]
+余数是 5。因为 \(7^3\equiv5\pmod{13}\)，且 \(7^{12}\equiv1\pmod{13}\)，所以 \(7^{123}=7^{12\cdot10+3}\equiv5\pmod{13}\)。
+
+[A02]
+甲打破了杯子。甲和丙的话均为假，乙的话为真；如果是乙或丙打破的，都会有两句话为真。
+
+[A03]
+\[
+P(\text{发生}\mid\text{阳性})
+=\frac{0.02\times0.90}{0.02\times0.90+0.98\times0.05}
+=\frac{18}{67}。
+\]
+
+[A04]
+35 个。先排 6 个 0，形成 7 个可放置 1 的空隙；从中选 4 个放入 1，共 \(\binom74=35\) 个。
+
+[A05]
+最短路径为 A→C→B→E→D，总权重为 \(2+1+3+1=7\)。
+
+[A06]
+\(f(1)\) 至 \(f(8)\) 依次为 1、2、4、7、13、24、44、81，因此 \(f(8)=81\)。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items":["pear","apple","banana","kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+先手必胜，唯一能保证获胜的第一步是取 1 枚。递推可得不超过 15 的必败局面为 0、2、7、9、14 枚；取 1 枚后留给对手 14 枚，而取 3 枚或 4 枚分别留下 12 枚或 11 枚，都是对手的必胜局面。
+
+[A11]
+3882 条。总路径数为 \(\binom{16}{8}=12870\)。经过三个禁点的路径数分别为 5544、4410、1764；同时经过 \((2,2)\) 和另外两个禁点的路径数分别为 2100、630，后两个禁点不能在同一条路径上。由容斥原理：
+\[
+12870-5544-4410-1764+2100+630=3882。
+\]
+
+[A12]
+22 个。首位为 1、末位为 0 时，中间 6 位选 3 个 1，共 \(\binom63=20\) 个；其中包含连续三个 1 的有 9 个，故合法的有 11 个。反转字符串可将其一一对应到首位为 0、末位为 1 的情况，所以共有 \(11\times2=22\) 个。
+
+[B01]
+7
+
+[B02]
+583104729681245907336024815971408362559137026884720391564130875294612058739471826035918642709253671480326194857203681
+
+[B03]
+HTTHTHHHTTTHHHTTHTHHTHTTTTHHTHTTHHHTTHHTHTHTTTHHHTTTHHTTHHHTHTTTHTHHTTHTTHHHTHHT
+
+[B04]
+4,1,6,2,2,5,3,6,1,4,4,2,6,3,5,1,2,5,5,4,6,2,3,1
+
+[B05]
+海豚
+
+[B06]
+63
+
+[B07]
+先不用把整个计划想清楚，只挑一件五分钟内能做的事开始吧。比如打开文档，写下第一句，哪怕很粗糙也没关系。做完这一步，再决定下一步。
+
+[B08]
+平均数只告诉你数据的总量分摊后是多少，不告诉你每个数是怎么分布的。比如两组收入都是平均每人 5000 元：一组每个人都拿 5000 元，另一组有的人拿 1000 元、有的人拿 9000 元。平均数一样，但大家的实际感受可能很不同。
+
+[B09]
+小林告诉小周：“我明天不能来。”
+
+[B10]
+材料没有给出获胜者姓名或票数，无法确定。材料原文是：“虚构城市澄岚城在2041年举行了一次选举”。
+
+[B11]
+无法同时满足：包含“蓝色灯”必然出现“灯”字。
+
+[B12]
+Randomness doesn’t mean everything has to look evenly mixed. Imagine flipping a coin: getting five heads in a row may feel suspicious, but that particular sequence is just as likely as any other sequence of five flips.
+
+In a long simulation, there are many chances for streaks, clusters, and other patterns to appear. Our brains are excellent at spotting them, even when no hidden rule caused them. A pattern can be real as an observation without being evidence that the process was rigged.

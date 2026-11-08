@@ -1,0 +1,90 @@
+[A01]
+余数是 5。因为 7² ≡ 10，7³ ≡ 70 ≡ 5，7⁶ ≡ 5² = 25 ≡ −1，所以 7¹² ≡ 1 (mod 13)。又 123 = 12×10 + 3，故 7¹²³ ≡ 7³ ≡ 5。
+
+[A02]
+是甲打破的。如果是甲，那么甲的话为假，乙的话为真，丙的话为假，正好一句为真。如果是乙，甲和丙都说了真话，有两句为真；如果是丙，乙和丙都说了真话，也有两句为真。这两种都不符合条件。
+
+[A03]
+P = (0.02×0.9) / (0.02×0.9 + 0.98×0.05) = 0.018 / (0.018 + 0.049) = 0.018/0.067 = 18/67
+
+[A04]
+35。先放好 6 个 0，它们之间连同两端一共有 7 个空位，每个空位最多放一个 1，从中选 4 个，得 C(7,4) = 35。
+
+[A05]
+最短路径是 A→C→B→E→D，总权重为 2+1+3+1 = 7。其他路径更长，例如 A→C→B→D 为 8，A→B→E→D 为 8。
+
+[A06]
+f(1)=1，f(2)=2，f(3)=4，f(4)=7，f(5)=13，f(6)=24，f(7)=44，f(8)=81。所以 f(8) = 81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items":["pear","apple","banana","kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+先手必胜，唯一能保证获胜的第一步是取 1 枚。剩余石子数除以 7 余 0 或余 2 时，轮到的一方必败：从这些数出发，取 1、3 或 4 枚后余数都不会是 0 或 2；而从其他任何数出发，总有一种取法能把余数变成 0 或 2。15 除以 7 余 1。取 1 枚剩 14，余数为 0，是必败局面，留给对手。取 3 枚剩 12（余 5），取 4 枚剩 11（余 4），都把必胜局面留给了对手。
+
+[A11]
+答案是 3882 条，用容斥原理计算。设 P1=(2,2)，P2=(4,5)，P3=(6,3)。
+
+全部路径：C(16,8) = 12870
+经过 P1：C(4,2)·C(12,6) = 6·924 = 5544
+经过 P2：C(9,4)·C(7,3) = 126·35 = 4410
+经过 P3：C(9,3)·C(7,2) = 84·21 = 1764
+同时经过 P1、P2：6·C(5,2)·35 = 6·10·35 = 2100
+同时经过 P1、P3：6·C(5,1)·21 = 6·5·21 = 630
+P2 和 P3 不可能在同一条路径上（从一个点到另一个点必须有某个坐标减小），三个点都经过也不可能，都是 0
+不合法路径：5544+4410+1764−2100−630 = 8988；合法路径：12870−8988 = 3882
+[A12]
+答案是 26。把 4 个 0 排好，形成 5 个空位，各空位放 1 的个数记为 x1…x5，满足总和为 4 且每个都 ≤2（这样就不会出现连续三个 1）。
+
+不限首尾时：C(8,4) − 5·5 = 45
+首尾都是 1（x1≥1，x5≥1）：13
+首尾都是 0（x1=x5=0，x2+x3+x4=4，每个 ≤2）：6
+首尾不同：45 − 13 − 6 = 26（首 1 尾 0 和首 0 尾 1 各 13 个）
+[B01]
+7
+
+[B02]
+382910475619374028655501938274662819304790173645282849503716730291846501938475628456102937472839015661839204752950173846
+
+[B03]
+HTTHHTHTTTHHTHTTHHTHTTHTHHHTTHHTHTTTHHTHTHHTTHTHHTTTHHHTHTTHHTTHTHHTHTTHHTHTTTHH
+
+[B04]
+4,1,6,3,3,5,2,6,1,4,5,2,6,6,3,1,5,4,2,3,1,6,4,2
+
+[B05]
+水獭
+
+[B06]
+62
+
+[B07]
+我太懂这种感觉了，越想做到完美，越不敢开头。要不我们换个思路：先不管整个计划，只挑一件十分钟内能做完的小事，今天就做。比如打开文档写个标题，或者列三个要点。做得粗糙一点完全没关系，第一版本来就是拿来改的。开了头，后面的路自然就清楚了。你现在最想先动的是哪一小块？
+
+[B08]
+平均数只告诉你这组数的"中间大概在哪"，不告诉你这些数是挤在一起还是散得很开。比如两个班的平均分都是 70 分：一个班人人都考 68 到 72 分，另一个班一半人考 100 分、一半人考 40 分。平均数一样，可前一个班大家水平差不多，后一个班两极分化很严重，给人的感觉完全不同。所以看数据时，除了平均数，还要看数据有多分散、有没有特别极端的值。
+
+[B09]
+原句的"他"既可以指小林，也可以指小周。按两种意思分别改：
+
+小林告诉小周："我明天不能来。"
+小林告诉小周："你明天不能来。" 也可以写成"小林告诉小周，小林自己明天不能来"或"小林告诉小周，小周明天不能来"。
+[B10]
+材料里没有写获胜者的姓名和票数，所以无法回答。唯一能引用的原文是"虚构城市澄岚城在2041年举行了一次选举"，它只说明举行过这次选举。
+
+[B11]
+这两条要求互相矛盾：只要包含"蓝色灯"三个字，就一定会出现"灯"字，所以没有答案能同时满足。如果只能满足一条，我选择满足第②条：蓝色的照明器具。
+
+[B12]
+Here's the funny thing about randomness: it's lumpier than you'd expect. If you flip a fair coin 100 times, you'll almost certainly get a streak of five or six heads in a row somewhere. That isn't the coin "deciding" anything. With that many flips, streaks are just bound to show up. Our brains are pattern-detectors, built to spot tigers in the grass, so we see those streaks and think something meaningful is going on.
+
+Simulations add a second twist. Computers can't actually be random. They use a formula that takes a starting number (a "seed") and churns out a sequence that looks random. If the formula is good, you'd never notice. If it's weak, it can repeat itself after a while or leave subtle structure behind, like points that line up in neat planes when you plot them in 3D.
+
+So patterns in simulated randomness come from two places: real randomness naturally produces clumps and streaks, and imperfect generators can sneak in patterns of their own. The trick is learning to tell which one you're looking at, and that's basically what statistics is for.

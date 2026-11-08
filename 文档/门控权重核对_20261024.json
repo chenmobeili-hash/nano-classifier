@@ -1,0 +1,44 @@
+{
+  "parameter_norms": {
+    "kernel": {
+      "l2": 1.291004996124608,
+      "max_abs_change_from_init": 9.012528953467047e-06
+    },
+    "hidden_bias": {
+      "l2": 0.0007385100101238436,
+      "max_abs_change_from_init": 0.0005069675922279771
+    },
+    "gate": {
+      "l2": 1.0235193603429102e-06,
+      "max_abs_change_from_init": 6.32212288567124e-07
+    },
+    "gate_bias": {
+      "l2": 7.4213708579155345e-06,
+      "max_abs_change_from_init": 7.4213708579155345e-06
+    },
+    "W": {
+      "l2": 0.0038282151052135564,
+      "max_abs_change_from_init": 0.0017534933256643603
+    },
+    "b": {
+      "l2": 0.46946959483983963,
+      "max_abs_change_from_init": 0.326933872988456
+    }
+  },
+  "class_bias": {
+    "Claude": 0.23037602860451292,
+    "DeepSeek": -0.326933872988456,
+    "GLM": 0.04591567315582165,
+    "GPT": -0.13313586878962852,
+    "Qwen": 0.20151779081893129
+  },
+  "gate_on_valid_centers": {
+    "min": 0.5000017827960491,
+    "max": 0.500001905964075,
+    "std": 1.7932735904918415e-08
+  },
+  "classifier_weight_max_abs": 0.0017534933256643603,
+  "uniform_vs_gated_summaries": "Same top1 counts and near identical margins in current evaluation.",
+  "local_readout_max_absolute_on_current100": 6.712637151073585e-05,
+  "readout_bias_max_absolute": 0.326933872988456
+}

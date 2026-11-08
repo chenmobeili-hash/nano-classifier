@@ -1,0 +1,90 @@
+[A01]
+7^123 ≡ 5 (mod 13)。
+推导：7^2=49≡10，7^3≡70≡5，7^6≡25≡−1，故 7^12≡1。123=12×10+3，所以 7^123≡7^3≡5（也可直接算 343=26×13+5）。
+
+[A02]
+甲打破的杯子。
+理由：甲、乙两句话互为否定（“乙打破的”与“不是乙”），必有一真一假；三句话恰有一句真，故丙必定说假话，即“不是甲打破的”为假，所以是甲。检验：甲假、乙真、丙假，恰一真，自洽。（另两种假设分别产生两句真话。）
+
+[A03]
+18/67。
+P(E|+) = (0.02×0.9) / (0.02×0.9 + 0.98×0.05) = 0.018/(0.018+0.049) = 0.018/0.067 = 18/67 ≈ 0.2687。
+
+[A04]
+35。
+恰有4个1且互不相邻 ⇔ 在10个位置中选4个互不相邻的位置，数目为 C(10−4+1, 4) = C(7,4) = 35。
+
+[A05]
+最短路径：A→C→B→E→D，总权重 2+1+3+1 = 7。
+Dijkstra：A=0，C=2，B=min(4,2+1)=3，E=3+3=6，D=min(2+8, 3+5, 6+1)=7。其余路径：A→B→D=9，A→C→B→D=8，A→B→E→D=8，A→C→D=10，均更长。
+
+[A06]
+f(8)=81。
+f(1) 至 f(8)：1, 2, 4, 7, 13, 24, 44, 81。
+（f(1)=1+0+0=1，f(2)=1+1+0=2，f(3)=2+1+1=4，其后逐项三项相加。）
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+先手必胜，且唯一能保证获胜的第一步是取 1 枚（留下 14 枚）。
+理由：必败态（轮到走者必输）为 n ≡ 0 或 2 (mod 7)：0、2、7、9、14、16…。因 2 只能取1→1(胜态)，7 的走法 6/4/3 全为胜态，9 的走法 8/6/5 全为胜态，14 的走法 13/11/10 全为胜态，递推成立。15 枚时：取1→14（必败态，给对手）✓；取3→12、取4→11 都是对手的胜态，故不能保证赢。
+
+[A11]
+3882 条。
+方法一（容斥）：总路径 C(16,8)=12870。设 A、B、C 分别为经过 (2,2)、(4,5)、(6,3) 的路径。
+|A| = C(4,2)·C(12,6) = 6×924 = 5544；|B| = C(9,4)·C(7,4) = 126×35 = 4410；|C| = C(9,3)·C(7,2) = 84×21 = 1764。
+A∩B = C(4,2)·C(5,2)·C(7,4) = 6×10×35 = 2100；A∩C = 6×C(5,1)×21 = 630；B∩C = 0（(4,5) 与 (6,3) 互不可达）；三者交为 0。
+合法数 = 12870 − (5544+4410+1764) + (2100+630) = 3882。
+方法二（网格 DP，与上式一致）：逐格累加左、下两格路径数，被禁格记 0，终点 (8,8) 得 3882。
+
+[A12]
+26 个。
+方法：首末位不同分两类，互为“反转”双射，各算一类再乘 2。取首位=1、末位=0，则中间 6 位（第2–7位）恰含 3 个1，且整串不得出现 111。中间 6 位选 3 个1共 C(6,3)=20 种，排除：第2、3位同时为1（与首位构成111）的4种，及中间出现连续三个1的 {2,3,4}、{3,4,5}、{4,5,6} 三种，共排除7种，剩13种。故 2×13 = 26。
+
+[B01]
+7
+
+[B02]
+483920175620194758637391840256018362947556290138479476152830385729461062018457931543087269872645901340958173627310264895
+
+[B03]
+HTHHTHTTHTHHTHTHTTHHTTHHTHTHHTTHHTHTTHHHTHTHTTHTHHTHTHTTHHTHTHTTHTHHTHTTHTHTHHTT
+
+[B04]
+4,2,6,1,3,5,2,6,4,1,5,3,6,2,4,5,1,3,2,6,4,3,5,2
+
+[B05]
+海豚
+
+[B06]
+73
+
+[B07]
+这种“准备到完美才开始”的卡点我太熟了～它其实不是懒，是怕做出来不够好。给你三个小办法：一是把目标缩到小得可笑——不是“做完整个计划”，而是“打开文档写三行”；二是设一个 10 分钟计时器，允许自己产出很烂的第一版，反正草稿不用给任何人看；三是先做最不确定的那一步，因为迟迟不开始往往就是卡在“不知道那步怎么做”。今天就挑一个 10 分钟内能完成的最小动作做完，你会发现启动比想象中轻。
+
+[B08]
+平均数只告诉你“总量摊平后每份多少”，却完全没告诉你数据散不散、怎么分布。比如两个班平均分都是75：甲班大多在70到80之间，人人中等；乙班一半人95分、一半人55分，平均也是75。数字一样，但甲班“整齐”，乙班“两极分化”，给人的感觉天差地别。另外还要看极端值：一个团队里10个人年薪都是10万，平均10万；若9个人9万、老板100万，平均就变成18万多——这个“平均”已经不能代表任何人。所以看平均数时，最好再问一句：数据波动多大？有没有离群值？分布是集中还是分散？这就是标准差、分位数这些指标存在的意义。
+
+[B09]
+原句的“他”指代不明，需要明确：若“他”指小林——“小林对小周说：‘我明天不能来。’”；若“他”指小周——“小林告诉小周：‘你明天不能来。’”（也可写成“小林通知小周，小周明天不能来。”）
+
+[B10]
+材料未提供获胜者姓名与票数，无法作答；无法给出“支持答案的原文”，因为材料中不存在相关表述。材料全文仅为：“虚构城市澄岚城在2041年举行了一次选举”。它只说明了地点、年份和事件类型，没有涉及候选人、结果或票数。
+
+[B11]
+本题两条要求互相矛盾，无解：①要求答案中恰好包含“蓝色灯”这三个汉字，而该串本身含有“灯”字；②又禁止出现“灯”字。任何包含“蓝色灯”的文本必然包含“灯”，因此不存在同时满足①②的答案。若允许修改条件，可改为“恰好包含三个汉字‘蓝、色、光’”或取消②，才可构造答案。
+
+[B12]
+Because a simulator only promises you the *odds*, not a tidy-looking result. Flip a fair coin 20 times and you might get HHHHHTTTTTHHHHHTTTTT — that's 4 runs, when "random-looking" intuition expects constant alternation. Surprising streaks aren't a bug; they're what independence looks like. Each flip ignores the last one, so long runs happen at exactly the rate probability predicts.
+
+There are a few other reasons patterns jump out. Small samples are noisy: in 10 rolls of a die, seeing three 6s feels meaningful, but it's totally ordinary. Coincidences multiply: you notice the one time your "random" numbers formed 1234 and ignore the thousands of boring ones. And our brains are pattern detectors on overdrive — we see faces in clouds, so we see "design" in noise.
+
+Here's the fun part: patterns and predictability are different things. Over many trials, aggregate behaviour becomes extremely predictable — about half heads, about 1/6 sixes, and the proportions tighten as the count grows (that's the law of large numbers). So randomness is messy locally and orderly globally. A simulation showing clumps, streaks, and lopsided patches is usually behaving *more* correctly than one that looks perfectly even — a too-smooth sequence is often the sign of a bad generator, or of a human pretending to be random. 🐳

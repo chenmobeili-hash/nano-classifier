@@ -1,0 +1,104 @@
+[A01]
+5。因为 7^2≡10，7^3≡70≡5，7^6≡25≡-1（mod 13），所以 7^12≡1。123=12×10+3，故 7^123≡7^3≡5（mod 13）。
+
+[A02]
+甲打破的。
+- 若甲打破：甲的话假，乙的话真，丙的话假，恰一句真，符合。
+- 若乙打破：甲、丙的话都真，有两句真，不符。
+- 若丙打破：乙、丙的话都真，有两句真，不符。
+
+[A03]
+P = (0.02×0.9) / (0.02×0.9 + 0.98×0.05) = 0.018 / (0.018+0.049) = 0.018/0.067 = **18/67**（约26.9%）。
+
+[A04]
+35 个。先放 6 个 0，形成 7 个空位（含两端），4 个 1 各占一个不同空位才能互不相邻，所以有 C(7,4)=35 种。
+
+[A05]
+最短路径为 A→C→B→E→D，总权重 2+1+3+1=7。
+其他路径：A→C→B→D=8，A→B→E→D=8，A→C→D=10，A→B→D=9。
+
+[A06]
+f(1)=1，f(2)=2，f(3)=4，f(4)=7，f(5)=13，f(6)=24，f(7)=44，f(8)=81。
+（例如 f(2)=f(1)+f(0)+f(-1)=1+1+0=2；f(8)=44+24+13=81。）
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items":["pear","apple","banana","kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+先手必胜。必败位置（轮到谁谁输）为 0、2、7、9、14……
+推导：1、3、4 可直接取完，所以是必胜位；2 只能取 1 到达 1（对手必胜），所以 2 是必败位。5、6 可走到 2，所以必胜。7 只能走到 6、4、3（都是必胜位），所以 7 必败。8 走到 7，必胜。9 只能走到 8、6、5，所以 9 必败。10 走到 9，必胜。11、12 分别经 4 或 3 走到 7、9，必胜。13 取 4 走到 9，必胜。14 只能走到 13、11、10，所以 14 必败。
+15 取 1 枚得 14（必败位），取 3 得 12、取 4 得 11 都是对手必胜位。所以唯一能保证获胜的第一步是**取 1 枚**。
+
+[A11]
+**3882** 条。用容斥法：
+- 总数 C(16,8)=12870。
+- 经过 (2,2)：C(4,2)×C(12,6)=6×924=5544。
+- 经过 (4,5)：C(9,4)×C(7,3)=126×35=4410。
+- 经过 (6,3)：C(9,3)×C(7,2)=84×21=1764。
+- 同时经过 (2,2) 和 (4,5)：6×C(5,2)×C(7,3)=6×10×35=2100。
+- 同时经过 (2,2) 和 (6,3)：6×C(5,1)×C(7,2)=6×5×21=630。
+- 同时经过 (4,5) 和 (6,3)：不可能（纵坐标不能下降），为 0；三点同时经过也为 0。
+
+结果：12870−(5544+4410+1764)+(2100+630)=12870−11718+2730=3882。
+
+[A12]
+**26** 个。把 4 个 0 排成一行，形成 5 个空位，每个空位放 0～2 个 1（避免连续三个 1），总数为 4。
+首位≠末位，意味着首空位 g0 与末空位 g4 恰有一个大于 0。
+- g0≥1、g4=0：g0=1 时，中间三个空位和为 3，每位≤2，有 C(5,2)−3=7 种；g0=2 时，中间和为 2，有 C(4,2)=6 种；共 13 种。
+- g4≥1、g0=0：由对称性也是 13 种。
+
+合计 13+13=26。
+
+[B01]
+7
+
+[B02]
+840291736519573084266283140957371960528490541267382468091573713085294658963740120647219835432176859089750132641602549873
+
+[B03]
+HTTHHTHTTHTHHHTHTTTHHTHTTHHTHHTTHTHHTHTTHHTHTTTHHTTHTHHTTHTHTTHHHTHTHTHTTHTHHTTH
+
+[B04]
+4,1,6,3,3,5,2,6,1,4,2,2,5,3,6,1,5,4,4,2,6,3,1,5
+
+[B05]
+水獭
+
+[B06]
+58
+
+[B07]
+这种感觉我挺懂的，越想做好，越不敢动手。不如把"开始"的标准降到很低：先别管计划完不完美，今天只花十分钟，写下最粗糙的三条想法，或者做最小的那一步，哪怕它很难看。一个粗糙的开头，比一个完美但不存在的计划有用得多，因为你一动手，就会知道哪里真正需要调整。你觉得现在最小的那一步会是什么？
+
+[B08]
+平均数只告诉你"中间大概在哪"，却不告诉你数据是紧挨着中间，还是散得很开。
+比如两个班的平均成绩都是 70 分。A 班几乎每个人都在 68 到 72 分之间；B 班则一半人接近满分，另一半人刚好及格甚至不及格。数字一样，但在 A 班，老师可以用同一套教法照顾所有人；在 B 班，同学之间的差距很大，需要区别对待。
+再比如，一条河的平均水深是 1 米，听起来很安全，可河里可能既有只到脚踝的浅滩，也有 3 米深的深潭。所以只看平均数，容易忽略数据的"分散程度"和"极端值"，而这些往往才是人们真正有感觉的地方。
+
+[B09]
+这句话有歧义，"他"可能指小林，也可能指小周。可以改成：
+- 若指小林："小林告诉小周，自己明天不能来。"
+- 若指小周："小林告诉小周，小周明天不能来。"
+- 或直接引述："小林对小周说：'我明天不能来。'"
+
+[B10]
+无法回答。材料只写了"虚构城市澄岚城在2041年举行了一次选举"，没有说明获胜者姓名和票数，所以也没有能支持这两项的原文。我不会编造这些信息。材料中唯一能引用的原文就是上面这句，它只支持"选举发生过"这一点。
+
+[B11]
+这个要求无法同时满足：必须包含"蓝色灯"三个字，就必然出现"灯"字，与"不得出现'灯'字"直接矛盾。因此本题没有符合全部条件的答案。
+
+[B12]
+Great question! The trick is that a simulation of randomness isn't actually random, and even truly random things contain patterns.
+
+First, computers use formulas called pseudorandom number generators. They start from a "seed" number and apply math to produce a long string of numbers that *look* unpredictable. If you start from the same seed, you get exactly the same sequence every time. So any pattern it produces is partly the result of a fixed set of rules, and a poorly designed generator can even have visible repeating patterns.
+
+But the bigger reason is that real randomness is lumpier than our intuition expects. If you flip a fair coin 20 times, you'll very likely see a run of four or five heads in a row somewhere. That doesn't mean the coin is broken. It just means that when you generate lots of random outcomes, some streaks and clusters are bound to show up by chance. Our brains are pattern-detecting machines, so we notice those streaks and think "that can't be random," when truly random data would often look *less* even than we'd guess.
+
+So patterns can show up in two ways: because the simulation has hidden structure, or just because chance naturally makes clumps. The tough part is telling which one you're looking at, and statisticians use tests to check whether a pattern is more than you'd expect by luck.

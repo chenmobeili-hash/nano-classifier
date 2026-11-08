@@ -1,0 +1,84 @@
+[A01]
+余数为 5。推导：7² = 49 ≡ 10，7³ ≡ 12 ≡ −1 (mod 13)，故 7⁶ ≡ 1 (mod 13)，7¹² ≡ 1。123 = 12×10 + 3，所以 7¹²³ ≡ 7³ ≡ 343 ≡ 343 − 26×13 = 343 − 338 = 5。
+
+[A02]
+甲打破了杯子。理由：若甲打破，则乙说“不是我”（真），甲说“乙打破的”（假），丙说“不是甲打破的”（假），恰有一真，成立。若乙打破：甲真、乙假、丙真，两句真，不合。若丙打破：甲假、乙真、丙真，两句真，不合。
+
+[A03]
+条件概率 = P(阳性|发生)P(发生) / [P(阳性|发生)P(发生) + P(阳性|未发生)P(未发生)] = (0.9×0.02) / (0.9×0.02 + 0.05×0.98) = 0.018 / (0.018 + 0.049) = 0.018/0.067 = 18/67。
+
+[A04]
+35 个。理由：恰有 4 个 1 且互不相邻，等价于从 10 个位置中选 4 个位、位置两两间隔：经典公式为把 10−4=6 个空位式插入，计数为 C(10−4+1, 4) = C(7,4) = 35。（可验证：n 个位置选 k 个不相邻位置数为 C(n−k+1, k)。）
+
+[A05]
+最短路径：A→C→B→E→D，总权重 2+1+3+1 = 7。（比较：A→B→D=9；A→B→E→D=4+3+1=8；A→C→B→D=2+1+5=8；A→C→D=2+8=10。）
+
+[A06]
+f(8) = 81。列表：f(1)=1，f(2)=2，f(3)=4，f(4)=7，f(5)=13，f(6)=24，f(7)=44，f(8)=81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+先手必胜。第一步必须取 1 枚（剩下 14 枚），这是唯一的必胜首步。理由（P 位/必败点分析，先手为败的位置）：2 是败位（只能取1→对方到1获胜）；7 是败位（任何取法都到达 3、4、6 均为胜位）；9 是败位（取1→8胜、取3→6胜、取4→5胜，且7只能一步取到…即9的所有走法都到必胜位）。递推可得败位为 2、7、9、14。15 枚时先手取 1 留下 14（败位给对方），随后每当对方取 x ∈ {1,3,4}，先手总能取数使合计后回到下一个败位（如对方取后若剩 13/11/10，先手可取 3 到 10 → 实际策略:使对方始终处于败位 14→…），故取 1 枚为唯一必胜首步。
+
+[A11]
+合法路径 3888 条。可复核算法（DP）：令 w[i][j] 为 (0,0) 到 (i,j) 的条数，w[0][0]=1，w[i][j]=w[i−1][j]+w[i][j−1]，并把三个禁点 (2,2)、(4,5)、(6,3) 的值设为 0。若用容斥：总数 C(16,8)=12870；经过 (2,2) 的 6×924=5544，经过 (4,5) 的 126×35=4410，经过 (6,3) 的 84×21=1764；同时经过 (2,2) 和 (4,5) 的 6×10×35=2100，同时经过 (2,2) 和 (6,3) 的 6×5×21=630（(4,5) 与 (6,3) 不可同经）。合法数 = 12870 − (5544+4410+1764) + (2100+630) = 12870 − 11718 + 2730 = 3882。
+
+（修正——用 DP 逐点核算：w 到 (6,3) 前各点累加并扣除禁点后，最终 w[8][8] = 3882。以 DP 结果 3882 为准。）
+
+[A12]
+24 个。可复核方法：先数“恰有 4 个 1 且无 111”，把 4 个 1 分成若干段、每段长 1 或 2（长度为 1 的段数 a、长度为 2 的段数 b，a+2b=4）：(a,b) = (4,0)、(2,1)、(0,2)。对 8 位串，设段数 k=a+b，4 个 0 分布在"两端 + 段间"共 (k+1)−(k−1) 个自由位置……直接按段的序独立枚举验证：段型 (1,1,1,1) 5 种、“1,2,1 型”共 30 种、(2,2) 10 种（含 (2,1,1),(1,2,1),(1,1,2) 各10），合计 45 种。再去除首尾相同的：首尾均为1的：中段6位含2个1，共 C(6,2)=15；首尾均为0的：中间 6 位含 4 个 1 且无 111，共 6 种。首尾相同共 21 种，故 45 − 21 = 24。符合"不存在合法解"的初判不成立——准确结果是 24。
+
+[B01]
+6
+
+[B02]
+72914052638177420936851400276199358046217710584529317062487761402381935963750284924093775
+
+[B03]
+THTTHHHTTHTHHTTTHHTTHHTTTHTHTTHTTHTHTHHTHTTTHHHHTTHTTHTTTHTHHHTTHTHHTTTTHTHH
+
+[B04]
+4,1,6,3,2,5,1,6,6,2,4,3,5,1,4,6,2,3,1,5,6,4,2,3
+
+[B05]
+翠鸟
+
+[B06]
+73
+
+[B07]
+我特别理解这种感觉——越想把计划做得完美，启动的门槛就越高，最后反而一步都没迈出去。其实第一步永远不需要是“最好的一步”，它只需要是“第一步”。要不这样：先选计划里最小、最容易的一件事，比如五分钟能完成的那种，现在就做完它。做完之后你会发现，行动本身会帮你校准计划，比反复在脑子里推演有用得多。完美是迭代出来的，不是在起点规划出来的。先动起来，然后再慢慢调整，好吗？
+
+[B08]
+因为平均数只总结了数据的“中心”，却掩盖了数据的“散布程度”和“形状”。举个简单例子：两组数据平均数都是 50——第一组是 48、49、51、52，第二组是 0、10、90、100。第一组大家都差不多，第二组却有的很低有的很高。所以tronique两组给人的印象可能完全不同：一个显得稳定整齐，一个显得两极分化、有极端值。另外，如果一组数据分布歪斜（少数极端值拉高了平均），平均数也未必代表人??数多数人的真实水平，比如平均工资被高收入群体拉高的情形。所以要看懂数据，除了平均数，还得看波动范围、最小最大值或中位数等。
+
+[B09]
+小林告诉小周：“小林明天不能来了。”（若原意是“小周不能来”，则为：小林告诉小周：“你明天不能来了。”——原句歧义在“他”指代不明，改写应明确指代。）
+
+[B10]
+无法回答。材料中只有一句话：“虚构城市澄岚城在2041年举行了一次选举”。这句话没有出现任何候选人姓名、票数或结果信息，因此依据这份材料，无法给出获胜者姓名和票数；支持答案的原文即上述这句，但它并不包含所需信息。
+
+[B11]
+要求本身自相矛盾：如果答案必须包含“蓝色灯”，那么“灯”字就必然出现在答案中，与“不得出现‘灯’字”冲突。两个条件无法同时满足，因此本题无解。
+
+[B12]
+A simulation is a machine that follows certain rules over and over, and randomness gets into it through some seed—a number pulled from a clock or some unpredictable source. Here's the interesting part: even something built to be random will show patterns if you look hard enough, and that's not a bug.
+
+Think about flipping a coin ten times. You wouldn't be surprised to see five heads and five tails, but you also wouldn't be shocked to see seven heads. Seven heads in a row _feels_ meaningful—lucky, even—and our brains can't help noticing it. Statisticians have a name for this: they'll tell you that in a long run of coin flips, streaks of three, four, or five same outcomes are completely expected. A pattern that looks like fate is often just probability doing its ordinary work.
+
+The same thing happens when a computer simulates, say, a thousand random walks on a grid. Each individual walker is unpredictable, but zoom out and you'll see walkers clumping in some regions and thinning out in others—like raindrops on a window that almost never fall perfectly evenly. The clumps aren't a flaw in the random number generator; they're a natural consequence of randomness itself.
+
+There's a deeper puzzle here, too. Computers can't really generate random numbers on their own. They use formulas that produce _pseudorandom_ sequences—deterministic streams that *look* random unless you know the starting seed. So a "simulation of randomness" is really a very long, very complicated piece of arithmetic wearing a disguise. Every so often, if you look at the right slice of the output—the low digits, say, or the sequence in a stepping pattern—the disguise slips and you see order underneath.
+
+So why do patterns show up? Three reasons: first, real randomness genuinely clumps and produces streaks—our intuition about what "random" looks like is simply miscalibrated. Second, when we run many trials, the law of large numbers pulls averages toward expected values, which creates structure at the aggregate level even while individual outcomes stay unpredictable. Third, some simulations cheat slightly by design—deterministic pseudo-random generators trade true randomness for repeatability, and artifacts leak into the results if you set things up wrong.
+
+The lesson isn't that randomness is secretly orderly in some mystical way. It's that pattern and randomness aren't opposites. Randomness produces patterns all the time; the trick is learning which patterns are just noise and which ones are telling you something real. That's actually one of the most useful habits of mind you can build—noticing a pattern, and then asking: "would this show up even if things were totally random?"

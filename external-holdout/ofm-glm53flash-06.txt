@@ -1,0 +1,58 @@
+[A01] 7²=49≡10，7⁴≡10²=100≡9，7⁶≡9·10=90≡12≡-1 (mod 13)，阶为12。123=12×10+3，故 7¹²³≡7³=343=26×13+5。**余数为5。**
+
+[A02] **甲打破了杯子。** 若甲打破：甲话假、乙话真、丙话假——恰一真，成立。若乙打破：三句话全真，不符。若丙打破：三句话全假，不符。唯一自洽情形是甲。
+
+[A03] P = P(病|阳) = (0.02×0.90)/(0.02×0.90 + 0.98×0.05) = 0.018/0.067 = **18/67**（约26.9%）。
+
+[A04] 恰有4个1且互不相邻：把4个1插入由6个0形成的7个空隙（含两端），每空至多1个1，方案数 = C(7,4) = **35**。
+
+[A05] 最短路径为 **A→C→B→E→D**，总权重 2+1+3+1 = **7**。（比较：A→C→B→D=8，A→B→D=9，A→C→D=10。）
+
+[A06] f(1)=f(0)+f(-1)+f(-2)=1；f(2)=3；f(3)=6... 逐项：f(1)=1，f(2)=2，f(3)=4，f(4)=7，f(5)=13，f(6)=24，f(7)=44，**f(8)=81**。
+
+[A07] [2, 2, 2]
+[0, 1, 2]
+
+[A08] {"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09] [1, 3]
+
+[A10] **先手必胜**。设剩余n枚时为"必败点"当且仅当所有取法都把对手送入必胜点。递推得必败点为 n ≡ 0, 5, 7 (mod 7)：0,5,7,12,14,19,21,…。15-1=14和15-3=12都是必败点，故能保证获胜的第一步取法为：**取1枚或取3枚**（取走后留给对手14枚或12枚这两个必败局面）。取4枚留11枚（必胜点）不可。此后每轮都把剩余数保持在 {0,5,7,12,14,…} 中即可。
+
+[A11] 总路径 C(16,8)=12870。用容斥（单调路径必须先向下/左计数两点间路径，用 C(m+n, m)）：
+- 经过(2,2)：C(4,2)·C(12,4)=6·495=2970
+- 经过(4,5)：C(9,4)·C(7,3)=126·35=4410
+- 经过(6,3)：C(9,6)·C(7,5)=84·21=1764
+- 同时经(2,2)和(4,5)：6·C(5,3)·35=6·10·35=2100
+- 同时经(2,2)和(6,3)：6·C(5,1)·C(7,5)=6·5·21=630
+- (4,5)与(6,3)不可兼得（只右不上无法折返）；三者同经亦不可能。
+
+合法路径 = 12870 − 2970 − 4410 − 1764 + 2100 + 630 = **6456**。
+
+[A12] 第一步：长度8、恰4个1、无"111"。无此约束共 C(8,4)=70；含至少连续三个1的：事件Eᵢ（位置i..i+2全1，i=1..6），|Eᵢ|=5（剩1个1放在其余5位），相邻对 |Eᵢ∩Eᵢ₊₁|=1（四个连续1），隔位交集需≥5个1为0，容斥得 |∪Eᵢ| = 6×5 − 5 = 25，故无三连1的有 70−25=45 条。
+第二步：45条中"首=末"的：首末均为0时，中间6位含4个1且内部2个0分隔，即3个内部空隙各至多2个1、总和4：(2,2,0)和(2,1,1)的排列共 3+3=6 条；首末均为1时，中间6位含2个1且不能落在与端点相邻处，即从中间第2~5位选2位，C(4,2)=6 条。共12条。
+答案：45 − 12 = **33**。
+
+[B01] 7
+
+[B02] 57140382069382517026493810562739401826549073182564039580271693045281760294835610927384601529483607
+
+[B03] TTHHHTTTHTHHTTTHHTHHTHTHTTHHTTHTHHTTTHHTTTHTHHHTHTTHTTHHTHTTTHTHTHHTTTHTHHTTHTHH
+
+[B04] 3,6,1,4,4,2,5,6,1,1,3,2,6,4,5,2,3,3,1,5,6,2,4,1
+
+[B05] 刺猬
+
+[B06] 42
+
+[B07] 我很理解你——想把事情做完美是种认真，但完美往往是在做的过程中一点点长出来的，而不是开始之前就备好的。要不试试把计划缩小到你今天五分钟内就能完成的一小块？比如只读一页、只写三句话。先迈出这一小步，有了真实的反馈，那个"完美的计划"反而更容易自己浮现出来。开始了，就已经赢过"还没开始"。
+
+[B08] 平均数只告诉你数据的"重心"在哪里，却不告诉你数据是怎么散开、怎么分布的。两组平均身高一样，一组是大家都差不多（比如170±2厘米），另一组是有人极高有人很矮（同样平均170）。后者给人的印象截然不同：风险更大、特例更多、多数人其实不在平均线上。日常感受依赖的是"典型个体长什么样、波动有多大"，也就是分布形状和离散程度，而不只是一个汇总数字。所以说，平均数是必要信息，但单独看它会掩盖很多故事。
+
+[B09] 更清楚的写法：把模糊的"他"换成具体的人名。例如——"小林告诉小周："我明天不能来。""（若意为小林不能来）；或"小林告诉小周："你明天不能来了。""（若意为小周不能来）。
+
+[B10] 无法回答。材料中只有一句"虚构城市澄岚城在2041年举行了一次选举"，没有出现任何获胜者姓名、票数或其他相关信息，因此不存在支持答案的原文。若必须引用，可引用的原文仅为上述这一句，但它不包含题目所要的信息。
+
+[B11] 无法同时满足这两条要求：所要求的那个三字组合本身含有一个字，而第二条禁止出现这个字，两者逻辑上矛盾。任何答案都至少违反其中一条，本答案选择遵守第②条，因此无法给出包含三个该组合的合规答案。
+
+[B12] A simulation of randomness can produce patterns because "random" doesn't mean "pattern-free" — it means "not designed." When you flip a coin many times, you'll inevitably get stretches of the same result, clusters, even runs that look surprisingly tidy. That's not the simulation cheating; it's just how chance behaves when you look closely. Humans are also superb pattern-detectors — we evolved to notice shapes, trends, and coincidences — so our eyes pick structure out of noise even when none was intended. Imagine dropping sand onto a table one grain at a time: each grain lands unpredictably, yet a pile with slopes and ridges emerges. In the same way, random events, once accumulated, settle into visible textures — streaks, waves, clusters. The deep point is that patterns and randomness live at different layers: each individual event is unpredictable, but collections of events have statistics, and those statistics show up to our eyes as patterns. A good simulation isn't failing when you spot one; you're simply seeingChance wearing a pattern as a costume.

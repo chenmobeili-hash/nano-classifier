@@ -1,0 +1,131 @@
+  [A01]
+  结果是 5。
+  推导：7² ≡ 10，7³ ≡ 70 ≡ 5，7⁶ ≡ 25 ≡ −1 (mod 13)，所以 7¹² ≡ 1。
+  123 = 12×10 + 3，因此 7¹²³ ≡ 7³ ≡ 5 (mod 13)。
+
+  [A02]
+  打破杯子的是 甲。
+
+  • 若甲打破：甲的话假，乙的话真，丙的话假，恰有一真，符合。
+  • 若乙打破：甲真，乙假，丙真，有两真，不符。
+  • 若丙打破：甲假，乙真，丙真，有两真，不符。
+
+  [A03]
+  P(阳性) = 0.02×0.9 + 0.98×0.05 = 0.018 + 0.049 = 0.067。
+  P(发生|阳性) = 0.018 / 0.067 = 18/67。
+  [A04]
+  共 35 个。
+  先放 6 个 0，它们之间和两端共有 7 个空位。4 个 1 各占一个不同空位，就保证互不相邻。所以有 C(7,4) = 35 种。
+
+  [A05]
+  最短路径是 A→C→B→E→D，总权重 7。
+  计算：2+1+3+1 = 7。
+  其他路径：A→C→B→D 为 8，A→B→E→D 为 8，A→B→D 为 9，A→C→D 为 10。
+
+  [A06]
+  f(1)=1，f(2)=2，f(3)=4，f(4)=7，f(5)=13，f(6)=24，f(7)=44，f(8)=81。
+  计算：f(2) = f(1)+f(0)+f(−1) = 1+1+0 = 2。之后每项等于前三项之和。
+
+  [A07]
+  [2, 2, 2]
+  [0, 1, 2]
+  [A08]
+  {"items":["pear","apple","banana","kiwi"]}
+
+  [A09]
+  [1,3]
+
+  [A10]
+  先手必胜，唯一能保证获胜的第一步是 取 1 枚。
+  记 L 为轮到谁走谁输的局面。按取 1、3、4 枚递推，剩余石子数为 0、2、7、9、14 时是 L，其余是胜局，规律是模 7 余 0 或
+  2。
+  15 枚时：
+  • 取 1 枚，剩 14，是 L。
+  • 取 3 枚，剩 12，对手可取 3 枚到 9，所以不行。
+  • 取 4 枚，剩 11，对手可取 4 枚到 7，所以不行。
+
+  [A11]
+  共 3882 条。
+  用容斥法。总数 C(16,8) = 12870。
+
+  • 经过 (2,2)：C(4,2)·C(12,6) = 6·924 = 5544。
+  • 经过 (4,5)：C(9,4)·C(7,4) = 126·35 = 4410。
+  • 经过 (6,3)：C(9,3)·C(7,2) = 84·21 = 1764。
+  • 同时经过 (2,2) 和 (4,5)：6·C(5,2)·35 = 2100。
+  • 同时经过 (2,2) 和 (6,3)：6·C(5,1)·21 = 630。
+  • (4,5) 与 (6,3) 不可能同时经过，三者同时经过的数目为 0。
+
+  非法路径数 = 5544+4410+1764−2100−630 = 8988。
+  合法路径数 = 12870−8988 = 3882。
+
+  [A12]
+  共 26 个。
+  首尾不同有两种对称情形，下面算首位为 1、末位为 0 的情形。
+
+  • 字符串形如 1 x₂…x₇ 0，中间 6 位含 3 个 1，共 C(6,3) = 20 种。
+  • 要排除 x₂x₃ 都是 1 的情形，因为它会和首位的 1 连成 111。这样的有 4 种。
+  • 还要排除中间自身含 111 的情形：111 的起点在 x₂ 到 x₅ 共 4 种。其中从 x₂ 起的那 1 种已计入上一条。
+  • 排除总数为 4+4−1 = 7，剩下 20−7 = 13 种。
+  首位为 0、末位为 1 的情形由反转对称同样得 13 种，所以合计 13×2 = 26。
+
+  [B01]
+  7
+  [B02]
+  38419062255516280453702773918466718245093324958073118035162974176943085243269715809580247163071365942886254183907389
+  7526640
+
+  [B03]
+  HTTHHTHTTTHHTHTHHHTHTTHTTHHTHTHTHHHTTTHTTHTHHTHTTHHHTTHTHHTTHTHTTTHHTHTHHTHTHTTH
+
+  [B04]
+  4,2,6,1,1,5,3,6,2,4,4,3,5,1,6,2,3,3,6,5,1,4,2,6
+
+  [B05]
+  水獭
+
+  [B06]
+  47
+
+  [B07]
+  这很常见，想做好本来是件好事，只是它有时会变成一道门槛。不如先把目标从"做出完美的计划"换成"做出一个能被修改的草稿"。
+  现在就挑一件 10
+  分钟内能做完的小事，比如写下三个要点，或者只定好第一步是什么。做完这一步，你会比空想时更清楚下一步该怎么走。
+  计划本来就是边做边改的，不用一次想对。你愿意先说说是哪件事吗？我们可以一起拆出那个最小的第一步。
+  [B08]
+  平均数只告诉你"中间大概在哪"，却没告诉你数据是挤在中间，还是散在两头。
+  比如两个班的平均分都是 70。甲班几乎人人都在 65 到 75 分之间，乙班一半人 40 分、一半人 100
+  分。平均数一样，但在甲班，大多数人表现差不多；在乙班，有人学得很好，也有人很吃力。
+  所以看一组数据，除了平均数，还要看它的波动有多大，也就是数据离平均数有多远。最高、最低和大多数人的情况，往往比一个平
+  均数更能说明问题。
+  [B09]
+  这句话有歧义，"他"可能指小林，也可能指小周。可以改成以下两种之一：
+
+  • 小林告诉小周，自己明天不能来。
+  • 小林告诉小周，小周明天不能来。
+
+  如果是别的意思，请以实际所指为准。
+  [B10]
+  无法回答。材料只写了"虚构城市澄岚城在2041年举行了一次选举"，没有给出获胜者姓名和票数，所以我不能编造。
+  材料中能引用的原文只有这一句，它只能支持选举发生过，不能支持任何获胜者或票数。
+
+  [B11]
+  这两条要求互相矛盾，无法同时满足。要"恰好包含三个汉字‘蓝色灯’"，就必须写出"灯"字，而要求②又禁止出现"灯"字。所以不存
+  在满足全部条件的答案。
+
+  [B12]
+  Imagine you ask a computer to "flip a coin" a thousand times. It isn't really flipping anything. It runs a recipe, a
+  formula that turns one number into the next, and the results are designed to look random. That's called pseudo-
+  randomness.
+
+  Even so, patterns can show up, for two reasons.
+
+  1. Real randomness is clumpy. If you flip a fair coin 20 times, getting 5 heads in a row somewhere isn't weird. It's
+  actually pretty likely. Our brains expect randomness to look evenly mixed, like HTHTHT, but that's too neat. Truly
+  random data has streaks and clusters, and our pattern-spotting brains notice them.
+
+  2. A simulation has a hidden recipe. Because the formula is fixed, a poor generator can repeat itself after a while
+  or produce numbers that line up in odd ways. Good generators make this extremely hard to notice, but the rule is
+  still there underneath.
+
+  So a pattern doesn't automatically mean something is broken. A random-looking result with no streaks at all would be
+  the more suspicious one.

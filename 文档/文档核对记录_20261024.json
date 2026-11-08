@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-24",
+  "document_characters": 20777,
+  "han_characters": 11127,
+  "numbered_sections": 18,
+  "math_delimiters_balanced": true,
+  "fences_balanced": true,
+  "implementation_links_resolve": true,
+  "parameter_inventory_metrics_verified": true,
+  "strong_margin_protection_grid_verified": true,
+  "critical_disclosures": [
+    "Current policy disables gate",
+    "One A-text feature enters MLP",
+    "Gate near0.5; bias-dominated correction",
+    "Fixed gate matches gated top1 counts",
+    "External11 previously observed",
+    "B-only signature limitation"
+  ],
+  "document_sha256": "9fa4bc33fbbfcf0795ac954a832ba223cd34270a36e008cdd849e1c92b979670"
+}

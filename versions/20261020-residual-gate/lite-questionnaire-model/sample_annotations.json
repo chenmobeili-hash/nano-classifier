@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "samples": {
+    "deepseekv4.1flash-weak-01.txt": {
+      "response_sha256": "70b69f894d86a070595af8a16898a4c07698544e74cd72859f1fef7e77a746a9",
+      "label": "疑似1013灰测，未确认",
+      "status": "user_suspected_unconfirmed",
+      "exclude_in_comparison": true,
+      "basis": "用户说明：仅最低的weak-01样本疑似灰测1013；保留原标签和含全部均分，另算排除该样本均分。原文件名为deepseekv4.1flash-01.txt。"
+    },
+    "deepseekv4.1flash1017-03.txt": {
+      "response_sha256": "82c28966b7588e9ec51a1f9490be22091716a4c4ddb420e93ecaa233b0008c63",
+      "label": "20秒疑似异常样本，用户要求排除",
+      "status": "user_excluded_suspected_outlier",
+      "exclude_from_training_and_ranking": true,
+      "exclude_in_comparison": true,
+      "basis": "用户多次复测未复现，另确认77.txt以low、38秒获得200分，要求直接排除03。异常及其原因未独立确认；保留原文及原评分。"
+    }
+  }
+}

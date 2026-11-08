@@ -1,0 +1,76 @@
+{
+  "neural": {
+    "version": "balanced-neural-1",
+    "profile": "balanced",
+    "classes": [
+      "Claude",
+      "DeepSeek",
+      "GLM",
+      "GPT",
+      "Qwen"
+    ],
+    "architecture": [
+      135,
+      8,
+      5
+    ],
+    "seed": 42,
+    "epochs": 400,
+    "l2": 0.01,
+    "learning_rate": 0.01,
+    "reference_signature": "369405a7887a17b8b669ea2f9a3214ce9625fc62888f75bb0bf921fa1cea3966",
+    "samples": 100,
+    "parameters": 1133,
+    "training_loss": 0.1536572723419732,
+    "sample_weighting": "equal-family-then-model",
+    "hidden": 8,
+    "family_boost": {},
+    "training_accuracy": 1.0
+  },
+  "nlp": {
+    "version": "nlp-ngram-1",
+    "kind": "lr",
+    "classes": [
+      "Claude",
+      "DeepSeek",
+      "GLM",
+      "GPT",
+      "Qwen"
+    ],
+    "dimensions": 4096,
+    "char_ngrams": [
+      2,
+      3,
+      4
+    ],
+    "word_ngrams": [
+      1,
+      2
+    ],
+    "include_a": false,
+    "questions": [
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06",
+      "B07",
+      "B08",
+      "B09",
+      "B10",
+      "B11",
+      "B12"
+    ],
+    "seed": 42,
+    "epochs": 400,
+    "l2": 0.001,
+    "learning_rate": 0.05,
+    "reference_signature": "369405a7887a17b8b669ea2f9a3214ce9625fc62888f75bb0bf921fa1cea3966",
+    "samples": 100,
+    "sample_weighting": "equal-family-then-model",
+    "parameters": 65546,
+    "training_accuracy": 1.0
+  },
+  "note": "In-sample training accuracy is not independent evaluation."
+}

@@ -1,0 +1,133 @@
+[A01]
+5
+推导：13 为素数，7 与 13 互素，由费马小定理 7^12 ≡ 1 (mod 13)。123 = 12×10 + 3，故 7^123 ≡ (7^12)^10 · 7^3 ≡ 1 · 343 (mod 13)。13×26 = 338，343 − 338 = 5。
+
+[A02]
+甲打破了杯子。
+理由（逐一假设打破者，检查真话数）：
+- 甲打破：甲「乙打破的」=假，乙「不是我」=真，丙「不是甲」=假 → 恰一句真，符合。
+- 乙打破：甲=真，乙=假，丙=真 → 两句真，矛盾。
+- 丙打破：甲=假，乙=真，丙=真 → 两句真，矛盾。
+唯一可能是甲。
+
+[A03]
+18/67（≈0.2687）
+计算式：P(E|+) = (0.02×0.90) / (0.02×0.90 + 0.98×0.05) = 0.018 / (0.018 + 0.049) = 18/67。
+
+[A04]
+35 个
+理由：设 4 个 1 的位置为 p1<p2<p3<p4，不相邻即 p(k+1) − pk ≥ 2。令 qk = pk − (k−1)，则 1 ≤ q1<q2<q3<q4 ≤ 10−3 = 7，是一一对应，故为 C(7,4) = 35。
+
+[A05]
+A→C→B→E→D，总权重 7（2+1+3+1）。
+对照其他候选：A→B→E→D = 8，A→C→B→D = 8，A→B→D = 9，A→C→D = 10。
+
+[A06]
+f(8) = 81
+列表：f(1)=1, f(2)=2, f(3)=4, f(4)=7, f(5)=13, f(6)=24, f(7)=44, f(8)=81。
+（其中 f(1)=f(0)+f(−1)+f(−2)=1，f(2)=f(1)+f(0)+f(−1)=2，f(3)=4+2+1... 即 f(3)=f(2)+f(1)+f(0)=2+1+1=4，之后逐项累加前三项。）
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+先手必胜；唯一必胜第一步是取 1 枚（留 14）。
+理由（P 位=后手胜，按「取走最后一枚者胜」递推）：
+n: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+类: P N P N N N N P N P N N N N P N
+即必败点为 0, 2, 7, 9, 14（可验证：这些点上任何合法取法 1/3/4 都只能走到必胜点；其余点上至少存在一个取法走到必败点）。15 − 1 = 14 为必败点，而 15 − 3 = 12、15 − 4 = 11 都是必胜点，所以只有取 1 是必胜第一步。
+
+[A11]
+3882 条
+方法（容斥，路径数 = C(步数, 右移数)；记 P1=(2,2), P2=(4,5), P3=(6,3)）：
+- 总数 C(16,8) = 12870
+- 过 P1：C(4,2)·C(12,6) = 6×924 = 5544
+- 过 P2：C(9,4)·C(7,4) = 126×35 = 4410
+- 过 P3：C(9,6)·C(7,2) = 84×21 = 1764
+- 过 P1,P2：6 · C(5,2) · 35 = 6×10×35 = 2100
+- 过 P1,P3：6 · C(5,1) · 21 = 6×5×21 = 630
+- 过 P2,P3：0（P2、P3 互不可比，单调路径无法同时经过）
+合法数 = 12870 − (5544+4410+1764) + (2100+630) = 12870 − 11718 + 2730 = 3882。
+交叉校验：DP（w[i][j]=w[i−1][j]+w[i][j−1]，三个禁点置 0）同样得到 w[8][8]=3882。
+
+[A12]
+26 个
+计数法一（按首末分类，反转对称使两类同数）：
+首位 1、末位 0：中间 2–7 六个位置放 3 个 1，共 C(6,3)=20；坏情形＝含三连（{2,3,4},{3,4,5},{4,5,6},{5,6,7}，4 种）或 x2=x3=1 与首位成三连（{2,3,4},{2,3,5},{2,3,6},{2,3,7}，与前者重叠 1 种），合计坏 7 种 → 13。
+首位 0、末位 1：同理（对称地排除 {2,3,4},{3,4,5},{4,5,6},{5,6,7} 及 {2,6,7},{3,6,7},{4,6,7}）→ 13。
+合计 13 + 13 = 26。
+计数法二（校验）：恰 4 个 1 共 C(8,4)=70；含 111 的有「一整块 4 连」5 种 +「恰 3 连加一个孤立 1」20 种 = 25，故无 111 者 45；其中首末相同的：首末 0（6 种）+ 首末 1（13 种）= 19，45 − 19 = 26。一致。
+
+[B01]
+7
+
+[B02]
+739201884504629157339827104652115938206467024918835392741068802615739429481065773615029847907428316514839026576227015439
+
+[B03]
+HTTHHTHTHHTHHTTHHTHTHHTHTTHTHHTHHTHTTHHTHHTHTTHHTHTTHHTHTHHHTHTTTHHTHTHHTHTHHHHTTHHTHTT
+
+[B04]
+3,6,1,4,4,2,5,3,6,1,2,4,5,5,3,1,6,2,4,3,5,6,2,1
+
+[B05]
+雪豹
+
+[B06]
+73
+
+[B07]
+这个状态太常见了，不是你能力有问题，是「完美计划」这个目标本身没有终点——计划永远还能再细化一层，于是「开始」就一直被往后推。
+
+有个很好用的拆法：把今天要做的不是「完成项目」，而是「做出一个很丑的第一版」。给自己定 25 分钟，只做一件小到不可能失败的事，比如建好文件夹、写下三行大纲、跑通一个 hello world。做完就允许自己停下来，这一步就成功了。
+
+关键是先拿到「反馈」，再谈「完美」。真实做出来的东西会告诉你哪些担心其实是多余的、哪些地方才真的需要打磨——而坐在计划里是想不出这些的，你只会重复消耗同一批已知信息。
+
+另外可以给自己一个明确的「计划截止时间」：今晚 10 点前只做提纲，10 点之后禁止再改提纲，只能动手。计划够用到「下一步知道自己该干什么」就停手，不追求万无一失。
+
+要不要现在就从那 25 分钟开始？你告诉我第一件事是什么，我陪你把它做完。
+
+[B08]
+因为平均数只回答「整体在哪儿」，不回答「散得多开」和「长什么形状」。
+
+举个具体画面：两个班数学平均分都是 70 分。A 班大家基本都在 65 到 75 之间晃，A 班给人的印象是「教得稳、水平整齐」。B 班是一半人 30 分、一半人 110 分（假设满分够高），平均下来也是 70，听起来却像「这个班两极分化、教学出了大问题」。同一个平均数，两种完全不同的现实。
+
+再比如两个城市月均温都是 20℃，一个四季如春天天接近 20℃，另一个夏天 40℃、冬天 0℃——「平均 20℃」这句话听起来美好，但你带衣服的方式完全不一样。
+
+还有一个常见坑：平均数特别容易被少数极端值拽走。一个房间里 5 个人月薪都是 8 千，再来一个月薪 100 万的老板，平均月薪立刻变成 17 万——听起来这个房间的人都很富，实际上对原来那 5 个人毫无意义。
+
+所以看数据时，除了问「平均是多少」，还要多问两句：「这些数字彼此差多远？」「有没有个别数字在硬撑场面？」把这两句问出来，印象才不会跑偏。
+
+[B09]
+小林告诉小周，说他（小林）明天不能来。
+或：小林转告小周，小周明天不能来。
+（原句的「他」指代不明，可指小林也可指小周。改写要点是把代词换成具体人名，或改成直接引语：小林对小周说：「我明天不能来。」）
+
+[B10]
+无法给出获胜者姓名与票数——这两项信息在材料中不存在。
+材料全部原文仅为：「虚构城市澄岚城在2041年举行了一次选举」。这句话只说明时间（2041 年）、地点（虚构城市澄岚城）和事件（举行了一次选举），没有提及任何候选人姓名、得票数、票数对比或结果。
+因此任何姓名和数字都只能是编造，我不提供。若需要答案，请补充包含选举结果的原文。
+
+[B11]
+①要求答案中出现「蓝色」加上一个字（该字同时被②禁止出现），②又要求不出现该字，二者互斥，无法同时满足。
+按规则 5 自行处理：优先保证可实现的②，答案内容为「蓝色」二字（不含被禁止的那个字）。若判定标准要求①原样成立，则本题按互斥条件无解。
+
+[B12]
+Here's the thing nobody tells you about randomness: "random" doesn't mean "spread out evenly." It means "each draw is independent, with no memory." And independence is exactly what produces clumps.
+
+Flip a coin 20 times and you'll almost certainly see a run of 3 or 4 heads in a row. That feels like a "pattern" — but it isn't evidence of anything weird. Each flip has no idea what came before, so nothing prevents HHHH from showing up. In fact, sequences that look perfectly alternating (HTHTHTHT) are the *unusual* ones; they'd require a hidden rule keeping each flip different from the last, which is the opposite of random.
+
+Two effects do most of the work. First, with many trials, everything that *can* happen *does* happen. Throw 10,000 points at random onto a screen and some will land next to each other purely by chance — stars cluster into constellations that humans invented names for. Second, the law of large numbers makes the *overall* rate settle down (about 50% heads) while the local stretches swing wildly; you get stable averages made of chaotic pieces, which reads as structure.
+
+There's also a computer-specific layer. A simulation uses a pseudo-random generator: a deterministic formula that produces a number sequence so good at hiding its rules that it passes statistical tests. It's not truly random, but it's random-looking, so it also produces clumps, streaks and gaps — faithfully. If you re-run with the same seed you get the identical "random" sequence, which is a nice hint that the pattern was always inside the arithmetic.
+
+And the final ingredient is you. Human brains are pattern-detectors that overshoot: we see a "streak" in coin flips and a "curse" in dice rolls because noticing clusters was useful for survival, even when nothing is causing them. Simulations make this easy to feel, because they hand you a huge pile of data and dare you not to see something in it.
+
+So the honest summary: patterns are what randomness looks like from the inside. Evenness is a rule; streaks are the absence of rules.

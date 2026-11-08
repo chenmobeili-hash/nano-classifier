@@ -1,0 +1,50 @@
+[A01] 余数是 5。推导：7^2≡10≡-3，7^3≡-21≡5（mod 13）；又 7^6=(7^3)^2≡25≡12≡-1（mod 13）。因 123=6×20+3，故 7^123≡(7^6)^20·7^3≡(-1)^20×5≡5（mod 13）。
+
+[A02] 甲打破了杯子。理由：穷举三种可能。若乙打破，则甲的话真、丙的话（不是甲）也真，出现两句真话，与"恰有一句真"矛盾；若丙打破，则乙的话真、丙的话也真，同样两句真；若甲打破，则甲的话假、乙的话真、丙的话假，恰好一句真，符合条件。所以只能是甲。
+
+[A03] 精确值为 18/67（约 26.87%）。计算式：P(事件|阳性)=P(阳性|事件)P(事件) / [P(阳性|事件)P(事件)+P(阳性|未发生)P(未发生)] = (0.90×0.02) / (0.90×0.02 + 0.05×0.98) = 0.018 / (0.018+0.049) = 0.018/0.067 = 18/67。
+
+[A04] 35 个。理由：设 4 个 1 的位置为 x1<x2<x3<x4，要求 xi+1 ≥ xi+2。令 yi = xi − (i−1)，则 1 ≤ y1<y2<y3<y4 ≤ 10−3 = 7，即从 1..7 中选 4 个位置，共 C(7,4)=35。（等价说法：先放 4 个 1 与 3 个强制隔开的 0，剩 3 个 0 自由插入 5 个空隙，组合数同为 35。）
+
+[A05] 最短路径为 A→C→B→E→D，总权重 2+1+3+1 = 7。说明：A→C 为 2，C→B 为 1（优于直接 A→B 的 4），B→E 为 3，E→D 为 1；对照 A→C→D 为 10、A→C→B→D 为 8，均更差。
+
+[A06] f(8)=81。f(1) 至 f(8) 依次为：1, 2, 4, 7, 13, 24, 44, 81。推导：f(1)=1+0+0=1，f(2)=1+1+0=2，f(3)=2+1+1=4，此后每项为前三项之和。
+
+[A07] [2, 2, 2]
+[0, 1, 2]
+
+[A08] {"items":["pear","apple","banana","kiwi"]}
+
+[A09] [1,3]
+
+[A10] 先手必胜，且唯一能保证获胜的第一步是取 1 枚（留下 14 枚）。理由：设 n 为轮到某人取时的石子数，n=0 为必败。逐个推得必败局面为 0, 2, 7, 9, 14, …，即 n ≡ 0 或 2 (mod 7) 时轮到取的人必败，其余为必胜。15 ≡ 1 (mod 7) 属必胜局面；从 15 取 1 枚剩 14（≡0，必败给对方），取 3 枚剩 12（≡5）、取 4 枚剩 11（≡4）都把必胜局面让给对方，故只有取 1 枚可行。
+
+[A11] 3882 条。可复核方法一（容斥，记 P(a,b)=C(a+b,a)）：总数 C(16,8)=12870；经过 (2,2)：P(2,2)·P(6,6)=6×924=5544；经过 (4,5)：P(4,5)·P(4,3)=126×35=4410；经过 (6,3)：P(6,3)·P(2,5)=84×21=1764；两两同时经过：(2,2)与(4,5)：6×C(5,2)×35=6×10×35=2100，(2,2)与(6,3)：6×C(5,4)×21=6×5×21=630，(4,5)与(6,3)：0（(4,5)→(6,3) 需向上 −2 步，不可达）；三者同时经过：0。合法数 = 12870 − (5544+4410+1764) + (2100+630) = 3882。方法二（逐格 DP，障碍格计 0）得到同一数值 3882。
+
+[A12] 26 个。可复核计数：首末位不同分两类，由反转对称两类数目相等。以"首位 1、末位 0"为例：中间 6 位（第 2–7 位）需放 3 个 1，且不能出现连续三个 1，又因首位为 1 而不能同时取第 2、3 位。在 6 个位置中取 3 个的 C(6,3)=20 种里，去掉含连续三位的 4 种（{1,2,3},{2,3,4},{3,4,5},{4,5,6}），再去掉同时含第 2、3 位的 3 种（{1,2,4},{1,2,5},{1,2,6}），得 13；另一类同为 13。合计 26。（校验：满足"恰 4 个 1 且无三连 1"的 8 位串共 45 个，其中首末相同的 16 个，45−16=29… 按前述分类细算，首末同为 1 的 10 个、同为 0 的 6 个，45−10−6=29 不符，正确拆分应以首末不同为准：13+13=26，与此前逐类枚举一致。注：此处 45−10−6=29 系误把"同为 0"的 6 个当成全部同类，重算：首末同为 0 时中间 6 位须放满 4 个 1 且无三连，合法 6 种；首末同为 1 时中间放 2 个 1 且不含相邻对（受首位 1 与末位 1 限制），合法 10 种，故首末相同的实为 16 个，且 45−16=29≠26，说明"总 45"包含了首末相同的 16 个与首末不同的 26 个并不等于 45，即总数为 16+26=42。以逐项枚举的 13+13=26 为答案。）
+
+[A12 更正] 上段末尾出现自相矛盾的核对，正确答案以分类枚举为准：26 个。理由：首位 1、末位 0 时，第 2–7 位放 3 个 1，且不含连续三个 1、不取第 2 与第 3 位同时为 1，枚举合法位置集合为 {1,3,4},{1,3,5},{1,3,6},{1,4,5},{1,4,6},{1,5,6},{2,3,5},{2,3,6},{2,4,5},{2,4,6},{2,5,6},{3,4,6},{3,5,6} 共 13 个，另一类同为 13，合计 26。
+
+[B01] 7
+
+[B02] 473819265092507418361863094275502791648383416509272695803714710438526935824691076917532048047928153697561283041360829475
+
+[B03] HTTHTHHTHTTHHTHTTHHTHHTTHHTHTTTTHTHHTTHHHTHHTTHTHHTHTTHHTHHTHHHTTHTTHTTTHHTHHTTH
+
+[B04] 3,6,1,5,2,6,4,1,3,2,6,5,1,4,6,2,3,5,1,6,4,2,5,3
+
+[B05] 猫
+
+[B06] 63
+
+[B07] 这种"想做到完美所以不开始"，其实是把"开始"和"交付"绑在一起了～ 先给计划降级：只做五分钟的粗糙版，比如只写三行提纲、只打开文档写一句最丑的初稿，做完就允许自己停。完美是改出来的，不是想出来的；有了第一版，你才有可以改的东西。要不要现在挑一件最小的事做五分钟，然后回来告诉我卡在哪儿？
+
+[B08] 平均数只告诉你数据的"重心"在哪，不告诉你数据是怎么摊开的。举个例子：两个班平均分都是 80。甲班所有人都在 76 到 84 之间，你会觉得"这个班水平整齐"；乙班一半人考 60、一半人考 100，你看到的是"两极分化"。平均分完全一样，印象完全相反。再比如九个人月薪五千、一个人月薪五十万，平均月薪被抬到五万多，但绝大多数人并不"平均"。所以看数据还要看：最大和最小差多少（离散程度）、大多数人集中在哪儿、有没有极端值把平均数拖走、分布是单峰还是双峰。平均数回答"中心在哪"，印象来自"大家离中心多远、怎么分布"。
+
+[B09] 原句的"他"指代不明，可按三种意思分别改清楚：一、若"他"指小林：小林告诉小周："我明天不能来。"二、若"他"指小周：小林告诉小周，小周明天不能来（或直接说"你明天不能来"）。三、若"他"指第三个人：小林告诉小周，某某（写清姓名）明天不能来。
+
+[B10] 材料中没有获胜者姓名，也没有票数，因此无法给出答案。材料全文只有一句："虚构城市澄岚城在2041年举行了一次选举"。这句原文只说明"举行过选举"，未提供任何候选人、当选者或票数信息，故支持答案的原文不存在——不能凭推测补出姓名和票数。
+
+[B11] 这两条要求无法同时满足，本题按规则 5 自行处理：优先遵守可验证的字面禁令②，并如实说明冲突。原因：要求①要答案里出现三处由「蓝」「色」和第三个字（正是被②禁止的那个字）连成的汉字串；而那个被禁的字恰是该串的组成部分。因此凡满足①者必然含有被禁字，必违反②；若删去被禁字，①所要的三处汉字串就不存在。把该字写成繁体、形近字或拆成偏旁部件，也只是换了写法，仍违反②的字面含义。结论：不存在同时满足①②的答案。
+
+[B12] Think about what randomness actually looks like. Most people picture something like H T H T T H — nicely alternating, evenly mixed. Real randomness doesn't behave that way. It clumps. If you flip a coin 80 times, runs of five or six heads in a row are not a glitch; they're expected, because each flip has no memory of the last one. A streak isn't the coin "heating up" — it's just what independent events do once you have enough of them. With 80 flips there are 76 overlapping windows of five, and each window has a 1-in-32 chance of being all heads, so seeing a long run somewhere is actually likely, not suspicious. The same thing happens with dice: in 24 rolls you'll probably see a number repeat back-to-back, and some numbers will show up four times while others show up twice. That's not the dice cheating; it's the difference between "even in the long run" and "even in a short sample." There's a second reason too: you're a pattern-spotting machine. Your brain is built to notice streaks and coincidences and to forget the thousands of boring, unremarkable stretches in between. So when a simulation spits out HHHHH, that stands out and feels designed, while the ordinary parts of the sequence leave no trace in memory. Put those two together — genuine clumping plus selective attention — and a perfectly honest random simulation can look like it's hiding a message. The test isn't whether a pattern appears; it's whether the pattern appears more often than the maths predicts.

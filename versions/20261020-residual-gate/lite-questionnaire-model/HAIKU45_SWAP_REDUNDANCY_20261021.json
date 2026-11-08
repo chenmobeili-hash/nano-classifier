@@ -1,0 +1,611 @@
+{
+  "role": "Development corpus redundancy audit; not an independent test. Choice frozen before new training.",
+  "source_signature": "369405a7887a17b8b669ea2f9a3214ce9625fc62888f75bb0bf921fa1cea3966",
+  "minimum_original_group_size": 4,
+  "chosen": "qwen3.8flash-02.txt",
+  "rows": [
+    {
+      "source": "qwen3.8flash-02.txt",
+      "model": "qwen3.8flash",
+      "group_size": 6,
+      "closest_same_model": "qwen3.8flash-03.txt",
+      "cosine_similarity": 0.8152090907096863,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.538435230775576
+    },
+    {
+      "source": "qwen3.8flash-03.txt",
+      "model": "qwen3.8flash",
+      "group_size": 6,
+      "closest_same_model": "qwen3.8flash-02.txt",
+      "cosine_similarity": 0.8152090907096863,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.16281097419746537
+    },
+    {
+      "source": "qwen3.8flash-05.txt",
+      "model": "qwen3.8flash",
+      "group_size": 6,
+      "closest_same_model": "qwen3.8flash-03.txt",
+      "cosine_similarity": 0.8088542819023132,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.44428370890083557
+    },
+    {
+      "source": "qwen3.8flash-07.txt",
+      "model": "qwen3.8flash",
+      "group_size": 6,
+      "closest_same_model": "qwen3.8flash-03.txt",
+      "cosine_similarity": 0.8058086633682251,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.8196391837784602
+    },
+    {
+      "source": "qwen3.8flash-01.txt",
+      "model": "qwen3.8flash",
+      "group_size": 6,
+      "closest_same_model": "qwen3.8flash-03.txt",
+      "cosine_similarity": 0.8024001717567444,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.573131456882547
+    },
+    {
+      "source": "claudeopus5.5-01.txt",
+      "model": "claudeopus5.5",
+      "group_size": 4,
+      "closest_same_model": "claudeopus5.5-03.txt",
+      "cosine_similarity": 0.7845665812492371,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.30521524352792245
+    },
+    {
+      "source": "claudeopus5.5-03.txt",
+      "model": "claudeopus5.5",
+      "group_size": 4,
+      "closest_same_model": "claudeopus5.5-01.txt",
+      "cosine_similarity": 0.7845665812492371,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.8666117595199148
+    },
+    {
+      "source": "qwen3.8flash-06.txt",
+      "model": "qwen3.8flash",
+      "group_size": 6,
+      "closest_same_model": "qwen3.8flash-03.txt",
+      "cosine_similarity": 0.7718410491943359,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.19424080126741522
+    },
+    {
+      "source": "claudeopus5.5-04.txt",
+      "model": "claudeopus5.5",
+      "group_size": 4,
+      "closest_same_model": "claudeopus5.5-01.txt",
+      "cosine_similarity": 0.7537968754768372,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.7879989262434348
+    },
+    {
+      "source": "deepseekv4.1flash1017-05.txt",
+      "model": "deepseekv4.1flash1017",
+      "group_size": 9,
+      "closest_same_model": "deepseekv4.1flash1017-06.txt",
+      "cosine_similarity": 0.7414190769195557,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.1323262205995961
+    },
+    {
+      "source": "deepseekv4.1flash1017-06.txt",
+      "model": "deepseekv4.1flash1017",
+      "group_size": 9,
+      "closest_same_model": "deepseekv4.1flash1017-05.txt",
+      "cosine_similarity": 0.7414190769195557,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.4096161363237226
+    },
+    {
+      "source": "deepseekv4.1flash-strong-02.txt",
+      "model": "deepseekv4.1flash-strong",
+      "group_size": 4,
+      "closest_same_model": "deepseekv4.1flash-strong-03.txt",
+      "cosine_similarity": 0.7397547960281372,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.573503870579432
+    },
+    {
+      "source": "deepseekv4.1flash-strong-03.txt",
+      "model": "deepseekv4.1flash-strong",
+      "group_size": 4,
+      "closest_same_model": "deepseekv4.1flash-strong-02.txt",
+      "cosine_similarity": 0.7397547960281372,
+      "old_baseline_correct": false,
+      "old_baseline_margin": 0.3418705449056893
+    },
+    {
+      "source": "deepseekv4.1flash1017-09.txt",
+      "model": "deepseekv4.1flash1017",
+      "group_size": 9,
+      "closest_same_model": "deepseekv4.1flash1017-05.txt",
+      "cosine_similarity": 0.7378360629081726,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.4415732513393589
+    },
+    {
+      "source": "claudeopus5.5-02.txt",
+      "model": "claudeopus5.5",
+      "group_size": 4,
+      "closest_same_model": "claudeopus5.5-04.txt",
+      "cosine_similarity": 0.731101930141449,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.6649462435978655
+    },
+    {
+      "source": "GLM5.3FLASH-01.txt",
+      "model": "glm5.3flash",
+      "group_size": 6,
+      "closest_same_model": "GLM5.3FLASH-03.txt",
+      "cosine_similarity": 0.7258710265159607,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.774445571489436
+    },
+    {
+      "source": "GLM5.3FLASH-03.txt",
+      "model": "glm5.3flash",
+      "group_size": 6,
+      "closest_same_model": "GLM5.3FLASH-01.txt",
+      "cosine_similarity": 0.7258710265159607,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.7393950549932549
+    },
+    {
+      "source": "GLM5.3FLASH-FREE-01.txt",
+      "model": "glm5.3flash-free",
+      "group_size": 4,
+      "closest_same_model": "GLM5.3FLASH-FREE-04.txt",
+      "cosine_similarity": 0.7255462408065796,
+      "old_baseline_correct": false,
+      "old_baseline_margin": 0.3291394302002527
+    },
+    {
+      "source": "GLM5.3FLASH-FREE-04.txt",
+      "model": "glm5.3flash-free",
+      "group_size": 4,
+      "closest_same_model": "GLM5.3FLASH-FREE-01.txt",
+      "cosine_similarity": 0.7255462408065796,
+      "old_baseline_correct": false,
+      "old_baseline_margin": 0.02362842051061509
+    },
+    {
+      "source": "deepseekv4.1flash1017-10.txt",
+      "model": "deepseekv4.1flash1017",
+      "group_size": 9,
+      "closest_same_model": "deepseekv4.1flash1017-05.txt",
+      "cosine_similarity": 0.7198728919029236,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.7576472652859656
+    },
+    {
+      "source": "deepseekv4.1flash-weak-04.txt",
+      "model": "deepseekv4.1flash-weak",
+      "group_size": 7,
+      "closest_same_model": "deepseekv4.1flash-weak-05.txt",
+      "cosine_similarity": 0.7181280255317688,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.743328478640187
+    },
+    {
+      "source": "deepseekv4.1flash-weak-05.txt",
+      "model": "deepseekv4.1flash-weak",
+      "group_size": 7,
+      "closest_same_model": "deepseekv4.1flash-weak-04.txt",
+      "cosine_similarity": 0.7181280255317688,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.39689434065752704
+    },
+    {
+      "source": "GLM5.3FLASH-04.txt",
+      "model": "glm5.3flash",
+      "group_size": 6,
+      "closest_same_model": "GLM5.3FLASH-01.txt",
+      "cosine_similarity": 0.7180963158607483,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.7528130309867659
+    },
+    {
+      "source": "GLM5.3FLASH-FREE-03.txt",
+      "model": "glm5.3flash-free",
+      "group_size": 4,
+      "closest_same_model": "GLM5.3FLASH-FREE-01.txt",
+      "cosine_similarity": 0.717086911201477,
+      "old_baseline_correct": false,
+      "old_baseline_margin": 0.06253819888570561
+    },
+    {
+      "source": "claudesonnet5.5-01.txt",
+      "model": "claudesonnet5.5",
+      "group_size": 4,
+      "closest_same_model": "claudesonnet5.5-03.txt",
+      "cosine_similarity": 0.7158086895942688,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.6326689306410087
+    },
+    {
+      "source": "claudesonnet5.5-03.txt",
+      "model": "claudesonnet5.5",
+      "group_size": 4,
+      "closest_same_model": "claudesonnet5.5-01.txt",
+      "cosine_similarity": 0.7158086895942688,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.8103794021515134
+    },
+    {
+      "source": "claudehaiku5.5-05.txt",
+      "model": "claudehaiku5.5",
+      "group_size": 9,
+      "closest_same_model": "claudehaiku5.5-08.txt",
+      "cosine_similarity": 0.7154390215873718,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.41681696033573823
+    },
+    {
+      "source": "claudehaiku5.5-08.txt",
+      "model": "claudehaiku5.5",
+      "group_size": 9,
+      "closest_same_model": "claudehaiku5.5-05.txt",
+      "cosine_similarity": 0.7154390215873718,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.5773103756490698
+    },
+    {
+      "source": "deepseekv4.1flash1017-04.txt",
+      "model": "deepseekv4.1flash1017",
+      "group_size": 9,
+      "closest_same_model": "deepseekv4.1flash1017-05.txt",
+      "cosine_similarity": 0.7149374485015869,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.522258466544154
+    },
+    {
+      "source": "GLM5.3FLASH-02.txt",
+      "model": "glm5.3flash",
+      "group_size": 6,
+      "closest_same_model": "GLM5.3FLASH-03.txt",
+      "cosine_similarity": 0.7140685319900513,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.6901061196369687
+    },
+    {
+      "source": "qwen-app-thinking-02.txt",
+      "model": "qwen-app-thinking",
+      "group_size": 4,
+      "closest_same_model": "qwen-app-thinking-04.txt",
+      "cosine_similarity": 0.7137718796730042,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.27583270387541964
+    },
+    {
+      "source": "qwen-app-thinking-04.txt",
+      "model": "qwen-app-thinking",
+      "group_size": 4,
+      "closest_same_model": "qwen-app-thinking-02.txt",
+      "cosine_similarity": 0.7137718796730042,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.4146968674820015
+    },
+    {
+      "source": "deepseekv4.1flash1017-08.txt",
+      "model": "deepseekv4.1flash1017",
+      "group_size": 9,
+      "closest_same_model": "deepseekv4.1flash1017-05.txt",
+      "cosine_similarity": 0.7126277685165405,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.8749191624022656
+    },
+    {
+      "source": "qwen-app-thinking-03.txt",
+      "model": "qwen-app-thinking",
+      "group_size": 4,
+      "closest_same_model": "qwen-app-thinking-02.txt",
+      "cosine_similarity": 0.7119606137275696,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.45029692190816684
+    },
+    {
+      "source": "GLM5.3FLASH-05.txt",
+      "model": "glm5.3flash",
+      "group_size": 6,
+      "closest_same_model": "GLM5.3FLASH-03.txt",
+      "cosine_similarity": 0.7095460891723633,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.1298739749099952
+    },
+    {
+      "source": "GLM5.3FLASH-06.txt",
+      "model": "glm5.3flash",
+      "group_size": 6,
+      "closest_same_model": "GLM5.3FLASH-01.txt",
+      "cosine_similarity": 0.703355610370636,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.27554335532176166
+    },
+    {
+      "source": "deepseekv4.1flash-strong-01.txt",
+      "model": "deepseekv4.1flash-strong",
+      "group_size": 4,
+      "closest_same_model": "deepseekv4.1flash-strong-02.txt",
+      "cosine_similarity": 0.703292191028595,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.8122055082074008
+    },
+    {
+      "source": "claudesonnet5.5-04.txt",
+      "model": "claudesonnet5.5",
+      "group_size": 4,
+      "closest_same_model": "claudesonnet5.5-03.txt",
+      "cosine_similarity": 0.7030054926872253,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.8243030354472008
+    },
+    {
+      "source": "deepseekv4.1flash-weak-07.txt",
+      "model": "deepseekv4.1flash-weak",
+      "group_size": 7,
+      "closest_same_model": "deepseekv4.1flash-weak-05.txt",
+      "cosine_similarity": 0.7028162479400635,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.09380340718214414
+    },
+    {
+      "source": "qwen-app-thinking-01.txt",
+      "model": "qwen-app-thinking",
+      "group_size": 4,
+      "closest_same_model": "qwen-app-thinking-02.txt",
+      "cosine_similarity": 0.7023678421974182,
+      "old_baseline_correct": false,
+      "old_baseline_margin": 0.21161525442031995
+    },
+    {
+      "source": "deepseekv4.1flash1017-07.txt",
+      "model": "deepseekv4.1flash1017",
+      "group_size": 9,
+      "closest_same_model": "deepseekv4.1flash1017-05.txt",
+      "cosine_similarity": 0.7008964419364929,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.8344030288239418
+    },
+    {
+      "source": "deepseekv4.1flash-weak-03.txt",
+      "model": "deepseekv4.1flash-weak",
+      "group_size": 7,
+      "closest_same_model": "deepseekv4.1flash-weak-05.txt",
+      "cosine_similarity": 0.7007913589477539,
+      "old_baseline_correct": false,
+      "old_baseline_margin": 0.3392963690874791
+    },
+    {
+      "source": "deepseekv4.1flash-weak-06.txt",
+      "model": "deepseekv4.1flash-weak",
+      "group_size": 7,
+      "closest_same_model": "deepseekv4.1flash-weak-05.txt",
+      "cosine_similarity": 0.6903362274169922,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.4885495829721087
+    },
+    {
+      "source": "GLM5.3FLASH-FREE-02.txt",
+      "model": "glm5.3flash-free",
+      "group_size": 4,
+      "closest_same_model": "GLM5.3FLASH-FREE-01.txt",
+      "cosine_similarity": 0.6878836154937744,
+      "old_baseline_correct": false,
+      "old_baseline_margin": 0.09383686465400437
+    },
+    {
+      "source": "deepseekv4.1flash-weak-01.txt",
+      "model": "deepseekv4.1flash-weak",
+      "group_size": 7,
+      "closest_same_model": "deepseekv4.1flash-weak-05.txt",
+      "cosine_similarity": 0.6874673366546631,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.798639476301149
+    },
+    {
+      "source": "deepseekv4.1flash1017-02.txt",
+      "model": "deepseekv4.1flash1017",
+      "group_size": 9,
+      "closest_same_model": "deepseekv4.1flash1017-05.txt",
+      "cosine_similarity": 0.6789623498916626,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.7962959420846514
+    },
+    {
+      "source": "deepseekv4.1flash1017-01.txt",
+      "model": "deepseekv4.1flash1017",
+      "group_size": 9,
+      "closest_same_model": "deepseekv4.1flash1017-08.txt",
+      "cosine_similarity": 0.6749181747436523,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.7643072816515497
+    },
+    {
+      "source": "claudehaiku5.5-03.txt",
+      "model": "claudehaiku5.5",
+      "group_size": 9,
+      "closest_same_model": "claudehaiku5.5-08.txt",
+      "cosine_similarity": 0.6722570061683655,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.7778668442335688
+    },
+    {
+      "source": "deepseekv4.1flash-weak-02.txt",
+      "model": "deepseekv4.1flash-weak",
+      "group_size": 7,
+      "closest_same_model": "deepseekv4.1flash-weak-05.txt",
+      "cosine_similarity": 0.6721371412277222,
+      "old_baseline_correct": false,
+      "old_baseline_margin": 0.1401424395445175
+    },
+    {
+      "source": "claudehaiku5.5-02.txt",
+      "model": "claudehaiku5.5",
+      "group_size": 9,
+      "closest_same_model": "claudehaiku5.5-08.txt",
+      "cosine_similarity": 0.6719634532928467,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.8425212487985578
+    },
+    {
+      "source": "claudehaiku5.5-09.txt",
+      "model": "claudehaiku5.5",
+      "group_size": 9,
+      "closest_same_model": "claudehaiku5.5-02.txt",
+      "cosine_similarity": 0.6653581857681274,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.41366099337019413
+    },
+    {
+      "source": "claudehaiku5.5-01.txt",
+      "model": "claudehaiku5.5",
+      "group_size": 9,
+      "closest_same_model": "claudehaiku5.5-08.txt",
+      "cosine_similarity": 0.6631008982658386,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.780102908445401
+    },
+    {
+      "source": "claudehaiku5.5-07.txt",
+      "model": "claudehaiku5.5",
+      "group_size": 9,
+      "closest_same_model": "claudehaiku5.5-03.txt",
+      "cosine_similarity": 0.6561887860298157,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.36189213374914453
+    },
+    {
+      "source": "qwen-app-fast-01.txt",
+      "model": "qwen-app-fast",
+      "group_size": 6,
+      "closest_same_model": "qwen-app-fast-02.txt",
+      "cosine_similarity": 0.6353414058685303,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.4338819322016634
+    },
+    {
+      "source": "qwen-app-fast-02.txt",
+      "model": "qwen-app-fast",
+      "group_size": 6,
+      "closest_same_model": "qwen-app-fast-01.txt",
+      "cosine_similarity": 0.6353414058685303,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.6617327966835485
+    },
+    {
+      "source": "qwen-app-fast-03.txt",
+      "model": "qwen-app-fast",
+      "group_size": 6,
+      "closest_same_model": "qwen-app-fast-02.txt",
+      "cosine_similarity": 0.6269861459732056,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.7884000948998451
+    },
+    {
+      "source": "claudehaiku5.5-06.txt",
+      "model": "claudehaiku5.5",
+      "group_size": 9,
+      "closest_same_model": "claudehaiku5.5-08.txt",
+      "cosine_similarity": 0.6145681142807007,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.5011459045676534
+    },
+    {
+      "source": "qwen-app-fast-06.txt",
+      "model": "qwen-app-fast",
+      "group_size": 6,
+      "closest_same_model": "qwen-app-fast-01.txt",
+      "cosine_similarity": 0.6077295541763306,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.4143581088885781
+    },
+    {
+      "source": "qwen-app-fast-04.txt",
+      "model": "qwen-app-fast",
+      "group_size": 6,
+      "closest_same_model": "qwen-app-fast-02.txt",
+      "cosine_similarity": 0.6014057397842407,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.39615952722735864
+    },
+    {
+      "source": "qwen-app-fast-05.txt",
+      "model": "qwen-app-fast",
+      "group_size": 6,
+      "closest_same_model": "qwen-app-fast-02.txt",
+      "cosine_similarity": 0.5880209803581238,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.2217506851032665
+    },
+    {
+      "source": "gpt5.6luna-02.txt",
+      "model": "gpt5.6luna",
+      "group_size": 4,
+      "closest_same_model": "gpt5.6luna-04.txt",
+      "cosine_similarity": 0.5743602514266968,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.6008604324028468
+    },
+    {
+      "source": "gpt5.6luna-04.txt",
+      "model": "gpt5.6luna",
+      "group_size": 4,
+      "closest_same_model": "gpt5.6luna-02.txt",
+      "cosine_similarity": 0.5743602514266968,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.6560917687152815
+    },
+    {
+      "source": "deepseekv4.1flash-strong-04.txt",
+      "model": "deepseekv4.1flash-strong",
+      "group_size": 4,
+      "closest_same_model": "deepseekv4.1flash-strong-02.txt",
+      "cosine_similarity": 0.5706167221069336,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.3517716479744111
+    },
+    {
+      "source": "gpt5.6luna-01.txt",
+      "model": "gpt5.6luna",
+      "group_size": 4,
+      "closest_same_model": "gpt5.6luna-04.txt",
+      "cosine_similarity": 0.56226646900177,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.7421359368971916
+    },
+    {
+      "source": "claudesonnet5.5-02.txt",
+      "model": "claudesonnet5.5",
+      "group_size": 4,
+      "closest_same_model": "claudesonnet5.5-01.txt",
+      "cosine_similarity": 0.5091977119445801,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.7018049468625445
+    },
+    {
+      "source": "claudehaiku5.5-04.txt",
+      "model": "claudehaiku5.5",
+      "group_size": 9,
+      "closest_same_model": "claudehaiku5.5-05.txt",
+      "cosine_similarity": 0.4781402349472046,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.3094801848975183
+    },
+    {
+      "source": "gpt5.6luna-03.txt",
+      "model": "gpt5.6luna",
+      "group_size": 4,
+      "closest_same_model": "gpt5.6luna-02.txt",
+      "cosine_similarity": 0.46886470913887024,
+      "old_baseline_correct": true,
+      "old_baseline_margin": 0.841124963890005
+    }
+  ]
+}

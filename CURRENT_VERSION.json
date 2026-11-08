@@ -1,0 +1,16 @@
+{
+  "label": "残差门控融合 · 2026-10-27 GPT-6.1-Terra补样",
+  "updated": "2026-10-27",
+  "timezone": "America/New_York",
+  "version_directory": "20261020-residual-gate",
+  "valid_samples": 102,
+  "model_groups": 25,
+  "reference_signature": "4aa85bb127a4113f67e78075e226ea276e46e78a1402032be1ee7e63f4d0800b",
+  "gate_policy_enabled": false,
+  "architecture": "MLP + character/word n-gram TF-IDF logistic regression + small local residual gate",
+  "latest_entry": "最新版_粘贴答案测试.bat",
+  "path": "versions/20261020-residual-gate",
+  "stable_path": "versions/20261019-glm-tuned",
+  "stable_entry": "正式版_粘贴答案测试.bat",
+  "note": "Self-contained 2026-10-27 residual-gate release. Older version directories are not in this folder. Paths are relative to this package."
+}

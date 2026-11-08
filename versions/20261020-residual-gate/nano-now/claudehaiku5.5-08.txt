@@ -1,0 +1,95 @@
+[A01]
+余数是 5。
+7 除以 13 的余数依次为 7, 10, 5, 9, 11, 12, 1。所以 7^6 ≡ 12 ≡ -1 (mod 13)，7^12 ≡ 1。因为 123 = 12×10 + 3，所以 7^123 ≡ 7^3 = 343 ≡ 5 (mod 13)。
+
+[A02]
+甲打破了杯子。
+若甲打破：甲的话假，乙的话真，丙的话假，恰一句真，成立。若乙打破：甲真、丙真，有两句真，不成立。若丙打破：甲假、乙真、丙真，也有两句真，不成立。
+
+[A03]
+18/67
+P(阳性) = 0.02×0.9 + 0.98×0.05 = 0.018 + 0.049 = 0.067。
+P(确实发生 | 阳性) = 0.018 / 0.067 = 18/67，约为 26.9%。
+
+[A04]
+35
+把 4 个 1 放入 10 个位置且互不相邻，等价于从 10−4+1 = 7 个位置中选 4 个，即 C(7,4) = 35。
+
+[A05]
+最短路径为 A→C→B→E→D，总权重为 7。
+各路径权重：A→B→D 为 9，A→B→E→D 为 8，A→C→B→D 为 8，A→C→B→E→D 为 7，A→C→D 为 10。
+
+[A06]
+f(8) = 81。
+f(1) 至 f(8) 依次为：1, 2, 4, 7, 13, 24, 44, 81。
+注：f(1) = 1，f(2) = 2，之后逐项按 f(n) = f(n−1)+f(n−2)+f(n−3) 计算。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+先手必胜。唯一能保证获胜的第一步是取 1 枚，使剩下 14 枚。
+用 n 表示剩余枚数。必败局面（先手输）为 n = 0, 2, 7, 9, 14。
+验证：从 15 取 1 得 14（必败），取 3 得 12（必胜，对手可取 3 到 9），取 4 得 11（必胜，对手可取 4 到 7）。所以只有取 1 可行。
+
+[A11]
+3882
+用动态规划计数：令 N(x,y) 为从原点到 (x,y) 且不经过障碍点的路径数，障碍点取值为 0，其余 N(x,y) = N(x−1,y) + N(x,y−1)。逐行计算到 (8,8) 得 3882。
+作为参照，不设障碍时总数为 C(16,8) = 12870。
+
+[A12]
+26
+先计算不含“111”且恰有 4 个 1 的串：4 个 0 把串分成 5 段，每段 1 的个数在 {0,1,2} 中且总和为 4。系数为 (1+x+x²)^5 中 x⁴ 的系数，即 45。
+再要求首末位不同。设 g0 为首段 1 的个数，g4 为末段 1 的个数，则需恰有一个大于 0。由对称性，只需计算 g0=0 且 g4≥1 的情形的两倍。
+当 g4=1 时，g1+g2+g3=3，方案数为 7；当 g4=2 时，g1+g2+g3=2，方案数为 6。合计 13，乘以 2 得 26。
+
+[B01]
+7
+
+[B02]
+083729154619028374653819405726820491375629184073651094827362573819204639274185606284013759417293860570361529482615807391
+
+[B03]
+HTTHTHHTTHHHTTTHTHTHTHHTHTTHHTHHTHTTTHTHHTTTHHTHHTTHTHHHTTHHTHTTHTHHTHTT
+
+[B04]
+3,6,1,4,2,5,6,3,1,4,5,2,6,4,3,1,5,2,6,3,4,1,2,5
+
+[B05]
+狐狸
+
+[B06]
+37
+
+[B07]
+听你这么说，我特别能理解。想把每件事都安排到完美，往往最后连第一步都迟迟迈不出去，这种感觉挺让人累的。其实计划不必一开始就完美，它本来就是可以边走边改的。不如今天就选一件最小的事去做，哪怕只花十分钟，先让事情动起来。等开了头，你会发现很多问题在行动中自然就清楚了。你想先从哪件事开始？我可以陪你一起想想怎么拆分。
+
+[B08]
+平均数只告诉我们一组数据的“中间位置”，并不描述数据彼此之间差别有多大。比如两个班级的数学平均分都是 70 分。第一班的同学大多在 65 到 75 分之间，成绩比较集中；第二班却有人考了 100 分，也有人只考了 40 分，两极分化很明显。两组数据的平均数相同，但第二班的情况显然更分散、更不稳定。所以，要理解一组数据，除了看平均数，还需要看它的波动范围，比如最高值、最低值，或者数据的分散程度。
+
+[B09]
+可以改为：“小林告诉小周，小林自己明天不能来。”
+或者：“小林告诉小周，小周明天不能来。”
+原句中的“他”可以指小林，也可以指小周，因此容易产生歧义。改写时把代词换成具体的人名，就能避免误解。
+
+[B10]
+材料中没有提供这次选举的获胜者姓名和票数，因此无法给出这些信息。材料中唯一与选举相关的原文是：“虚构城市澄岚城在2041年举行了一次选举”。这句话只说明选举发生过，没有任何支持具体结果的内容。另外，材料明确写明“澄岚城”是虚构城市，因此这里的选举也不对应任何真实事件。
+
+[B11]
+这两条要求无法同时满足。“蓝色灯”三个字本身就包含“灯”字，所以只要包含“蓝色灯”，就一定违反“不得出现‘灯’字”。
+若只满足第一条，可以写：蓝色灯亮起了。
+若只满足第二条，可以写：请把蓝色的光源打开。
+
+[B12]
+Imagine flipping a coin 80 times and getting a run of six heads in a row. It can feel like the coin must be "due" for tails, or that something must be wrong. But a fair coin has no memory, so each flip is independent. Random sequences don't spread out evenly the way our intuition expects. Instead, they clump. Streaks and gaps appear naturally, because a truly random process has no rule preventing them.
+
+This is why simulations of randomness can produce patterns that look meaningful. If you run a simulation many times, you'll see some results cluster and others look surprisingly lopsided. Those patterns are not a sign of a bug. They're exactly what randomness looks like over a finite number of trials. Many people expect "fair" randomness to look perfectly balanced in the short run, but that's a mistake. Balance only emerges slowly, as the number of trials grows very large.
+
+There's also a twist: computers don't generate true randomness. They use formulas that produce sequences that look random but are fully determined by a starting value called a seed. Good generators pass many statistical tests, but the patterns you see in a simulation still come from the mathematics of chance, not from anything intentional.

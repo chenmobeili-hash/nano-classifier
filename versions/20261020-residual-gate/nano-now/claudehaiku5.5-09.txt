@@ -1,0 +1,74 @@
+[A01]
+余数是 5。推导：7^1≡7，7^2≡10，7^3≡5，7^4≡9，7^5≡11，7^6≡12≡−1 (mod 13)，所以 7^12≡1。123 = 12×10 + 3，故 7^123 ≡ 7^3 ≡ 5 (mod 13)。
+
+[A02]
+是甲打破的。理由：若甲打破，则甲的话假、乙的话真、丙的话假，恰一句真。若乙打破，则甲真、乙假、丙真，有两句真，不成立。若丙打破，则甲假、乙真、丙真，有两句真，不成立。
+
+[A03]
+18/67。计算：P(阳性) = 0.02×0.9 + 0.98×0.05 = 0.018 + 0.049 = 0.067 = 67/1000；P(事件|阳性) = 0.018 / 0.067 = 18/67。
+
+[A04]
+35 个。理由：6 个 0 形成 7 个空位，从中选 4 个放 1（每个空位至多放一个 1，保证 1 不相邻），方法数为 C(7,4) = 35。
+
+[A05]
+最短路径为 A→C→B→E→D，总权重为 7。理由：各路径权重分别为 A→B→D = 9，A→B→E→D = 8，A→C→B→D = 8，A→C→B→E→D = 7，A→C→D = 10，其中最小为 7。
+
+[A06]
+f(8) = 81。f(1) 至 f(8) 依次为：1, 2, 4, 7, 13, 24, 44, 81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+先手必胜。用必败位置分析：0、2、7、9、14 为必败位（轮到该玩家时必输）。15 枚时，唯一能保证获胜的第一步是取 1 枚，留给对方 14 枚（必败位）。取 3 枚留 12 枚，取 4 枚留 11 枚，对方都有办法转为必败位给你，因此不能保证获胜。
+
+[A11]
+3882 条。计算方法：令 N(x,y) = N(x−1,y) + N(x,y−1)，其中被禁止的格子 (2,2)、(4,5)、(6,3) 记为 0，边界上 N(x,0) = N(0,y) = 1。逐行计算后得到 N(8,8) = 3882。
+
+[A12]
+26。计算方法：首位与末位不同时，利用反转对称，只需计算首位为 0、末位为 1 的情形再乘 2。此时中间 6 位恰有 3 个 1、3 个 0，且中间不含 111，也不能以 11 结尾（否则与末位的 1 形成 111）。3 个 0 把中间分成 4 个空隙，放入 3 个 1，每个空隙至多 2 个，且最后一个空隙至多 1 个。计数为 7（最后空隙为 0）+ 6（最后空隙为 1）= 13。总数为 13 × 2 = 26。
+
+[B01]
+7
+
+[B02]
+382716509462158203947027194658349173062580623571394135902748674308159622695740138510628394793845027164330643917258472138069
+
+[B03]
+HTTHHTHTTHTHHTTHTHHTHTTHHTTHTHHTHTTHTHHTHHHTTTHTHHTTHTHHHHTTHTHTTHTTHTHHHTTHTHTHTTHHHTHTHHTHHT
+
+[B04]
+3,5,1,6,2,4,6,1,3,5,2,4,4,6,1,2,5,3,6,4,1,3,2,5
+
+[B05]
+猫
+
+[B06]
+37
+
+[B07]
+你说的这种感觉我特别能理解，很多人都卡在“还没准备好”这一步。完美的计划往往是在行动中慢慢修正出来的，第一版不必完美，只要能动起来就已经赢过停在原地的自己。不如现在就选一个最小的步骤，比如先花十分钟列个大纲，或者先做一件最容易开始的事。做完之后告诉我，我们再一起看下一步。
+
+[B08]
+可以用一个小例子来说明。假设两个班的数学平均分都是 70 分。第一个班所有人都考 70 分，整体很整齐；第二个班一半人考 40 分，一半人考 100 分，平均也是 70，但学生的差距非常大。所以“平均数”只告诉我们中间的大致位置，并没有说明数据是集中还是分散。要真正了解一组数据，还需要看它的波动大小，比如最高和最低值、范围，或者标准差，也可以看中位数和分布图。
+
+[B09]
+小林对小周说：“我明天不能来。”
+
+（如果原意是小周明天不能来，可以改为：小林告诉小周：“你明天不能来。”）
+
+[B10]
+材料无法支持回答。材料只说明虚构城市澄岚城在 2041 年举行过一次选举，没有写出获胜者的姓名、票数，也没有任何与获胜者或票数相关的原文。能支持的原文只有：“虚构城市澄岚城在2041年举行了一次选举”。
+
+[B11]
+这两条要求无法同时满足。要求①必须包含“蓝色灯”，而“蓝色灯”本身含有“灯”字，因此与要求②冲突。我只能满足要求①，无法满足要求②。
+
+[B12]
+Imagine flipping a coin again and again. Even though each flip is random, you will not get a perfectly even mix of heads and tails in short stretches. Sometimes you get five heads in a row, and your brain wants to say "something is going on here." That is the trick: random processes produce clumps, streaks, and gaps by chance alone. Simulations work the same way. When a computer generates lots of random numbers, the outcomes naturally bunch up in certain shapes, such as the bell curve. Patterns show up not because someone designed them, but because chance, repeated many times, tends to create structure. Once you see that, randomness stops looking like chaos and starts looking like a source of surprising order.

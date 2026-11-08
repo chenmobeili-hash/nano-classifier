@@ -1,0 +1,2588 @@
+{
+  "samples": [
+    {
+      "source": "claudehaiku4.5-extended-01.txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\claude-haiku4.5-extended\\新增 文字文件.txt",
+      "analysis": {
+        "baseline": {
+          "top": "DeepSeek",
+          "candidate": "DeepSeek",
+          "margin": 0.20832958079227717,
+          "threshold": 0.06979340338601572,
+          "scores": {
+            "Claude": 0.14255953488497702,
+            "DeepSeek": 0.4543720862289685,
+            "GLM": 0.1354713530932409,
+            "GPT": 0.021554520356122205,
+            "Qwen": 0.24604250543669134
+          }
+        },
+        "gated": {
+          "top": "DeepSeek",
+          "candidate": "DeepSeek",
+          "margin": 0.21373090962366628,
+          "threshold": 0.06883314363067793,
+          "scores": {
+            "Claude": 0.142555597743286,
+            "DeepSeek": 0.45684971491488185,
+            "GLM": 0.13601925422031674,
+            "GPT": 0.021456627830299654,
+            "Qwen": 0.24311880529121557
+          }
+        },
+        "policy": {
+          "top": "DeepSeek",
+          "candidate": "DeepSeek",
+          "margin": 0.20832958079227717,
+          "threshold": 0.06979340338601572,
+          "scores": {
+            "Claude": 0.14255953488497702,
+            "DeepSeek": 0.4543720862289685,
+            "GLM": 0.1354713530932409,
+            "GPT": 0.021554520356122205,
+            "Qwen": 0.24604250543669134
+          }
+        },
+        "policy_enabled": false,
+        "same_top": true,
+        "max_logit_correction": 0.010521634223774431,
+        "protected": false,
+        "nearest_samples": [
+          {
+            "source": "qwen3.8flash-03.txt",
+            "model": "qwen3.8flash",
+            "family": "Qwen",
+            "distance": 0.30683764119398593
+          },
+          {
+            "source": "qwen3.8flash-07.txt",
+            "model": "qwen3.8flash",
+            "family": "Qwen",
+            "distance": 0.3183375872384895
+          },
+          {
+            "source": "qwen3.8max-02.txt",
+            "model": "qwen3.8max",
+            "family": "Qwen",
+            "distance": 0.31850513654431356
+          }
+        ],
+        "nearest_metric": "NLP TF-IDF空间余弦距离，越小越相近；不参与家族分数计算。",
+        "reference_matches": [],
+        "scores": {
+          "result_only": {
+            "label": "最终结果分",
+            "score": null,
+            "provisional_score": 52,
+            "max_points": 100,
+            "pending_review": 4,
+            "score_interval": [
+              52,
+              100
+            ]
+          },
+          "legacy": {
+            "label": "旧版分（含过程）",
+            "score": null,
+            "provisional_score": 65.2,
+            "max_points": 100,
+            "pending_review": 7,
+            "score_interval": [
+              44.0,
+              92.8
+            ]
+          },
+          "strict": {
+            "label": "严格格式版",
+            "score": null,
+            "provisional_score": 66.14,
+            "max_points": 100,
+            "pending_review": 7,
+            "score_interval": [
+              47.6,
+              89.9
+            ]
+          },
+          "format": {
+            "label": "格式分",
+            "score": 80.0,
+            "provisional_score": 80.0,
+            "max_points": 100,
+            "pending_review": 0,
+            "score_interval": [
+              80.0,
+              80.0
+            ]
+          },
+          "combined": {
+            "label": "旧版＋严格版合计",
+            "score": null,
+            "provisional_score": 131.34,
+            "max_points": 200,
+            "pending_review": 7,
+            "score_interval": [
+              91.6,
+              182.7
+            ]
+          }
+        },
+        "ability": {
+          "scope": "本问卷能力分档，不代表通用智能或供应商排名",
+          "rubric_version": "ability-strict-4",
+          "consistency_version": "delivery-consistency-1",
+          "consistency_caps": {
+            "corrected_wrong_conclusion": 0.8,
+            "corrected_wrong_work": 0.9,
+            "unresolved_conclusions": 0.6
+          },
+          "content_provisional_score": 65.8,
+          "consistency_deduction": 0.6,
+          "answer_sha256": "a631bc8ea97f030bb95b18a0a84670008996975f24d621c28016caaef26201f2",
+          "weights": {
+            "A01": 6,
+            "A02": 6,
+            "A03": 8,
+            "A04": 6,
+            "A05": 8,
+            "A06": 8,
+            "A07": 6,
+            "A08": 5,
+            "A09": 5,
+            "A10": 12,
+            "A11": 16,
+            "A12": 14
+          },
+          "max_points": 100,
+          "tier": null,
+          "score": null,
+          "status": "review_required",
+          "score_interval": [
+            44.0,
+            92.8
+          ],
+          "provisional_score": 65.2,
+          "provisional_tier": "C 相对靠后",
+          "possible_tiers": [
+            "A 较高",
+            "B 中段",
+            "C 相对靠后"
+          ],
+          "pending_review": 7,
+          "unresolved_components": 5,
+          "questions": [
+            {
+              "question": "A01",
+              "weight": 6,
+              "score": null,
+              "status": "needs_review",
+              "content_provisional_points": 6.0,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 1.0,
+              "provisional_points": 6.0,
+              "points_interval": [
+                3.6,
+                6.0
+              ],
+              "answer_cue_found": null,
+              "expected": "5；模13周期为12，7^6≡-1",
+              "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+              "components": [
+                {
+                  "name": "最终结论",
+                  "share": 0.6,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按明确结论核对。",
+                  "issues": [],
+                  "claims": [
+                    "5"
+                  ]
+                },
+                {
+                  "name": "方法与推导",
+                  "share": 0.4,
+                  "fraction": 1,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "rule_supported",
+                  "evidence": "有限规则支持该方法，完整推导仍需复核。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": []
+            },
+            {
+              "question": "A02",
+              "weight": 6,
+              "score": null,
+              "status": "needs_review",
+              "content_provisional_points": 4.2,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 0.6,
+                "events": [
+                  {
+                    "kind": "unresolved_conclusions",
+                    "cap_fraction": 0.6,
+                    "evidence": "同题保留了互相冲突的定论，没有明确撤回错误定论。",
+                    "claims": [
+                      "乙",
+                      "甲"
+                    ]
+                  }
+                ],
+                "applied_deduction": 0.6
+              },
+              "provisional_fraction": 0.6,
+              "provisional_points": 3.6,
+              "points_interval": [
+                0.0,
+                3.6
+              ],
+              "answer_cue_found": null,
+              "expected": "甲；仅乙说真话",
+              "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+              "components": [
+                {
+                  "name": "最终结论",
+                  "share": 0.6,
+                  "fraction": 0.5,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "conflict",
+                  "evidence": "识别到相互冲突的结论，未见明确更正，需复核。",
+                  "issues": [],
+                  "claims": [
+                    "乙",
+                    "甲"
+                  ]
+                },
+                {
+                  "name": "方法与推导",
+                  "share": 0.4,
+                  "fraction": 1,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "rule_supported",
+                  "evidence": "有限规则支持该方法，完整推导仍需复核。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": [
+                {
+                  "component": "最终结论",
+                  "points": 1.8,
+                  "type": "conflict",
+                  "reason": "识别到相互冲突的结论，未见明确更正，需复核。"
+                },
+                {
+                  "component": "作答一致性",
+                  "points": 0.6,
+                  "type": "strict_consistency",
+                  "reason": "本题内容与过程原分受严格一致性上限限制；同一问题不重复叠加扣分。"
+                }
+              ]
+            },
+            {
+              "question": "A03",
+              "weight": 8,
+              "score": null,
+              "status": "needs_review",
+              "content_provisional_points": 8.0,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 1.0,
+              "provisional_points": 8.0,
+              "points_interval": [
+                4.8,
+                8.0
+              ],
+              "answer_cue_found": null,
+              "expected": "18/67；贝叶斯公式",
+              "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+              "components": [
+                {
+                  "name": "最终结论",
+                  "share": 0.6,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按明确结论核对。",
+                  "issues": [],
+                  "claims": [
+                    "18/67",
+                    "18/67"
+                  ]
+                },
+                {
+                  "name": "方法与推导",
+                  "share": 0.4,
+                  "fraction": 1,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "rule_supported",
+                  "evidence": "有限规则支持该方法，完整推导仍需复核。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": []
+            },
+            {
+              "question": "A04",
+              "weight": 6,
+              "score": null,
+              "status": "needs_review",
+              "content_provisional_points": 6.0,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 1.0,
+              "provisional_points": 6.0,
+              "points_interval": [
+                3.6,
+                6.0
+              ],
+              "answer_cue_found": null,
+              "expected": "35；C(7,4)",
+              "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+              "components": [
+                {
+                  "name": "最终结论",
+                  "share": 0.6,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按明确结论核对。",
+                  "issues": [],
+                  "claims": [
+                    "35"
+                  ]
+                },
+                {
+                  "name": "方法与推导",
+                  "share": 0.4,
+                  "fraction": 1,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "rule_supported",
+                  "evidence": "有限规则支持该方法，完整推导仍需复核。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": []
+            },
+            {
+              "question": "A05",
+              "weight": 8,
+              "score": 1.0,
+              "status": "auto_checked",
+              "content_provisional_points": 8.0,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 1.0,
+              "provisional_points": 8.0,
+              "points_interval": [
+                8.0,
+                8.0
+              ],
+              "answer_cue_found": null,
+              "expected": "A→C→B→E→D；总权重7",
+              "reason": "按确定的内容、格式或数值逐项核对。",
+              "components": [
+                {
+                  "name": "最短路径",
+                  "share": 0.5,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按明确结论核对。",
+                  "issues": [],
+                  "claims": [
+                    "A→C→B→E→D"
+                  ]
+                },
+                {
+                  "name": "总权重",
+                  "share": 0.5,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按明确结论核对。",
+                  "issues": [],
+                  "claims": [
+                    "7"
+                  ]
+                }
+              ],
+              "deductions": []
+            },
+            {
+              "question": "A06",
+              "weight": 8,
+              "score": 1.0,
+              "status": "auto_checked",
+              "content_provisional_points": 8.0,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 1.0,
+              "provisional_points": 8.0,
+              "points_interval": [
+                8.0,
+                8.0
+              ],
+              "answer_cue_found": null,
+              "expected": "1,2,4,7,13,24,44,81",
+              "reason": "按确定的内容、格式或数值逐项核对。",
+              "components": [
+                {
+                  "name": "f(8)",
+                  "share": 0.4,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按明确结论核对。",
+                  "issues": [],
+                  "claims": [
+                    "81",
+                    "81"
+                  ]
+                },
+                {
+                  "name": "完整序列",
+                  "share": 0.6,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "checked",
+                  "evidence": "逐项核对f(1)至f(8)。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": []
+            },
+            {
+              "question": "A07",
+              "weight": 6,
+              "score": 1.0,
+              "status": "auto_checked",
+              "content_provisional_points": 6.0,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 1.0,
+              "provisional_points": 6.0,
+              "points_interval": [
+                6.0,
+                6.0
+              ],
+              "answer_cue_found": null,
+              "expected": "[2, 2, 2]\n[0, 1, 2]",
+              "reason": "按确定的内容、格式或数值逐项核对。",
+              "components": [
+                {
+                  "name": "内容",
+                  "share": 0.8,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按输出行或数组元素的位置给内容部分分；JSON检查重复键与数据类型。",
+                  "issues": [],
+                  "claims": []
+                },
+                {
+                  "name": "格式",
+                  "share": 0.2,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按只输出指定内容核对；代码围栏只扣格式分。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": []
+            },
+            {
+              "question": "A08",
+              "weight": 5,
+              "score": 1.0,
+              "status": "auto_checked",
+              "content_provisional_points": 5.0,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 1.0,
+              "provisional_points": 5.0,
+              "points_interval": [
+                5.0,
+                5.0
+              ],
+              "answer_cue_found": null,
+              "expected": "{\"items\":[\"pear\",\"apple\",\"banana\",\"kiwi\"]}",
+              "reason": "按确定的内容、格式或数值逐项核对。",
+              "components": [
+                {
+                  "name": "内容",
+                  "share": 0.8,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按输出行或数组元素的位置给内容部分分；JSON检查重复键与数据类型。",
+                  "issues": [],
+                  "claims": []
+                },
+                {
+                  "name": "格式",
+                  "share": 0.2,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按只输出指定内容核对；代码围栏只扣格式分。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": []
+            },
+            {
+              "question": "A09",
+              "weight": 5,
+              "score": 1.0,
+              "status": "auto_checked",
+              "content_provisional_points": 5.0,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 1.0,
+              "provisional_points": 5.0,
+              "points_interval": [
+                5.0,
+                5.0
+              ],
+              "answer_cue_found": null,
+              "expected": "[1,3]",
+              "reason": "按确定的内容、格式或数值逐项核对。",
+              "components": [
+                {
+                  "name": "内容",
+                  "share": 0.8,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按输出行或数组元素的位置给内容部分分；JSON检查重复键与数据类型。",
+                  "issues": [],
+                  "claims": []
+                },
+                {
+                  "name": "格式",
+                  "share": 0.2,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按只输出指定内容核对；代码围栏只扣格式分。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": []
+            },
+            {
+              "question": "A10",
+              "weight": 12,
+              "score": null,
+              "status": "needs_review",
+              "content_provisional_points": 3.6,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 0.6,
+                "events": [
+                  {
+                    "kind": "unresolved_conclusions",
+                    "cap_fraction": 0.6,
+                    "evidence": "同题保留了互相冲突的定论，没有明确撤回错误定论。",
+                    "claims": [
+                      "True",
+                      "False"
+                    ]
+                  }
+                ],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 0.3,
+              "provisional_points": 3.6,
+              "points_interval": [
+                0.0,
+                7.2
+              ],
+              "answer_cue_found": null,
+              "expected": "先手必胜；唯一获胜第一步取1枚；必败态0、2、7、9、14",
+              "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+              "components": [
+                {
+                  "name": "先手胜负",
+                  "share": 0.2,
+                  "fraction": 0.5,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "conflict",
+                  "evidence": "识别到相互冲突的结论，未见明确更正，需复核。",
+                  "issues": [],
+                  "claims": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "所有必胜第一步",
+                  "share": 0.4,
+                  "fraction": null,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "unresolved",
+                  "evidence": "未识别出明确结论；不按全文数字命中判对。",
+                  "issues": [],
+                  "claims": []
+                },
+                {
+                  "name": "方法与推导",
+                  "share": 0.4,
+                  "fraction": 0.5,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "method_cue",
+                  "evidence": "只识别到方法线索，方法暂给一半；完整推导待复核。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": [
+                {
+                  "component": "先手胜负",
+                  "points": 1.2,
+                  "type": "conflict",
+                  "reason": "识别到相互冲突的结论，未见明确更正，需复核。"
+                },
+                {
+                  "component": "所有必胜第一步",
+                  "points": 4.8,
+                  "type": "uncredited_pending_review",
+                  "reason": "未识别出明确结论；不按全文数字命中判对。"
+                },
+                {
+                  "component": "方法与推导",
+                  "points": 2.4,
+                  "type": "method_cue",
+                  "reason": "只识别到方法线索，方法暂给一半；完整推导待复核。"
+                }
+              ]
+            },
+            {
+              "question": "A11",
+              "weight": 16,
+              "score": null,
+              "status": "needs_review",
+              "content_provisional_points": 3.2,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 0.2,
+              "provisional_points": 3.2,
+              "points_interval": [
+                0.0,
+                16.0
+              ],
+              "answer_cue_found": null,
+              "expected": "3882；容斥或动态规划",
+              "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+              "components": [
+                {
+                  "name": "最终结论",
+                  "share": 0.6,
+                  "fraction": null,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "unresolved",
+                  "evidence": "未识别出明确结论；不按全文数字命中判对。",
+                  "issues": [],
+                  "claims": []
+                },
+                {
+                  "name": "方法与推导",
+                  "share": 0.4,
+                  "fraction": 0.5,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "method_cue",
+                  "evidence": "只识别到方法线索，方法暂给一半；完整推导待复核。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": [
+                {
+                  "component": "最终结论",
+                  "points": 9.6,
+                  "type": "uncredited_pending_review",
+                  "reason": "未识别出明确结论；不按全文数字命中判对。"
+                },
+                {
+                  "component": "方法与推导",
+                  "points": 3.2,
+                  "type": "method_cue",
+                  "reason": "只识别到方法线索，方法暂给一半；完整推导待复核。"
+                }
+              ]
+            },
+            {
+              "question": "A12",
+              "weight": 14,
+              "score": null,
+              "status": "needs_review",
+              "content_provisional_points": 2.8,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 0.2,
+              "provisional_points": 2.8,
+              "points_interval": [
+                0.0,
+                14.0
+              ],
+              "answer_cue_found": null,
+              "expected": "26；反转对称的两类各13个",
+              "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+              "components": [
+                {
+                  "name": "最终结论",
+                  "share": 0.6,
+                  "fraction": null,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "unresolved",
+                  "evidence": "未识别出明确结论；不按全文数字命中判对。",
+                  "issues": [],
+                  "claims": []
+                },
+                {
+                  "name": "方法与推导",
+                  "share": 0.4,
+                  "fraction": 0.5,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "method_cue",
+                  "evidence": "只识别到方法线索，方法暂给一半；完整推导待复核。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": [
+                {
+                  "component": "最终结论",
+                  "points": 8.4,
+                  "type": "uncredited_pending_review",
+                  "reason": "未识别出明确结论；不按全文数字命中判对。"
+                },
+                {
+                  "component": "方法与推导",
+                  "points": 2.8,
+                  "type": "method_cue",
+                  "reason": "只识别到方法线索，方法暂给一半；完整推导待复核。"
+                }
+              ]
+            }
+          ],
+          "note": "加权满分100。结论/方法分别计分；A07–A09内容80%、格式20%。未识别项暂不计分但列入区间上限；不是直接判错。开放推导有限规则支持仍待复核。严格版按整份作答核对：错误定论后改对本题至多80%，错误推导后更正至多90%，未撤回的冲突定论至多60%；与既有失分取较低得分，不重复叠扣。人工score为内容与过程的0至1复核比例，仍接受一致性上限约束。按型号均分排名，每个型号占一个位置。每一份都是满分的型号同列为MAX，因为分数不能再高；MAX可以并列。唯一的非满分榜首才是S+。其余型号按中位秩四分位分为S/A/B/C；并列同分不拆档。参考集变化会改变档位。 主榜包含全部样本，同时提供排除疑似标记样本的独立均分与排名对照；标记不是身份确认。 均分采用严格交付评分，包含更正前错误的作答一致性限制。 原文A题命中只用于关联参考型号评分，不证明真实型号身份；未命中或改分后的单份回答仅对照S/A/B/C标尺，不授MAX或S+。",
+          "legacy_absolute_tier": "B 中等",
+          "tier_version": "relative-model-tiers-2",
+          "tier_basis": "single_answer_against_reference_models",
+          "tier_code": "C",
+          "tier_score": 65.2,
+          "tier_score_interval": [
+            44.0,
+            92.8
+          ],
+          "relative_model": null,
+          "sample_annotations": [],
+          "reference_match_models": [],
+          "ranking_reference": {
+            "cohort_sha256": "bb34acdd86fa95cf12295d0667be10ac5c7cce77cdc76bd67be4c87264616e21",
+            "model_count": 23,
+            "sample_count": 98,
+            "winner": null,
+            "boundaries": [
+              {
+                "upper_band": "S",
+                "lower_band": "A",
+                "cutoff": 98.5333333333
+              },
+              {
+                "upper_band": "A",
+                "lower_band": "B",
+                "cutoff": 92.6333333333
+              },
+              {
+                "upper_band": "B",
+                "lower_band": "C",
+                "cutoff": 81.6111111111
+              }
+            ],
+            "status": "provisional"
+          },
+          "score_versions": {
+            "version": "dual-delivery-1",
+            "legacy": {
+              "version": "ability-strict-4",
+              "provisional_score": 65.2,
+              "max_points": 100,
+              "note": "旧版A题分；包含原有A07–A09局部格式扣分，不检查整卷格式。"
+            },
+            "strict": {
+              "version": "ability-format-strict-5",
+              "provisional_score": 66.14,
+              "max_points": 100,
+              "content_score": 64.6,
+              "format_score": {
+                "version": "format-instruction-2",
+                "max_points": 100,
+                "provisional_score": 80.0,
+                "score": 80.0,
+                "score_interval": [
+                  80.0,
+                  80.0
+                ],
+                "pending_review": 0,
+                "items": [
+                  {
+                    "name": "标签独占一行且使用[A01]形式",
+                    "maximum": 20,
+                    "points": 20.0,
+                    "status": "checked",
+                    "reason": "24/24个标签符合"
+                  },
+                  {
+                    "name": "24题齐全且不重复",
+                    "maximum": 15,
+                    "points": 15.0,
+                    "status": "checked",
+                    "reason": "24/24题；异常题号："
+                  },
+                  {
+                    "name": "题号顺序",
+                    "maximum": 5,
+                    "points": 5.0,
+                    "status": "checked",
+                    "reason": "须完整按A01至B12排列"
+                  },
+                  {
+                    "name": "无额外开场及整卷围栏",
+                    "maximum": 5,
+                    "points": 5.0,
+                    "status": "checked",
+                    "reason": "检查题号前文本及整卷代码围栏；不猜测B12结尾是否为结束语"
+                  },
+                  {
+                    "name": "A07仅输出指定内容",
+                    "maximum": 6.666666666666667,
+                    "points": 6.6667,
+                    "status": "checked",
+                    "reason": "不允许说明、代码围栏或额外内容"
+                  },
+                  {
+                    "name": "A08仅输出指定内容",
+                    "maximum": 6.666666666666667,
+                    "points": 6.6667,
+                    "status": "checked",
+                    "reason": "不允许说明、代码围栏或额外内容"
+                  },
+                  {
+                    "name": "A09仅输出指定内容",
+                    "maximum": 6.666666666666667,
+                    "points": 6.6667,
+                    "status": "checked",
+                    "reason": "不允许说明、代码围栏或额外内容"
+                  },
+                  {
+                    "name": "B01/B05/B06单项输出",
+                    "maximum": 10,
+                    "points": 10.0,
+                    "status": "checked",
+                    "reason": "分别只输出范围内整数、中文名称、范围内整数；不验证动物语义"
+                  },
+                  {
+                    "name": "B02长度和字符",
+                    "maximum": 10,
+                    "points": 0.0,
+                    "status": "checked",
+                    "reason": "须恰好120个指定字符；实有84字符；内部空白同样违规"
+                  },
+                  {
+                    "name": "B03长度和字符",
+                    "maximum": 10,
+                    "points": 0.0,
+                    "status": "checked",
+                    "reason": "须恰好80个指定字符；实有74字符；内部空白同样违规"
+                  },
+                  {
+                    "name": "B04骰子格式",
+                    "maximum": 5,
+                    "points": 5.0,
+                    "status": "checked",
+                    "reason": "24个1至6整数，以英文逗号分隔"
+                  }
+                ],
+                "note": "只自动核查可验证的交付格式；忽略每题末尾独占一行的横向分隔线，不忽略解释、围栏、序列内部空白。矛盾题B11如实说明不处罚；随机性、工具使用及开放题语义不靠关键词自动定罪。"
+              },
+              "questions": [
+                {
+                  "question": "A01",
+                  "weight": 6,
+                  "provisional_points": 6.0,
+                  "cap_fraction": 1,
+                  "legacy_points": 6.0,
+                  "points_interval": [
+                    3.6,
+                    6.0
+                  ]
+                },
+                {
+                  "question": "A02",
+                  "weight": 6,
+                  "provisional_points": 3.0,
+                  "cap_fraction": 0.5,
+                  "legacy_points": 3.6,
+                  "points_interval": [
+                    0.0,
+                    3.0
+                  ]
+                },
+                {
+                  "question": "A03",
+                  "weight": 8,
+                  "provisional_points": 8.0,
+                  "cap_fraction": 1,
+                  "legacy_points": 8.0,
+                  "points_interval": [
+                    4.8,
+                    8.0
+                  ]
+                },
+                {
+                  "question": "A04",
+                  "weight": 6,
+                  "provisional_points": 6.0,
+                  "cap_fraction": 1,
+                  "legacy_points": 6.0,
+                  "points_interval": [
+                    3.6,
+                    6.0
+                  ]
+                },
+                {
+                  "question": "A05",
+                  "weight": 8,
+                  "provisional_points": 8.0,
+                  "cap_fraction": 1,
+                  "legacy_points": 8.0,
+                  "points_interval": [
+                    8.0,
+                    8.0
+                  ]
+                },
+                {
+                  "question": "A06",
+                  "weight": 8,
+                  "provisional_points": 8.0,
+                  "cap_fraction": 1,
+                  "legacy_points": 8.0,
+                  "points_interval": [
+                    8.0,
+                    8.0
+                  ]
+                },
+                {
+                  "question": "A07",
+                  "weight": 6,
+                  "provisional_points": 6.0,
+                  "cap_fraction": 1,
+                  "legacy_points": 6.0,
+                  "points_interval": [
+                    6.0,
+                    6.0
+                  ]
+                },
+                {
+                  "question": "A08",
+                  "weight": 5,
+                  "provisional_points": 5.0,
+                  "cap_fraction": 1,
+                  "legacy_points": 5.0,
+                  "points_interval": [
+                    5.0,
+                    5.0
+                  ]
+                },
+                {
+                  "question": "A09",
+                  "weight": 5,
+                  "provisional_points": 5.0,
+                  "cap_fraction": 1,
+                  "legacy_points": 5.0,
+                  "points_interval": [
+                    5.0,
+                    5.0
+                  ]
+                },
+                {
+                  "question": "A10",
+                  "weight": 12,
+                  "provisional_points": 3.6,
+                  "cap_fraction": 0.5,
+                  "legacy_points": 3.6,
+                  "points_interval": [
+                    0.0,
+                    6.0
+                  ]
+                },
+                {
+                  "question": "A11",
+                  "weight": 16,
+                  "provisional_points": 3.2,
+                  "cap_fraction": 1,
+                  "legacy_points": 3.2,
+                  "points_interval": [
+                    0.0,
+                    16.0
+                  ]
+                },
+                {
+                  "question": "A12",
+                  "weight": 14,
+                  "provisional_points": 2.8,
+                  "cap_fraction": 1,
+                  "legacy_points": 2.8,
+                  "points_interval": [
+                    0.0,
+                    14.0
+                  ]
+                }
+              ],
+              "weights": {
+                "content": 0.9,
+                "format": 0.1
+              },
+              "consistency_caps": {
+                "corrected_wrong_conclusion": 0.7,
+                "corrected_wrong_work": 0.85,
+                "unresolved_conclusions": 0.5
+              },
+              "pending_review": 7,
+              "score_interval": [
+                47.6,
+                89.9
+              ],
+              "note": "内容90%+格式10%；更正错误结论/过程/未撤回冲突上限70%/85%/50%；A07–A09格式分迁至格式项，本版不重复扣。开放推导继承复核状态。"
+            },
+            "combined": {
+              "provisional_score": 131.34,
+              "max_points": 200,
+              "score": null,
+              "normalized_score": 65.67,
+              "pending_review": 7,
+              "score_interval": [
+                91.6,
+                182.7
+              ],
+              "note": "旧版100分与严格格式版100分相加；型号按合计均分排名。",
+              "provisional_tier": "C 相对靠后",
+              "tier_code": "C",
+              "tier": null,
+              "relative_model": null,
+              "ranking_basis": "single_combined_score",
+              "ranking_reference": {
+                "model_count": 23,
+                "sample_count": 98,
+                "max_points": 200,
+                "boundaries": [
+                  {
+                    "upper_band": "S",
+                    "lower_band": "A",
+                    "cutoff": 196.26875
+                  },
+                  {
+                    "upper_band": "A",
+                    "lower_band": "B",
+                    "cutoff": 183.5208333333
+                  },
+                  {
+                    "upper_band": "B",
+                    "lower_band": "C",
+                    "cutoff": 162.3045833333
+                  }
+                ],
+                "cohort_sha256": "8a30d3c48f0ccd875d6ca6c4ca33c0822d341b6bccf9f28ca820cccb003eebad"
+              }
+            }
+          }
+        },
+        "result_only": {
+          "version": "final-result-1",
+          "policy": "只核对A题最终结果，沿用原权重100分。每题所要求结果须全部正确才得分；不计过程、格式或更正扣分，明确更正采用最终答案；未撤回的冲突、缺答、错误结果不得分。B题不计分。本榜独立展示，不加入原200分总榜。",
+          "max_points": 100,
+          "answer_sha256": "a631bc8ea97f030bb95b18a0a84670008996975f24d621c28016caaef26201f2",
+          "score": null,
+          "provisional_score": 52,
+          "score_interval": [
+            52,
+            100
+          ],
+          "correct_questions": 8,
+          "question_count": 12,
+          "pending_review": 4,
+          "questions": [
+            {
+              "question": "A01",
+              "weight": 6,
+              "correct": true,
+              "points": 6,
+              "pending_review": false,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A02",
+              "weight": 6,
+              "correct": null,
+              "points": 0,
+              "pending_review": true,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A03",
+              "weight": 8,
+              "correct": true,
+              "points": 8,
+              "pending_review": false,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A04",
+              "weight": 6,
+              "correct": true,
+              "points": 6,
+              "pending_review": false,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A05",
+              "weight": 8,
+              "correct": true,
+              "points": 8,
+              "pending_review": false,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A06",
+              "weight": 8,
+              "correct": true,
+              "points": 8,
+              "pending_review": false,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A07",
+              "weight": 6,
+              "correct": true,
+              "points": 6,
+              "pending_review": false,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A08",
+              "weight": 5,
+              "correct": true,
+              "points": 5,
+              "pending_review": false,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A09",
+              "weight": 5,
+              "correct": true,
+              "points": 5,
+              "pending_review": false,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A10",
+              "weight": 12,
+              "correct": null,
+              "points": 0,
+              "pending_review": true,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A11",
+              "weight": 16,
+              "correct": null,
+              "points": 0,
+              "pending_review": true,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A12",
+              "weight": 14,
+              "correct": null,
+              "points": 0,
+              "pending_review": true,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            }
+          ]
+        },
+        "note": "家族分数未经概率校准，不能当作身份正确概率；最近样本仅作诊断，答卷评分独立计算。"
+      }
+    },
+    {
+      "source": "claudehaiku4.5-extended-02.txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\claude-haiku4.5-extended\\新增 文字文件 (2).txt",
+      "analysis": {
+        "baseline": {
+          "top": "GLM",
+          "candidate": "GLM",
+          "margin": 0.08156809106951407,
+          "threshold": 0.06979340338601572,
+          "scores": {
+            "Claude": 0.26332222817575673,
+            "DeepSeek": 0.24110756877821696,
+            "GLM": 0.3448903192452708,
+            "GPT": 0.0361594062991385,
+            "Qwen": 0.11452047750161697
+          }
+        },
+        "gated": {
+          "top": "GLM",
+          "candidate": "GLM",
+          "margin": 0.08403198699011472,
+          "threshold": 0.06883314363067793,
+          "scores": {
+            "Claude": 0.2627178072828278,
+            "DeepSeek": 0.2430506229214079,
+            "GLM": 0.3467497942729425,
+            "GPT": 0.03576941583262681,
+            "Qwen": 0.11171235969019501
+          }
+        },
+        "policy": {
+          "top": "GLM",
+          "candidate": "GLM",
+          "margin": 0.08156809106951407,
+          "threshold": 0.06979340338601572,
+          "scores": {
+            "Claude": 0.26332222817575673,
+            "DeepSeek": 0.24110756877821696,
+            "GLM": 0.3448903192452708,
+            "GPT": 0.0361594062991385,
+            "Qwen": 0.11452047750161697
+          }
+        },
+        "policy_enabled": false,
+        "same_top": true,
+        "max_logit_correction": 0.019874524705155067,
+        "protected": false,
+        "nearest_samples": [
+          {
+            "source": "qwen3.8flash-03.txt",
+            "model": "qwen3.8flash",
+            "family": "Qwen",
+            "distance": 0.29046714858407574
+          },
+          {
+            "source": "claudesonnet4.6-03.txt",
+            "model": "claudesonnet4.6",
+            "family": "Claude",
+            "distance": 0.29909468900634084
+          },
+          {
+            "source": "GLM5.3FLASH-03.txt",
+            "model": "glm5.3flash",
+            "family": "GLM",
+            "distance": 0.3063327216770082
+          }
+        ],
+        "nearest_metric": "NLP TF-IDF空间余弦距离，越小越相近；不参与家族分数计算。",
+        "reference_matches": [],
+        "scores": {
+          "result_only": {
+            "label": "最终结果分",
+            "score": null,
+            "provisional_score": 38,
+            "max_points": 100,
+            "pending_review": 3,
+            "score_interval": [
+              38,
+              66
+            ]
+          },
+          "legacy": {
+            "label": "旧版分（含过程）",
+            "score": null,
+            "provisional_score": 48.0,
+            "max_points": 100,
+            "pending_review": 7,
+            "score_interval": [
+              38.0,
+              82.0
+            ]
+          },
+          "strict": {
+            "label": "严格格式版",
+            "score": null,
+            "provisional_score": 55.93,
+            "max_points": 100,
+            "pending_review": 7,
+            "score_interval": [
+              46.93,
+              86.53
+            ]
+          },
+          "format": {
+            "label": "格式分",
+            "score": 73.33,
+            "provisional_score": 73.33,
+            "max_points": 100,
+            "pending_review": 0,
+            "score_interval": [
+              73.33,
+              73.33
+            ]
+          },
+          "combined": {
+            "label": "旧版＋严格版合计",
+            "score": null,
+            "provisional_score": 103.93,
+            "max_points": 200,
+            "pending_review": 7,
+            "score_interval": [
+              84.93,
+              168.53
+            ]
+          }
+        },
+        "ability": {
+          "scope": "本问卷能力分档，不代表通用智能或供应商排名",
+          "rubric_version": "ability-strict-4",
+          "consistency_version": "delivery-consistency-1",
+          "consistency_caps": {
+            "corrected_wrong_conclusion": 0.8,
+            "corrected_wrong_work": 0.9,
+            "unresolved_conclusions": 0.6
+          },
+          "content_provisional_score": 48.0,
+          "consistency_deduction": 0.0,
+          "answer_sha256": "2b314285dc26f793fb1d696e04d6ba32e071d33cfe68f62613a94ae07649dbdd",
+          "weights": {
+            "A01": 6,
+            "A02": 6,
+            "A03": 8,
+            "A04": 6,
+            "A05": 8,
+            "A06": 8,
+            "A07": 6,
+            "A08": 5,
+            "A09": 5,
+            "A10": 12,
+            "A11": 16,
+            "A12": 14
+          },
+          "max_points": 100,
+          "tier": null,
+          "score": null,
+          "status": "review_required",
+          "score_interval": [
+            38.0,
+            82.0
+          ],
+          "provisional_score": 48.0,
+          "provisional_tier": "C 相对靠后",
+          "possible_tiers": [
+            "B 中段",
+            "C 相对靠后"
+          ],
+          "pending_review": 7,
+          "unresolved_components": 5,
+          "questions": [
+            {
+              "question": "A01",
+              "weight": 6,
+              "score": null,
+              "status": "needs_review",
+              "content_provisional_points": 6.0,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 1.0,
+              "provisional_points": 6.0,
+              "points_interval": [
+                3.6,
+                6.0
+              ],
+              "answer_cue_found": null,
+              "expected": "5；模13周期为12，7^6≡-1",
+              "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+              "components": [
+                {
+                  "name": "最终结论",
+                  "share": 0.6,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按明确结论核对。",
+                  "issues": [],
+                  "claims": [
+                    "5"
+                  ]
+                },
+                {
+                  "name": "方法与推导",
+                  "share": 0.4,
+                  "fraction": 1,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "rule_supported",
+                  "evidence": "有限规则支持该方法，完整推导仍需复核。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": []
+            },
+            {
+              "question": "A02",
+              "weight": 6,
+              "score": null,
+              "status": "needs_review",
+              "content_provisional_points": 1.2,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 0.2,
+              "provisional_points": 1.2,
+              "points_interval": [
+                0.0,
+                6.0
+              ],
+              "answer_cue_found": null,
+              "expected": "甲；仅乙说真话",
+              "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+              "components": [
+                {
+                  "name": "最终结论",
+                  "share": 0.6,
+                  "fraction": null,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "unresolved",
+                  "evidence": "未识别出明确结论；不按全文数字命中判对。",
+                  "issues": [],
+                  "claims": []
+                },
+                {
+                  "name": "方法与推导",
+                  "share": 0.4,
+                  "fraction": 0.5,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "method_cue",
+                  "evidence": "只识别到方法线索，方法暂给一半；完整推导待复核。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": [
+                {
+                  "component": "最终结论",
+                  "points": 3.6,
+                  "type": "uncredited_pending_review",
+                  "reason": "未识别出明确结论；不按全文数字命中判对。"
+                },
+                {
+                  "component": "方法与推导",
+                  "points": 1.2,
+                  "type": "method_cue",
+                  "reason": "只识别到方法线索，方法暂给一半；完整推导待复核。"
+                }
+              ]
+            },
+            {
+              "question": "A03",
+              "weight": 8,
+              "score": null,
+              "status": "needs_review",
+              "content_provisional_points": 1.6,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 0.2,
+              "provisional_points": 1.6,
+              "points_interval": [
+                0.0,
+                8.0
+              ],
+              "answer_cue_found": null,
+              "expected": "18/67；贝叶斯公式",
+              "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+              "components": [
+                {
+                  "name": "最终结论",
+                  "share": 0.6,
+                  "fraction": null,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "unresolved",
+                  "evidence": "未识别出明确结论；不按全文数字命中判对。",
+                  "issues": [],
+                  "claims": []
+                },
+                {
+                  "name": "方法与推导",
+                  "share": 0.4,
+                  "fraction": 0.5,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "method_cue",
+                  "evidence": "只识别到方法线索，方法暂给一半；完整推导待复核。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": [
+                {
+                  "component": "最终结论",
+                  "points": 4.8,
+                  "type": "uncredited_pending_review",
+                  "reason": "未识别出明确结论；不按全文数字命中判对。"
+                },
+                {
+                  "component": "方法与推导",
+                  "points": 1.6,
+                  "type": "method_cue",
+                  "reason": "只识别到方法线索，方法暂给一半；完整推导待复核。"
+                }
+              ]
+            },
+            {
+              "question": "A04",
+              "weight": 6,
+              "score": null,
+              "status": "needs_review",
+              "content_provisional_points": 6.0,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 1.0,
+              "provisional_points": 6.0,
+              "points_interval": [
+                3.6,
+                6.0
+              ],
+              "answer_cue_found": null,
+              "expected": "35；C(7,4)",
+              "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+              "components": [
+                {
+                  "name": "最终结论",
+                  "share": 0.6,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按明确结论核对。",
+                  "issues": [],
+                  "claims": [
+                    "35"
+                  ]
+                },
+                {
+                  "name": "方法与推导",
+                  "share": 0.4,
+                  "fraction": 1,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "rule_supported",
+                  "evidence": "有限规则支持该方法，完整推导仍需复核。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": []
+            },
+            {
+              "question": "A05",
+              "weight": 8,
+              "score": 1.0,
+              "status": "auto_checked",
+              "content_provisional_points": 8.0,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 1.0,
+              "provisional_points": 8.0,
+              "points_interval": [
+                8.0,
+                8.0
+              ],
+              "answer_cue_found": null,
+              "expected": "A→C→B→E→D；总权重7",
+              "reason": "按确定的内容、格式或数值逐项核对。",
+              "components": [
+                {
+                  "name": "最短路径",
+                  "share": 0.5,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按明确结论核对。",
+                  "issues": [],
+                  "claims": [
+                    "A→C→B→E→D"
+                  ]
+                },
+                {
+                  "name": "总权重",
+                  "share": 0.5,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按明确结论核对。",
+                  "issues": [],
+                  "claims": [
+                    "7"
+                  ]
+                }
+              ],
+              "deductions": []
+            },
+            {
+              "question": "A06",
+              "weight": 8,
+              "score": 1.0,
+              "status": "auto_checked",
+              "content_provisional_points": 8.0,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 1.0,
+              "provisional_points": 8.0,
+              "points_interval": [
+                8.0,
+                8.0
+              ],
+              "answer_cue_found": null,
+              "expected": "1,2,4,7,13,24,44,81",
+              "reason": "按确定的内容、格式或数值逐项核对。",
+              "components": [
+                {
+                  "name": "f(8)",
+                  "share": 0.4,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按明确结论核对。",
+                  "issues": [],
+                  "claims": [
+                    "81",
+                    "81"
+                  ]
+                },
+                {
+                  "name": "完整序列",
+                  "share": 0.6,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "checked",
+                  "evidence": "逐项核对f(1)至f(8)。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": []
+            },
+            {
+              "question": "A07",
+              "weight": 6,
+              "score": 0.0,
+              "status": "auto_checked",
+              "content_provisional_points": 0.0,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 0.0,
+              "provisional_points": 0.0,
+              "points_interval": [
+                0.0,
+                0.0
+              ],
+              "answer_cue_found": null,
+              "expected": "[2, 2, 2]\n[0, 1, 2]",
+              "reason": "按确定的内容、格式或数值逐项核对。",
+              "components": [
+                {
+                  "name": "内容",
+                  "share": 0.8,
+                  "fraction": 0.0,
+                  "lower_fraction": 0.0,
+                  "upper_fraction": 0.0,
+                  "state": "incorrect",
+                  "evidence": "按输出行或数组元素的位置给内容部分分；JSON检查重复键与数据类型。",
+                  "issues": [],
+                  "claims": []
+                },
+                {
+                  "name": "格式",
+                  "share": 0.2,
+                  "fraction": 0.0,
+                  "lower_fraction": 0.0,
+                  "upper_fraction": 0.0,
+                  "state": "format_error",
+                  "evidence": "按只输出指定内容核对；代码围栏只扣格式分。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": [
+                {
+                  "component": "内容",
+                  "points": 4.8,
+                  "type": "incorrect",
+                  "reason": "按输出行或数组元素的位置给内容部分分；JSON检查重复键与数据类型。"
+                },
+                {
+                  "component": "格式",
+                  "points": 1.2,
+                  "type": "format_error",
+                  "reason": "按只输出指定内容核对；代码围栏只扣格式分。"
+                }
+              ]
+            },
+            {
+              "question": "A08",
+              "weight": 5,
+              "score": 1.0,
+              "status": "auto_checked",
+              "content_provisional_points": 5.0,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 1.0,
+              "provisional_points": 5.0,
+              "points_interval": [
+                5.0,
+                5.0
+              ],
+              "answer_cue_found": null,
+              "expected": "{\"items\":[\"pear\",\"apple\",\"banana\",\"kiwi\"]}",
+              "reason": "按确定的内容、格式或数值逐项核对。",
+              "components": [
+                {
+                  "name": "内容",
+                  "share": 0.8,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按输出行或数组元素的位置给内容部分分；JSON检查重复键与数据类型。",
+                  "issues": [],
+                  "claims": []
+                },
+                {
+                  "name": "格式",
+                  "share": 0.2,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按只输出指定内容核对；代码围栏只扣格式分。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": []
+            },
+            {
+              "question": "A09",
+              "weight": 5,
+              "score": 1.0,
+              "status": "auto_checked",
+              "content_provisional_points": 5.0,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 1.0,
+              "provisional_points": 5.0,
+              "points_interval": [
+                5.0,
+                5.0
+              ],
+              "answer_cue_found": null,
+              "expected": "[1,3]",
+              "reason": "按确定的内容、格式或数值逐项核对。",
+              "components": [
+                {
+                  "name": "内容",
+                  "share": 0.8,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按输出行或数组元素的位置给内容部分分；JSON检查重复键与数据类型。",
+                  "issues": [],
+                  "claims": []
+                },
+                {
+                  "name": "格式",
+                  "share": 0.2,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按只输出指定内容核对；代码围栏只扣格式分。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": []
+            },
+            {
+              "question": "A10",
+              "weight": 12,
+              "score": null,
+              "status": "needs_review",
+              "content_provisional_points": 7.2,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 0.6,
+              "provisional_points": 7.2,
+              "points_interval": [
+                4.8,
+                9.6
+              ],
+              "answer_cue_found": null,
+              "expected": "先手必胜；唯一获胜第一步取1枚；必败态0、2、7、9、14",
+              "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+              "components": [
+                {
+                  "name": "先手胜负",
+                  "share": 0.2,
+                  "fraction": 1.0,
+                  "lower_fraction": 1.0,
+                  "upper_fraction": 1.0,
+                  "state": "correct",
+                  "evidence": "按明确结论核对。",
+                  "issues": [],
+                  "claims": [
+                    "True",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "所有必胜第一步",
+                  "share": 0.4,
+                  "fraction": 0.5,
+                  "lower_fraction": 0.5,
+                  "upper_fraction": 0.5,
+                  "state": "incorrect",
+                  "evidence": "列出了取1，也包含不能保证获胜的取法，只给部分分。",
+                  "issues": [],
+                  "claims": [
+                    "frozenset({1, 3})"
+                  ]
+                },
+                {
+                  "name": "方法与推导",
+                  "share": 0.4,
+                  "fraction": 0.5,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "method_cue",
+                  "evidence": "只识别到方法线索，方法暂给一半；完整推导待复核。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": [
+                {
+                  "component": "所有必胜第一步",
+                  "points": 2.4,
+                  "type": "incorrect",
+                  "reason": "列出了取1，也包含不能保证获胜的取法，只给部分分。"
+                },
+                {
+                  "component": "方法与推导",
+                  "points": 2.4,
+                  "type": "method_cue",
+                  "reason": "只识别到方法线索，方法暂给一半；完整推导待复核。"
+                }
+              ]
+            },
+            {
+              "question": "A11",
+              "weight": 16,
+              "score": null,
+              "status": "needs_review",
+              "content_provisional_points": 0.0,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 0.0,
+              "provisional_points": 0.0,
+              "points_interval": [
+                0.0,
+                6.4
+              ],
+              "answer_cue_found": null,
+              "expected": "3882；容斥或动态规划",
+              "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+              "components": [
+                {
+                  "name": "最终结论",
+                  "share": 0.6,
+                  "fraction": 0.0,
+                  "lower_fraction": 0.0,
+                  "upper_fraction": 0.0,
+                  "state": "incorrect",
+                  "evidence": "按明确结论核对。",
+                  "issues": [],
+                  "claims": [
+                    "6276"
+                  ]
+                },
+                {
+                  "name": "方法与推导",
+                  "share": 0.4,
+                  "fraction": null,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "unresolved",
+                  "evidence": "未验证该方法，不凭正确数字给方法分。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": [
+                {
+                  "component": "最终结论",
+                  "points": 9.6,
+                  "type": "incorrect",
+                  "reason": "按明确结论核对。"
+                },
+                {
+                  "component": "方法与推导",
+                  "points": 6.4,
+                  "type": "uncredited_pending_review",
+                  "reason": "未验证该方法，不凭正确数字给方法分。"
+                }
+              ]
+            },
+            {
+              "question": "A12",
+              "weight": 14,
+              "score": null,
+              "status": "needs_review",
+              "content_provisional_points": 0.0,
+              "consistency": {
+                "version": "delivery-consistency-1",
+                "cap_fraction": 1,
+                "events": [],
+                "applied_deduction": 0.0
+              },
+              "provisional_fraction": 0.0,
+              "provisional_points": 0.0,
+              "points_interval": [
+                0.0,
+                14.0
+              ],
+              "answer_cue_found": null,
+              "expected": "26；反转对称的两类各13个",
+              "reason": "按分项计分；开放推导为有限规则暂估，保留人工复核。",
+              "components": [
+                {
+                  "name": "最终结论",
+                  "share": 0.6,
+                  "fraction": null,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "unresolved",
+                  "evidence": "未识别出明确结论；不按全文数字命中判对。",
+                  "issues": [],
+                  "claims": []
+                },
+                {
+                  "name": "方法与推导",
+                  "share": 0.4,
+                  "fraction": null,
+                  "lower_fraction": 0,
+                  "upper_fraction": 1,
+                  "state": "unresolved",
+                  "evidence": "未验证该方法，不凭正确数字给方法分。",
+                  "issues": [],
+                  "claims": []
+                }
+              ],
+              "deductions": [
+                {
+                  "component": "最终结论",
+                  "points": 8.4,
+                  "type": "uncredited_pending_review",
+                  "reason": "未识别出明确结论；不按全文数字命中判对。"
+                },
+                {
+                  "component": "方法与推导",
+                  "points": 5.6,
+                  "type": "uncredited_pending_review",
+                  "reason": "未验证该方法，不凭正确数字给方法分。"
+                }
+              ]
+            }
+          ],
+          "note": "加权满分100。结论/方法分别计分；A07–A09内容80%、格式20%。未识别项暂不计分但列入区间上限；不是直接判错。开放推导有限规则支持仍待复核。严格版按整份作答核对：错误定论后改对本题至多80%，错误推导后更正至多90%，未撤回的冲突定论至多60%；与既有失分取较低得分，不重复叠扣。人工score为内容与过程的0至1复核比例，仍接受一致性上限约束。按型号均分排名，每个型号占一个位置。每一份都是满分的型号同列为MAX，因为分数不能再高；MAX可以并列。唯一的非满分榜首才是S+。其余型号按中位秩四分位分为S/A/B/C；并列同分不拆档。参考集变化会改变档位。 主榜包含全部样本，同时提供排除疑似标记样本的独立均分与排名对照；标记不是身份确认。 均分采用严格交付评分，包含更正前错误的作答一致性限制。 原文A题命中只用于关联参考型号评分，不证明真实型号身份；未命中或改分后的单份回答仅对照S/A/B/C标尺，不授MAX或S+。",
+          "legacy_absolute_tier": "C 待提升",
+          "tier_version": "relative-model-tiers-2",
+          "tier_basis": "single_answer_against_reference_models",
+          "tier_code": "C",
+          "tier_score": 48.0,
+          "tier_score_interval": [
+            38.0,
+            82.0
+          ],
+          "relative_model": null,
+          "sample_annotations": [],
+          "reference_match_models": [],
+          "ranking_reference": {
+            "cohort_sha256": "bb34acdd86fa95cf12295d0667be10ac5c7cce77cdc76bd67be4c87264616e21",
+            "model_count": 23,
+            "sample_count": 98,
+            "winner": null,
+            "boundaries": [
+              {
+                "upper_band": "S",
+                "lower_band": "A",
+                "cutoff": 98.5333333333
+              },
+              {
+                "upper_band": "A",
+                "lower_band": "B",
+                "cutoff": 92.6333333333
+              },
+              {
+                "upper_band": "B",
+                "lower_band": "C",
+                "cutoff": 81.6111111111
+              }
+            ],
+            "status": "provisional"
+          },
+          "score_versions": {
+            "version": "dual-delivery-1",
+            "legacy": {
+              "version": "ability-strict-4",
+              "provisional_score": 48.0,
+              "max_points": 100,
+              "note": "旧版A题分；包含原有A07–A09局部格式扣分，不检查整卷格式。"
+            },
+            "strict": {
+              "version": "ability-format-strict-5",
+              "provisional_score": 55.93,
+              "max_points": 100,
+              "content_score": 54.0,
+              "format_score": {
+                "version": "format-instruction-2",
+                "max_points": 100,
+                "provisional_score": 73.33,
+                "score": 73.33,
+                "score_interval": [
+                  73.33,
+                  73.33
+                ],
+                "pending_review": 0,
+                "items": [
+                  {
+                    "name": "标签独占一行且使用[A01]形式",
+                    "maximum": 20,
+                    "points": 20.0,
+                    "status": "checked",
+                    "reason": "24/24个标签符合"
+                  },
+                  {
+                    "name": "24题齐全且不重复",
+                    "maximum": 15,
+                    "points": 15.0,
+                    "status": "checked",
+                    "reason": "24/24题；异常题号："
+                  },
+                  {
+                    "name": "题号顺序",
+                    "maximum": 5,
+                    "points": 5.0,
+                    "status": "checked",
+                    "reason": "须完整按A01至B12排列"
+                  },
+                  {
+                    "name": "无额外开场及整卷围栏",
+                    "maximum": 5,
+                    "points": 5.0,
+                    "status": "checked",
+                    "reason": "检查题号前文本及整卷代码围栏；不猜测B12结尾是否为结束语"
+                  },
+                  {
+                    "name": "A07仅输出指定内容",
+                    "maximum": 6.666666666666667,
+                    "points": 0.0,
+                    "status": "checked",
+                    "reason": "不允许说明、代码围栏或额外内容"
+                  },
+                  {
+                    "name": "A08仅输出指定内容",
+                    "maximum": 6.666666666666667,
+                    "points": 6.6667,
+                    "status": "checked",
+                    "reason": "不允许说明、代码围栏或额外内容"
+                  },
+                  {
+                    "name": "A09仅输出指定内容",
+                    "maximum": 6.666666666666667,
+                    "points": 6.6667,
+                    "status": "checked",
+                    "reason": "不允许说明、代码围栏或额外内容"
+                  },
+                  {
+                    "name": "B01/B05/B06单项输出",
+                    "maximum": 10,
+                    "points": 10.0,
+                    "status": "checked",
+                    "reason": "分别只输出范围内整数、中文名称、范围内整数；不验证动物语义"
+                  },
+                  {
+                    "name": "B02长度和字符",
+                    "maximum": 10,
+                    "points": 0.0,
+                    "status": "checked",
+                    "reason": "须恰好120个指定字符；实有95字符；内部空白同样违规"
+                  },
+                  {
+                    "name": "B03长度和字符",
+                    "maximum": 10,
+                    "points": 0.0,
+                    "status": "checked",
+                    "reason": "须恰好80个指定字符；实有73字符；内部空白同样违规"
+                  },
+                  {
+                    "name": "B04骰子格式",
+                    "maximum": 5,
+                    "points": 5.0,
+                    "status": "checked",
+                    "reason": "24个1至6整数，以英文逗号分隔"
+                  }
+                ],
+                "note": "只自动核查可验证的交付格式；忽略每题末尾独占一行的横向分隔线，不忽略解释、围栏、序列内部空白。矛盾题B11如实说明不处罚；随机性、工具使用及开放题语义不靠关键词自动定罪。"
+              },
+              "questions": [
+                {
+                  "question": "A01",
+                  "weight": 6,
+                  "provisional_points": 6.0,
+                  "cap_fraction": 1,
+                  "legacy_points": 6.0,
+                  "points_interval": [
+                    3.6,
+                    6.0
+                  ]
+                },
+                {
+                  "question": "A02",
+                  "weight": 6,
+                  "provisional_points": 1.2,
+                  "cap_fraction": 1,
+                  "legacy_points": 1.2,
+                  "points_interval": [
+                    0.0,
+                    6.0
+                  ]
+                },
+                {
+                  "question": "A03",
+                  "weight": 8,
+                  "provisional_points": 1.6,
+                  "cap_fraction": 1,
+                  "legacy_points": 1.6,
+                  "points_interval": [
+                    0.0,
+                    8.0
+                  ]
+                },
+                {
+                  "question": "A04",
+                  "weight": 6,
+                  "provisional_points": 6.0,
+                  "cap_fraction": 1,
+                  "legacy_points": 6.0,
+                  "points_interval": [
+                    3.6,
+                    6.0
+                  ]
+                },
+                {
+                  "question": "A05",
+                  "weight": 8,
+                  "provisional_points": 8.0,
+                  "cap_fraction": 1,
+                  "legacy_points": 8.0,
+                  "points_interval": [
+                    8.0,
+                    8.0
+                  ]
+                },
+                {
+                  "question": "A06",
+                  "weight": 8,
+                  "provisional_points": 8.0,
+                  "cap_fraction": 1,
+                  "legacy_points": 8.0,
+                  "points_interval": [
+                    8.0,
+                    8.0
+                  ]
+                },
+                {
+                  "question": "A07",
+                  "weight": 6,
+                  "provisional_points": 6.0,
+                  "cap_fraction": 1,
+                  "legacy_points": 0.0,
+                  "points_interval": [
+                    6.0,
+                    6.0
+                  ]
+                },
+                {
+                  "question": "A08",
+                  "weight": 5,
+                  "provisional_points": 5.0,
+                  "cap_fraction": 1,
+                  "legacy_points": 5.0,
+                  "points_interval": [
+                    5.0,
+                    5.0
+                  ]
+                },
+                {
+                  "question": "A09",
+                  "weight": 5,
+                  "provisional_points": 5.0,
+                  "cap_fraction": 1,
+                  "legacy_points": 5.0,
+                  "points_interval": [
+                    5.0,
+                    5.0
+                  ]
+                },
+                {
+                  "question": "A10",
+                  "weight": 12,
+                  "provisional_points": 7.2,
+                  "cap_fraction": 1,
+                  "legacy_points": 7.2,
+                  "points_interval": [
+                    4.8,
+                    9.6
+                  ]
+                },
+                {
+                  "question": "A11",
+                  "weight": 16,
+                  "provisional_points": 0.0,
+                  "cap_fraction": 1,
+                  "legacy_points": 0.0,
+                  "points_interval": [
+                    0.0,
+                    6.4
+                  ]
+                },
+                {
+                  "question": "A12",
+                  "weight": 14,
+                  "provisional_points": 0.0,
+                  "cap_fraction": 1,
+                  "legacy_points": 0.0,
+                  "points_interval": [
+                    0.0,
+                    14.0
+                  ]
+                }
+              ],
+              "weights": {
+                "content": 0.9,
+                "format": 0.1
+              },
+              "consistency_caps": {
+                "corrected_wrong_conclusion": 0.7,
+                "corrected_wrong_work": 0.85,
+                "unresolved_conclusions": 0.5
+              },
+              "pending_review": 7,
+              "score_interval": [
+                46.93,
+                86.53
+              ],
+              "note": "内容90%+格式10%；更正错误结论/过程/未撤回冲突上限70%/85%/50%；A07–A09格式分迁至格式项，本版不重复扣。开放推导继承复核状态。"
+            },
+            "combined": {
+              "provisional_score": 103.93,
+              "max_points": 200,
+              "score": null,
+              "normalized_score": 51.965,
+              "pending_review": 7,
+              "score_interval": [
+                84.93,
+                168.53
+              ],
+              "note": "旧版100分与严格格式版100分相加；型号按合计均分排名。",
+              "provisional_tier": "C 相对靠后",
+              "tier_code": "C",
+              "tier": null,
+              "relative_model": null,
+              "ranking_basis": "single_combined_score",
+              "ranking_reference": {
+                "model_count": 23,
+                "sample_count": 98,
+                "max_points": 200,
+                "boundaries": [
+                  {
+                    "upper_band": "S",
+                    "lower_band": "A",
+                    "cutoff": 196.26875
+                  },
+                  {
+                    "upper_band": "A",
+                    "lower_band": "B",
+                    "cutoff": 183.5208333333
+                  },
+                  {
+                    "upper_band": "B",
+                    "lower_band": "C",
+                    "cutoff": 162.3045833333
+                  }
+                ],
+                "cohort_sha256": "8a30d3c48f0ccd875d6ca6c4ca33c0822d341b6bccf9f28ca820cccb003eebad"
+              }
+            }
+          }
+        },
+        "result_only": {
+          "version": "final-result-1",
+          "policy": "只核对A题最终结果，沿用原权重100分。每题所要求结果须全部正确才得分；不计过程、格式或更正扣分，明确更正采用最终答案；未撤回的冲突、缺答、错误结果不得分。B题不计分。本榜独立展示，不加入原200分总榜。",
+          "max_points": 100,
+          "answer_sha256": "2b314285dc26f793fb1d696e04d6ba32e071d33cfe68f62613a94ae07649dbdd",
+          "score": null,
+          "provisional_score": 38,
+          "score_interval": [
+            38,
+            66
+          ],
+          "correct_questions": 6,
+          "question_count": 12,
+          "pending_review": 3,
+          "questions": [
+            {
+              "question": "A01",
+              "weight": 6,
+              "correct": true,
+              "points": 6,
+              "pending_review": false,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A02",
+              "weight": 6,
+              "correct": null,
+              "points": 0,
+              "pending_review": true,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A03",
+              "weight": 8,
+              "correct": null,
+              "points": 0,
+              "pending_review": true,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A04",
+              "weight": 6,
+              "correct": true,
+              "points": 6,
+              "pending_review": false,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A05",
+              "weight": 8,
+              "correct": true,
+              "points": 8,
+              "pending_review": false,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A06",
+              "weight": 8,
+              "correct": true,
+              "points": 8,
+              "pending_review": false,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A07",
+              "weight": 6,
+              "correct": false,
+              "points": 0,
+              "pending_review": false,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A08",
+              "weight": 5,
+              "correct": true,
+              "points": 5,
+              "pending_review": false,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A09",
+              "weight": 5,
+              "correct": true,
+              "points": 5,
+              "pending_review": false,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A10",
+              "weight": 12,
+              "correct": false,
+              "points": 0,
+              "pending_review": false,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A11",
+              "weight": 16,
+              "correct": false,
+              "points": 0,
+              "pending_review": false,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            },
+            {
+              "question": "A12",
+              "weight": 14,
+              "correct": null,
+              "points": 0,
+              "pending_review": true,
+              "reason": "有限规则暂估最终结果；冲突或无法识别时须人工复核。"
+            }
+          ]
+        },
+        "note": "家族分数未经概率校准，不能当作身份正确概率；最近样本仅作诊断，答卷评分独立计算。"
+      }
+    }
+  ],
+  "baseline_library": 98
+}

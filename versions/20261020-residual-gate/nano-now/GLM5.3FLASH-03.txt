@@ -1,0 +1,90 @@
+[A01]
+余数为 5。推导：7^1≡7，7^2≡10，7^3≡5 (mod 13)，由 7^12≡1（费马小定理）知周期为12；123 = 12×10 + 3，故 7^123 ≡ 7^3 = 343 ≡ 343 − 26×13 = 343 − 338 = 5 (mod 13)。
+
+[A02]
+是甲打破的。逐一假设：若甲打破，则甲话假、乙话“不是我”真、丙话“不是甲”假，恰有一真，成立；若乙打破，则甲真、乙假、丙真，两句真，矛盾；若丙打破，则甲假、乙真、丙真，也是两句真，矛盾。故唯一可能是甲。
+
+[A03]
+P(发生|阳性) = P(阳性|发生)·P(发生) / [P(阳性|发生)·P(发生) + P(阳性|未发生)·P(未发生)] = (0.9×0.02) / (0.9×0.02 + 0.05×0.98) = 0.018 / (0.018 + 0.049) = 0.018/0.067 = 18/67。
+
+[A04]
+35 个。理由：在10个位置中选4个互不相邻的位置，等价于把4个1放入其中、其余为0，用隔板法：把4个1排成一排，它们之间至少需要3个0，剩余 10−4−3=3 个0可自由分配到5个空隙（首、3个间隔、尾），方案数为 C(3+5−1, 5−1) = C(7,4) = 35。
+
+[A05]
+最短路径为 A→C→B→E→D，总权重 7。推导：d(A)=0；经 A→C 得 d(C)=2；经 C→B 得 d(B)=2+1=3（优于直达的4）；由 B 得 d(E)=3+3=6，d(D) 候选为 3+5=8；再由 E 得 d(D)=6+1=7；C→D 给出 2+8=10；A→B→D=9。最小为 7。
+
+[A06]
+f(8) = 81。f(1) 至 f(8) 依次为：1, 2, 4, 7, 13, 24, 44, 81。（递推时 f(负数)=0：f(1)=f(0)=1，f(2)=1+1=2，f(3)=2+1+1=4，f(4)=4+2+1=7，f(5)=7+4+2=13，f(6)=13+7+4=24，f(7)=24+13+7=44，f(8)=44+24+13=81。）
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+先手必胜，且唯一能保证获胜的第一步是取 1 枚（留下14枚）。理由：用倒推法标记必败点（轮到谁面对该数谁输）：0 必败；2 必败（只能取1，留下1给对手取胜）；7 必败（取1、3、4分别留下6、4、3，均为必胜点）；9 必败（留下8、6、5，均为必胜点）；14 必败（留下13、11、10，均为必胜点）。15 不是必败点，且 15−1=14 是必败点，而 15−3=12、15−4=11 都是必胜点。故先手取 1 枚后，无论对手怎么取，先手总能把剩余数再次“送回”必败点集合 {14, 9, 7, 2, 0}，最终取走最后一枚。
+
+[A11]
+合法路径共 3882 条。可复核方法：动态规划 f(x,y) = 从(0,0)到(x,y)的合法路径数，f(0,0)=1，遇障碍点置 0，否则 f(x,y)=f(x−1,y)+f(x,y−1)。逐行计算（行内按 x 递增）：
+y=0: 1 1 1 1 1 1 1 1 1
+y=1: 1 2 3 4 5 6 7 8 9
+y=2: 1 3 0 4 9 15 22 30 39（(2,2)为障碍）
+y=3: 1 4 4 8 17 32 0 30 69（(6,3)为障碍）
+y=4: 1 5 9 17 34 66 66 96 165
+y=5: 1 6 15 32 0 66 132 228 393（(4,5)为障碍）
+y=6: 1 7 22 54 54 120 252 480 873
+y=7: 1 8 30 84 138 258 510 990 1863
+y=8: 1 9 39 123 261 519 1029 2019 3882
+交叉验证（容斥）：总数 C(16,8)=12870；经过(2,2)的有 6×924=5544；经过(4,5)的有 126×35=4410；经过(6,3)的有 84×21=1764；同时经过(2,2)和(4,5)的有 6×10×35=2100；同时经过(2,2)和(6,3)的有 6×5×21=630；(4,5)与(6,3)不可能同时经过（坐标不单调相容）。故 12870 − (5544+4410+1764) + (2100+630) = 12870 − 11718 + 2730 = 3882。两种方法一致。
+
+[A12]
+26 个。可复核的计数方法：把串分解为若干段1（每段长1或2，因为不能有连续三个1），段与段之间至少一个0。设1的个数为4、0的个数为4。按段数 r 分类计数“首位为0、末位为1”的串（设 z₀ 为前导0个数 ≥1，末段贴到末位）：
+- r=4（四段各长1）：z₀≥1，中间三个间隔零加末尾零共剩 1 个自由零 → 1 种；
+- r=3（2,1,1 的3种排列）：z₀≥1，z₀+两间隔零=2 → 每种排列3种，共 9 种；
+- r=2（两段各长2）：z₀≥1，z₀+中间间隔=3 → 3 种。
+合计 13。由翻转对称（串反转把“首位0末位1”变为“首位1末位0”，约束不变），“首位1末位0”也是 13。再算“首末同为1”共 13 种、“首末同为0”共 6 种，总数 13+6+13+13=45，与独立验证一致（C(8,4)=70 中含"111"的有 6×5−5=25 种，70−25=45）。故首末不同的串为 13+13 = 26。
+
+[B01]
+7
+
+[B02]
+917260438530291847566483029175091726354848302916577261049385930284756108473629156720418395418302675920394857168501937264
+
+[B03]
+HTTHTHHTTHTHTHHTHTTHHTHHTTHTHHTTHTHHTTHTHHTHHTHHTTTHTTHHTTHTHHTHTTHTHHHTHTTHTTHTHHH
+
+[B04]
+3,6,1,4,4,2,5,6,6,3,1,2,4,5,5,1,3,6,2,4,1,5,3,2
+
+[B05]
+企鹅
+
+[B06]
+73
+
+[B07]
+我特别理解这种感觉——想把计划做到完美，恰恰说明你很在意这件事。但完美计划其实是无法在“开始之前”完成的，因为真正会暴露问题的，只有行动本身。不如这样：别把“开始”定义成“正式执行完整计划”，而是把它缩小到一个小到不可能失败的动作，比如今天只花15分钟做个粗略草稿，或者只列出第一步要打的一个电话。完成后你会发现，动的不是意志力，而是那个“还没开始”的心理门槛。先允许自己做得粗糙，粗糙的第一版永远胜过完美的空白页——你随时可以在路上修改方向，但只有出发了才谈得上方向。
+
+[B08]
+因为平均数只告诉我们要“整体水准”，却不告诉我们数据是怎么围绕这个水准分布的。举个例子：两个班级平均分都是75分。A班可能所有人的成绩都在70到80之间，大家水平很整齐；B班可能一半人考95分以上、一半人只考50分，高的很高、低的很低。两组一平均都是75，但给人的印象完全不同：一个像“大家都不错”，另一个像“贫富悬殊”。造成这种差异的关键是数据的“波动程度”（统计学里叫方差或标准差），此外极个别特别大或特别小的数值也会把平均数拉偏——比如一个班大部分考60分，只有一个考了200分（假设满分不止100），平均分就会虚高。所以只看平均数，就像只看一个人的身高就猜测他的体型，身高相同的人胖瘦可以差很远；我们还需要看分布、极值和离散程度，才能得到完整的印象。
+
+[B09]
+这句话的歧义在于“他”既可以指小林也可以指小周。改清楚需要明确是谁明天不能来，例如：若指小林——“小林告诉小周：他自己明天不能来。”若指小周——“小林告诉小周：小周明天不能来。”
+
+[B10]
+无法回答。材料中只有一句话：“虚构城市澄岚城在2041年举行了一次选举”，其中没有提到任何候选人、获胜者或票数信息，因此获胜者的姓名和票数在材料中没有依据，无法给出。
+
+[B11]
+无法给出满足要求的答案：这两条要求互相矛盾。要求①要答案恰好包含三个“蓝色灯”，而“蓝色灯”这个词本身含有“灯”字；要求②又规定答案中不得出现“灯”字。只要①成立，②就必然被违反，反之亦然。因此不存在同时满足两条的文字，只能如实说明这一矛盾。
+
+[B12]
+This is one of my favorite little surprises about randomness: it doesn't look random the way we expect it to. Imagine flipping a coin over and over. Most people assume a "truly random" sequence should alternate a lot — heads, tails, heads, tails — because that feels fair and mixed. But a fair coin has no memory. After three heads in a row, the next flip is still 50/50, so streaks like HHHHT or TTTHH show up all the time. In a run of a hundred flips, a streak of five or six identical results is not just possible, it's practically guaranteed.
+
+There's a second reason patterns appear, and it lives in our heads rather than in the coins. Our brains are extraordinary pattern-detection machines — that's how we learned to spot predators in rustling grass — so when we look at a scatter of random dots and see a cluster, or hear a "hot streak" in a simulation, we're often finding shapes that were never planted there. Show ten people the same random noise and several will find something meaningful in it.
+
+Put those two things together and you get the punchline: a simulation of randomness produces patterns because genuine randomness naturally clumps, drifts, and streaks, and because we're built to notice when it does. Ironically, a sequence that looks perfectly "shuffled and balanced" is often the one a human made up — real randomness is messier than our intuition about it, and that messiness is exactly what randomness should look like.

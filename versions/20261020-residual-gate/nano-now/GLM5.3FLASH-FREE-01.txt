@@ -1,0 +1,103 @@
+[A01]
+余数为 5。
+推导：7²=49≡10，7³≡70≡5，7⁶≡12≡-1 (mod 13)，故 7^12≡1，阶为 12。123=12×10+3，所以 7^123≡7³=343=26×13+5≡5 (mod 13)。
+
+[A02]
+打破杯子的是甲。
+理由：逐一假设并数真话数——若甲打破：甲的话“乙打破的”为假，乙说“不是我”为真，丙说“不是甲”为假，恰好一句真，符合；若乙打破：甲真、乙假、丙真，两句真，不合；若丙打破：甲假、乙真、丙真，两句真，不合。只有“甲打破”满足恰一句为真。
+
+[A03]
+条件概率 = P(D∩阳)/P(阳) = 0.02×0.90 / (0.02×0.90 + 0.98×0.05) = 0.018 / (0.018+0.049) = 0.018/0.067 = 18/67 ≈ 26.87%。
+
+[A04]
+35 个。
+理由：设 4 个 1 所在位置 p₁<p₂<p₃<p₄，要求 p_{i+1}≥p_i+2。令 q_i=p_i-(i-1)，则 1≤q₁<q₂<q₃<q₄≤10-3=7，即从 7 个位置中选 4 个：C(7,4)=35。（等价地：把 4 个 1 和 6 个 0 排开，需在 1 前后的空隙中分配，得 C(7,4)。）
+
+[A05]
+最短路径为 A→C→B→E→D，总权重 2+1+3+1=7。
+验证各点最短距离：C=2；B=min(4, 2+1)=3；E=3+3=6；D=min(B+5=8, C+8=10, E+1=7)=7。直接 A→C→D 为 10，A→B→D 为 9，均不优于 7。
+
+[A06]
+f(1)=1，f(2)=2，f(3)=4，f(4)=7，f(5)=13，f(6)=24，f(7)=44，f(8)=81。
+逐项：f(1)=f(0)+0+0=1；f(2)=1+1+0=2；f(3)=2+1+1=4；f(4)=4+2+1=7；f(5)=7+4+2=13；f(6)=13+7+4=24；f(7)=24+13+7=44；f(8)=44+24+13=81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+先手必胜，且唯一能保证获胜的第一步是取 1 枚（留给对方 14 枚）。
+理由：记剩余 n 枚时轮到走的一方，n=0 为必败位（P 位）。递推：若某一步能走到 P 位则该位为必胜位（N 位）。逐个计算得 P 位为 0, 2, 7, 9, 14：
+- 2：只能取 1 到 1（N），必败；
+- 7：取 1/3/4 分别到 6、4、3，均 N（6→可取 4 到 P 位 2；4、3 可直接取完），必败；
+- 9：到 8、6、5，均 N（8→1 到 7；6→4 到 2；5→3 到 2），必败；
+- 14：到 13、11、10，均 N（13→4 到 9；11→4 到 7；10→1 到 9），必败。
+15 枚时：取 1 到 14（P 位）必胜；取 3 到 12（12 可取 3 到 P 位 9）、取 4 到 11（11 可取 4 到 P 位 7）都把必胜位留给对方。因此只有“取 1”一种第一步必胜，之后始终把 14、9、7 或 2 这类 P 位留给对方即可。
+
+[A11]
+合法路径共 3882 条。
+可复核方法（容斥）：总路径 C(16,8)=12870。经过某禁止点 P 的路径数 = (起点到 P 的路径数)×(P 到终点的路径数)。
+- 经过 (2,2)：C(4,2)×C(12,6)=6×924=5544
+- 经过 (4,5)：C(9,4)×C(7,3)=126×35=4410
+- 经过 (6,3)：C(9,6)×C(7,2)=84×21=1764
+同时经过两个禁止点（按坐标只能自左下到右上的顺序连乘）：
+- (2,2) 与 (4,5)：6×C(5,2)×35=6×10×35=2100
+- (2,2) 与 (6,3)：6×C(5,4)×21=6×5×21=630
+- (4,5) 与 (6,3)：从 (4,5) 到 (6,3) 需向下走，不可能，为 0
+三重交集：需同时经过 (4,5) 与 (6,3)，为 0。
+结果 = 12870 − (5544+4410+1764) + (2100+630) − 0 = 12870 − 11718 + 2730 = 3882。
+
+[A12]
+26 个。
+可复核方法：分两种情况，首位=0、末位=1，或首位=1、末位=0。把字符串反转可在这两种情况之间一一对应，且保持“恰有 4 个 1”和“无 111”，故总数 = 2×N，其中 N 为首位 0、末位 1 时的数目。
+首位 0、末位 1：1 必在位置 8，另 3 个 1 从 {2,…,7} 中选，共 C(6,3)=20 种；逐一检查会形成 111 的：含有 {2,3,4}、{3,4,5}、{4,5,6}、{5,6,7}，或同时含 6、7（使 6,7,8 成三个 1）的选法共 7 种（{2,3,4},{3,4,5},{4,5,6},{5,6,7},{2,6,7},{3,6,7},{4,6,7}），故 N=20−7=13，总数 2×13=26。
+
+[B01]
+7
+
+[B02]
+418276395073920581462609173748581940362793028461756147392085872630491509534187263846017592754028139661293507844687013529
+
+[B03]
+HTTHHTTHTHTHTHHHTTTHTTHHTHTHHHGTTTTHTHHHTTHTHHHTHTHTTHTHTTHHTHHTTHTHHTTHTHHTTTHT
+
+等等，上面拼装配有误，重写为严格 80 字符：HTTHHTTHTHTHTHHHTTTHTTHHTHTHHTHHTTTHTHHHTTHTHHHTHTHTTHTHTTHHTHHTTHTHHTTHTHHTTTHT（每 10 个一组共 8 组：HTTHHTTHTH / THTHHHTTTH / TTHHTHTHHT / HHTTTHTHHH / TTHTHHHTHT / HTTHTHTTHH / THHTTHTHHT / THTHHTTTHT）
+
+[B04]
+4,1,6,3,2,5,2,6,6,1,4,3,5,2,1,6,3,4,5,1,2,6,4,3
+
+[B05]
+狐狸
+
+[B06]
+63
+
+[B07]
+我想说，计划做得完美本身不是问题，问题是你把“完成完美计划”当成了开始的前提。不如试试反过来：先用十分钟做一个“够差就行”的版本——一行字的提纲、一个草稿文件夹、一次只做第一步。行动会给你真实的信息，让你调整计划，这事后再改也来得及。要不要现在就挑你计划里最小、最不会失败的一小块，花十分钟启动它？你说出来是哪件事，我们一起把它拆成今天就能做的一步。
+
+[B08]
+因为平均数只概括“中心位置”，却不告诉你数据是怎么散布在它周围的。想象两个班平均分都是 75 分：甲班人人都考 73 到 77 分，乙班一半人接近满分、一半人不及格。平均一样，但一个是“大家差不多”，一个是“两极分化”，给人的印象当然完全不同。决定这种印象的是数据的波动程度（比如极差、标准差），还有些时候是数据的形状——大多数人集中在哪、有没有少数极端值把平均拉高拉低。所以只看平均数，就像只看一个人的身高却不看他体型，会漏掉很多关键信息。
+
+[B09]
+改为：小林告诉小周：“我明天不能来。”（若“他”指小林）。若“他”指第三人，则应写明该人姓名，例如：“小林告诉小周，小陈明天不能来。”这句话的歧义在于“他”可能指小林、小周或二人都认识的另一个人，用直接引语或写明姓名即可消除。
+
+[B10]
+无法回答。材料中只有一句话：“虚构城市澄岚城在2041年举行了一次选举”，它只说明选举发生了，完全没有提到任何候选人和得票情况。因此获胜者的姓名和票数在材料中不存在，也不存在任何支持这两个答案的原文。
+
+[B11]
+这两条要求无法同时满足，如实说明如下：要求①要求答案中恰好出现三次“蓝色灯”，而“蓝色灯”这三个字本身就含有“灯”字，出现三次就意味着“灯”至少出现三次，必然违反要求②“不得出现‘灯’字”。两个条件互相矛盾，不存在任何满足两者的答案，因此本题没有合法答案。
+
+[B12]
+Here's the funny thing about randomness: we expect it to look messy, but it keeps showing us structure anyway. If you flip a coin twenty times, you'll almost certainly hit a run of three or four heads in a row — not because anything is rigged, but because streaks are a natural consequence of not caring about what came before. Each flip forgets the last one, so gaps in the pattern are always chances for a streak to start, and enough chances pretty much guarantee one.
+
+There's another, subtler reason: randomness concentrates. With a fair coin each flip is 50/50, but over 100 flips the *total* number of heads is very likely to land near 50 and very unlikely to be 20 or 80. That's the heart of statistics — individual events are unpredictable, but swarms of them settle into a shape (in the limit, the famous bell curve). So a simulation of random noise, aggregated, almost can't help producing a predictable silhouette.
+
+There's also us in the picture. Our brains are superb pattern-detectors — that's useful for spotting a predator in the grass, but it means we see shapes in static, faces in clouds, and "streaks" in coin flips even when the sequence is perfectly fair. The simulation is just sampling; the drama of the pattern is partly added by the observer.
+
+And finally, real simulations aren't perfectly random. They use deterministic formulas called pseudo-random generators, which cycle through enormous but finite sequences — so if you looked deep enough, patterns genuinely are in there. A good random simulation is a bit like surf: every individual wave is chaotic, yet standing back you see a steady rhythm. Randomness at the small scale and structure at the large scale aren't contradictory — the structure is literally what randomness looks like when it piles up.

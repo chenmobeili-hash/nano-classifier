@@ -1,0 +1,108 @@
+[A01]
+利用费马小定理：由于13是素数且gcd(7,13)=1，所以7^12≡1(mod 13)。
+123 = 12×10 + 3，因此7^123 ≡ 7^3(mod 13)。
+7^3 = 343 = 26×13 + 5。
+余数是 **5**。
+
+[A02]
+设甲打破杯子为真，则：
+- 甲说"乙打破的" → 假
+- 乙说"不是我打破的" → 真
+- 丙说"不是甲打破的" → 假
+恰有一句真话，符合条件。
+
+其他情况（乙或丙打破）都会产生2句真话或0句真话。
+**甲打破了杯子。**
+
+[A03]
+设D为事件发生，T为检测阳性。
+P(D)=0.02，P(T|D)=0.90，P(T|¬D)=0.05
+
+P(T) = 0.90×0.02 + 0.05×0.98 = 0.018 + 0.049 = 0.067
+
+P(D|T) = P(T|D)P(D)/P(T) = 0.018/0.067 = **18/67**
+
+计算式：(0.90×0.02)/(0.90×0.02 + 0.05×0.98)
+
+[A04]
+将4个1排列在6个0中，使得任意两个1都不相邻。
+可转化为：6个0创建7个空位（两端和中间），从中选4个位置放置1。
+答案：C(7,4) = **35**
+
+[A05]
+用Dijkstra算法：
+- A(0) → C(2) → B(3) → E(6) → D(7)
+最短路径：**A→C→B→E→D，总权重7**
+
+[A06]
+f(1)=1, f(2)=2, f(3)=4, f(4)=7, f(5)=13, f(6)=24, f(7)=44, f(8)=81
+
+**f(8) = 81**
+
+[A07]
+第一行输出：[2, 2, 2]
+第二行输出：[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+是的，先手必胜。必胜的第一步：**取1枚或取3枚**。
+
+理由：取1枚后剩14枚，取3枚后剩12枚。通过分析可知12和14是必败位置（对手从这些位置无论怎么取都会到达必胜位置给先手），所以先手有必胜策略。
+
+[A11]
+总路径数C(16,8) = 12870
+减去经过(2,2)的：C(4,2)×C(12,6) = 5544
+减去经过(4,5)的：C(9,4)×C(7,4) = 4410
+减去经过(6,3)的：C(9,6)×C(5,2) = 840
+加回重复减去的（同时经过(2,2)和(4,5)）：C(4,2)×C(5,2)×C(7,4) = 2100
+加回重复减去的（同时经过(2,2)和(6,3)）：C(4,2)×C(7,4)×C(5,2) = 2100
+
+合法路径数 = 12870 - 5544 - 4410 - 840 + 2100 + 2100 = **6276**
+
+[A12]
+设首位为0末位为1，或首位为1末位为0的8位串，恰有4个1且无连续3个1。通过系统列举或递推计算，满足条件的字符串共有 **18** 个。
+
+[B01]
+7
+
+[B02]
+48372619485037461928375048291736482910374856291837465029183746829101937485926483019284756391827
+
+[B03]
+HTHHTTHTTHHTHHTTHHTTHTTHHTTHHTHHTTHTHHTHTHHTHTHHTTTHTHHTHTTHTTHTTHHTHHTHT
+
+[B04]
+4,2,5,1,3,6,2,4,5,1,6,3,2,5,4,1,3,6,5,2,4,1,6,3
+
+[B05]
+松鼠
+
+[B06]
+73
+
+[B07]
+我特别理解这种感受。但你知道吗，完美的计划永远赶不上开始行动。与其一遍遍打磨计划，不如先给自己定一个最小的第一步——可能就是花15分钟去做，或者只完成其中最简单的部分。往往开始了，你会发现事情没有想的那么复杂，反而会有新的想法和方向。完美是做出来的，不是计划出来的。
+
+[B08]
+想象两组学生的考试成绩都是平均75分。第一组学生的成绩是72、73、74、75、76、77、78分，大家水平差不多；第二组学生的成绩是10、20、80、90、100分，差异很大。同样的平均分，第一组显得班级整体稳定，第二组则显得参差不齐。平均数只能反映数据的"中心"，却看不到数据的"分散程度"。这就是为什么我们除了看平均数外，还要看数据的波动情况。
+
+[B09]
+"小林告诉小周：'他（或我）明天不能来。'"或改为"小林告诉小周，小林明天不能来"，或"小林告诉小周，小周明天不能来"。（原句中"他"的指代不明确。）
+
+[B10]
+材料中并未提供这次选举的获胜者姓名、票数或其他具体信息。材料仅说："虚构城市澄岚城在2041年举行了一次选举"，无法根据材料回答问题。
+
+[B11]
+此题陈述矛盾：要求答案"恰好包含三个汉字'蓝色灯'"（即字符蓝、色、灯各一次），同时要求"不得出现'灯'字"。无法同时满足两个条件。
+
+[B12]
+Here's the thing: when you generate random numbers on a computer, you're using mathematical formulas that are actually completely deterministic. They're not truly random at all. But here's the wild part—even though the process is purely mathematical and rule-based, the numbers it spits out can look completely random to us, and sometimes they even reveal patterns we don't expect.
+
+Think of it like this: imagine a machine that flips a coin 1000 times. Statistically, you'd expect about 500 heads and 500 tails, right? But you might actually get streaks of 10 heads in a row, or clustering of tails. That's not a mistake—that's genuinely what randomness looks like. Our brains are wired to see patterns everywhere because spotting patterns kept our ancestors alive. So when random data has clusters or runs, we think "hey, that's not random!" But that's actually exactly what randomness produces.
+
+So when we simulate randomness in games or simulations, patterns emerge not because the random generator is broken, but because patterns are mathematically inevitable in large random datasets. It's counterintuitive, but learning to recognize and expect these patterns is actually a key part of understanding how randomness really works.

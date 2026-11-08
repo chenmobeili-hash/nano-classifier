@@ -1,0 +1,94 @@
+[A01]
+余数为 5。推导：由费马小定理 7^12 ≡ 1 (mod 13)。123 = 12×10 + 3，故 7^123 ≡ 7^3 = 343 ≡ 343 − 26×13 = 343 − 338 = 5 (mod 13)。
+
+[A02]
+是甲打破了杯子。逐一假设检验“恰有一句真话”：
+- 若甲打破：甲的话（“乙打破的”）假，乙的话（“不是我”）真，丙的话（“不是甲”）假——恰有 1 真，符合。
+- 若乙打破：甲真、乙假、丙真——2 真，不符合。
+- 若丙打破：甲假、乙真、丙真——2 真，不符合。
+只有甲成立，故是甲。
+
+[A03]
+P(事件|阳性) = (0.02×0.9) / (0.02×0.9 + 0.98×0.05) = 0.018 / (0.018 + 0.049) = 0.018/0.067 = 18/67（约 26.9%）。
+
+[A04]
+35 个。6 个 0 之间及两端共形成 7 个空隙，在每个空隙中至多放 1 个 1，即可保证 1 互不相邻。从 7 个空隙选 4 个放 1：C(7,4) = 35。
+
+[A05]
+最短路径为 A→C→B→E→D，总权重 2+1+3+1 = 7。比较各路径：A→B→D=9，A→C→D=10，A→C→B→D=8，A→B→E→D=8，A→C→B→E→D=7，故 7 为最小。
+
+[A06]
+f(1)=1，f(2)=2，f(3)=4，f(4)=7，f(5)=13，f(6)=24，f(7)=44，f(8)=81。
+递推验证：f(1)=f(0)+f(−1)+f(−2)=1；之后每项为前三项之和（如 81=44+24+13）。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items":["pear","apple","banana","kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+先手必胜，且唯一能保证获胜的第一步是取 1 枚。
+理由（递推必败态）：设面对 n 枚石子的一方，0, 2, 7, 9, 14 为必败态（即模 7 余 0 或 2 的数）。验证：从这些数出发，减 1、3、4 后余数只会变成 6,4,3 或 1,6,5，均不是 0 或 2，即任何一步都把必败态送给对手；而从其余余数出发总有一步回到必败态（余1减1、余3减3、余4减4、余5减3、余6减4）。15−1=14 是必败态；15−3=12、15−4=11 都是必胜态。所以先手只能取 1 枚才能把对手留在必败态。
+
+[A11]
+用容斥原理。总路径 C(16,8)=12870。
+经过一个禁点 P 的路径数 = 起点到 P 的路径数 × P 到终点的路径数：
+- (2,2)：C(4,2)×C(12,6) = 6×924 = 5544
+- (4,5)：C(9,4)×C(7,3) = 126×35 = 4410
+- (6,3)：C(9,6)×C(7,2) = 84×21 = 1764
+两两组合中只有 (2,2)→(4,5)（6×C(5,2)=60）和 (2,2)→(6,3)（6×C(5,4)=30）可行；(4,5)与(6,3)互相不可达（需向左或向下）。三项同时经过的不存在。
+合法路径 = 12870 − (5544+4410+1764) + (60+30) = 12870 − 11718 + 90 = 1242。
+
+[A12]
+26 个。计数方法：首位与末位不同，分两种对称情形（互为反转，数目相同）。
+情形一（首 0 末 1）：中间 6 个位置（第 2–7 位）恰放 3 个 1，共 C(6,3)=20 种。其中出现"111"的违法方案：{2,3,4}、{3,4,5}、{4,5,6}、{5,6,7}（中段三连），以及含第 6、7 位并借末位成三连的 {2,6,7}、{3,6,7}、{4,6,7}，共 7 种。合法 20−7=13。
+情形二（首 1 末 0）：同样分析，违法方案为含 {2,3} 的 4 种（{2,3,4},{2,3,5},{2,3,6},{2,3,7}，借首位成三连）加 {3,4,5}、{4,5,6}、{5,6,7}，共 7 种，合法 13。
+总计 13+13 = 26。（也可用总约束前验算：无限制时 2×C(6,3)=40，含"111"且首末不同的串共 14 个：连续 4 个 1 的 2 个，"111…1"型 6 个，"1…111"型 6 个，40−14=26，一致。）
+
+[B01]
+7
+
+[B02]
+384726190553981047266183940527475620384983019472656473829105592038471626495830177301928465485762019331847509624638291057
+
+[B03]
+HTTHTHHHTTHTHHTTHHTHTTHHTHTTHTHHTTHTHTTHHTHTTHHHTTHTHHTTHTTHHTTHTHTHHTTHHTHTTHTH
+
+[B04]
+4,2,6,1,1,5,3,6,2,4,4,1,6,3,5,5,2,2,6,1,4,3,3,5
+
+[B05]
+狐狸
+
+[B06]
+87
+
+[B07]
+这种感觉特别常见，其实“完美计划”有时候是拖延最体面的借口——因为只要计划还没定稿，就不用面对真正开始的不安。不如试试把门槛砍到最低：今天只花 15 分钟做一个最粗糙的版本，哪怕只是列三行要点、写一段烂初稿。计划是用来被 reality 修正的，不是用来在脑子里一次成型的。先动手，边做边调，往往做着做着方向就清晰了。
+
+[B08]
+可以这样想：平均数只是一个“重心”，它告诉你这组数据大概的中心在哪，但完全不告诉你大家离这个中心有多散。比如两个班数学平均分都是 70 分：一个班所有人都在 65 到 75 之间，你会觉得“这个班水平挺整齐”；另一个班一半人考 95、一半人考 45，平均也是 70，但感觉完全是另一个故事——有学霸也有跟不上的人。同样的平均数，背后可以是“人人都差不多”，也可以是“两极分化”，给人留下的印象天差地别。所以看数据时，除了平均数，还要看分散程度（每个人离平均数有多远）甚至整体分布，才能知道它到底讲了个什么故事。
+
+[B09]
+小林告诉小周：“我明天不能来。”
+（若原意是“小周明天不能来”，则应改为：小林告诉小周，小周明天不能来。原句的“他”指代不明，改为直接引语或明确主语即可消除歧义。）
+
+[B10]
+无法回答。材料中没有任何关于获胜者姓名或票数的信息，唯一原文是“虚构城市澄岚城在2041年举行了一次选举”，其中不含获胜者及票数的任何表述。
+
+[B11]
+本题无法给出合法答案：要求①规定答案必须包含“蓝色灯”，而“蓝色灯”三个字中本身含有“灯”字，与要求②“不得出现‘灯’字”直接矛盾，两条要求不可能同时满足。
+
+[B12]
+Here's the weird thing about randomness: it's not "smooth." People imagine randomness as even static — everything nicely mixed — but real randomness is lumpy. Flip a coin 100 times and you'll almost certainly see a streak of six or seven heads in a row somewhere. That feels like a pattern, like the coin "got hot," but it's just what happens when you give chaos enough room. In 100 flips there are about 95 different spots where a streak could start, and each of those small chances adds up. Rare things become near-certain when you get enough attempts.
+
+There's a second layer too: you, the observer. Your brain is a pattern-finding machine — it's why we see faces in clouds and hear hidden messages in static. So when a random streak shows up, your brain lights up and says "that means something!" But you're only noticing the streak *after* it happened. You didn't predict it; you noticed it. Hindsight turns noise into what looks like signal.
+
+Want a fun one? In a room of just 23 people, there's about a 50% chance two share a birthday. Sounds spooky, until you count: it's not about *your* birthday matching someone — it's about any of the 253 possible pairs matching. Tons of chances, each one small, one of them hits.
+
+So the trick when you spot a pattern is to ask: how many opportunities were there for *some* pattern to show up? In big batches of random data, the answer is usually "a huge number" — and clumps, streaks, and coincidences are exactly what randomness looks like when it's doing its job.

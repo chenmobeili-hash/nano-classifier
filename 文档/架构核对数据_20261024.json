@@ -1,0 +1,578 @@
+{
+  "date": "2026-10-24",
+  "root": "C:\\Users\\betraysilence\\Music\\nano-classfier",
+  "runtime": "C:\\Users\\betraysilence\\Music\\nano-classfier\\versions\\20261020-residual-gate\\lite-questionnaire-model",
+  "signature": "369405a7887a17b8b669ea2f9a3214ce9625fc62888f75bb0bf921fa1cea3966",
+  "families": {
+    "Claude": 22,
+    "DeepSeek": 28,
+    "GLM": 13,
+    "GPT": 19,
+    "Qwen": 18
+  },
+  "groups": {
+    "Claude": 5,
+    "DeepSeek": 6,
+    "GLM": 3,
+    "GPT": 6,
+    "Qwen": 4
+  },
+  "models": {
+    "claudehaiku4.5-extended": 2,
+    "claudehaiku5.5": 9,
+    "claudeopus5.5": 4,
+    "claudesonnet4.6": 3,
+    "claudesonnet5.5": 4,
+    "deepseek-app-nonthinking": 2,
+    "deepseek-app-thinking": 3,
+    "deepseekv4.1flash-strong": 4,
+    "deepseekv4.1flash-weak": 7,
+    "deepseekv4.1flash1017": 9,
+    "deepseekv4pro": 3,
+    "glm5.3": 3,
+    "glm5.3flash": 6,
+    "glm5.3flash-free": 4,
+    "gpt-oss-120b": 3,
+    "gpt5.6luna": 4,
+    "gpt6.1sol": 3,
+    "gpt6astra": 3,
+    "gpt6luna": 3,
+    "gpt6sol": 3,
+    "qwen-app-fast": 6,
+    "qwen-app-thinking": 4,
+    "qwen3.8flash": 6,
+    "qwen3.8max": 2
+  },
+  "blocks": {
+    "style": 42,
+    "behavior": 22,
+    "choices": 34,
+    "sequence": 33,
+    "extra": 4
+  },
+  "a_text_change_diff_indices_zero_based": [
+    133
+  ],
+  "gate_shapes": {
+    "kernel": [
+      3,
+      5
+    ],
+    "hidden_bias": [
+      5
+    ],
+    "gate": [
+      5
+    ],
+    "gate_bias": [
+      1
+    ],
+    "W": [
+      5,
+      5
+    ],
+    "b": [
+      5
+    ]
+  },
+  "base_shapes": {
+    "mlp": {
+      "mean": [
+        135
+      ],
+      "scale": [
+        135
+      ],
+      "gain": [
+        135
+      ],
+      "w1": [
+        135,
+        8
+      ],
+      "b1": [
+        8
+      ],
+      "w2": [
+        8,
+        5
+      ],
+      "b2": [
+        5
+      ]
+    },
+    "nlp": {
+      "w": [
+        4096,
+        5
+      ],
+      "b": [
+        5
+      ],
+      "idf": [
+        4096
+      ]
+    }
+  },
+  "gate_parameters": 56,
+  "mlp_parameters": 1133,
+  "nlp_lr_parameters": 20485,
+  "npz_bytes": {
+    "residual-gate.npz": 177861,
+    "neural-balanced.npz": 7079,
+    "nlp-model.npz": 252480
+  },
+  "stored_float64_values": 26175,
+  "runs": {
+    "sample": {
+      "baseline": {
+        "tested": 100,
+        "correct": 89,
+        "accuracy": 0.89,
+        "threshold": 0.09380763338911596,
+        "accepted": 96,
+        "accepted_correct": 87,
+        "accepted_accuracy": 0.90625,
+        "coverage": 0.96,
+        "enabled_folds": null
+      },
+      "gated": {
+        "tested": 100,
+        "correct": 89,
+        "accuracy": 0.89,
+        "threshold": 0.07666930944342375,
+        "accepted": 96,
+        "accepted_correct": 88,
+        "accepted_accuracy": 0.9166666666666666,
+        "coverage": 0.96,
+        "enabled_folds": null
+      },
+      "uniform": {
+        "tested": 100,
+        "correct": 89,
+        "accuracy": 0.89,
+        "threshold": 0.07666930942822968,
+        "accepted": 96,
+        "accepted_correct": 88,
+        "accepted_accuracy": 0.9166666666666666,
+        "coverage": 0.96,
+        "enabled_folds": null
+      },
+      "linear": {
+        "tested": 100,
+        "correct": 89,
+        "accuracy": 0.89,
+        "threshold": 0.07428885827490443,
+        "accepted": 96,
+        "accepted_correct": 88,
+        "accepted_accuracy": 0.9166666666666666,
+        "coverage": 0.96,
+        "enabled_folds": null
+      },
+      "selected": {
+        "tested": 100,
+        "correct": 89,
+        "accuracy": 0.89,
+        "threshold": 0.09380763338911596,
+        "accepted": 96,
+        "accepted_correct": 87,
+        "accepted_accuracy": 0.90625,
+        "coverage": 0.96,
+        "enabled_folds": 0
+      }
+    },
+    "model": {
+      "baseline": {
+        "tested": 100,
+        "correct": 62,
+        "accuracy": 0.62,
+        "threshold": 0.021250452517788624,
+        "accepted": 96,
+        "accepted_correct": 61,
+        "accepted_accuracy": 0.6354166666666666,
+        "coverage": 0.96,
+        "enabled_folds": null
+      },
+      "gated": {
+        "tested": 100,
+        "correct": 63,
+        "accuracy": 0.63,
+        "threshold": 0.029864128264071865,
+        "accepted": 96,
+        "accepted_correct": 61,
+        "accepted_accuracy": 0.6354166666666666,
+        "coverage": 0.96,
+        "enabled_folds": null
+      },
+      "uniform": {
+        "tested": 100,
+        "correct": 63,
+        "accuracy": 0.63,
+        "threshold": 0.029864128296472132,
+        "accepted": 96,
+        "accepted_correct": 61,
+        "accepted_accuracy": 0.6354166666666666,
+        "coverage": 0.96,
+        "enabled_folds": null
+      },
+      "linear": {
+        "tested": 100,
+        "correct": 62,
+        "accuracy": 0.62,
+        "threshold": 0.02821802582179291,
+        "accepted": 96,
+        "accepted_correct": 61,
+        "accepted_accuracy": 0.6354166666666666,
+        "coverage": 0.96,
+        "enabled_folds": null
+      },
+      "selected": {
+        "tested": 100,
+        "correct": 62,
+        "accuracy": 0.62,
+        "threshold": 0.021250452517788624,
+        "accepted": 96,
+        "accepted_correct": 61,
+        "accepted_accuracy": 0.6354166666666666,
+        "coverage": 0.96,
+        "enabled_folds": 6
+      }
+    }
+  },
+  "external": {
+    "counts": {
+      "GLM": 7,
+      "Claude": 2,
+      "DeepSeek": 1,
+      "Qwen": 1
+    },
+    "summary": {
+      "baseline": {
+        "tested": 11,
+        "correct": 10,
+        "accuracy": 0.9090909090909091,
+        "threshold": 0.09380763338911596,
+        "accepted": 9,
+        "accepted_correct": 9,
+        "accepted_accuracy": 1.0,
+        "coverage": 0.8181818181818182,
+        "fixes": [],
+        "breaks": [],
+        "changed_top": [],
+        "enabled_folds": null
+      },
+      "gated": {
+        "tested": 11,
+        "correct": 10,
+        "accuracy": 0.9090909090909091,
+        "threshold": 0.07666930944342375,
+        "accepted": 9,
+        "accepted_correct": 9,
+        "accepted_accuracy": 1.0,
+        "coverage": 0.8181818181818182,
+        "fixes": [],
+        "breaks": [],
+        "changed_top": [],
+        "enabled_folds": null
+      },
+      "uniform": {
+        "tested": 11,
+        "correct": 10,
+        "accuracy": 0.9090909090909091,
+        "threshold": 0.07666930942822968,
+        "accepted": 9,
+        "accepted_correct": 9,
+        "accepted_accuracy": 1.0,
+        "coverage": 0.8181818181818182,
+        "fixes": [],
+        "breaks": [],
+        "changed_top": [],
+        "enabled_folds": null
+      },
+      "linear": {
+        "tested": 11,
+        "correct": 10,
+        "accuracy": 0.9090909090909091,
+        "threshold": 0.07428885827490443,
+        "accepted": 9,
+        "accepted_correct": 9,
+        "accepted_accuracy": 1.0,
+        "coverage": 0.8181818181818182,
+        "fixes": [],
+        "breaks": [],
+        "changed_top": [],
+        "enabled_folds": null
+      },
+      "selected": {
+        "tested": 11,
+        "correct": 10,
+        "accuracy": 0.9090909090909091,
+        "threshold": 0.09380763338911596,
+        "accepted": 9,
+        "accepted_correct": 9,
+        "accepted_accuracy": 1.0,
+        "coverage": 0.8181818181818182,
+        "fixes": [],
+        "breaks": [],
+        "changed_top": [],
+        "enabled_folds": 0
+      }
+    }
+  },
+  "full_training": {
+    "selection": {
+      "enabled": false,
+      "validation_count": 33,
+      "fixes": 0,
+      "breaks": 0,
+      "base_nll": 1.0408188398289393,
+      "residual_nll": 1.0439318407685154,
+      "rule": ">=12 samples, >=3 families, >=1 fix, zero breaks, non-increasing weighted NLL",
+      "training_sources": [
+        "claudehaiku4.5-extended-01.txt",
+        "claudehaiku4.5-extended-02.txt",
+        "claudehaiku5.5-01.txt",
+        "claudehaiku5.5-02.txt",
+        "claudehaiku5.5-03.txt",
+        "claudehaiku5.5-04.txt",
+        "claudehaiku5.5-05.txt",
+        "claudehaiku5.5-06.txt",
+        "claudehaiku5.5-07.txt",
+        "claudehaiku5.5-08.txt",
+        "claudehaiku5.5-09.txt",
+        "claudeopus5.5-01.txt",
+        "claudeopus5.5-02.txt",
+        "claudeopus5.5-03.txt",
+        "claudeopus5.5-04.txt",
+        "claudesonnet5.5-01.txt",
+        "claudesonnet5.5-02.txt",
+        "claudesonnet5.5-03.txt",
+        "claudesonnet5.5-04.txt",
+        "deepseek-app-nonthinking-01.txt",
+        "deepseek-app-nonthinking-02.txt",
+        "deepseek-app-thinking-01.txt",
+        "deepseek-app-thinking-02.txt",
+        "deepseek-app-thinking-03.txt",
+        "deepseekv4.1flash-strong-01.txt",
+        "deepseekv4.1flash-strong-02.txt",
+        "deepseekv4.1flash-strong-03.txt",
+        "deepseekv4.1flash-strong-04.txt",
+        "deepseekv4pro-01.txt",
+        "deepseekv4pro-02.txt",
+        "deepseekv4pro-03.txt",
+        "GLM5.3FLASH-01.txt",
+        "GLM5.3FLASH-02.txt",
+        "GLM5.3FLASH-03.txt",
+        "GLM5.3FLASH-04.txt",
+        "GLM5.3FLASH-05.txt",
+        "GLM5.3FLASH-06.txt",
+        "GLM5.3FLASH-FREE-01.txt",
+        "GLM5.3FLASH-FREE-02.txt",
+        "GLM5.3FLASH-FREE-03.txt",
+        "GLM5.3FLASH-FREE-04.txt",
+        "gpt-oss-120b-01.txt",
+        "gpt-oss-120b-02.txt",
+        "gpt-oss-120b-03.txt",
+        "gpt6astra-01.txt",
+        "gpt6astra-02.txt",
+        "gpt6astra-03.txt",
+        "gpt6luna-01.txt",
+        "gpt6luna-02.txt",
+        "gpt6luna-03.txt",
+        "gpt6sol-01.txt",
+        "gpt6sol-02.txt",
+        "gpt6sol-03.txt",
+        "qwen-app-fast-01.txt",
+        "qwen-app-fast-02.txt",
+        "qwen-app-fast-03.txt",
+        "qwen-app-fast-04.txt",
+        "qwen-app-fast-05.txt",
+        "qwen-app-fast-06.txt",
+        "qwen3.8flash-01.txt",
+        "qwen3.8flash-02.txt",
+        "qwen3.8flash-03.txt",
+        "qwen3.8flash-05.txt",
+        "qwen3.8flash-06.txt",
+        "qwen3.8flash-07.txt",
+        "qwen3.8max-01.txt",
+        "qwen3.8max-02.txt"
+      ],
+      "validation_sources": [
+        "claudesonnet4.6-01.txt",
+        "claudesonnet4.6-02.txt",
+        "claudesonnet4.6-03.txt",
+        "deepseekv4.1flash-weak-01.txt",
+        "deepseekv4.1flash-weak-02.txt",
+        "deepseekv4.1flash-weak-03.txt",
+        "deepseekv4.1flash-weak-04.txt",
+        "deepseekv4.1flash-weak-05.txt",
+        "deepseekv4.1flash-weak-06.txt",
+        "deepseekv4.1flash-weak-07.txt",
+        "deepseekv4.1flash1017-01.txt",
+        "deepseekv4.1flash1017-02.txt",
+        "deepseekv4.1flash1017-04.txt",
+        "deepseekv4.1flash1017-05.txt",
+        "deepseekv4.1flash1017-06.txt",
+        "deepseekv4.1flash1017-07.txt",
+        "deepseekv4.1flash1017-08.txt",
+        "deepseekv4.1flash1017-09.txt",
+        "deepseekv4.1flash1017-10.txt",
+        "GLM5.3-01.txt",
+        "GLM5.3-02.txt",
+        "GLM5.3-03.txt",
+        "gpt5.6luna-01.txt",
+        "gpt5.6luna-02.txt",
+        "gpt5.6luna-03.txt",
+        "gpt5.6luna-04.txt",
+        "gpt6.1sol-01.txt",
+        "gpt6.1sol-02.txt",
+        "gpt6.1sol-03.txt",
+        "qwen-app-thinking-01.txt",
+        "qwen-app-thinking-02.txt",
+        "qwen-app-thinking-03.txt",
+        "qwen-app-thinking-04.txt"
+      ],
+      "inner_gate_training": {
+        "parameters_allocated": 56,
+        "parameters_trainable": 56,
+        "initial_loss": 1.0638788392088212,
+        "final_loss": 1.0593953251780026,
+        "base_correct": 45,
+        "residual_correct": 46,
+        "max_absolute_delta": 0.09996411417166223
+      }
+    },
+    "diagnostics": {
+      "gated": {
+        "parameters_allocated": 56,
+        "parameters_trainable": 56,
+        "initial_loss": 0.9249647085152064,
+        "final_loss": 0.9223212699205661,
+        "base_correct": 66,
+        "residual_correct": 66,
+        "max_absolute_delta": 0.07778134208879776
+      },
+      "uniform": {
+        "parameters_allocated": 56,
+        "parameters_trainable": 50,
+        "initial_loss": 0.9249647085152064,
+        "final_loss": 0.9223212699211173,
+        "base_correct": 66,
+        "residual_correct": 66,
+        "max_absolute_delta": 0.0777813420479679
+      },
+      "linear": {
+        "parameters_allocated": 56,
+        "parameters_trainable": 56,
+        "initial_loss": 0.9249647085152064,
+        "final_loss": 0.9213193155481733,
+        "base_correct": 66,
+        "residual_correct": 66,
+        "max_absolute_delta": 0.11656951960759461
+      }
+    }
+  },
+  "base_fit_count": 459,
+  "evaluation_seconds": 1058.7667312999984,
+  "mlp_meta": {
+    "version": "balanced-neural-1",
+    "profile": "balanced",
+    "classes": [
+      "Claude",
+      "DeepSeek",
+      "GLM",
+      "GPT",
+      "Qwen"
+    ],
+    "architecture": [
+      135,
+      8,
+      5
+    ],
+    "seed": 42,
+    "epochs": 400,
+    "l2": 0.01,
+    "learning_rate": 0.01,
+    "reference_signature": "369405a7887a17b8b669ea2f9a3214ce9625fc62888f75bb0bf921fa1cea3966",
+    "samples": 100,
+    "parameters": 1133,
+    "training_loss": 0.1536572723419732,
+    "sample_weighting": "equal-family-then-model",
+    "hidden": 8,
+    "family_boost": {},
+    "training_accuracy": 1.0
+  },
+  "nlp_meta": {
+    "version": "nlp-ngram-1",
+    "kind": "lr",
+    "classes": [
+      "Claude",
+      "DeepSeek",
+      "GLM",
+      "GPT",
+      "Qwen"
+    ],
+    "dimensions": 4096,
+    "char_ngrams": [
+      2,
+      3,
+      4
+    ],
+    "word_ngrams": [
+      1,
+      2
+    ],
+    "include_a": false,
+    "questions": [
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06",
+      "B07",
+      "B08",
+      "B09",
+      "B10",
+      "B11",
+      "B12"
+    ],
+    "seed": 42,
+    "epochs": 400,
+    "l2": 0.001,
+    "learning_rate": 0.05,
+    "reference_signature": "369405a7887a17b8b669ea2f9a3214ce9625fc62888f75bb0bf921fa1cea3966",
+    "samples": 100,
+    "sample_weighting": "equal-family-then-model",
+    "parameters": 65546,
+    "training_accuracy": 1.0
+  },
+  "reviewed": 100,
+  "pending_samples": 0,
+  "environment": {
+    "python": "3.12.10",
+    "numpy": "1.26.4",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "sha256": {
+    "residual_gate.py": "14a5e191a8ba6df27a3e408397806f4574ee2feca0f83c09df35a08e222321fa",
+    "neural_core.py": "1ba86afa7c5e7e0f1494232cbcdec8046b4f744faf59f69605f27ad62a497903",
+    "nlp_core.py": "c67489ae9afdd41b7e805faef0492931f3f6b8ad12640a1e0e220fe0522ae78d",
+    "feature_profiles.py": "7f2d7ba05f0a2c5344441e0bcefedff3eafd1f7cd66a24eb2e1875e0becad6e8",
+    "extra_features.py": "87666465b5cfa4a108bf90e65430035a8d12c805bc92f74574239e020aae9b0f",
+    "evaluate_residual_gate.py": "0411027b0fcb450981cc367e724705611dd4030e3b35e8cce65cfbf82c980da5",
+    "residual_demo.py": "3d5d8b63fc3d6574e8bc561ccb8a8a6b29055ecc7fc7119e31f6918419acbcb3",
+    "ai_review.py": "d47bce7d3d8436d8e5f120850df0367c960e91e39bb6b84dd1d372d2ee76c12a",
+    "ability.py": "d3f8f4de1ff08ea5d499c97c229cac3771a90e6968739592a631f9ed2e420cbb",
+    "dual_scoring.py": "cd23d05ce6d707b73d7db21025ab2958b2e40a26dc7610b64d50c6adae44f95c",
+    "result_scoring.py": "88c5a76d001316ddedcd7dceb03bbf54541f67b6724aa3c53e2b0acd339ac0bf",
+    "evaluation-residual-gate.json": "a0c2c95a4983bf958e0653a208cf4b224da6d69687b0e295b0e4f00b4b717caf",
+    "residual-gate.npz": "75c86815f2fc4385091c6aff6bd14981bfb6268761380420b0e79ca49b8c3cd3",
+    "sample_reviews.json": "3a6f6ae2fc881a9368364d6c0fc3a8968d96063c1d80e5465e6988dd4740f2da",
+    "result_reviews.json": "697263df1bdb5b9565941f92ad0214df6d79c2bba4d0537a96af1eeed91b97ca"
+  },
+  "frozen_eval_code_hash_matches": {
+    "residual_gate.py": true,
+    "evaluate_residual_gate.py": true
+  }
+}

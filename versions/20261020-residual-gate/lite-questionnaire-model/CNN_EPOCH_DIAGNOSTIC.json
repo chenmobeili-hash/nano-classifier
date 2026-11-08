@@ -1,0 +1,69 @@
+{
+  "version": "frozen-cnn-epoch-diagnostic-1",
+  "scope": "first fold only, no checkpoint selection; not complete cross-validation",
+  "rows": [
+    {
+      "epochs": 20,
+      "train": {
+        "correct": 45,
+        "count": 81,
+        "unweighted_ce": 1.456378698348999
+      },
+      "heldout_first_fold": {
+        "correct": 4,
+        "count": 18,
+        "unweighted_ce": 1.5786771774291992
+      },
+      "seconds": 4.867788599998676
+    },
+    {
+      "epochs": 80,
+      "train": {
+        "correct": 80,
+        "count": 81,
+        "unweighted_ce": 0.9559522271156311
+      },
+      "heldout_first_fold": {
+        "correct": 11,
+        "count": 18,
+        "unweighted_ce": 1.2975884675979614
+      },
+      "seconds": 5.546228699999119
+    },
+    {
+      "epochs": 200,
+      "train": {
+        "correct": 81,
+        "count": 81,
+        "unweighted_ce": 0.36145395040512085
+      },
+      "heldout_first_fold": {
+        "correct": 14,
+        "count": 18,
+        "unweighted_ce": 0.9166178107261658
+      },
+      "seconds": 12.881410500000129
+    }
+  ],
+  "heldout_sources": [
+    "claudehaiku5.5-05.txt",
+    "claudeopus5.5-01.txt",
+    "claudesonnet5.5-03.txt",
+    "deepseek-app-nonthinking-01.txt",
+    "deepseek-app-thinking-03.txt",
+    "deepseekv4.1flash-strong-03.txt",
+    "deepseekv4.1flash-weak-04.txt",
+    "deepseekv4.1flash1017-07.txt",
+    "deepseekv4.1flash1017-10.txt",
+    "GLM5.3FLASH-04.txt",
+    "GLM5.3FLASH-FREE-02.txt",
+    "gpt5.6luna-03.txt",
+    "gpt6-chat-03.txt",
+    "gpt6luna-02.txt",
+    "gpt6sol-03.txt",
+    "qwen-app-fast-05.txt",
+    "qwen-app-thinking-01.txt",
+    "qwen3.8flash-06.txt"
+  ],
+  "unchanged": "64 chars/question, vocab512, embedding8, conv3/5/7x12, dropout .45, AdamW .003 wd .025, seed42"
+}

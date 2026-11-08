@@ -1,0 +1,84 @@
+[A01]
+余数是 5。7^6 = 117649 ≡ -1 (mod 13)（因为 7^3=343≡5，5^2=25≡12≡-1），故 7^12 ≡ 1；123 = 12×10 + 3，所以 7^123 ≡ 7^3 = 343 ≡ 343 − 26×13 = 343 − 338 = 5 (mod 13)。
+
+[A02]
+是甲打破的。逐一验证：若甲打破，则甲的话（“乙打破的”）为假，乙的话（“不是我”）为真，丙的话（“不是甲打破的”）为假，恰有一句真，成立。若乙打破，甲真、乙假、丙真，两句真，矛盾；若丙打破，甲假、乙真、丙真，也是两句真，矛盾。故只能是甲。
+
+[A03]
+条件概率 = P(发生且阳性)/P(阳性) = (0.02×0.90)/(0.02×0.90 + 0.98×0.05) = 0.018/(0.018+0.049) = 0.018/0.067 = 18/67（约 26.9%）。
+
+[A04]
+35 个。恰有 4 个 1 且互不相邻，等价于把 4 个 1 放入 10 个位置，两两之间至少隔一个 0。用隔板法：设 1 之间及两端的 0 的数目为 g0+g1+g2+g3+g4 = 6，其中中间三个间隔 g1,g2,g3 ≥ 1。令 h_i = g_i − 1（i=1,2,3），则 h1+h2+h3+g0+g4 = 3，非负整数解数为 C(3+5−1, 5−1) = C(7,4) = 35。（等价公式：从 10−4+1=7 个位置中选 4 个。）
+
+[A05]
+最短路径为 A → C → B → E → D，总权重 7。比较各条路：A→B→D = 9；A→C→B→D = 2+1+5 = 8；A→C→D = 10；A→C→B→E→D = 2+1+3+1 = 7。最小者为 7。
+
+[A06]
+f(1)=1，f(2)=2，f(3)=4，f(4)=7，f(5)=13，f(6)=24，f(7)=44，f(8)=81。逐项验证：f(4)=4+2+1=7，f(5)=7+4+2=13，f(6)=13+7+4=24，f(7)=24+13+7=44，f(8)=44+24+13=81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+先手必胜，且保证获胜的第一步取法有两种：取 1 枚或取 3 枚。
+理由：先计算必败点（轮到谁取谁就输的剩余石子数）。记 P 为必败、N 为必胜：0 是 P；2 是 P（只能取 1，留下 1 给对方）；3、4 可一次取完，是 N；5、6 可留下 2，是 N；7 的所有取法留下 6、4、3（全为 N），故 7 是 P；同理 9 是 P（留下 8、6、5 全 N），12 是 P（留下 11、9、8 全 N），14 是 P（留下 13、11、10 全 N）。面对 15 枚时，取 1 枚留下 14（P 点），或取 3 枚留下 12（P 点），都把必败点丢给对方；而取 4 枚留下 11（N 点）不行。所以获胜第一步为：取 1 枚或取 3 枚，之后每轮都把剩余石子数保持在必败点集合 {2, 7, 9, 12, 14, …} 中。
+
+[A11]
+1488 条。计算方法（容斥原理）：
+总路径 = C(16,8) = 12870。
+经过 (2,2) 的 = C(4,2)×C(12,6) = 6×924 = 5544；
+经过 (4,5) 的 = C(9,4)×C(7,3) = 126×35 = 4410；
+经过 (6,3) 的 = C(9,3)×C(7,5) = 84×21 = 1764；
+同时经过 (2,2) 和 (4,5) 的 = 6×35 = 210；同时经过 (2,2) 和 (6,3) 的 = 6×21 = 126；同时经过 (4,5) 和 (6,3) 的 = 0（从 (4,5) 到 (6,3) 需向下走，不可能）。
+合法数 = 12870 − 5544 − 4410 − 1764 + 210 + 126 = 1488。
+
+[A12]
+26 个。可复核的计数方法：
+第一步，数“恰有 4 个 1 且无连续三个 1”的 8 位串（共 45 个）：把 4 个 1 按 1 的游程分段，各段长 ≤2，分段方案有 2+2、2+1+1（3 种排列）、1+1+1+1 三类；用间隔插 0 法（段间至少 1 个 0，共 4 个 0）分别得 10、30、5 个，合计 45。
+第二步，从中扣除首位与末位相同的：
+首位=末位=0：中间 6 位含 4 个 1 且无 111，枚举得 6 个；
+首位=末位=1：中间 6 位含 2 个 1，共 C(6,2)=15，扣除使开头成 111 的（中间前两位为 1，1 种）和使结尾成 111 的（中间后两位为 1，1 种），得 13 个。
+所以首位末位不同：45 − 6 − 13 = 26 个。
+
+[B01]
+7
+
+[B02]
+8392017465038271604938271604938271604938271604938271604938271604938271604938271604938271604938271604938271604938
+
+[B03]
+HTTHHTTHTHHTTHTHHTHTTHHTHTTHTHHTTHTHHTHTTHTHHTTHTHHTHTTHHTTHTHHTTHTHHTHTTHHT
+
+[B04]
+4, 1, 6, 2, 5, 3, 6, 6, 1, 4, 2, 5, 3, 1, 6, 4, 2, 5, 5, 1, 3, 6, 2, 4
+
+[B05]
+企鹅
+
+[B06]
+42
+
+[B07]
+我特别理解这种感觉——越想把计划做到完美，开头就越沉重，反而一直停在“准备”里。其实第一步不需要是最好的一步，只需要是一步。你可以试试把计划缩小到“今天能做完的十分钟版本”：比如不是“整理好整个项目”，而是“先写下三行草稿”或者“先打开文件看一眼”。做完之后你会发现，真正开始之后的阻力往往比想象中小得多，而且只有动起来，计划才会越来越清晰——完美的计划本来就是在做的过程中长出来的，不是在做之前想出来的。要不现在就花十分钟，从最小的一块开始？
+
+[B08]
+因为平均数只概括了数据的“中心”，却完全丢掉了数据的“分散程度”和分布形状。举个例子：两组人平均工资都是 8000 元，第一组可能是 7500、8000、8500，大家彼此差不多；第二组可能是 2000、3000、19000，虽然平均一样，但绝大多数人挣得很少，只有个别人挣得特别多。看平均数会觉得两组“一样好”，可生活在里面感受完全不同。此外，平均数还容易被极端值拉偏，也可能掩盖“多数人在一边、少数人在另一边”的偏斜分布。所以单看平均数会丢掉波动、极端值和分布形态这些关键信息，印象自然可能截然不同。
+
+[B09]
+可以改为：“小林告诉小周：‘小林明天不能来。’”（如果是小林不能来）；或者“小林告诉小周：‘你明天不能来。’”（如果是小周不能来）。原句的“他”指代不明，改写时需要明确到底是小林还是小周不能来。
+
+[B10]
+材料中没有任何关于这次选举获胜者的信息。获胜者姓名：材料未提供；票数：材料未提供；支持答案的原文：不存在——材料仅写着“虚构城市澄岚城在2041年举行了一次选举”，只说明了选举的地点和年份，没有提到任何候选人、结果或票数。
+
+[B11]
+两条要求无法同时满足：要求①需要的那个词组由“蓝色”和另一个字组成，而这个被组合进去的字正是要求②所禁止出现的字，因此只要满足①就必然违反②。本题无解，这是逻辑上的自相矛盾，而非信息不足。
+
+[B12]
+That's a great question, and it touches on something that surprises almost everyone the first time they see it. When we simulate randomness—say, by flipping a virtual coin thousands of times—we expect the results to look "smooth" and evenly mixed. But true randomness doesn't work that way. In a short run, streaks are not just possible; they're guaranteed. If you flip a coin 100 times, seeing six heads in a row has a pretty good chance of happening somewhere in the sequence, even though each individual flip is fair. Our brains are pattern-seeking machines, evolved to find faces in clouds and connections in coincidences, so when we look at random data, we naturally "see" clusters, trends, and hot streaks that aren't really there as designed features—they're just inevitable artifacts of chance. Statisticians sometimes call this the "clustering illusion." The key insight is that randomness is not the same as alternation or balance. A perfectly alternating sequence like HTHTHT actually looks suspiciously regular and would be a red flag in a real simulation. So when a simulation of randomness produces patterns, it's not malfunctioning—it's doing exactly what randomness does: producing clumps, gaps, and streaks that our pattern-hungry minds then interpret as meaning something.

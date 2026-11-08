@@ -1,0 +1,134 @@
+[A01]
+余数为5。由费马小定理，\(7^{12}\equiv1\pmod{13}\)。因为\(123=12\times10+3\)，所以
+\[
+7^{123}\equiv7^3=343\equiv5\pmod{13}.
+\]
+
+[A02]
+甲打破了杯子。甲和乙的话互为否定，因此其中恰有一句真话。要使三句话中只有一句是真的，丙的话必须为假，即杯子是甲打破的。
+
+[A03]
+\[
+P(\text{发生}\mid\text{阳性})
+=\frac{0.02\times0.90}{0.02\times0.90+0.98\times0.05}
+=\frac{18}{67}.
+\]
+
+[A04]
+35个。先排列6个0，它们前后及中间共有7个空隙。选择其中4个空隙，各放一个1，便能保证1互不相邻：
+\[
+\binom74=35.
+\]
+
+[A05]
+最短路径为 \(A\to C\to B\to E\to D\)，总权重为 \(2+1+3+1=7\)。
+
+[A06]
+\(f(1)\)至\(f(8)\)依次为：
+\[
+1,\ 2,\ 4,\ 7,\ 13,\ 24,\ 44,\ 81.
+\]
+所以 \(f(8)=81\)。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items":["pear","apple","banana","kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+先手必胜，唯一能保证获胜的第一步是取1枚，留下14枚。
+
+把轮到取石子的人必败的状态记为“败”：0枚为败；一个状态若能走到败态就是胜态，否则就是败态。依次递推，0至15枚中的败态为
+\[
+0,\ 2,\ 7,\ 9,\ 14.
+\]
+从15枚取1、3、4枚，分别留下14、12、11枚，只有14枚是败态。
+
+[A11]
+共有 **3882条**。
+
+用容斥原理。经过某个点的路径数，等于到达该点的路径数乘以从该点到终点的路径数。不加限制时有\(\binom{16}{8}\)条。
+
+经过三个禁点的路径数分别为：
+\[
+\begin{aligned}
+N_{(2,2)}&=\binom42\binom{12}{6}=5544,\\
+N_{(4,5)}&=\binom94\binom74=4410,\\
+N_{(6,3)}&=\binom93\binom72=1764.
+\end{aligned}
+\]
+同时经过两禁点的路径数为：
+\[
+N_{(2,2),(4,5)}=6\times10\times35=2100,
+\]
+\[
+N_{(2,2),(6,3)}=6\times5\times21=630.
+\]
+只能向右、向上，因此不可能同时经过\((4,5)\)和\((6,3)\)，也不可能经过全部三个禁点。故答案为
+\[
+12870-5544-4410-1764+2100+630=\boxed{3882}.
+\]
+
+[A12]
+共有 **26个**。
+
+先算首位为0、末位为1的情况。若有\(k\)段连续的1，就也有\(k\)段连续的0。每段1只能长1或2，而4个0分成\(k\)个非空段有\(\binom{3}{k-1}\)种方法。
+
+- \(k=2\)：1段长度只能为\((2,2)\)，共\(1\times3=3\)种。
+- \(k=3\)：1段长度为\((2,1,1)\)的排列，共\(3\times3=9\)种。
+- \(k=4\)：各段均长1，共1种。
+
+合计13种。反转字符串可一一对应到首位为1、末位为0的情况，因此总数为\(13\times2=26\)。
+
+[B01]
+7
+
+[B02]
+804719362519300867427762519048039582617346297008519183467206250683194763710582904819275368705364109232688047159642176038
+
+[B03]
+HHTHTTTHTHTTHHHHTTHTHTTTHTHHTTHHHTHTTTTHTHHHTHHTHTTTTHTTHTHHHTHHHHTHTTTHTTTHHHTH
+
+[B04]
+3,6,2,2,5,1,4,6,6,3,1,5,2,4,2,6,1,3,3,5,6,2,5,4
+
+[B05]
+水獭
+
+[B06]
+63
+
+[B07]
+你可能太想把这件事做好了，连开始都变得有压力。试试今天只做十分钟：写第一段、打开文件列三个要点，或者拿出需要的材料。先挑一个最小的动作，允许它做得粗糙。做完就可以停，下一步怎么改，等有了这一点成果再想。
+
+[B08]
+平均数只告诉你数据的平均水平，没有告诉你数据分布得有多散。
+
+比如两组人的等待时间分别是“5、5、5分钟”和“0、0、15分钟”，平均都是5分钟。但第一组每个人的体验都一样；第二组两个人完全不用等，一个人却等了很久。
+
+所以，要了解实际情况，还需要看数据之间的差异、有没有特别大的或特别小的数，以及多数数据集中在哪里。
+
+[B09]
+如果“他”指小林：小林告诉小周：“我明天不能来。”
+
+如果“他”指小周：小林告诉小周：“你明天不能来。”
+
+[B10]
+获胜者姓名和票数均无法从材料中确定。
+
+材料原文只有：“虚构城市澄岚城在2041年举行了一次选举”。这句话没有提供选举结果，因此不存在支持具体姓名或票数的原文。
+
+[B11]
+两项要求互相矛盾，无法同时满足。
+
+[B12]
+Randomness can produce patterns because it doesn’t have a rule against them. When you flip a fair coin, getting four heads in a row doesn’t make tails “due.” The next flip still has a fifty-fifty chance.
+
+Over a long sequence, you have many opportunities to see streaks, repeated blocks, or surprisingly neat alternations. A sequence that never allowed those patterns would actually be constrained: each new result would have to avoid certain earlier results.
+
+Most computer simulations use a deterministic algorithm to generate numbers that behave like random draws. A good simulation can therefore contain noticeable patterns without anything being wrong. The useful question is whether a pattern occurs more often than the model predicts—not simply whether you can spot one.

@@ -1,0 +1,25 @@
+[A01] 余数是 5。推导：7^2≡49≡10，7^3≡70≡5（mod 13）；又 7^6≡(7^3)^2≡25≡−1，所以 7^12≡1。123=12×10+3，故 7^123≡7^3≡5（mod 13）。
+[A02] 甲打破的。理由：甲说“乙打破的”和乙说“不是我打破的”互相否定，所以两句中必有一句真、一句假；三句话恰有一句为真，因此丙的话“不是甲打破的”必为假，即甲打破的。验证：甲假、乙真、丙假，恰有一句真。
+[A03] 18/67。计算：P(E|+)=P(+|E)P(E)/[P(+|E)P(E)+P(+|¬E)P(¬E)]=(0.9×0.02)/(0.9×0.02+0.05×0.98)=0.018/0.067=18/67。
+[A04] 35。把4个1排开，它们之间至少要放3个0隔开；剩下3个0可放入4个1形成的5个空隙（含两端），方案数为 C(3+5−1,5−1)=C(7,4)=35。
+[A05] 最短路径是 A→C→B→E→D，总权重为 2+1+3+1=7。其他路线：A→B→D=9，A→C→B→D=8，A→B→E→D=8，A→C→D=10，均不小于7。
+[A06] f(8)=81。f(1) 至 f(8) 依次为：1, 2, 4, 7, 13, 24, 44, 81。计算：f(1)=1，f(2)=1+1+0=2，f(3)=2+1+1=4，之后每项等于前三项之和。
+[A07] [2, 2, 2]
+[0, 1, 2]
+[A08] {"items":["pear","apple","banana","kiwi"]}
+[A09] [1,3]
+[A10] 先手必胜；唯一能保证获胜的第一步是取1枚（留下14枚）。理由：必败态为0、2、7、9、14枚；15枚时取1枚可把14枚（必败态）留给后手，而取3枚留12枚、取4枚留11枚都会给后手留下必胜态。
+[A11] 3882。方法：总路径数为 C(16,8)=12870。记 P1=(2,2)、P2=(4,5)、P3=(6,3)，经过单点的路径数分别为 C(4,2)C(12,6)=5544、C(9,4)C(7,4)=4410、C(9,6)C(7,2)=1764；同时经过 P1、P2 的为 C(4,2)C(5,2)C(7,4)=2100，同时经过 P1、P3 的为 C(4,2)C(5,4)C(7,2)=630，P2、P3 不可比，同时经过为0，三点无可行顺序。容斥得 12870−(5544+4410+1764)+(2100+630)=3882。
+[A12] 26。先数不含连续三个1、恰有4个1的长度8串：4个0形成5个空隙，每个空隙最多放2个1，解 2a+b=4 得 C(5,4)+C(5,1)C(4,2)+C(5,2)=5+30+10=45。再减去首末相同的：首末都为0时，中间6位需4个1、2个0，空隙法系数为6；首末都为1时，中间6位需2个1、4个0，共 C(6,2)=15，减去中间以11开头或结尾的各1种，得13。故 45−6−13=26。
+[B01] 7
+[B02] 730492815619482730566284059173507391648291628473053805729146472908153685130627492638475910704593862153892067419152748306
+[B03] HTTHTHHTTHTHTTHHTHTTHHTHTTHTHHTTHTHHTTHTHTHTTHHTHTTHHTHTTHHTHTTHHTHTTHTHTHTTHHTT
+[B04] 4,2,6,5,3,1,6,4,2,5,6,3,1,4,2,6,5,3,4,1,6,2,5,4
+[B05] 海豚
+[B06] 73
+[B07] 先别追求“完美开局”，把它改成“五分钟版本”：只做最小的一步，比如打开文档写下三行提纲，或把材料摊在桌上。做完这一步就允许自己停；通常开始之后，动力会自己跟上来。要不要我陪你把第一步拆得更小？
+[B08] 平均数只描述“重心”，不描述分散程度。比如两组数据的平均分都是70：一组是68、69、70、71、72，另一组是40、55、70、85、100。前者人人接近平均，后者有人很低有人很高；后者还可能被极端值拉高平均，让人误以为“大多数人都很高”。所以看数据还要看范围、波动和分布形状。
+[B09] 原句“他”指代不明，需明确：若不能来的是小林，改为“小林告诉小周，小林明天不能来”；若不能来的是小周，改为“小林告诉小周，小周明天不能来”。也可用直接引语：“小林对小周说：‘我明天不能来。’”或“小林对小周说：‘你明天不能来。’”
+[B10] 无法确定。材料只说明“虚构城市澄岚城在2041年举行了一次选举”，没有给出获胜者姓名，也没有给出票数。支持这一判断的原文就是：“虚构城市澄岚城在2041年举行了一次选举”。
+[B11] 无法同时满足。条件①要求答案包含“蓝色灯”，这必然出现“灯”字，直接违反条件②；因此不存在满足两条要求的答案。
+[B12] Here's the thing: randomness is about how each result is produced, not about the result looking messy. If you flip a fair coin 80 times, every exact sequence has the same tiny probability, but there are far more sequences with a mix of heads and tails than sequences that alternate perfectly. So streaks like HHHHH happen — not because the coin "wants" a pattern, but because there are many ways for clusters to appear. Our brains are pattern detectors, so we notice the streak and ignore the ordinary flips around it. A simulation can also show patterns if it uses a fixed seed, a weak random number generator, or too few trials. Short runs look lumpy; patterns become more stable only over many repetitions. Seeing a pattern in a small sample is often just a reminder that "random" means unpredictable in detail, not uniform at every moment.

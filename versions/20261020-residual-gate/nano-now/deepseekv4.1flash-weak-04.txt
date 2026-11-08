@@ -1,0 +1,86 @@
+[A01]
+7^123 mod 13 = 5。推导：7^1≡7，7^2≡49≡10，7^3≡10·7≡70≡5，7^4≡5·7≡35≡9，7^5≡9·7≡63≡11，7^6≡11·7≡77≡12≡−1（mod 13），故周期为12。123 = 12×10 + 3，所以 7^123 ≡ 7^3 ≡ 5。
+
+[A02]
+丙打破的杯子。理由：枚举三种可能——若甲打破，则甲假、乙真、丙假（丙说"不是甲"为假），恰一句真，成立；若乙打破，则甲真、乙假、丙真，两句真，不成立；若丙打破，则甲假、乙真、丙真，两句真，不成立。唯"甲打破"时恰有一句为真，故是甲打破的杯子。
+
+[A03]
+9/32。计算式：P(发生|阳性) = [P(阳性|发生)P(发生)] / [P(阳性|发生)P(发生) + P(阳性|未发生)P(未发生)] = (0.9×0.02) / (0.9×0.02 + 0.05×0.98) = 0.018 / (0.018 + 0.049) = 18/670 = 9/335 ≈ 2.69%。
+
+[A04]
+35 个。理由：4个1先把它们固定，剩余10−4=6个0，且4个1之间至少有3个0作间隔，先放3个0到3个空隙中，剩3个0自由分配到5个位置（4个1前、之间3处、之后1处），即 C(3+5−1, 3) = C(7,3) = 35。等价地也等于 C(10−4+1, 4) = C(7,4) = 35。
+
+[A05]
+最短路径 A→C→B→E→D，总权重 2+1+3+1 = 7。检验其他路径：A→C→D = 2+8 = 10；A→B→D = 4+5 = 9；A→B→E→D = 4+3+1 = 8；A→C→B→D = 2+1+5 = 8。均大于 7，故 7 为最短。
+
+[A06]
+f(8) = 44。f(1) 至 f(8)：1, 2, 4, 7, 13, 24, 44, 81。（递推：f(1)=f(0)+f(−1)+f(−2)=1+0+0=1；f(2)=f(1)+f(0)+f(−1)=1+1+0=2；f(3)=f(2)+f(1)+f(0)=2+1+1=4；依此类推。）
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items":["pear","apple","banana","kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+先手必败，没有能保证获胜的第一步取法。理由：设 n 为剩余石子数，必败局面为 n ∈ {2, 7, 10, 12, 15}。逐项可验证：n=0 是已取完（对上一位是胜势）；n=1,3,4 一步可取完，为胜势；n=2 只能取1剩1（对手取完）或取3/4超限，故必败；n=5→可取4剩1（胜势）、n=6→取4剩2、n=8→取1剩7、n=9→取3剩6，均为胜势；n=7 取1→6、取3→4、取4→3 全是对手的胜势，故7必败；同法得10、12、15必败。15 是必败局面，故先手无论取1（剩14）、取3（剩12）、取4（剩11），对手都能走到必败局面，先手无法必胜。
+
+[A11]
+8232 条。方法（容斥 + 组合计数）：令 F(a,b) = C(a+b, a) 表示从 (0,0) 到 (a,b) 的单调路径数。总路径 F(8,8) = C(16,8) = 12870。
+经过 (2,2)：F(2,2)·F(6,6) = 6·924 = 5544。
+经过 (4,5)：F(4,5)·F(4,3) = 126·35 = 4410。
+经过 (6,3)：F(6,3)·F(2,5) = 84·21 = 1764。
+三项合计 11718。两两同时经过：(2,2)+(4,5)：6·F(2,3)·F(4,3) = 6·10·35 = 2100；(2,2)+(6,3)：6·F(4,1)·F(2,5) = 6·5·21 = 630；(4,5)+(6,3)：126·F(2,−2) = 0（(4,5) 到不了 (6,3)）。两两合计 2730。三项同时：0（(4,5)→(6,3) 不可达）。
+合法数 = 12870 − 11718 + 2730 − 0 = 3882。修正：注意上面三项中每一项都是"经过该点"的总路径数，容斥结果为 12870 − (5544+4410+1764) + (2100+630+0) − 0 = 3882。
+
+[A12]
+27 个。方法（按首末位分两类，用"插入法/间隔法"核验）：
+类一（首位0、末位1）：需在第2–7位放3个1、3个0（共 C(6,3)=20 种），扣除三连1：3个1全在2–7内且位置连续，可取 (2,3,4)、(3,4,5)、(4,5,6)、(5,6,7)，以及跨越起点位的 (1,2,3)、(1,2,4)... 逐项枚举后非法7种，合法 13 个。
+类二（首位1、末位0）：同样 C(6,3)=20 种，非法6种（含位1与位2、3成三连的情形），合法 14 个。
+合计 13 + 14 = 27 个。（也可用状态机 f(n, 末两位, 1的个数) 递推：n=1 记 a=1,b=0；n=2 记 00→1, 01→1, 10→1, 11→0；n≥3 时 n2 接 0 得 n0（+1个0）、n1 接 1 得 n2（+1个1）；n=8 时统计 k=4 且首末位不同，得 27。）
+
+[B01]
+7
+
+[B02]
+48392015673482901746358209184736251093847562018394756201938475620193847562109483756201938475621094837562019384756210948375620193847562109
+
+[B03]
+HTHHTHTTTHTHHHTTHTHTTTHHHTHTTTHTHHTHTTHTHTTTHHHTHTTHTHTTHHTHTTTHTHHTHTTHTT
+
+[B04]
+4,2,6,1,5,3,3,6,2,4,1,5,6,3,2,4,5,1,2,6,4,3,5,1
+
+[B05]
+猫
+
+[B06]
+42
+
+[B07]
+先说一句：想做好，说明你在乎；卡住不是因为懒，是因为"完美"这个标准太大了，大到第一步迈不动。所以别想着把整件事做完，只想"能不能先做个五分钟的、允许很丑的版本"——写三行烂草稿、列五个关键词、打开空白文档打个标题都算。做完之后你会发现，最难受的从来不是做，是"还没开始"这件事一直挂着。今晚只定一个小到不可能失败的动作，做完就算赢，剩下的明天再收拾。
+
+[B08]
+平均数只告诉你"总量摊平后每人分到多少"，它把差别的形状抹掉了。比如两组数据平均都是75分：一组是74、75、76、75——大家挤在中间，印象是"整体踏实"；另一组是100、100、50、50——平均也是75，但你看到的是一半人满分、一半人不及格。平均数一样，故事完全相反。所以看数据除了看平均，还要看散得开不开（方差/标准差）、有没有极端值把平均拽偏（比如99、99、99、3 平均也是75）。平均数是"重心"，不是"全貌"。
+
+[B09]
+改法（消歧义）："小林告诉小周：'我明天不能来。'" 或 "小林告诉小周：'你明天不能来。'" 原句的问题在"他"指代不明，无法判断不能来的是小林还是小周，改成直接引语或写明姓名即可。
+
+[B10]
+材料中没有获胜者的姓名，也没有票数，无法给出。材料原文只有一句："虚构城市澄岚城在2041年举行了一次选举"。该句只说明"举行了选举"这一事实，未提及任何人名或票数，因此这两项信息在给定材料中不存在。
+
+[B11]
+本题的两个要求自相矛盾，无法同时满足：要求①必须恰好包含三个汉字"蓝色灯"，而"蓝色灯"这三个字本身就含有一个"灯"字，因此满足①必然使该答案中至少出现一个"灯"字，直接违反要求②"不得出现'灯'字"。故不存在同时满足①②的答案。若把②理解为"不得出现除'蓝色灯'之外的'灯'字"，则可给出：蓝色灯亮了又灭，蓝光铺满墙角。
+
+[B12]
+Here's the thing: randomness isn't the same as "no pattern." It means every flip or roll is independent — the coin doesn't remember the last ten results. But when you line up a lot of independent results, clumps and streaks are not a bug; they're exactly what randomness looks like.
+
+Imagine flipping a fair coin 8 times. There are 256 equally likely sequences, and "HHHHHHHH" is one of them — just as likely as "HTHHTTHT." So a run of 8 heads isn't the coin "being weird"; it's one specific outcome among 256, and it'll show up about once every 256 tries of 8 flips.
+
+People get fooled because our brains are pattern-hunting machines. We expect randomness to look nicely mixed, like HTHTHT. But truly random sequences are lumpier than that. In 80 flips, a streak of 5 or 6 in a row is actually pretty likely, not a miracle. And if a random generator smoothed everything out — no streaks, perfectly alternating, each digit appearing exactly the same number of times — that would be the suspicious sign, because real independence doesn't balance things on purpose.
+
+So the rule of thumb: the patternlessness is in the process (each event independent, fixed probabilities), not in the appearance. When you see a clump, ask "how many chances were there for a clump like this?" — usually a lot. That's why simulations of randomness produce patterns: patterns are what randomness looks like when you finally get enough of it to stare at.

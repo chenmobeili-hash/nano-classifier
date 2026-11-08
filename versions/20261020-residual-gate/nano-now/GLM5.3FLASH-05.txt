@@ -1,0 +1,107 @@
+[A01]
+  5。推导：7^2=49≡10，7^3≡70≡5，7^6≡5²=25≡12≡−1 (mod 13)，故 7^12≡1。123=12×10+3，所以 7^123≡7^3≡5。
+
+  [A02]
+  甲打破的。若甲打破：甲话假、乙“不是我”真、丙“不是甲”假——恰一句真，成立。若乙打破：甲真、丙真，两句真，排除
+  。若丙打破：乙真、丙真，两句真，排除。
+
+  [A03]
+  P = (0.02×0.90) / (0.02×0.90 + 0.98×0.05) = 0.018 / 0.067 = 18/67（约26.9%）。
+
+  [A04]
+  35。理由：设第 i 个 1 的位置为 pᵢ，因互不相邻有 pᵢ ≥ pᵢ₋₁+2；令 qᵢ = pᵢ−(i−1)，则问题化为从 1..7 中选 4
+  个数，共 C(7,4)=35。
+
+  [A05]
+  最短路径 A→C→B→E→D，总权重 2+1+3+1=7。（对比：A→B→D=9，A→C→D=10，A→C→B→D=8，A→B→E→D=8。）
+
+  [A06]
+  f(8)=81。列表：f(1)=1，f(2)=2，f(3)=4，f(4)=7，f(5)=13，f(6)=24，f(7)=44，f(8)=81。
+
+  [A07]
+  [2, 2, 2]
+  [0, 1, 2]
+
+  [A08]
+  {"items": ["pear", "apple", "banana", "kiwi"]}
+
+  [A09]
+  [1, 3]
+
+  [A10]
+  先手必胜，且唯一能保证获胜的第一步是取 1 枚（留下 14 枚）。
+  理由：设必败点（轮到谁走谁输）集合 P。递推：n=0 为 P；若 n 能一步走到 P 则 n 为必胜点，否则为 P。逐个算得
+  P = {0, 2, 7, 9, 14}（例如 2 只能走到 1；7 的三种走法到 6、4、3 全是必胜点；9 走到 8、6、5 全是必胜点；14
+  走到 13、11、10 全是必胜点）。从 15 出发：取 1 剩 14（P 点，必胜）；取 3 剩 12、取 4 剩
+  11，均为对方必胜点。故只有“取 1 枚”必胜，此后每轮把局面拉回 {0,2,7,9,14} 即可（对方从 14 取
+  1/3/4，分别回以取 4/4/1 到 9 或 7；从 9 取 1/3/4，分别回以取 1/4/3 到 7 或 2；从 7 取 1/3/4，分别回以取
+  4/4/3；从 2 对方只能取 1，你再取 1 收尾）。
+
+  [A11]
+  3882。计算（容斥）：总路径 C(16,8)=12870。经过各禁点的路径数＝(到该点)×(该点到终点)：
+  (2,2)：C(4,2)·C(12,6)=6×924=5544；(4,5)：C(9,4)·C(7,4)=126×35=4410；(6,3)：C(9,6)·C(7,2)=84×21=1764。
+  同时经过两禁点的需加回：(2,2)&(4,5)：6×10×35=2100；(2,2)&(6,3)：6×5×21=630；(4,5)&(6,3)
+  不可能同路（只向右上）。
+  答案 = 12870 − (5544+4410+1764) + (2100+630) = 12870 − 11718 + 2730 = 3882。
+
+  [A12]
+  26。方法：首位与末位不同分两个对称情形（0…1 与 1…0），各 13 个，共 26。以 0 开头、1 结尾为例：中间第 2–7
+  位恰含 3 个 1（第 8 位已是 1），共 C(6,3)=20 种放法；禁止 111：中间连续三元组
+  {2,3,4},{3,4,5},{4,5,6},{5,6,7} 共 4 种，另需位置 6、7 同时为 1（与末位构成 6,7,8）时第三个 1 可在
+  {2,3,4,5}，其中 {5,6,7} 已计入，故再增 3 种，共 7 种非法。20−7=13。
+
+  [B01]
+  7
+
+  [B02]
+  7931482065284710396250173849267391046825047291638501729483651027485936041927583691027485630192758463102958
+  47369102837465
+
+  [B03]
+  THHHTTHTTHHTHTHHTTHTTTHHHTTHTHHHTHTTHHTTTTHTHHHTHTHTTTHHTTHTHHTHTTTHHTTHTHHTTHTT
+
+  [B04]
+  3, 1, 6, 2, 5, 5, 4, 1, 3, 6, 2, 4, 6, 1, 3, 5, 2, 4, 6, 3, 1, 5, 2, 4
+
+  [B05]
+  企鹅
+
+  [B06]
+  57
+
+  [B07]
+  我特别理解这种感觉——有时候把计划做得越细，反而越不敢动手，因为只要不开始，它就还停留在“完美”里。要不咱们换
+  个思路：别想着把整件事做好，先挑计划里最小、最不吓人的一小块，今天花15分钟做掉它。做得糙一点完全没关系，糙
+  的第一版才是能被改进的东西，而完美的计划只是停在纸上的东西。你先动起来，我再陪你一起调整，怎么样？
+
+  [B08]
+  平均数只告诉你“整体中心”在哪，却不告诉你数据是怎么分布在中心周围的。比如两个小区的平均收入都是每月一万：一
+  个是大多数人都拿九千到一万一，另一个是少数人拿十万、大多数人只拿三千——数字一样，生活感受天差地别。这背后是
+  “离散程度”在起作用：数据越分散，极端值对平均数的拉动越大，普通个体的体验就越偏离平均值。另外数据的形状也有
+  影响：偶尔的极端情况（比如通勤时间平时20分钟、暴雨天两小时）会让人觉得“不可预测”，即使平均值和别处相同。所
+  以人类印象更多来自波动、极端案例和分布形状，而不是那个单一的平均数。
+
+  [B09]
+  这句话的问题在于“他”有歧义，可改写为：
+  若指小林：“小林告诉小周，小林自己明天不能来。”
+  若指小周：“小林告诉小周，小周明天不能来。”
+
+  [B10]
+  材料中没有提供这次选举获胜者的姓名和票数，因此无法给出这两项信息；材料中支持答案的原文仅有“虚构城市澄岚城
+  在2041年举行了一次选举”，其中不含获胜者相关内容。
+
+  [B11]
+  这两条要求互相矛盾，无法同时满足：“蓝色灯”这个词本身包含“灯”字，要求①（恰好三个“蓝色灯”）必然导致“灯”字出
+  现，与要求②（不出现“灯”字）冲突。因此本题不存在满足全部要求的答案。
+
+  [B12]
+  Here's the funny thing about randomness: it's never as smooth as we imagine. Picture flipping a fair coin.
+   Most people expect heads and tails to alternate politely—H, T, H, T. But real randomness is clumpy. In
+  just 100 flips, you'll almost certainly see a streak of 5 or 6 heads in a row, and that's not a
+  glitch—it's exactly what randomness looks like. A simulation repeats these random draws over and over, and
+   any limited slice of the results contains coincidences: clusters, gaps, streaks. Our brains, which
+  evolved to spot faces in clouds and predators in bushes, jump on those coincidences and call them
+  patterns. Sometimes there's a deeper story too: over many trials, the average settles down (that's the law
+   of large numbers), even while any short run looks wild and lopsided. So a simulation produces patterns
+  not because randomness secretly has a plan, but because chance is naturally lumpy, we only ever see a
+  small window of it, and we're pattern-finding machines doing our job a little too enthusiastically.

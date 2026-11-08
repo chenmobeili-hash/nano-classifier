@@ -1,0 +1,48 @@
+{
+  "role": "post-fit diagnosis on the published full-data weights; not a validation metric",
+  "date": "2026-10-27",
+  "reference_signature": "4aa85bb127a4113f67e78075e226ea276e46e78a1402032be1ee7e63f4d0800b",
+  "samples": 102,
+  "parameter_norms": {
+    "kernel": {
+      "l2": 1.2910062616590288,
+      "max_abs_change_from_init": 1.0633898495093774e-05
+    },
+    "hidden_bias": {
+      "l2": 0.0009078256526606447,
+      "max_abs_change_from_init": 0.0006865822324468488
+    },
+    "gate": {
+      "l2": 1.6091377878884469e-06,
+      "max_abs_change_from_init": 1.3860611255951953e-06
+    },
+    "gate_bias": {
+      "l2": 8.27442655309915e-06,
+      "max_abs_change_from_init": 8.27442655309915e-06
+    },
+    "W": {
+      "l2": 0.004040269436240388,
+      "max_abs_change_from_init": 0.001959846973527972
+    },
+    "b": {
+      "l2": 0.5398267655493199,
+      "max_abs_change_from_init": 0.342824616677093
+    }
+  },
+  "class_bias": {
+    "Claude": 0.342824616677093,
+    "DeepSeek": -0.28759817259759346,
+    "GLM": -0.07905917157676455,
+    "GPT": -0.20298278902898403,
+    "Qwen": 0.20909123575554311
+  },
+  "gate_on_valid_centers": {
+    "min": 0.500001969316948,
+    "max": 0.5000021666751642,
+    "std": 2.960030186224418e-08
+  },
+  "classifier_weight_max_abs": 0.001959846973527972,
+  "local_readout_max_absolute_on_current_library": 6.7471626199378e-05,
+  "readout_bias_max_absolute": 0.342824616677093,
+  "selection_enabled": false
+}

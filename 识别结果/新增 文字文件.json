@@ -1,0 +1,130 @@
+{
+  "file": "新增 文字文件.txt",
+  "baseline": {
+    "top": "GPT",
+    "candidate": "GPT",
+    "margin": 0.88251381601098,
+    "threshold": 0.07902400501232161,
+    "scores": {
+      "Claude": 0.01611021087462406,
+      "DeepSeek": 0.03539335976945603,
+      "GLM": 0.018994411469572425,
+      "GPT": 0.917907175780436,
+      "Qwen": 0.011594842105911501
+    }
+  },
+  "gated": {
+    "top": "GPT",
+    "candidate": "GPT",
+    "margin": 0.88251381601098,
+    "threshold": 0.07354860833836288,
+    "scores": {
+      "Claude": 0.01611021087462406,
+      "DeepSeek": 0.03539335976945603,
+      "GLM": 0.018994411469572425,
+      "GPT": 0.917907175780436,
+      "Qwen": 0.011594842105911501
+    }
+  },
+  "policy": {
+    "top": "GPT",
+    "candidate": "GPT",
+    "margin": 0.88251381601098,
+    "threshold": 0.07902400501232161,
+    "scores": {
+      "Claude": 0.01611021087462406,
+      "DeepSeek": 0.03539335976945603,
+      "GLM": 0.018994411469572425,
+      "GPT": 0.917907175780436,
+      "Qwen": 0.011594842105911501
+    }
+  },
+  "policy_enabled": false,
+  "nearest_samples": [
+    {
+      "source": "gpt6.1terra-01.txt",
+      "model": "gpt6.1terra",
+      "family": "GPT",
+      "distance": 0.0
+    },
+    {
+      "source": "deepseek-app-thinking-02.txt",
+      "model": "deepseek-app-thinking",
+      "family": "DeepSeek",
+      "distance": 0.5773673340102913
+    },
+    {
+      "source": "gpt6sol-01.txt",
+      "model": "gpt6sol",
+      "family": "GPT",
+      "distance": 0.6168625423880963
+    }
+  ],
+  "model_candidates": [
+    {
+      "model": "gpt6.1terra",
+      "family": "GPT",
+      "samples": 2,
+      "distance": 0.35197833656504257,
+      "nearest_sample": "gpt6.1terra-01.txt"
+    },
+    {
+      "model": "deepseek-app-thinking",
+      "family": "DeepSeek",
+      "samples": 3,
+      "distance": 0.67216731200878,
+      "nearest_sample": "deepseek-app-thinking-02.txt"
+    },
+    {
+      "model": "gpt6astra",
+      "family": "GPT",
+      "samples": 3,
+      "distance": 0.7193930619459309,
+      "nearest_sample": "gpt6astra-01.txt"
+    },
+    {
+      "model": "gpt6luna",
+      "family": "GPT",
+      "samples": 3,
+      "distance": 0.7269128655957205,
+      "nearest_sample": "gpt6luna-03.txt"
+    },
+    {
+      "model": "gpt6sol",
+      "family": "GPT",
+      "samples": 3,
+      "distance": 0.7383240867319886,
+      "nearest_sample": "gpt6sol-01.txt"
+    }
+  ],
+  "reference_matches": [
+    "gpt6.1terra-01.txt"
+  ],
+  "scores": {
+    "result_only": {
+      "provisional": 78,
+      "max": 100,
+      "pending": 1
+    },
+    "legacy": {
+      "provisional": 81.6,
+      "max": 100,
+      "pending": 8
+    },
+    "strict": {
+      "provisional": 82.44,
+      "max": 100,
+      "pending": 8
+    },
+    "format": {
+      "provisional": 90.0,
+      "max": 100,
+      "pending": 0
+    },
+    "combined": {
+      "provisional": 164.04,
+      "max": 200,
+      "pending": 8
+    }
+  }
+}

@@ -1,0 +1,75 @@
+[A01]
+5。推导：7^12 ≡ 1 (mod 13)，因为 7^6 ≡ -1 (mod 13)。123 = 12×10 + 3，所以 7^123 ≡ 7^3 = 343 ≡ 5 (mod 13)。
+
+[A02]
+甲打破了杯子。若甲打破：甲的话假，乙的话真（不是乙），丙的话假，恰一真，成立。若乙打破：甲的话真，乙的话假，丙的话真，有两句真，不成立。若丙打破：甲假，乙真，丙真，有两句真，不成立。
+
+[A03]
+18/67。计算：P(阳性) = 0.02×0.9 + 0.98×0.05 = 0.018 + 0.049 = 0.067，P(发生|阳性) = 0.018 / 0.067 = 18/67。
+
+[A04]
+35。把6个0排成一列，形成7个缝隙，在其中选4个放1，互不相邻即可，方法数为 C(7,4) = 35。
+
+[A05]
+最短路径为 A→C→B→E→D，总权重为 7（2+1+3+1）。其他路径：A→B→E→D 为 8，A→C→B→D 为 8，A→B→D 为 9，A→C→D 为 10。
+
+[A06]
+f(8) = 81。
+f(1)=1, f(2)=2, f(3)=4, f(4)=7, f(5)=13, f(6)=24, f(7)=44, f(8)=81
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+先手必胜。记 n 为剩余石子数，必败位置（P位）为 0, 2, 7, 9, 14。15 取 1 后剩 14，是 P 位，对手无论取 1、3 或 4 都会把局面留给先手可以回到 P 位的状态。唯一能保证获胜的第一步是取 1 枚，因为取 3 剩 12，取 4 剩 11，两者都是胜位。
+
+[A11]
+3882。用动态规划，记 f(x,y) 为到达 (x,y) 的路径数，f(x,y) = f(x-1,y) + f(x,y-1)，并令三个禁止点的 f 值为 0。沿行逐格计算即可得到 f(8,8) = 3882。作为检验，无障碍时总数为 C(16,8) = 12870，经过 (2,2) 的路径数为 6×1... 此处的核对可用 f(2,3) = 4，即 C(5,2) − 6 = 4，与表格一致。
+
+[A12]
+26。由对称性（反转字符串保持条件），首位为 1 末位为 0 与首位为 0 末位为 1 的数量相等，各为一半。对首位 1、末位 0 的情形，按 1 的连续段分类：段长只能为 1 或 2，且段数 k 与 0 的段数相同。k=2 时（1 的段为 2,2）有 3 种 0 的分法；k=3 时（段为 2,1,1 的排列）有 3×3 = 9 种；k=4 时（段为 1,1,1,1）有 1 种。合计 13 种，乘以 2 得 26。
+
+[B01]
+7
+
+[B02]
+482910637509182736455502749138661729048323581709467194026381390671582480415729361372860459629403871708635172945149820736
+
+[B03]
+HTHHTTHTHTTTHHHTHTTHHTTHTHHHTTTHTTHHTHHTHHTHTTTHHTTHTHHTTHTHHTHTTHHTHTTTHTHHTHTT
+
+[B04]
+3,6,1,5,2,4,6,1,3,5,2,6,4,1,5,3,2,6,4,1,3,5,2,4
+
+[B05]
+熊猫
+
+[B06]
+37
+
+[B07]
+我很理解这种感觉，总想把每一步都做到最好，反而卡在了起点。不如先允许自己做一个粗糙的版本，哪怕只花十分钟写下第一句话。计划往往是在动手之后慢慢修改完善的，而不是在开始之前想出来的。你可以先选一件最小的事，今天就做一点点，看看感觉会不会轻松些。
+
+[B08]
+平均数只告诉我们一组数据的“中心”在哪里，却没有说明数据围绕这个中心散布得有多开。举个例子，两个班级的数学平均分都是70分。第一个班大家的成绩都在65到75之间，比较集中；第二个班有人只考了40分，也有人考了100分，两极分化明显。虽然平均分相同，但如果只看平均数，就会误以为两个班的情况差不多，而实际上第二个班的学生差异很大，老师需要关注的重点也完全不同。所以，要理解一组数据，除了看平均数，还要看它的分散程度。
+
+[B09]
+如果“他”指小林，可以改为：“小林告诉小周，小林明天不能来。”
+如果“他”指小周，可以改为：“小林告诉小周，小周明天不能来。”
+两种改法都避免了代词指代不清的问题。
+
+[B10]
+材料中没有提到这次选举的获胜者姓名，也没有任何票数信息，因此无法给出这些内容。材料唯一的相关原文是：“虚构城市澄岚城在2041年举行了一次选举”，它只说明选举举行过，没有其他结果信息。
+
+[B11]
+两条要求无法同时满足：要求的三字词组本身就包含被禁止的那个字，因此不可能既包含该词组又完全不含那个字。
+
+[B12]
+Here's a fun way to think about it. A computer can't really flip a coin, so it uses a formula that spits out numbers that look random but are actually fully determined by a starting value. Even so, the results pass for random because real randomness doesn't look evenly spread out. If you flip a coin 100 times, you'll almost certainly see a streak of five or six heads in a row somewhere, and that streak feels like a pattern even though every flip was independent. People expect randomness to alternate neatly between heads and tails, but true randomness clumps. So when a simulation produces clusters, streaks, or gaps, it's usually doing exactly what randomness should do. The patterns you see are the normal shape of chance over many tries.

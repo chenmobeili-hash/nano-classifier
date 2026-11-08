@@ -1,0 +1,159 @@
+[A01]
+余数为 **5**。
+推导：13 是素数且 gcd(7,13)=1，由费马小定理 7^12 ≡ 1 (mod 13)。123 = 12×10 + 3，故 7^123 ≡ (7^12)^10 · 7^3 ≡ 7^3 = 343 (mod 13)。343 = 13×26 + 5，所以余 5。
+
+[A02]
+**甲**打破了杯子。
+理由：甲说“乙打破的”，乙说“不是我打破的”，两者互为矛盾，必有一真一假。已知三句中恰有一句为真，那句真话必在甲、乙之间，因此丙的话为假。“不是甲打破的”为假 ⇒ 是甲打破的。验证：甲打破时，甲话假、乙话真（确实不是乙）、丙话假，恰一真，成立。
+
+[A03]
+**18/67**（≈0.2687，约 26.87%）。
+计算式：
+P(发生|阳性) = P(阳性|发生)P(发生) / [P(阳性|发生)P(发生) + P(阳性|未发生)P(未发生)]
+= (0.9 × 0.02) / (0.9 × 0.02 + 0.05 × 0.98)
+= 0.018 / (0.018 + 0.049) = 0.018 / 0.067 = 18/67。
+
+[A04]
+**35 个**。
+计数理由：先排 6 个 0，它们连同首尾共形成 7 个“空位”（_0_0_0_0_0_0_）。往其中任取 4 个空位各放一个 1，则 4 个 1 必被至少一个 0 隔开，且任意合法串都能唯一这样得到。故为 C(7,4) = 35。
+
+[A05]
+最短路径 **A → C → B → E → D**，总权重 **7**（2 + 1 + 3 + 1）。
+穷举核对所有 A→D 路径：A-B-D=9；A-B-E-D=8；A-C-D=10；A-C-B-D=8；A-C-B-E-D=7。唯一最短为 7。
+
+[A06]
+f(8) = **81**。
+f(1) 至 f(8)：**1, 2, 4, 7, 13, 24, 44, 81**
+（f(1)=1+0+0=1；f(2)=1+1+0=2；f(3)=2+1+1=4；f(4)=4+2+1=7；f(5)=7+4+2=13；f(6)=13+7+4=24；f(7)=24+13+7=44；f(8)=44+24+13=81）
+
+[A07]
+```
+[2, 2, 2]
+[0, 1, 2]
+```
+
+[A08]
+```json
+{"items": ["pear", "apple", "banana", "kiwi"]}
+```
+
+[A09]
+```json
+[1, 3]
+```
+
+[A10]
+**先手必胜，且唯一能保证获胜的第一步是取 1 枚。**
+理由：记 P 位（轮到谁走谁输）与 N 位。可取 {1,3,4}，递推得 P 位恰为 n ≡ 0 或 2 (mod 7)：0,2,7,9,14,16,…（如 n=2 只能取 1 到 n=1 的 N 位；n=7 的三种走法到 6、4、3 全是 N 位；n=14 到 13、11、10 也全是 N 位）。
+15 ≡ 1 (mod 7)，是 N 位，先手必胜。三种首步：取 1 → 14 ≡ 0，是 P 位（胜）；取 3 → 12 ≡ 5，N 位（送给对方必胜）；取 4 → 11 ≡ 4，N 位（同样送胜）。故只有“取 1 枚”正确。
+后续维持策略：对方取 1 则我取 4（14→13→9），对方取 3 则我取 4（11→7），对方取 4 则我取 1（10→9），始终把石子数留在 {0,2} mod 7，直到取走最后一枚。
+
+[A11]
+**3882 条**。
+容斥法（单调路径数 = 组合数乘积）：
+- 总数 C(16,8) = 12870。
+- 过 A(2,2)：C(4,2)·C(12,6) = 6·924 = 5544
+- 过 B(4,5)：C(9,4)·C(7,4) = 126·35 = 4410
+- 过 C(6,3)：C(9,6)·C(7,2) = 84·21 = 1764
+- 过 A、B：C(4,2)·C(5,2)·C(7,4) = 6·10·35 = 2100
+- 过 A、C：C(4,2)·C(5,4)·C(7,2) = 6·5·21 = 630
+- 过 B、C：0（B(4,5) 与 C(6,3) 不可比，单调路径无法同时经过；三重交亦为 0）
+结果 = 12870 − (5544+4410+1764) + (2100+630) − 0 = 12870 − 11718 + 2730 = **3882**。
+可复核代码（DP，逐格累加，禁点置 0）：
+```python
+B = {(2, 2), (4, 5), (6, 3)}
+f = {(0, 0): 1}
+for y in range(9):
+    for x in range(9):
+        if (x, y) == (0, 0) or (x, y) in B:
+            continue
+        f[x, y] = f.get((x - 1, y), 0) + f.get((x, y - 1), 0)
+print(f[8, 8])   # 3882
+```
+我也手算了该 DP 作交叉验证：第 y 行末值 f(8,y) 依次为 1, 9, 39, 69, 165, 393, 873, 1863, 3882，与容斥结果一致。
+
+[A12]
+**26 个**。
+计数方法（按首位分类，中间 6 位选 3 个 1）：
+- 首位=1、末位=0：从 {1..6} 选 3 位放 1，须避开“含 {1,2}”（否则与首位构成 111）以及 {1,2,3}/{2,3,4}/{3,4,5}/{4,5,6} 这类三连。20 个三元子集中被排除 7 个（{1,2,3},{1,2,4},{1,2,5},{1,2,6},{2,3,4},{3,4,5},{4,5,6}），得 **13**。
+- 首位=0、末位=1：同样 20 个三元子集，排除 {1,2,3},{2,3,4},{3,4,5},{4,5,6} 这四组三连，以及含 {5,6} 的 {1,5,6},{2,5,6},{3,5,6}（与末位构成 111），共 7 个，得 **13**。
+合计 13 + 13 = **26**。
+交叉验证：恰 4 个 1 且无 111 的总数 = 按“游程分拆 + 空隙插空”计算，2 游程(2+2) C(5,2)=10，3 游程(2+1+1、1+2+1、1+1+2) 3×C(5,3)=30，4 游程(1+1+1+1) C(5,4)=5，共 45；其中首末相同者：首末皆 1 为 C(6,2)−2=13（排除 {1,2}、{5,6}），首末皆 0 为 {1..6} 中选 4 个不含三连 = 6；45 − 19 = 26，一致。
+
+[B01]
+7
+
+[B02]
+773091426855218407399016437258446218059308712564303396047182612580394785073192642948165073706349812518357206494620913857
+
+[B03]
+HTTHTTHHTHTHTHHTTHTHHHTTHTHHTTTHTTHHTHTHHHTHTTHTTHTTHHTHHTTHHTHHTTHTTHTHTHHTTHHT
+
+[B04]
+3,6,1,4,4,2,5,6,3,1,2,2,6,4,5,1,3,3,6,2,4,5,1,6
+
+[B05]
+水母
+
+[B06]
+73
+
+[B07]
+听起来你不是懒，是被“要做到完美”这句话压住了——计划越完美，开始的门槛就越高，因为任何真实的初稿都注定配不上脑子里那个版本。
+
+试试把目标从“做出好计划”换成“做出一个丑版本”：今天只做 15 分钟，只写第一页、只跑通最小的那一步，允许它烂。烂初稿是可以改的，空白页没法改。
+
+再补一句：完美的计划通常是拖延伪装成的美德。你需要的不是更多信息，而是一次低成本的失败——它会告诉你哪些担心是真的，哪些只是想象。做完那 15 分钟，回来告诉我实际卡在哪，我们再往下拆。
+
+[B08]
+关键在于：平均数只是把一堆数“压扁”成一个代表值，它没说这些数是怎么散开的。
+
+举个具体例子。两个班各 5 人，平均分都是 70：
+- 甲班：66, 68, 70, 72, 74 —— 大家都很接近 70。
+- 乙班：20, 40, 70, 100, 120 —— 平均也是 70，但有人几乎不及格，有人满分爆表。
+
+如果你只听到“平均 70”，两班听起来一模一样；可甲班是“整齐稳定”，乙班是“两极分化”，给你的印象和该做的决定完全不同。
+
+同样的道理也出现在生活里：某公司“人均年薪 50 万”，可能是一个老板 400 万加四个 10 万的员工，平均数被极端值拉高了；某条路“平均车流 30 辆/分钟”，可能是大部分时间空荡、高峰时堵死。
+
+所以看数据时，除了平均数，还要问三件事：数值散不散（波动范围）、有没有极端值、整体是什么形状。平均数是一个总结，不是全貌——它把差异抹平了，而差异往往才是最有信息量的部分。
+
+[B09]
+原句的“他”指代不明，可有两种意思，改写后分别是：
+
+1. 若不能来的是小林（最常见意图）：
+   - 小林对小周说：“我明天不能来。”
+   - 或：小林告诉小周，自己明天不能来。
+2. 若不能来的是小周：
+   - 小林通知小周：小周明天不必来了。
+   - 或：小林告诉小周，明天不用他（小周）来。
+
+通用改写原则：把间接引语里的第三人称换成直接引语，或用具体姓名／“自己”替代“他”。
+
+[B10]
+无法回答。材料中只有一句“虚构城市澄岚城在2041年举行了一次选举”，既没有候选人或获胜者的姓名，也没有任何票数数据。因此：
+- 获胜者姓名：材料未提供；
+- 票数：材料未提供；
+- 支持答案的原文：不存在——材料中没有任何一句涉及获胜者或票数。
+我可以引用的唯一原文就是那句“虚构城市澄岚城在2041年举行了一次选举”，它只能支持“发生过一次选举”这一点。按不调用工具、不编造的要求，我在此如实说明信息缺失，而不给出虚构的名字或数字。
+
+[B11]
+这两条要求互斥，不存在同时满足的答案，理由如下：①所要求出现三次的三字短语，其第三个字正是②明令禁用的那个字；因此只要写出该短语一次，就必然违反②，写出三次则违反三次。逻辑上“包含该短语”蕴含“包含被禁字”，两者不可能同真。
+
+按题目规则自行处理：我选择严格遵守②（可复核——本答案通篇不含被禁字），并说明①无法满足，因此不输出那个短语。若只保留①而放弃②，答案将是把该短语连写三遍，但那会与②冲突，故此处不予给出。
+
+[B12]
+Here's the thing that trips almost everyone up: "random" does not mean "evenly spaced out." It means each event is decided without looking at the others. And that independence is exactly what creates clumps.
+
+Picture flipping a coin 80 times. Your gut says it should look like HTHTHTHT — nicely alternating. But real randomness has no memory, so after three heads in a row, the coin is still perfectly happy to give you a fourth. Runs happen *because* nothing is preventing them. In fact, in 80 fair flips, seeing a run of five or six heads is not a glitch — it's expected. If your simulated flips came out perfectly alternating, *that* would be the suspicious result.
+
+Same story with dots scattered on a page. If you drop 200 points at truly random positions, you'll get empty regions and tight clusters. To get an even-looking spread, you'd have to actively push points apart — which means adding a rule, which means it's no longer random. So a good randomness simulator produces lumps, gaps, streaks, and near-duplicates. It's reproducing reality faithfully.
+
+Then there's the other half of the effect: you. Human brains are pattern-detection machines, tuned so hard that they find faces in toast and constellations in scattered stars. Given a wall of noise, your eyes will lock onto the one accidental shape — the streak, the cluster, the coincidence — and it will feel meaningful, because your brain can't help treating it that way. Statisticians even have a name for the general habit of seeing structure in noise: apophenia.
+
+Two more details worth knowing:
+
+- **The law of large numbers is about totals, not sequences.** It says that over a huge number of flips, the *fraction* of heads settles near 50%. It says nothing about the local order. You can have long weird stretches and still land right on 50% overall — the weirdness gets diluted by volume, not prevented.
+- **Coincidences are cheap when there are many chances.** One specific unlikely thing is rare. But a simulation generates millions of positions where *something* unlikely could occur, so "at least one surprising pattern shows up" becomes nearly certain. Rare per spot, expected per run.
+
+So when a simulation of randomness hands you a beautiful accidental pattern, it isn't broken and it isn't secretly rigged. It's doing the two things randomness always does: producing clumps because nothing forbids them, and meeting a brain that is wired to notice clumps. The interesting question isn't "is this pattern real?" — it's "how many chances did this pattern have to appear?"

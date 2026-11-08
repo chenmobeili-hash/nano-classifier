@@ -1,0 +1,120 @@
+[A01]
+余数为 **5**。
+推导：7 与 13 互质，由费马小定理 7¹² ≡ 1 (mod 13)。123 = 12×10 + 3，故 7¹²³ ≡ 7³ (mod 13)。7² = 49 ≡ 10，7³ ≡ 7×10 = 70 ≡ 70 − 65 = 5 (mod 13)。
+
+[A02]
+**甲打破了杯子。**
+逐个假设（只有一人说真话）：
+- 甲打破：甲“乙打破”假，乙“不是我”真，丙“不是甲”假 → 恰一句真，符合。
+- 乙打破：甲真，乙假，丙“不是甲”真 → 两句真，矛盾。
+- 丙打破：甲假，乙真，丙真 → 两句真，矛盾。
+唯一一致的情形是甲打破。
+
+[A03]
+P(发生 | 阳性) = (0.02 × 0.90) / (0.02 × 0.90 + 0.98 × 0.05) = 0.018 / (0.018 + 0.049) = 0.018 / 0.067 = **18/67** ≈ 0.2687（约 26.9%）。
+
+[A04]
+**35 个。**
+先排好 6 个 0，它们产生 7 个可放位置（含两端）：_ 0 _ 0 _ 0 _ 0 _ 0 _ 0 _。要使 1 互不相邻，只需从这 7 个位置中选 4 个各放一个 1，即 C(7,4) = 35。（等价公式 C(n−k+1, k) = C(10−4+1, 4) = C(7,4)。）
+
+[A05]
+最短路径 **A → C → B → E → D，总权重 7**。
+比较各条：A-C-B-E-D = 2+1+3+1 = 7；A-B-E-D = 4+3+1 = 8；A-C-B-D = 2+1+5 = 8；A-B-D = 9；A-C-D = 10。最小为 7。
+
+[A06]
+**f(8) = 81。**
+f(1)=1, f(2)=2, f(3)=4, f(4)=7, f(5)=13, f(6)=24, f(7)=44, f(8)=81。
+（递推示例：f(4)=f(3)+f(2)+f(1)=4+2+1=7；f(8)=44+24+13=81；注意 n<0 时 f(n)=0，故 f(1)=1+0+0=1。）
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+**先手必胜，能保证获胜的第一步只有一种：取 1 枚（留下 14 枚）。**
+理由：从 0 枚起递推必败态（轮到谁谁输）为 n = 0, 2, 7, 9, 14…，规律是 n ≡ 0 或 2 (mod 7)。验证：0 输；2 只能到 1（胜态）故为败态；7 可到 6,4,3 皆胜态故败；9 可到 8,6,5 皆胜态故败；14 可到 13,11,10 皆胜态故败。15 ≡ 1 (mod 7) 是胜态，可走到的败态只有 14（取 1）；取 3 到 12、取 4 到 11 都是对手的胜态。因此唯一取胜首步是取 1 枚，此后无论对手取 1/3/4，都把它再次送回 ≡0 或 2 (mod 7) 的局面，最终由先手取走最后一枚。
+
+[A11]
+**3882 条。**
+方法一（容斥，路径数 P(p,q)=C(dx+dy, dx)）：
+- 总数 C(16,8) = 12870
+- 过 (2,2)：C(4,2)·C(12,6) = 6×924 = 5544
+- 过 (4,5)：C(9,4)·C(7,4) = 126×35 = 4410
+- 过 (6,3)：C(9,6)·C(7,2) = 84×21 = 1764
+- 同时过 (2,2) 与 (4,5)：C(4,2)·C(5,2)·C(7,4) = 6×10×35 = 2100
+- 同时过 (2,2) 与 (6,3)：C(4,2)·C(5,4)·C(7,2) = 6×5×21 = 630
+- (4,5) 与 (6,3) 互不可达，交集 0；三重交集 0
+结果 = 12870 − 11718 + 2730 = **3882**。
+方法二（DP 复核，dp[x][y]=dp[x−1][y]+dp[x][y−1]，禁点置 0）：逐行得到 dp[8][8] = 3882，两种方法一致。
+
+[A12]
+**26 个。**
+按首位分两类，中间 6 位需恰含 3 个 1（C(6,3)=20 种选位）。
+- 首位 1、末位 0：非法为同时选 2、3 位（构成前 1,1,1）或中间出现三连：{2,3,4},{2,3,5},{2,3,6},{2,3,7},{3,4,5},{4,5,6},{5,6,7} 共 7 种，合法 20−7 = 13。
+- 首位 0、末位 1：对称地，非法为同时选 6、7 位（与末位构成三连）或中间三连：{2,3,4},{3,4,5},{4,5,6},{5,6,7},{2,6,7},{3,6,7},{4,6,7} 共 7 种，合法 13。
+合计 13 + 13 = **26**。
+
+[B01]
+7
+
+[B02]
+471928305630827461957462059183295736104861308475293820561749571928306420486139756372910485194736025882503761944601928375
+
+[B03]
+HTTHHTHTTTHHTHTTHHTHTHTHHTTHTHHTHTTHTHHTHHTHTTHHTTHTHTTHHTHTTTHTHHTHHTHTTHHTHTTH
+
+[B04]
+3,6,1,4,4,2,5,3,6,2,1,3,5,4,6,2,2,5,1,6,3,4,6,5
+
+[B05]
+猫
+
+[B06]
+73
+
+[B07]
+完美其实是个特别好的目标，只是它不适合当第一步——它是走完几步之后才看得见的东西。你迟迟没开始，多半不是懒，是怕做出来的东西配不上脑子里那个版本，所以干脆不做。
+
+那就先把标准降下来：允许自己做一份“明知会被推翻”的草稿。比如写方案，别想着写完整份，今天只写三句话的目的和范围；做设计，先画最丑的一版线框。做完就停，别优化。
+
+再给这一步一个荒谬小的量级——五分钟，或者“只打开文件写下标题”。启动才是最贵的成本，一旦开始，改比新建容易得多，你会自然往下做。
+
+顺便把“完成”重新定义一下：不是“无可挑剔”，而是“能让某个人给你一句反馈”。完美是私下反复打磨的结果，不是第一次亮相的样子。你先迈出那一小步，剩下的我陪你一版一版改。
+
+[B08]
+因为平均数只告诉你“重心在哪”，不告诉你“数据散成什么样”。
+
+举个直观的例子：两个班的数学平均分都是 50 分。甲班每个人都在 48 到 52 之间，分数挤成一团；乙班一半人考 0 分，一半人考 100 分。平均数一样，但你听到“全班都差不多”和“半数人完全不会”的感觉完全不同——前者稳，后者其实藏着大问题。
+
+差别来自三件事：一是**分散程度**，数据是紧贴平均数还是散得很开；二是**极端值**，一两个特别高或特别低的数会把“平均”拉得脱离日常感受（一个小组里来了个百万富翁，全组“平均身家”就失真了）；三是**形状**，数据是均匀铺开、两极分化，还是大多数偏低只有少数极高。
+
+所以看平均数时，顺手问一句“大家实际都落在哪个范围”，往往比这个单一数字有用得多。
+
+[B09]
+原句的“他”指代不明，需按真实意思选一种：
+- 指小林：小林说明天不能来，他把这件事告诉了小周。
+- 指小周：小林告诉小周：“你明天不能来。”（或转述为：小林告知小周，小周明天不能到场。）
+- 指第三方：小林告诉小周，另一个人（如“小李”）明天不能来。
+
+[B10]
+无法回答。所给材料只有一句“虚构城市澄岚城在2041年举行了一次选举”，其中没有获胜者姓名，也没有票数，更没有可引用的支持原文。若给出任何姓名或票数，都是凭空编造，不属于“仅根据材料回答”。可以确定的只有：选举存在、地点澄岚城、年份2041，且该城市为虚构。
+
+[B11]
+两条要求互相矛盾，无法同时满足：要求①指定的三个字“蓝色灯”本身包含“灯”字，而要求②禁止“灯”字出现。任选其一才有答案：
+- 以②（不得出现“灯”字）为准，本题答案为：蓝色的光
+- 以①（必须恰含那三个汉字）为准，本题答案为：蓝色灯
+
+[B12]
+Here's the thing about randomness: it doesn't owe you an even spread. It just doesn't care.
+
+A fair coin has no memory, so nothing pushes it to "take turns" between heads and tails. Runs like HHHHH are perfectly ordinary — they're just rare one at a time, and rare things happen constantly when you do something thousands of times. With enough trials, there will almost surely be a stretch of ten heads in a row somewhere. Not because the coin got stuck, but because among millions of possible positions, one of them had to be the weirdest stretch you'd ever see. That's the "law of truly large numbers": any unlikely coincidence becomes likely once you've sampled enough opportunities for it.
+
+On top of that, you're a pattern-detecting machine. Your brain evolved to spot the leopard in the grass, so it flags clumps, streaks, and "hot hand" sequences in noise — and you remember the hits and forget the thousands of nothing-butterfly stretches. Meanwhile, the average over the long run really does settle down toward 50/50, and that convergence looks smooth and orderly, which is itself a pattern.
+
+One last twist: computers can't roll dice. They fake randomness with math — a deterministic formula that starts from a seed number. Give it the same seed and it replays the exact same "random" sequence, patterns and all. That's why you can reproduce a surprising result on purpose.

@@ -1,0 +1,97 @@
+[A01]
+5。推导：7^2≡49≡10，7^3≡10×7=70≡5（mod 13），故 7^6≡5^2=25≡−1，于是 7^12≡1。而 123=12×10+3，所以 7^123≡(7^12)^10×7^3≡7^3≡5（mod 13）。
+
+[A02]
+甲打破了杯子。逐一检验：若乙打破，则甲的话为真、丙的话（“不是甲”）也为真，两句为真，不合；若丙打破，则乙的话为真、丙的话也为真，同样是两句真，不合；若甲打破，则甲的话（“乙打破的”）为假、乙的话（“不是我”）为真、丙的话（“不是甲”）为假，恰好一句为真，符合条件。
+
+[A03]
+精确分数：18/67（约 26.87%）。计算式：P(发生|阳性)=[P(发生)×P(阳性|发生)]/[P(发生)×P(阳性|发生)+P(未发生)×P(阳性|未发生)]=(0.02×0.90)/(0.02×0.90+0.98×0.05)=0.018/(0.018+0.049)=0.018/0.067=18/67。
+
+[A04]
+35。理由：4个1互不相邻，等价于4个1之间至少各留一个0，把“1后面跟的0”作为间隔后，问题变成在 10−4+1=7 个可用位置中选4个放1，即 C(7,4)=35。
+
+[A05]
+路径 A→C→B→E→D，总权重 7（2+1+3+1=7）。比较：A→B→D=9，A→C→D=10，A→C→B→D=8，A→B→E→D=8，A→C→B→E→D=7，故最短为7。
+
+[A06]
+f(8)=81。f(1) 至 f(8) 依次为：1, 2, 4, 7, 13, 24, 44, 81。（f(0)=1，逐项相加：1+1+0→f(2)=2 起为 2,4,7,13,24,44,81。）
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+先手必胜；能保证获胜的第一步只有一种：取1枚，剩下14枚。
+理由：设剩 n 枚时轮到取的人处于“必败态”记为 P。可以验证 P={n≡0 或 2 (mod 7)}：从 n≡0 或 2 的状态取1、3、4 后分别落到 n≡6/4/3 或 1/6/5，都是必胜态；反过来任何 n≡1、3、4、5、6 都有一步走到 P（取1、取1、取4、取3、取4）。15≡1 (mod 7) 是必胜态，取1枚后剩14≡0，把必败态交给对手；若取3剩12（≡5）、取4剩11（≡4），对手都有必胜走法，所以只有取1枚可行。
+
+[A11]
+3882。可复核方法（容斥）：总路径 C(16,8)=12870。经过给定点 (a,b) 的路径数为 C(a+b,a)·C(16−a−b,8−a)：
+经(2,2)：C(4,2)·C(12,6)=6×924=5544；
+经(4,5)：C(9,4)·C(7,3)=126×35=4410；
+经(6,3)：C(9,6)·C(7,2)=84×21=1764。
+同时经过两个点（只有坐标可比较的点对才可能有路径）：
+(2,2)→(4,5)：6×C(5,2)×35=2100；(2,2)→(6,3)：6×C(5,4)×21=630；(4,5)与(6,3)不可比较，为0；三点同时经过不可能。
+容斥：12870−(5544+4410+1764)+(2100+630+0)−0=12870−11718+2730=3882。
+
+[A12]
+26。可复核方法：先数“恰有4个1且不含111”的8位串总数：C(8,4)=70；减去含某个三连1的（6个起始位置，每个再任选1个1有5种，共6×5=30）；加回同时含两个三连1的（即4个连续1，共5个），得 70−30+5=45。再数其中首末相同的：
+①首末都是0：中间6位放4个1且无111，C(6,4)=15，减去含三连1的（4个三连×各3种=12），加回4连1的（3个），得 15−12+3=6；
+②首末都是1：中间6位放2个1，唯一禁忌是位置2、3同时为1和位置6、7同时为1，C(6,2)−2=15−2=13。
+首末相同共 6+13=19，故首末不同为 45−19=26。
+
+[B01]
+7
+
+[B02]
+738204915640283716559183740265554012983720664958138731204596334975820164908127351587263904920351684747520981366014927538
+
+[B03]
+HTHHTHTTHTTHHTHTTTHHHHTHTHHTTHTTHHTHTHHTHTHTTHHTHTTHTHHHTTHTHHTTHTHHTHTTHTHHTTHH
+
+[B04]
+3,6,1,4,5,2,6,3,1,5,4,2,6,6,1,3,2,5,4,1,6,3,2,4
+
+[B05]
+猫
+
+[B06]
+63
+
+[B07]
+这事我懂——想完美的计划，常常是在等一个“绝不会出错”的保证，可那个保证永远不会来。
+不如把门槛砍到小得可笑：只写三行提纲、只打开文档、只发一条问路的微信，五分钟内能做完的一步就行。做完就允许自己收工，明天再决定要不要继续。计划是走出来的，不是想出来的；先迈一步，信息才会回来，漏洞也会自己冒出来。
+你想做的那件事是什么？说给我听，我陪你把它切成今天这一步。
+
+[B08]
+因为平均数只回答了“总量摊平后每人分到多少”，它丢掉了两个更要紧的东西：数据散得开不开，以及有没有特别大或特别小的值。
+举个例子：甲班五人考 80、80、80、80、80，平均80；乙班五人考 100、100、60、60、80，平均也是80。可印象完全不同——甲班是“大家都稳”，乙班是“两极分化，有人满分有人刚及格”。
+再比如两个小区月收入平均都是8000元：一个小区几乎人人7000到9000，另一个是多数人3000到4000、少数人月入十万。第二种情况里，“平均8000”对大多数住户毫无代表性，但数字照样是8000。
+所以平均数是个压缩包：方便，但有损。要知道两组数据像不像，还得看它周围散得开不开、有没有极端值、数据是怎么分布的。这些信息一补上，两个“同一个平均数”就会给人完全不同的印象。
+
+[B09]
+原句的毛病在“他”指代不明（可能指小林，也可能指小周或第三方）。指明是谁就清楚了，例如：
+· 小林对小周说：“我明天不能来。”（“他”指小林）
+· 小林对小周说：“你明天不能来。”（“他”指小周）
+· 小林对小周说：“小陈明天不能来。”（“他”指第三方）
+若不想写出姓名，可改为：“小林告诉小周，小林自己明天不能来。”或“小林告诉小周，小周明天不能来。”
+
+[B10]
+材料未提供获胜者姓名与票数，因此无法给出，正确的回答是“材料中没有这些信息”。材料中相关的原文只有一句：“虚构城市澄岚城在2041年举行了一次选举。”该句只能支持“澄岚城在2041年举行过一次选举”这一事实，不包含选举结果、获胜者或任何票数。
+
+[B11]
+本题两条要求互相矛盾，无法同时满足：要求①要使答案中出现“蓝”“色”“灯”这三个字（无论理解为这三个字各出现一次，还是理解为“蓝色灯”这一串三字），都必然写入“灯”字；而要求②又禁止出现“灯”字。①成立则②必被违反，②成立则①必被违反，故不存在同时满足两者的文本——本题无解，在此如实说明。若只保留要求②，同一意思可写成：那盏蓝色的东西亮着，一直亮到天亮。
+
+[B12]
+Think about what "random" actually promises. It doesn't promise the results will look messy, evenly mixed, or nicely spread out. It only promises you can't predict the next one. Everything else — the clumps, the streaks, the little clusters — is allowed, and with enough tries it's not just allowed, it's expected.
+
+Flip a coin 100 times and you'll very likely see a run of five or six heads somewhere. People see that and think the coin is rigged or the simulation is broken. But how many different 100-flip sequences are there? Two to the hundredth power — more than the number of atoms in the observable universe. Every specific sequence is equally absurdly unlikely, including HHHHHH followed by nonsense. The one with the streak isn't special; it's just the one you noticed. HHHHHH and HTHHTH are equally improbable on paper, but only one of them feels like a message.
+
+There's a second thing going on: your brain is a pattern detector that would rather be wrong than miss something. That's the same wiring that lets you spot a friend's face in a crowd. Hand it random data and it will happily find a face — a lucky cluster, a cold streak, a shape. The simulation isn't lying to you; you're just doing your job too well.
+
+And a final twist: most computer "randomness" isn't random at all. It's a deterministic recipe — same starting number, same sequence, every time. That's how a simulation can be replayed exactly. Numbers from a formula can still pass every statistical test for randomness, because randomness isn't about how a sequence looks; it's about whether you could have predicted the next value in advance. Which is the real lesson: a pattern you can see afterward is not the same as a pattern you could have used beforehand.

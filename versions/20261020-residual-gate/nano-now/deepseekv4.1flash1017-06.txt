@@ -1,0 +1,79 @@
+[A01]
+7^123 ≡ 5 (mod 13)。推导：7^2≡49≡10，7^3≡70≡5，7^6≡5^2=25≡12≡−1，故 7^12≡1；123=12×10+3，所以 7^123≡7^3≡5。
+
+[A02]
+甲（A）打破的。理由：甲说“乙打破的”与乙说“不是我”互为否定，二者必有一真；三句话恰有一真，故丙的话必假，即“不是甲打破的”为假，所以是甲打破的。（验证：甲假、乙真、丙假，恰一真。）
+
+[A03]
+18/67。计算式：P(E|+) = P(+|E)P(E) / [P(+|E)P(E) + P(+|¬E)P(¬E)] = (0.9×0.02) / (0.9×0.02 + 0.05×0.98) = 0.018 / (0.018+0.049) = 0.018/0.067 = 18/67。
+
+[A04]
+35。方法：4 个 1 互不相邻，等于从 10 个位置中选 4 个且两两至少隔 1 位，数量为 C(10−4+1, 4)=C(7,4)=35。
+
+[A05]
+最短路径 A→C→B→E→D，总权重 7（2+1+3+1）。对照：A→C→B→D=8，A→B→E→D=8，A→B→D=9，A→C→D=10。
+
+[A06]
+f(8)=81。f(0)=1，f(1)=1，f(2)=2，f(3)=4，f(4)=7，f(5)=13，f(6)=24，f(7)=44，f(8)=44+24+13=81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+先手必胜，且唯一能保证获胜的第一步是取 1 枚。理由：把“轮到你取时只剩 n 枚”的必败局面记为 n，则必败局面为 0、2、7、9、14、…（周期 7：0、2 后每隔 7 重复）。15 枚时先手取 1 枚留 14 枚（必败局面）即可取胜；取 3 留 12、取 4 留 11 都会把必胜局面交给对手，故只有取 1 枚。
+
+[A11]
+3882 条。方法：总路径 C(16,8)=12870。记经某点的路径数 = 到该点路径×该点到终点路径：
+经(2,2)：C(4,2)×C(12,6)=6×924=5544；
+经(4,5)：C(9,4)×C(7,4)=126×35=4410；
+经(6,3)：C(9,6)×C(7,2)=84×21=1764；
+同时经(2,2)与(4,5)：6×C(5,2)×35=6×10×35=2100；
+同时经(2,2)与(6,3)：6×C(5,4)×21=6×5×21=630；
+(4,5)→(6,3) 需向左，组合数为 0；三点同时经 0。
+容斥：12870−(5544+4410+1764)+(2100+630+0)=12870−11718+2730=3882。
+
+[A12]
+26。方法：先用“4 个 1 与 4 个 0、无连续三个 1”计数，等于 (1+x+x²)^5 中 x⁴ 的系数：2+2+0+0+0 型 10 种，2+1+1+0+0 型 30 种，1+1+1+1+0 型 5 种，共 45。再算首位末位相同的情形：首末皆 1 时，中间 6 位取 2 个 1 且避开 {2,3}、{6,7}，共 C(6,2)−2=13；首末皆 0 时，中间 6 位取 4 个 1 且不含连续三个 1，枚举为 6 种（如 110110 移位等）。故首末相同共 19 种，所求 45−19=26。
+
+[B01]
+7
+
+[B02]
+482937105670512843962918456730830471928516420935785729138064349582071695637142802178306945608459273149370615287852149063
+
+[B03]
+HTHTTHTHHTTTHHTHTTHTHHTHTTTHHTTHTHHTHTTHHHTTHTHTHTTTHTHHHTTHHTHTTHHTHTTHHTTHTHHT
+
+[B04]
+4,2,6,1,3,6,2,5,1,4,6,3,2,1,5,6,4,3,6,2,5,1,4,6
+
+[B05]
+猫
+
+[B06]
+73
+
+[B07]
+这种感觉我懂——你不是懒，是想一次就做到最好，结果被“完美”卡住了。试一个小动作：把计划砍到“十分钟能做完的版本”，比如只写下第一句话、只做第一步、只花十分钟。先让它以粗糙的样子存在，之后再改；不完美地开始，比完美地停在纸上更接近你想要的结果。今天只定一个起点，比如现在打开文件写三行，就算赢。
+
+[B08]
+平均数只告诉你“整体重心在哪”，不告诉你“数据散得开不开”。比如两组同学平均分都是 75：第一组几乎人人都在 70 到 80 之间，人人都差不多；第二组一半考 60、一半考 90，平均也是 75，但内部差距大得多。所以看数据不能只看平均数，还要看波动幅度（最大最小、方差这类“分散程度”的指标），否则同样的平均数会给人完全不同的感受。
+
+[B09]
+歧义在于“他”指谁。若指小林自己：“小林对小周说：‘我明天不能来。’”若指小周：“小林告诉小周：‘你明天不能来。’”按原句最自然的理解是前者，可改为前者；需要指小周时用后者。
+
+[B10]
+无法给出。材料只写了“虚构城市澄岚城在2041年举行了一次选举”，没有获胜者姓名、票数，也没有任何可支持这两个答案的原文，故材料不支持回答，不能凭空补出。
+
+[B11]
+无法同时满足：要求①规定答案中必须出现“蓝色灯”，其中含“灯”字；要求②禁止出现“灯”字。两者直接冲突，任何文本都无法同时成立，因此本题无解。
+
+[B12]
+Here's a way to think about it. When you flip a coin 10 times, you expect about five heads — but "about" is doing a lot of work. The coin doesn't remember being tails last time; every flip is fresh, so any specific sequence like HTHHTHTTHT is just as likely as HHHHHHHHHH. That's the key: randomness doesn't mean "evenly mixed", it means "no memory and no preference". Now imagine running a simulation of thousands of flips. Each run is random, but the *scores* (say, longest run of heads) have a shape: streaks of 7 or 8 heads are unlikely in any single run, but if you run the simulation many times, some run will produce one, and the histogram of streak lengths will form a smooth curve. That curve isn't a conspiracy — it's just what "random with no memory" actually looks like when you count it many times. Same with fake-looking digits: a truly random 120-digit string will often contain "999" or a tidy-looking "123456", because every arrangement is equally likely. Patterns that make you suspicious — long runs, repeated blocks, clusters — are exactly what independent randomness statistically produces sometimes. The trap is that your brain spots the pattern and says "that can't be random", while ignoring the thousands of unremarkable digits around it. That's why randomness tests check *overall* counts and distributions, not whether one string looks pretty. So a simulation producing patterns is normal: randomness guarantees no preference, not no structure — the structure is what you get from repeating a memoryless process many times.

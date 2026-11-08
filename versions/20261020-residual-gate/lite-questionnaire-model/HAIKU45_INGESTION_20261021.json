@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-21",
+  "timezone": "America/New_York",
+  "base_version": "20261020-residual-gate",
+  "previous_valid_samples": 98,
+  "expected_valid_samples": 100,
+  "training_additions": [
+    {
+      "source": "claudehaiku4.5-extended-01.txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\claude-haiku4.5-extended\\新增 文字文件.txt",
+      "sha256": "f22dceb84bf43e4b8bd964f90dfa91576d7f3b861668e7d6d45c6d01e00eda9f",
+      "b_fingerprint": "ba323be7d5eedfaa1175a59cbaf7de1d5c2ac9694f55a1dc9e744df640758052",
+      "family": "Claude",
+      "reported_model": "Claude Haiku 4.5",
+      "grouping_label": "claudehaiku4.5-extended",
+      "label_basis": "User explicitly requested these two Haiku4.5 answers be trained on 2026-10-21.",
+      "mode_label": "extended",
+      "mode_label_basis": "Source directory name; no additional effort/platform confirmation.",
+      "reasoning_effort": null,
+      "platform": null
+    },
+    {
+      "source": "claudehaiku4.5-extended-02.txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\claude-haiku4.5-extended\\新增 文字文件 (2).txt",
+      "sha256": "34534f3dc51043e91a5e406ca6d3b590c89944ee4d318bb189091ad17ae65f68",
+      "b_fingerprint": "9408c68a5a68d5c7ba7905cb251753c147cdf07e62b95999d48cb20ba88d7177",
+      "family": "Claude",
+      "reported_model": "Claude Haiku 4.5",
+      "grouping_label": "claudehaiku4.5-extended",
+      "label_basis": "User explicitly requested these two Haiku4.5 answers be trained on 2026-10-21.",
+      "mode_label": "extended",
+      "mode_label_basis": "Source directory name; no additional effort/platform confirmation.",
+      "reasoning_effort": null,
+      "platform": null
+    }
+  ],
+  "duplicates_not_added": [
+    {
+      "source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\claude-haiku4.5-extended\\新增 文字文件 (3).txt",
+      "sha256": "34534f3dc51043e91a5e406ca6d3b590c89944ee4d318bb189091ad17ae65f68",
+      "duplicate_of": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\claude-haiku4.5-extended\\新增 文字文件 (2).txt",
+      "subsequently_updated_during_run": true,
+      "current_sha256": "127a6ba9ce5cc8bfc50a3cb7d1642b6b1d625a63c8ff100970ab8720f8882044",
+      "note": "This file was a duplicate at initial capture, then changed during training. It is outside this requested two-answer batch and was not trained."
+    }
+  ],
+  "preserved_scoring_audit": "GPT_OSS_SCORING_AUDIT_20261021"
+}

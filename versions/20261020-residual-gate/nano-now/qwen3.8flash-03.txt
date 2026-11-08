@@ -1,0 +1,97 @@
+[A01]
+5。
+推导：13 是质数且 13∤7，由费马小定理 7^12 ≡ 1 (mod 13)。123 = 12×10 + 3，故 7^123 ≡ (7^12)^10 · 7^3 ≡ 7^3 = 343 ≡ 343 − 13×26 = 343 − 338 = 5 (mod 13)。
+
+[A02]
+甲打破了杯子。
+理由：甲（“乙打破的”）与乙（“不是我打破的”）互相矛盾，必一真一假，所以唯一的真话在他们中间，丙的话为假。丙说“不是甲打破的”为假 ⟹ 是甲打破的。回代检验：甲假、乙真、丙假，恰一句为真 ✓。
+
+[A03]
+P = (0.02×0.90) / (0.02×0.90 + 0.98×0.05) = 0.018 / 0.067 = 18/67 ≈ 0.2687。
+
+[A04]
+35 个。
+理由：把 4 个 1 与 6 个 0 排成一排，先放 6 个 0，它们（含两端）形成 7 个可放 1 的间隙，任选 4 个间隙各放一个 1 即保证互不相邻，且每种选法唯一对应一个字符串：C(7,4) = 35。
+
+[A05]
+A→C→B→E→D，总权重 7（2+1+3+1）。
+比较：A→C→B→D = 8，A→B→E→D = 8，A→B→D = 9，A→C→D = 10。
+
+[A06]
+f(1)=1, f(2)=2, f(3)=4, f(4)=7, f(5)=13, f(6)=24, f(7)=44, f(8)=81。
+所以 f(8) = 81（即 f(0)+f(1)+f(2)+… 的三项递推/Tribonacci）。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+先手必胜，且能保证获胜的第一步只有一种：取 1 枚（留下 14 枚）。
+理由：按剩余石子数递推胜态，必败态为 n ≡ 0 或 2 (mod 7)，即 0、2、7、9、14。验证规则：从 ≡0 走 1、3、4 步到 ≡6/4/3，从 ≡2 走到 ≡1/6/5，都落到必胜态；反之 1→0、3→2、4→0、5→2、6→2 均可把对手送进必败态。15 ≡ 1，取 1 后留 14 ≡ 0；取 3 留 12 ≡ 5、取 4 留 11 ≡ 4，都会把必胜态交给对手，故唯一。
+
+[A11]
+3882 条。
+方法一（容斥）：总数 C(16,8) = 12870。经过单点：(2,2) 为 C(4,2)·C(12,6) = 6×924 = 5544；(4,5) 为 C(9,4)·C(7,4) = 126×35 = 4410；(6,3) 为 C(9,6)·C(7,2) = 84×21 = 1764。(4,5) 与 (6,3) 不可比较，同经两点为 0；同经 (2,2),(4,5) 为 C(4,2)·C(5,2)·C(7,4) = 6×10×35 = 2100；同经 (2,2),(6,3) 为 C(4,2)·C(5,4)·C(7,2) = 6×5×21 = 630；三点同经为 0。坏路径 = 5544+4410+1764−2100−630 = 8988，合法 = 12870−8988 = 3882。
+方法二（DP 复核）：dp[i][j] = dp[i−1][j] + dp[i][j−1]，三个禁点置 0，可手推至 dp[8][8] = 3882（例如第 5 行被 (4,5) 截断后 dp[4][5]=0、dp[8][5]=393，最终 2019+1863=3882）。
+
+[A12]
+26 个。
+方法：按首位/末位分类，两种情形关于整串翻转一一对应，所以只需数「首位 1、末位 0」再乘 2。此时其余 3 个 1 选自位置 2–7，共 C(6,3) = 20 种；出现三连 1 的坏情况是 {2,3,4}、{2,3,5}、{2,3,6}、{2,3,7}（含 1,2,3）、{3,4,5}、{4,5,6}、{5,6,7}，共 7 种，合法 13 种（如 {2,4,5} → 11011000）。另一类同理 13 种。合计 2×13 = 26。
+
+[B01]
+7
+
+[B02]
+407193825611837409265502814739937126845026481739058305197264147209385666213089472958140673837416295051029483677463109285
+
+[B03]
+HHTHTTHHHTTHTTHHTTTHHHHTHTTHTHTTHHTHTTHHHTTTHHTHTTHHTHHHTTHTTHTTTHTHTTHHT
+
+[B04]
+5,2,6,3,3,1,4,6,2,5,6,1,3,4,2,6,5,5,2,3,1,6,4,2
+
+[B05]
+鲸鱼
+
+[B06]
+73
+
+[B07]
+完美其实是个移动的靶子——你越想看清它，它跑得越远。真正管用的办法是把目标缩小到「可笑的小」：不是「写完方案」，而是「打开文档，写下三行草稿」，而且给这十分钟定个时。先有版本，再有更好的版本；零版和 0.3 版之间的差距，比 0.3 版和 1.0 版之间大得多。另外可以提前写下「什么算完成」的最低标准，到了就发出去，让别人的反馈来告诉你什么值得补——你会发现他们指出的重点，和你自己纠结的根本不是一回事。允许自己交一份丑稿，是迈出第一步的全部秘密。需要的话，现在就告诉我你的计划是什么，我帮你切成十分钟能干完的第一块。
+
+[B08]
+因为平均数只告诉你「重心在哪」，没告诉你「数据摊得有多开」。
+打个比方：两个人各有 10 块钱，一个是「今天 10 元、明天 10 元、天天 10 元」，另一个是「昨天 100 元、今天欠 80 元」，两人平均都是 10 元，可后者的日子你根本没法过。同样，两个城市的年平均气温都是 15℃，一个四季如春，一个夏天热到 40℃、冬天冷到 −10℃——你要去住的话，选哪个完全取决于第二件事，而不是那 15℃。
+除了「摊得开不开」（波动大小），还有两件事平均数看不见：一是有没有人特别离谱地拉着平均值走，比如一屋子人平均月薪两万，可能是因为老板月薪两百万，剩下的人都是三千；二是数据是不是分成好几堆，比如奶茶分量平均 500 毫升，实际一半是 350 一半是 650，那你永远喝不到「平均」的那杯。
+所以看数据时别只问「平均是多少」，接着问两句就够了：「大家离平均值远不远？」「里面有没有异类和分堆？」
+
+[B09]
+原句的毛病在于「他」指代不明（可能指小林，也可能指小周或第三方），而且「告诉」没交代是转述还是约人。按不同真实含义改成：
+- 若指小林自己不能来：小林转告小周，说自己明天不能来。（或：小林对小周说：「我明天不能来了。」）
+- 若指第三方（如小李）不能来：小林告诉小周，小李明天不能来。
+- 若指小周不能来（通知/劝告）：小林通知小周，让他明天不要来了。
+关键是把代词换成具体的名字，或改用第一人称直接引语。
+
+[B10]
+无法回答。材料只提供了这一句原文：「虚构城市澄岚城在2041年举行了一次选举」。其中既没有获胜者姓名，也没有票数，也没有候选人与计票结果，因此这两项信息无法从材料推出，任何具体姓名和票数都只能靠编——所以我不给。若需要答案，请补充含计票结果的材料。
+
+[B11]
+两条要求互相矛盾：要求①指定的那三个字本身就含有要求②禁用之字，故无法同时满足。我以②为准，给出恰好三个汉字、且不含被禁用之字的答案：
+蓝色光
+
+[B12]
+Here's the thing that trips everybody up: true randomness isn't "spread out evenly" — it's clumpy. And a simulation is honest about the clumps, so the patterns you see aren't a bug. They're the signature of actually being random.
+
+Start with what probability really means. If a coin is fair, it has no memory and no sense of fairness. It doesn't know you got four heads in a row and owe you a tail. Each flip is a fresh 50/50. So six heads in a row isn't rare *for a specific sequence* — any particular string of 6 flips has probability 1/64. What feels uncanny is that you were mentally expecting the "average-looking" outcomes (H-T-H-T-ish) because there are more of them. But that preference for the middle is a counting effect, not a rule that gets enforced turn by turn. Over 1,000 flips the ratio settles near 50/50 not because the coin corrects itself, but because early wobbles get diluted by the sheer size of what comes after. That's the law of large numbers, and it's the one place "evenness" genuinely shows up — at the aggregate level, never in the short run.
+
+Now the second half of the story is about you, not the numbers. Your brain is a pattern-detection machine that fires constantly and can't be turned off, because noticing a shape in the grass used to keep our ancestors alive. Toss a thousand random points on a square and you'll see lines, arcs, empty corridors, tight knots — humans will confidently describe those as intentional. Statisticians have a name for it: clustering illusion. Given enough randomness and enough chances, weird-looking stretches aren't surprising; they're *mandatory*. Somewhere in 80 random coin flips there will almost certainly be a run of five or six the same. Someone in a lottery pool will win twice. A music shuffle will seem to "keep playing the same artist." Ask how often you've ever seen a perfectly even random sequence... basically never, because that's not what random looks like.
+
+There's also a mechanical reason simulations in particular repeat themselves: they run on pseudo-random number generators driven by a starting value called a seed. Feed the same seed and you get the exact same "random" stream twice, which is wonderful for debugging and reproducing results, and also why two students running the same assignment get identical output. Change the seed and the clumps move around — but the *kinds* of clumps stay. And if your model is subtly wrong (the generator has a short period, or you sampled with replacement when you meant without, or the intervals you drew from aren't independent), the simulation will happily produce a real, reproducible, *meaningful* pattern that isn't randomness at all. That's the interesting failure: it looks exactly like the success.
+
+So the practical takeaway is the fun part. Don't judge a pattern by eyeballing one run — eyeballing is where the illusion lives. Run it many times, count how often the pattern shows up, and compare with a null model where you *know* nothing is going on. If your clustering shows up just as often in the pure-noise runs, it's your pattern appetite, not the data. If it shows up way more, congratulations: you found something real hiding in the noise. That's genuinely how physicists, epidemiologists, and everyone who reads polling data decide which "wow, look at that!" moments deserve a follow-up — and it's why a good simulation of randomness is the best tool we have for learning what a coincidence actually costs.

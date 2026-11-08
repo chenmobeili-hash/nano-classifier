@@ -1,0 +1,99 @@
+[A01]
+余数为 **5**。
+推导：13 是质数，7 与 13 互质，由费马小定理 7¹² ≡ 1 (mod 13)。123 = 12×10 + 3，故 7¹²³ ≡ (7¹²)¹⁰·7³ ≡ 7³ = 343 (mod 13)。343 = 13×26 + 5，所以余 5。
+
+[A02]
+**甲打破了杯子。**
+理由：甲（“乙打破的”）与乙（“不是我打破的”）互相矛盾，必一真一假。因此唯一的那句真话在甲、乙之中，丙的话“不是甲打破的”为假 → 是甲打破的。回代验证：甲说真话？“乙打破的”为假；乙“不是我”为真；丙“不是甲”为假 —— 恰有一句真，且恰一人打破，一致。
+
+[A03]
+P = (0.02 × 0.90) / (0.02 × 0.90 + 0.98 × 0.05) = 0.018 / (0.018 + 0.049) = 0.018 / 0.067 = **18/67** ≈ 0.2687。
+
+[A04]
+**35 个。**
+理由：4 个 1 之间有 3 个「至少一个 0」的间隔，10 个位置放 4 个 1 用去 4 位，剩 6 个 0。先给 3 个内部间隔各放 1 个 0（用去 3 个），剩 3 个 0 可任意分配到 5 个空隙（含两端与 3 个内部间隔）。用「插空/星棒」等价形式：选 4 个不相邻位置数 = C(n−k+1, k) = C(10−4+1, 4) = C(7,4) = 35。
+
+[A05]
+最短路径 **A→C→B→E→D**，总权重 **7**（2+1+3+1）。
+对比：A→C→B→D = 8，A→B→E→D = 8，A→C→D = 10，A→B→D = 9。
+
+[A06]
+f(1)=1，f(2)=2，f(3)=4，f(4)=7，f(5)=13，f(6)=24，f(7)=44，**f(8)=81**。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+先手**必胜**，能保证获胜的第一步只有一种：**取 1 枚**（留下 14 枚）。
+理由：按「取走最后一枚者胜」倒推，令 L 为轮到走者必败局。逐档算得必败态为 n ≡ 0 或 2 (mod 7)，即 0, 2, 7, 9, 14, 16…（验证：从 ≡0 走 1/3/4 只能到 ≡6,4,3；从 ≡2 只能到 ≡1,6,5，全是必胜态；反之每个非 0/2 剩余类都能用一步跳回 0 或 2：1−1=0，3−1=2，4−4=0，5−3=2，6−4=2）。15 ≡ 1 (mod 7) 属必胜态；可去状态为 14(≡0，必败)、12(≡5)、11(≡4)，只有取 1 能把对手送进必败态，取 3 或取 4 都会输给最优对手。
+
+[A11]
+**3882 条。**
+可复核方法一（容斥）：总数 C(16,8)=12870；经过 (2,2) 的 C(4,2)·C(12,6)=5544，经过 (4,5) 的 C(9,4)·C(7,3)=4410，经过 (6,3) 的 C(9,3)·C(7,2)=1764；两两同时经过：(2,2)∧(4,5)=6·C(5,2)·C(7,3)=2100，(2,2)∧(6,3)=6·C(5,4)·C(7,2)=630，(4,5) 与 (6,3) 不可比（4<6 但 5>3），交集为 0，三重交集亦为 0。故 12870−5544−4410−1764+2100+630 = 3882。
+方法二（动态规划核对）：dp[x][y]=dp[x−1][y]+dp[x][y−1]，dp[2][2]=dp[4][5]=dp[6][3]=0，逐行推得 dp[8][8]=3882，两法一致。
+
+[A12]
+**26 个。**
+计数方法：首位与末位不同，分两类且对称。
+类 A（首位 1、末位 0）：中间 6 位含 3 个 1，要求自身无连续三个 1，且不得同时占第 2、3 位（否则与首位凑成三连 1）。从 C(6,3)=20 个三元子集中先删掉含 {1,2} 的 4 个，再从剩下 16 个中删掉连续三元组 {2,3,4}、{3,4,5}、{4,5,6} → 13 个。
+类 B（首位 0、末位 1）：镜像同理，删掉同时占第 6、7 位（即子集中的 {5,6}）的 4 个，再删连续三元组 {1,2,3}、{2,3,4}、{3,4,5} → 13 个。
+合计 13 + 13 = 26。
+
+[B01]
+7
+
+[B02]
+419307285603827465197265901384951837264028039465716390274815850263914717492056389263748051308195642757360192840948263715
+
+[B03]
+HHTHTTHTHHTHTHHTHTTHHHHTHHTTHTTHHTHHHTTHHHTTHTHHHTTTHHTHTTHHHTHTHHHTTHTHTHHHTHTTHTHHHT
+
+[B04]
+3,6,1,4,4,2,5,6,3,1,2,4,6,5,3,2,1,4,5,6,2,3,5,1
+
+[B05]
+鲸鱼
+
+[B06]
+73
+
+[B07]
+我懂那种感觉——计划越写越漂亮，就是迟迟不开始，因为一旦动手就可能发现它不完美。其实「完美」是个会移动的目标，你只有在做的过程中才知道什么才算好。
+给你一个很轻的起步办法：把目标缩到「不可能失败」的大小。比如明天要交的报告，第一步不是「写完」，而是「打开文档，写下三行最丑的草稿」，就三行，写完允许自己关掉。你会发现开头那一下最难，之后惯性会接手。
+另外给整个过程定个「粗糙版交付时间」：先做出一版能看的 60 分东西，再去打磨。打磨是在已有作品上改，凭空追求完美则没有抓手，只会越来越慌。
+今晚就试那三行，行不行？写完发我看看，我陪你往下推一步。
+
+[B08]
+平均数只告诉你「重心在哪」，不告诉你「数据散得多开」。
+举个生活里的例子：两条路的平均通勤时间都是 30 分钟。一条路每天都稳稳 28～32 分钟；另一条路有时 10 分钟、有时 60 分钟。平均数一样，但体验完全不同——你要卡点赶飞机，肯定选第一条。
+差别在于「分散程度」：数据挤在一起还是拉得很开；还在于「形状」：是大多数人都差不多、只有少数人极端（平均数被几个极端值拽走），还是整体都偏高偏低。人的感受往往由最差的那几次、由波动本身决定，而不是由那个被抹平的中间值决定。
+所以只看平均数容易上当，最好再问一句：最高最低是多少？大家都差不多，还是差得很远？
+
+[B09]
+歧义在于「他」指谁（小林、小周，还是第三方）。按不同原意改成：
+- 若指小林自己：小林告诉小周，他（小林）明天不能来。／更自然：小林对小周说，自己明天去不了。
+- 若指第三方：小林告诉小周，××（如「组长」）明天不能来。
+关键做法：把代词换成具体名字或身份，或用「自己」明确回指主语。
+
+[B10]
+材料只提供了「虚构城市澄岚城在 2041 年举行了一次选举」这一句，没有写获胜者姓名，也没有票数，更没有相关原文可引。
+因此：获胜者姓名——材料中无；票数——材料中无；支持原文——不存在（唯一原文即题干所给那一句，不含答案信息）。不编造，这就是诚实的答案。
+
+[B11]
+两条要求互相矛盾：要求①答案内容要恰好包含「蓝色灯」三个汉字，其中就有「灯」；要求②禁止出现「灯」字。任何写法（包括拆字、注音、异体）都无法同时满足。
+按要求无法同时成立时自行处理的规则，我选不违反禁令的那条，本题答案内容：蓝色
+并注明：这样要求①（恰好三个汉字「蓝色灯」）不能满足，二者只能取其一。
+
+[B12]
+Here's the thing that trips everyone up: randomness doesn't mean "evenly spread out," it means "each step is decided independently." Those are very different ideas, and patterns are what live in the gap between them.
+Roll a die twenty times and you'll probably see 3, 3, 3 in a row somewhere. That feels suspicious — like the die has a favorite number. But each 3 had the same 1-in-6 chance whether or not the last roll was also a 3. The die has no memory, so a streak costs nothing to produce. What's actually rare is a *specific* sequence of twenty rolls; there are just mind-bogglingly many sequences, so *some* of them look like streaks, and the ones you'd call "random-looking" are only a tiny slice of all possible outcomes. Your brain is pattern-detecting machinery, so it spots the slice that looks meaningful and ignores the vast majority that don't.
+There's also clustering. Drop raisins randomly into a cake and you get clumps and empty patches, not an even grid. Even spacing would require each raisin to know where the others are — that's a rule, not randomness. Random placement naturally produces gaps and knots; coin-flip walks wander far from the center for exactly this reason.
+And the law of large numbers isn't a debt collector. It doesn't say heads must "catch up" after a run of tails. It says that as flips pile up, the *fraction* of heads settles toward one half — the early imbalance just gets diluted by sheer volume, not corrected. That distinction is the whole reason "I'm due for a win" is a trap.
+So: patterns aren't bugs in a random simulation, they're signatures of it. A generated list that *never* clusters, with perfectly spaced digits and alternating coin flips, would be the fake — that's what people invent when they try to *act* random. Real randomness is lumpier than our intuition expects, and once you know that, streaks stop looking like messages and start looking like what they are: just noise, being noise honestly.

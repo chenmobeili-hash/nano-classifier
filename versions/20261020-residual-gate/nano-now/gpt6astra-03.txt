@@ -1,0 +1,134 @@
+[A01]
+余数为5。因为 \(7^3\equiv5\pmod{13}\)，所以 \(7^6\equiv25\equiv-1\pmod{13}\)，进而 \(7^{12}\equiv1\pmod{13}\)。由 123=12×10+3，得 \(7^{123}\equiv5\pmod{13}\)。
+
+[A02]
+甲打破了杯子。甲、乙的话互为否定，因此两句话中恰有一句为真。要使三句话恰有一句为真，丙的话必须为假，所以杯子是甲打破的。
+
+[A03]
+\[
+P(\text{发生}\mid\text{阳性})
+=\frac{0.02\times0.90}{0.02\times0.90+0.98\times0.05}
+=\frac{18}{67}.
+\]
+
+[A04]
+35个。先排好6个0，它们形成7个空位（包括两端）。从中选择4个空位，各放一个1，就能保证1互不相邻，因此共有
+\[
+\binom74=35
+\]
+个。
+
+[A05]
+最短路径为 A→C→B→E→D，总权重为 2+1+3+1=7。
+
+[A06]
+f(8)=81。
+
+f(1) 至 f(8) 依次为：
+1, 2, 4, 7, 13, 24, 44, 81.
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items":["pear","apple","banana","kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+先手必胜，唯一能保证获胜的第一步是取1枚。
+
+将轮到当前玩家时必败的石子数称为败态。0是败态；若某一步能到达败态，则当前状态为胜态，否则为败态。按此规则依次计算，0至14中的败态为：
+0, 2, 7, 9, 14.
+15枚时，取1枚留下14枚的败态；取3或4枚分别留下12或11枚，都是对手的胜态。
+
+[A11]
+共有3882条。
+
+用容斥原理计算。从起点到终点的全部路径数为 \(\binom{16}{8}=12870\)。经过三个禁点的路径数分别为：
+\[
+\begin{aligned}
+N_{(2,2)}&=\binom42\binom{12}6=5544,\\
+N_{(4,5)}&=\binom94\binom74=4410,\\
+N_{(6,3)}&=\binom93\binom72=1764.
+\end{aligned}
+\]
+
+同时经过两处禁点的路径数为：
+\[
+\begin{aligned}
+N_{(2,2),(4,5)}&=\binom42\binom52\binom74=2100,\\
+N_{(2,2),(6,3)}&=\binom42\binom51\binom72=630.
+\end{aligned}
+\]
+由于只能向右、向上，无法同时经过 (4,5) 和 (6,3)，也无法经过全部三个禁点。因此答案是
+                              ┌──────┐
+12870-5544-4410-1764+2100+630=│ 3882 │.
+                              └──────┘
+
+[A12]
+共有26个。
+
+反转字符串可将“首1末0”与“首0末1”一一对应，因此只需计算首1末0的情况，再乘2。
+
+将4个1分成 r 段，每段长度只能为1或2，所以 r=2,3,4。相应的段长排列数分别为1、3、1。
+
+4个0须放在相邻两段之间及最后一段之后，共 r 个位置，每个位置至少一个0，因此分配方法有 \(\binom3{r-1}\) 种。总数为
+\[
+2\left(1\binom31+3\binom32+1\binom33\right)
+=2(3+9+1)=26.
+\]
+
+[B01]
+7
+
+[B02]
+830197462855103690742698801537406723991017864520389940175626320859714468713200697459083215013667482985249017639082355401
+
+[B03]
+HTTTHHTHTHHHHTTTHTTHTHTHHHHTTTTTHHTHTHTTHTHHHTTTHHTTTTHTHHTHHHTHTTTTHHTHHHHTHTTT
+
+[B04]
+4,1,6,6,2,3,5,2,2,6,4,1,3,6,5,5,2,4,6,1,1,3,5,6
+
+[B05]
+水獭
+
+[B06]
+83
+
+[B07]
+想把计划做好很正常，但一直准备也挺累的。试着把今天的目标缩到十分钟能完成：比如打开文档，写下三句粗糙的想法。先允许它不完整，做完这十分钟就可以停。等手上有了一点东西，再决定怎么改，会容易很多。
+
+[B08]
+平均数只告诉你整体的平均水平，没有告诉你数据之间差多少。
+
+比如，两组人的分数分别是“50、50、50”和“0、50、100”，平均分都是50。第一组人人一样，第二组却有人得零分、有人得满分。它们给人的印象自然不同。
+
+所以，除了平均数，还要看看数据是否集中、最高最低差多少，以及有没有特别大或特别小的数。
+
+[B09]
+若不能来的是小林：小林告诉小周：“我明天不能来。”
+
+若不能来的是小周：小林告诉小周：“你明天不能来。”
+
+[B10]
+获胜者姓名：材料未提供。
+票数：材料未提供。
+材料原文：“虚构城市澄岚城在2041年举行了一次选举”。
+
+这句话仅说明选举发生的城市和年份，无法支持任何具体的获胜者姓名或票数。
+
+[B11]
+两条要求相互矛盾：第一条要求包含的第三个汉字，正是第二条禁止出现的字，因此无法同时满足。
+
+[B12]
+Randomness doesn’t promise an even-looking mix. It means individual outcomes are uncertain under the rules you’ve chosen.
+
+Imagine flipping a fair coin ten times. HHHHHHHHHH has exactly the same probability as HTTHTHHTHT: each particular sequence has a chance of 1 in 1,024. The first one catches your attention because it has an obvious pattern. The second looks ordinary, so you probably wouldn’t notice it.
+
+In a long simulation, there are many opportunities for streaks, clusters, and repeated sequences to appear. A fair coin also doesn’t “owe” you tails after several heads—the next flip still has a 50% chance of heads.
+
+Most computer simulations use deterministic algorithms to generate pseudorandom numbers. Poor algorithms can introduce unwanted patterns, but even a good simulation will produce occasional streaks. To judge whether something is wrong, you need to check how often a pattern occurs compared with what chance predicts.

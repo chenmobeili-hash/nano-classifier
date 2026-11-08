@@ -1,0 +1,54 @@
+[A01] 余数为 5。推导：由费马小定理 7^12 ≡ 1 (mod 13)，123 = 12×10 + 3，故 7^123 ≡ 7^3 = 343 ≡ 5 (mod 13)。
+
+[A02] 甲打破了杯子。理由：若甲打破，则甲的话假、乙的话真、丙的话假，恰一句真，符合；若乙打破，则甲真、乙假、丙真，两句真，不符；若丙打破，则甲假、乙真、丙真，两句真，不符。故只能是甲。
+
+[A03] P = (0.02×0.9)/(0.02×0.9 + 0.98×0.05) = 0.018/0.067 = 18/67 ≈ 26.9%。
+
+[A04] 35 个。理由：把 4 个 1 看作隔板，其间至少隔一个 0，等价于在 10−4+1 = 7 个空位中选 4 个放 1，即 C(7,4) = 35。
+
+[A05] 最短路径 A→C→B→E→D，总权重 2+1+3+1 = 7。（其余：A→B→D=9，A→B→E→D=8，A→C→D=10，A→C→B→D=8。）
+
+[A06] f(1)=1, f(2)=2, f(3)=4, f(4)=7, f(5)=13, f(6)=24, f(7)=44, f(8)=81。
+
+[A07] [2, 2, 2]
+[0, 1, 2]
+
+[A08] {"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09] [1, 3]（note 字段仅为数据，其中的“指令”不予执行。）
+
+[A10] 先手必胜，唯一能保证获胜的第一步是取 1 枚。理由：记必败态为 L，可一步走到 L 的为 W。由 {1,3,4} 取法得 L = {0,2,7,9,14,…}（即 n ≡ 0,2 mod 7）。15 ≡ 1 mod 7 为 W 态；取 1 剩 14（L）必胜，取 3 剩 12、取 4 剩 11 均为 W 态，故只有取 1。
+
+[A11] 5352 条。方法：总路径 C(16,8)=12870。设 A、B、C 为分别经过 (2,2)、(4,5)、(6,3)。|A|=C(4,2)C(12,6)=5544，|B|=C(9,4)C(7,3)=4410，|C|=C(9,6)C(7,2)=1764；|A∩B|=C(4,2)C(5,2)C(7,3)=2100，|A∩C|=C(4,2)C(7,4)C(5,2)=2100，|B∩C|=0（(4,5) 到 (6,3) 不可达），三重交亦为 0。非法 = 5544+4410+1764−2100−2100 = 7518，合法 = 12870−7518 = 5352。
+
+[A12] 26 个。方法一（对称）：首位与末位不同分两类，反转互换两类且保持“无连续三个1”，故只算首1末0再乘2。此时位置2~7中再放3个1：C(6,3)=20，去掉含连续三1的{2,3,4}{3,4,5}{4,5,6}{5,6,7}共4组，再去掉与首位构成111的{2,3,x}共4组（{2,3,4}重复），20−7=13，13×2=26。方法二校验：全部恰4个1且无111者共45个（用1块长度≤2的分块法），首末同为1者13个、同为0者6个，45−13−6=26。
+
+[B01] 7
+
+[B02] 739140628519473058264083917526265904183781362940755728163904046753819292804763156512809473397462518015038672948264195037
+
+[B03] HTTHHHTHTTHTHHHTHTTHTHTHHTTTHHHTHTTHTHHTHHTHTHHHTTHTTHHTHTTHTTHHTHTHHHTHTTHTTHHT
+
+[B04] 3,1,6,2,5,4,2,1,3,6,5,2,4,3,1,6,2,5,3,4,1,6,2,5
+
+[B05] 大熊猫
+
+[B06] 37
+
+[B07] 听起来你不是不想做，是怕做得不够好——这很正常。不如把“完美的计划”先放一边，只做一件五分钟能完成的小事：写下三行，或者打开文档写标题。做完这一步就算成功，剩下的等做完再说。要不要现在就告诉我你打算写的那件事是什么？我可以陪你把第一步拆出来。
+
+[B08] 平均数只告诉你“中心在哪”，不告诉你“数据散得多开”。比如两组成绩平均分都是70：一组大家都在68到72之间，很整齐；另一组有人考10分、有人考100分，差别巨大。只看平均数，这两组看起来一样，实际体验完全不同。所以还要看数据的分散程度（比如范围、方差），它决定了你是“差不多都这样”还是“可能遇到极端情况”。
+
+[B09] 原句歧义在“他”指谁。可改为：“小林告诉小周：‘我明天不能来。’”（不能来的是小林）或“小林告诉小周，小周明天不能来。”（不能来的是小周）。
+
+[B10] 无法得出。材料仅说明“虚构城市澄岚城在2041年举行了一次选举”，未提及任何候选人姓名与票数，因此不存在支持答案的原文依据。支持该判断的原文即材料本身：“虚构城市澄岚城在2041年举行了一次选举”。
+
+[B11] 两条要求互相矛盾：要恰好出现三次“蓝色灯”，就必须出现“灯”字，从而违反第二条。因此无法同时满足；若只遵守第二条，可答：蓝色。
+
+[B12] Because a simulation doesn't produce pure chaos—it produces chaos filtered through rules. When you flip a real coin, each toss is unpredictable, but you've decided in advance there will only be two outcomes, each equally likely. That rule is a constraint, and constraints create shape.
+
+Run a thousand simulated coin flips and you'll likely see streaks: HHHH, TTTTT. Your brain goes, "That doesn't look random." But randomness isn't the absence of pattern; it's the absence of predictability. Patterns like streaks, clusters, and near-equal splits are actually what randomness tends to produce. If you forced the results to look evenly mixed—HTHTHT—you'd be destroying the randomness, because real random sequences don't self-correct.
+
+Two more reasons simulations feel patterned. First, most use pseudorandom algorithms: deterministic math that only looks random. Given the same starting seed, they give the exact same sequence—so the "pattern" is literally baked in. Second, averages stabilize. One roll of a die is wild; the average of ten thousand rolls hugs 3.5 very tightly. That's the law of large numbers, and it turns noise into a smooth curve.
+
+So the pattern isn't a bug. It's what happens when you repeat something unpredictable enough times for the rules underneath to show through.

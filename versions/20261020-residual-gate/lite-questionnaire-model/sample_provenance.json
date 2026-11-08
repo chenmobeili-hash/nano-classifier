@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "note": "Recent ingestion provenance; earlier source records remain in original version archives. Metadata is not a classifier feature.",
+  "samples": [
+    {
+      "source": "gpt-oss-120b-01.txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\GPT-OSS\\新增 文字文件.txt",
+      "sha256": "897909d51f1b7a59ca40a259a43ac26350e2335a1f96bd4228742ec42fcb96cb",
+      "family": "GPT",
+      "reported_model": "GPT-OSS 120B",
+      "grouping_label": "gpt-oss-120b",
+      "label_basis": "User explicitly confirmed all three non-20B files are GPT-OSS 120B on 2026-10-21 (America/New_York).",
+      "reasoning_effort": null,
+      "platform": null
+    },
+    {
+      "source": "gpt-oss-120b-02.txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\GPT-OSS\\新增 文字文件 (2).txt",
+      "sha256": "59de192afb77c9852116feca817ad1a461c2407cd55af72618ed00299112c4b3",
+      "family": "GPT",
+      "reported_model": "GPT-OSS 120B",
+      "grouping_label": "gpt-oss-120b",
+      "label_basis": "User explicitly confirmed all three non-20B files are GPT-OSS 120B on 2026-10-21 (America/New_York).",
+      "reasoning_effort": null,
+      "platform": null
+    },
+    {
+      "source": "gpt-oss-120b-03.txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\GPT-OSS\\新增 文字文件 (3).txt",
+      "sha256": "7ccd57ad79cc67fe07a110e22554031642ca8bdb481beb172fed13684334ca9c",
+      "family": "GPT",
+      "reported_model": "GPT-OSS 120B",
+      "grouping_label": "gpt-oss-120b",
+      "label_basis": "User explicitly confirmed all three non-20B files are GPT-OSS 120B on 2026-10-21 (America/New_York).",
+      "reasoning_effort": null,
+      "platform": null
+    },
+    {
+      "source": "claudehaiku4.5-extended-01.txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\claude-haiku4.5-extended\\新增 文字文件.txt",
+      "sha256": "f22dceb84bf43e4b8bd964f90dfa91576d7f3b861668e7d6d45c6d01e00eda9f",
+      "b_fingerprint": "ba323be7d5eedfaa1175a59cbaf7de1d5c2ac9694f55a1dc9e744df640758052",
+      "family": "Claude",
+      "reported_model": "Claude Haiku 4.5",
+      "grouping_label": "claudehaiku4.5-extended",
+      "label_basis": "User explicitly requested these two Haiku4.5 answers be trained on 2026-10-21.",
+      "mode_label": "extended",
+      "mode_label_basis": "Source directory name; no additional effort/platform confirmation.",
+      "reasoning_effort": null,
+      "platform": null
+    },
+    {
+      "source": "claudehaiku4.5-extended-02.txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\claude-haiku4.5-extended\\新增 文字文件 (2).txt",
+      "sha256": "34534f3dc51043e91a5e406ca6d3b590c89944ee4d318bb189091ad17ae65f68",
+      "b_fingerprint": "9408c68a5a68d5c7ba7905cb251753c147cdf07e62b95999d48cb20ba88d7177",
+      "family": "Claude",
+      "reported_model": "Claude Haiku 4.5",
+      "grouping_label": "claudehaiku4.5-extended",
+      "label_basis": "User explicitly requested these two Haiku4.5 answers be trained on 2026-10-21.",
+      "mode_label": "extended",
+      "mode_label_basis": "Source directory name; no additional effort/platform confirmation.",
+      "reasoning_effort": null,
+      "platform": null
+    },
+    {
+      "source": "gpt6.1terra-01.txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classifier-最新版\\更新的樣本\\新增 文字文件.txt",
+      "sha256": "057e11fd3e0788634cc2fb6cb61e3c86302426d036142ddfaeff48f30a977875",
+      "b_fingerprint": "bf6ba2a8b66578f7eb23dd1c4d414ebd7a87ba8f09518593d58263680b8539fb",
+      "family": "GPT",
+      "reported_model": "GPT-6.1-Terra",
+      "grouping_label": "gpt6.1terra",
+      "label_basis": "User explicitly requested these two GPT-6.1-Terra answers be trained on 2026-10-27.",
+      "mode_label": null,
+      "reasoning_effort": null,
+      "platform": null
+    },
+    {
+      "source": "gpt6.1terra-02.txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classifier-最新版\\更新的樣本\\新增 文字文件 (2).txt",
+      "sha256": "807ec9f4e81e83b6bb08ab07077d0e8b20f6ce9596f0d260f59731231888b7b9",
+      "b_fingerprint": "93c93eb3703aeeccdafe6f2c5c3b477b58972063c84c2ae4bb52529e833c2a97",
+      "family": "GPT",
+      "reported_model": "GPT-6.1-Terra",
+      "grouping_label": "gpt6.1terra",
+      "label_basis": "User explicitly requested these two GPT-6.1-Terra answers be trained on 2026-10-27.",
+      "mode_label": null,
+      "reasoning_effort": null,
+      "platform": null
+    }
+  ]
+}

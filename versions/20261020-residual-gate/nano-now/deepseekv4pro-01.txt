@@ -1,0 +1,72 @@
+[A01]
+余数为 5。推导：7^2≡49≡10，7^4≡10^2=100≡9，7^6≡9×10=90≡-1 (mod 13)，故 7^12≡1。123=12×10+3，所以 7^123≡7^3=343≡5 (mod 13)。
+
+[A02]
+甲打破了杯子。理由：若乙打破，则甲句和丙句都真（两句真，矛盾）；若丙打破，则乙句和丙句都真（两句真，矛盾）；若甲打破，则只有乙句「不是我打破的」为真，甲句和丙句都假，恰好一句真，符合题意。
+
+[A03]
+18/67。计算式：P(事件|阳性) = (0.02×0.90) / (0.02×0.90 + 0.98×0.05) = 0.018 / (0.018 + 0.049) = 0.018/0.067 = 18/67。
+
+[A04]
+35。理由：把 4 个 1 视为需用 0 隔开，剩余 10−4=6 个 0 作为间隔（4 个 1 之间需 3 个 0 占位，还剩 6−3=3 个 0 可自由分配到 5 个空档）。等价于在 10−4+1=7 个位置中选 4 个放 1，即 C(7,4)=35。
+
+[A05]
+最短路径 A→C→B→E→D，总权重 2+1+3+1=7。
+
+[A06]
+f(8)=81。f(1) 至 f(8) 依次为：1, 2, 4, 7, 13, 24, 44, 81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+先手必胜，唯一能保证获胜的第一步是取 1 枚。理由：按必败局面（P 位）递推，P 位为 0、2、7、9、14……。当前 15 枚是必胜位，走一步后应把对手置于必败位：取 1 枚剩 14（P 位），而取 3 枚剩 12、取 4 枚剩 11 均为必胜位，故仅取 1 枚必胜。
+
+[A11]
+3882。方法：动态规划 f(x,y)=f(x−1,y)+f(x,y−1)，f(0,0)=1，边界 f(x,0)=f(0,y)=1，(2,2)、(4,5)、(6,3) 三点置 0，递推到 f(8,8)=3882。也可用容斥：C(16,8)−5544−4410−1764+2100+630=3882。
+
+[A12]
+26。方法：先固定首位=1、末位=0（由互补对称，另一种情况数量相同，最后乘 2）。中间 6 位恰有 3 个 1，且无「111」且不能以「11」开头：无「111」的取法为 C(6,3)−4=16，再排除以「11」开头的 3 种，得 13，乘 2 得 26。
+
+[B01]
+7
+
+[B02]
+482901735411627394805207364819995104826376139042853048521976218734069584361095726752983140920146583715734082694083961725
+
+[B03]
+HTTHTHHTHTHHTTTHHTTHTHTHHTHTTTHTHHTHTTTHTTHHTHTHHTHTHTTTHHTHTHHTHTTTHTHHTHTTHTHT
+
+[B04]
+3, 5, 1, 6, 2, 4, 6, 1, 3, 5, 2, 4, 1, 6, 3, 2, 5, 4, 6, 1, 2, 3, 4, 5
+
+[B05]
+猫
+
+[B06]
+47
+
+[B07]
+想一次做完美是很正常的，但「完美」往往是在动起来之后才慢慢长出来的，而不是开始前就能看见的。要不先别做完整计划，就挑一件 5 分钟能搞定的小事直接上手，哪怕做得很糙也没关系——先迈一步，剩下的路会自己清晰起来。
+
+[B08]
+平均数只是把所有数值加起来一除，它只告诉你「中心在哪里」，却把「数据散成什么样」全部抹平了。比如甲组是 50、50，乙组是 0、100，平均数都是 50，但甲组人人一个样，乙组有人一无所有、有人全拿。所以同样的平均数，背后可能是很均匀的一群人，也可能是差距极大的一群人，给人的印象自然完全不同。
+
+[B09]
+小林告诉小周：「我明天不能来。」
+
+[B10]
+材料未给出获胜者的姓名与票数，无法据此作答。材料中与本题相关的原文仅为：「虚构城市澄岚城在2041年举行了一次选举」。
+
+[B11]
+本题无法完成：要求①必须恰好包含「蓝色灯」这三个字，但「蓝色灯」本身含有「灯」字，与要求②「不得出现『灯』字」直接矛盾，两条要求不可能同时满足。
+
+[B12]
+It's actually the reverse of what people expect: if randomness never produced any patterns, that would be suspicious. Think of flipping a coin a hundred times. Every single specific sequence of heads and tails is exactly as likely as any other — getting "all heads" is no more miraculous than the messy sequence you actually got. We only *notice* the tidy-looking ones: a run of six heads in a row, or your shuffle playing the same two songs back to back. Our brains are pattern-hunting machines, so out of the huge number of equally-likely outcomes, a few will always look "special" to us. Coincidences feel meaningful precisely because we're comparing them against the patterns we care about, not against all the equally-unremarkable outcomes we ignore. So when a "random" thing shows a pattern, it's usually not the randomness being broken — it's you catching one of the many accidental arrangements that were bound to show up eventually.

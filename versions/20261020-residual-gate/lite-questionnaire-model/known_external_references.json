@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "note": "库外参考仅作已知原文身份标识，绝不由load_references读取，不参加训练、型号均分或档位标尺。",
+  "samples": [
+    {
+      "source": "external-known/claudeopus4.6-01.txt",
+      "original_source": "新增测试/新增 文字文件.txt",
+      "model": "Claude Opus 4.6",
+      "family": "Claude",
+      "label_source": "用户确认",
+      "answer_sha256": "beb494156dfa36fb9c8c1f41620ff11507b2482808759e7c258d5edaca4cf63b",
+      "raw_sha256": "d6f21fdd9c8d5408dd6ae564b48a51cf9661cca94fc2cefe41101804c5e934ff",
+      "training_included": false,
+      "ranking_included": false
+    }
+  ]
+}

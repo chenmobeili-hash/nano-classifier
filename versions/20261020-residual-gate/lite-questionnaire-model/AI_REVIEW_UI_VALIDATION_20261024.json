@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-24",
+  "backend_new_tests": {
+    "passed": 15,
+    "scope": "memory-only config, fixed schema+literal evidence, no draft writes, confirmation/overwrite, stale-answer/data, external no-training, transaction rollback/crash recovery, active writer, local HTTP mock and origin/session guards"
+  },
+  "existing_scoring_tests": {
+    "passed": 23,
+    "modules": [
+      "test_consistency_review",
+      "test_dual_scoring",
+      "test_result_scoring"
+    ]
+  },
+  "ui_checks": {
+    "method": "JavaScript DOM interaction harness with real-service fixtures",
+    "passed": [
+      "hidden5-click settings",
+      "password input clearing",
+      "manual without key",
+      "12 editable questions",
+      "preview197.72",
+      "confirmation and overwrite",
+      "saved scores refresh",
+      "provenance label",
+      "answer-change/in-flight invalidation"
+    ]
+  },
+  "api_validation": "Local mock API only; no real key and no paid requests. Live provider compatibility requires user configuration.",
+  "training_and_existing_scores_changed": false,
+  "code_sha256": {
+    "residual_demo.py": "3d5d8b63fc3d6574e8bc561ccb8a8a6b29055ecc7fc7119e31f6918419acbcb3",
+    "residual_demo.html": "63edd8acfc0f2cd0922e8839b63a8c7718cc042a3c6f3ca5d9b1d93633b07214",
+    "ai_review.py": "d47bce7d3d8436d8e5f120850df0367c960e91e39bb6b84dd1d372d2ee76c12a",
+    "test_ai_review.py": "3fceefe9d07934c5325228c08b73c84e27f8d47edaa654bbe11efb4042ef80d3"
+  }
+}

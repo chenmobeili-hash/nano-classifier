@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-21",
+  "timezone": "America/New_York",
+  "base_version": "20261020-residual-gate",
+  "previous_valid_samples": 95,
+  "expected_valid_samples": 98,
+  "training_additions": [
+    {
+      "source": "gpt-oss-120b-01.txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\GPT-OSS\\新增 文字文件.txt",
+      "sha256": "897909d51f1b7a59ca40a259a43ac26350e2335a1f96bd4228742ec42fcb96cb",
+      "family": "GPT",
+      "reported_model": "GPT-OSS 120B",
+      "grouping_label": "gpt-oss-120b",
+      "label_basis": "User explicitly confirmed all three non-20B files are GPT-OSS 120B on 2026-10-21 (America/New_York).",
+      "reasoning_effort": null,
+      "platform": null
+    },
+    {
+      "source": "gpt-oss-120b-02.txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\GPT-OSS\\新增 文字文件 (2).txt",
+      "sha256": "59de192afb77c9852116feca817ad1a461c2407cd55af72618ed00299112c4b3",
+      "family": "GPT",
+      "reported_model": "GPT-OSS 120B",
+      "grouping_label": "gpt-oss-120b",
+      "label_basis": "User explicitly confirmed all three non-20B files are GPT-OSS 120B on 2026-10-21 (America/New_York).",
+      "reasoning_effort": null,
+      "platform": null
+    },
+    {
+      "source": "gpt-oss-120b-03.txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\GPT-OSS\\新增 文字文件 (3).txt",
+      "sha256": "7ccd57ad79cc67fe07a110e22554031642ca8bdb481beb172fed13684334ca9c",
+      "family": "GPT",
+      "reported_model": "GPT-OSS 120B",
+      "grouping_label": "gpt-oss-120b",
+      "label_basis": "User explicitly confirmed all three non-20B files are GPT-OSS 120B on 2026-10-21 (America/New_York).",
+      "reasoning_effort": null,
+      "platform": null
+    }
+  ],
+  "external_only": [
+    {
+      "source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\GPT-OSS\\20B.txt",
+      "family": "GPT",
+      "reported_model": "GPT-OSS 20B",
+      "sha256": "09a8c5d15cfaf5f37bc400b460df00d2eb0928483627108bc77333055d9665c3",
+      "reason": "Already correctly classified; not included per user instruction."
+    }
+  ]
+}

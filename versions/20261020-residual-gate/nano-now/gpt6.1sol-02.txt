@@ -1,0 +1,115 @@
+[A01]
+余数为 5。由费马小定理，\(7^{12}\equiv1\pmod{13}\)，而 123=12×10+3，所以
+\[
+7^{123}\equiv7^3=343\equiv5\pmod{13}.
+\]
+
+[A02]
+甲打破了杯子。甲、乙的话互相矛盾，必有一句为真。因此丙的话必须为假，即杯子是甲打破的。此时只有乙说的是真话，符合条件。
+
+[A03]
+\[
+P(\text{发生}\mid\text{阳性})
+=\frac{0.02\times0.90}{0.02\times0.90+0.98\times0.05}
+=\frac{18}{67}.
+\]
+
+[A04]
+35个。先放置6个0，形成7个空隙（包括两端）。从中选4个空隙，各放一个1，即可保证1互不相邻：
+\[
+\binom74=35.
+\]
+
+[A05]
+最短路径为 A→C→B→E→D，总权重为 2+1+3+1=7。
+
+[A06]
+f(8)=81。
+
+f(1) 至 f(8) 依次为：1,2,4,7,13,24,44,81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items":["pear","apple","banana","kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+先手必胜，唯一能保证获胜的第一步是取1枚。
+
+按“能走到必败局面则为必胜，否则为必败”递推，0至15枚中的必败局面为 0,2,7,9,14。取1枚后剩14枚，是对手的必败局面；取3或4枚分别剩12或11枚，都是对手的必胜局面。
+
+[A11]
+3882条。用容斥原理计算；两点间的单调路径数为 \(\binom{\Delta x+\Delta y}{\Delta x}\)。
+
+总路径数为 \(\binom{16}{8}=12870\)。经过三个禁点的路径数依次为：
+\[
+\binom42\binom{12}6=5544,\qquad
+\binom94\binom74=4410,\qquad
+\binom96\binom72=1764.
+\]
+同时经过前两个禁点有 6×10×35=2100 条，同时经过第一、第三个禁点有 6×5×21=630 条。第二、第三个禁点无法同时经过，因此也没有经过全部三个禁点的路径。
+
+合法路径数为：
+                              ┌──────┐
+12870-5544-4410-1764+2100+630=│ 3882 │.
+                              └──────┘
+
+[A12]
+26个。先计首位为0、末位为1的情况。
+
+4个1只能组成长度为1或2的连续段。段数为2、3、4时，段长安排分别有1、3、1种。4个0须分配到首段之前及相邻段之间，每处至少1个，对应分法分别为 \(\binom31,\binom32,\binom33\)。
+
+因此这一类有：
+1×3+3×3+1×1=13
+个。反转字符串可与首1末0的情况一一对应，故共有 2×13=26 个。
+
+[B01]
+8
+
+[B02]
+804729166359100842772386159042997460318506288371064159720038760549882113620759448293306758407186221995370866402781425097
+
+[B03]
+HTTTHHTHTHHHHHTTTHTTTHTHTHHHTHTTTTTHTTHHHTHHHTHHTTTTHHTTTHTHHTHTHHHHHTTTTHTHTTTH
+
+[B04]
+6,2,2,5,1,6,6,3,4,2,5,5,5,1,3,6,2,4,1,1,6,3,3,2
+
+[B05]
+水獭
+
+[B06]
+83
+
+[B07]
+越想做好，越容易觉得自己还没准备好。先给自己十分钟，只做一个很小的动作，比如打开文档，写下三条粗略的想法。写得乱也没关系，今天做到这里就算完成。有了这几条，再决定下一步会容易些。
+
+[B08]
+平均数把一组数据压缩成一个数，很多细节就看不见了。
+
+比如两组等车时间分别是“5、5、5分钟”和“0、5、10分钟”，平均都是5分钟。第一组每次都很稳定，第二组有时立刻上车，有时要等很久。平均数相同，差距、稳定程度和个人体验仍可能完全不同。
+
+[B09]
+若“他”指小林：小林对小周说：“我明天不能来。”
+
+若“他”指小周：小林对小周说：“你明天不能来。”
+
+[B10]
+获胜者姓名和票数均无法确定，材料没有提供这些信息。
+
+材料原文只有：“虚构城市澄岚城在2041年举行了一次选举”。其中没有支持获胜者姓名或票数的原文。
+
+[B11]
+两项要求相互矛盾，无法同时满足。
+
+[B12]
+Random sequences naturally contain streaks, clusters, and repeats. For five fair coin flips, HHHHH and HTHTH each have a probability of 1 in 32. One looks like a streak and the other like an alternating pattern, but both are perfectly possible outcomes. A longer simulation gives these little patterns more opportunities to appear.
+
+Our brains also notice interesting stretches and overlook ordinary ones. After seeing a sequence, it’s easy to find something that looks special—even if we never predicted it beforehand.
+
+There’s another possibility: computer simulations usually generate randomness using algorithms. A poorly designed generator can introduce unwanted patterns. So spotting a pattern raises a useful question, but answering it takes more evidence: does that pattern occur more often than chance would predict across many runs?

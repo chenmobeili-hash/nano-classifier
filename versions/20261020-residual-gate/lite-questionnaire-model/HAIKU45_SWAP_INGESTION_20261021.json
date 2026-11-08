@@ -1,0 +1,37 @@
+{
+  "addition": {
+    "source": "claudehaiku4.5-extended-03.txt",
+    "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\claude-haiku4.5-extended\\新增 文字文件 (3).txt",
+    "sha256": "127a6ba9ce5cc8bfc50a3cb7d1642b6b1d625a63c8ff100970ab8720f8882044",
+    "b_fingerprint": "6de9566f2084dfe81e483f1a17866a4e301fea747cbef2ff6cbe7ca04b534f9c",
+    "family": "Claude",
+    "reported_model": "Claude Haiku 4.5",
+    "grouping_label": "claudehaiku4.5-extended",
+    "label_basis": "User explicitly requested third Haiku4.5 admission, replacing one low-value sample.",
+    "mode_label": "extended",
+    "mode_label_basis": "Source folder name; specific effort/platform not confirmed.",
+    "reasoning_effort": null,
+    "platform": null
+  },
+  "excluded": {
+    "response_sha256": "13312bfacc1df0f0735c1acae54d100ce3111b5a8365d6b9cbce08b554b1057e",
+    "label": "冗余样本，用户授权精简退出训练与排名",
+    "status": "user_authorized_redundancy_pruning",
+    "exclude_from_training_and_ranking": true,
+    "exclude_in_comparison": true,
+    "basis": "同型号至少4份时按B题TF-IDF余弦近似程度筛选；02与03为最高相似对(0.815209)，保留留出分差更小的03以覆盖边界。Qwen3.8Flash由6份减至5份。未依据外部回归结果择优。",
+    "archived_raw": "nano-now/qwen3.8flash-02.txt",
+    "source": "qwen3.8flash-02.txt",
+    "sha256": "d4542c05d975bcc540a63bb55cbe36ae3523acb82f75391d0ec6134744286478"
+  },
+  "before_signature": "369405a7887a17b8b669ea2f9a3214ce9625fc62888f75bb0bf921fa1cea3966",
+  "after_signature": "a1046ace58c189b7a50fc834d86495484c6ae854759987bcbb72af9303680c04",
+  "selection_is_exploratory": true,
+  "selection_note": "使用开发库文本与已观察留出信息选择冗余样本；本次留出是开发对照，不是全新盲测。",
+  "counts": {
+    "effective_samples": 100,
+    "model_groups": 24,
+    "haiku45": 3,
+    "qwen38flash": 5
+  }
+}

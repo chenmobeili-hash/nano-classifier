@@ -1,0 +1,132 @@
+[A01]
+余数为5。模13计算：
+\(7^3\equiv5\)，\(7^6\equiv25\equiv-1\)，故\(7^{12}\equiv1\)。
+由于\(123=12\times10+3\)，所以\(7^{123}\equiv5\pmod{13}\)。
+
+[A02]
+甲打破了杯子。甲、乙的话互为否定，必有且仅有一句真话。要使三句话中恰有一句为真，丙的话必须为假，因此打破杯子的是甲。
+
+[A03]
+\[
+P(\text{发生}\mid\text{阳性})
+=\frac{0.02\times0.90}{0.02\times0.90+0.98\times0.05}
+=\frac{18}{67}.
+\]
+
+[A04]
+35个。先在4个1之间放入3个必需的0，还剩3个0，可分配到两端及三个内部间隔，共5处。由隔板法得：
+\[
+\binom{3+5-1}{5-1}=\binom74=35.
+\]
+
+[A05]
+最短路径为 A→C→B→E→D，总权重为 \(2+1+3+1=7\)。
+
+[A06]
+\(f(8)=81\)。
+
+\(f(1)\)至\(f(8)\)依次为：
+1，2，4，7，13，24，44，81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items":["pear","apple","banana","kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+先手必胜，唯一能保证获胜的第一步是取1枚，留下14枚。
+
+把轮到当前玩家时必败的局面记为败态：0枚是败态；若能一步到达败态，则当前为胜态；若所有合法取法都到达胜态，则当前为败态。逐项递推，0至15枚中的败态为：
+\(0、2、7、9、14\)。
+
+15枚时，取1、3、4枚分别留下14、12、11枚，只有14枚是败态。
+
+[A11]
+3882条。用容斥原理，记三个禁点为 \(P=(2,2)\)、\(Q=(4,5)\)、\(R=(6,3)\)。
+
+不加限制共有 \(\binom{16}{8}=12870\) 条。经过各禁点的路径数分别为：
+\[
+N_P=\binom42\binom{12}6=5544,
+\quad
+N_Q=\binom94\binom74=4410,
+\quad
+N_R=\binom93\binom72=1764.
+\]
+
+同时经过两个禁点的路径数为：
+\[
+N_{PQ}=\binom42\binom52\binom74=2100,
+\quad
+N_{PR}=\binom42\binom51\binom72=630.
+\]
+只能向右或向上，故无法同时经过 \(Q、R\)，也无法经过全部三个禁点。
+
+因此合法路径数为：
+\[
+12870-5544-4410-1764+2100+630=\boxed{3882}.
+\]
+
+[A12]
+26个。
+
+先考虑首位为1、末位为0。将连续的1分成 \(r\) 段，每段长度只能为1或2；对应也有 \(r\) 段非空的0。
+
+4个1的分段数，在 \(r=2、3、4\) 时分别为1、3、1；4个0分成 \(r\) 个非空段有 \(\binom3{r-1}\) 种。因此：
+\[
+1\binom31+3\binom32+1\binom33=3+9+1=13.
+\]
+倒转字符串即可对应到首位为0、末位为1的情况，故总数为 \(2\times13=26\)。
+
+[B01]
+7
+
+[B02]
+804197362955702864139604187752103689240872655093148893021675241760039867591482063906875512048923706171346820956021958843
+
+[B03]
+HTTHTHHHTTTHHHHTHTHHTTHTTTHTHTHHTHHHTTTHTTTHTHHTHHHTHHHHHTTTTHTTHTTTTHHHHTHTHHTT
+
+[B04]
+4,1,6,6,2,5,3,6,1,4,4,2,6,3,5,1,1,6,2,4,5,6,3,2
+
+[B05]
+水獭
+
+[B06]
+83
+
+[B07]
+你可能是想先把事情想周全，好让自己少走弯路，但一直准备也挺累的。今天先挑一个十分钟就能做的小动作吧，比如打开文档，写下三条粗糙的想法。允许它暂时不好，也允许十分钟后停下来。有了这点实际进展，你才更容易知道下一步该改什么。
+
+[B08]
+平均数只告诉你总体处在什么水平，没有告诉你每个数离这个水平有多远。
+
+比如两组数：5、5、5、5，以及0、0、10、10，平均数都是5。如果它们代表四个人的收入，第一组人人一样，第二组却差距很大。人们感受到的还有差距、极端值和分布，所以平均数相同，印象仍可能完全不同。
+
+[B09]
+若不能来的是小林：小林对小周说：“我明天不能来。”
+
+若不能来的是小周：小林对小周说：“你明天不能来。”
+
+[B10]
+获胜者姓名：材料未提供，无法确定。
+票数：材料未提供，无法确定。
+材料原文：“虚构城市澄岚城在2041年举行了一次选举”。
+这句话只支持选举发生的城市与年份，不支持任何获胜者姓名或票数。
+
+[B11]
+两项要求互相矛盾，无法同时满足。
+
+[B12]
+Randomness doesn’t promise a neat mix. It allows streaks, clusters, and repetitions too.
+
+For example, four fair coin flips are just as likely to produce HHHH as HTHT. Each exact sequence has a probability of 1 in 16. HHHH feels more surprising because we immediately notice its repetition.
+
+If you simulate thousands of flips, you give coincidences thousands of chances to appear. You might find a long streak of heads or a section that alternates perfectly. For independent flips, those patterns don’t make the next flip predictable.
+
+Computer simulations usually use deterministic algorithms to imitate randomness. A good generator can produce convincing random behavior, including accidental patterns; a flawed one can introduce extra patterns. Seeing a pattern alone doesn’t tell you which kind you’ve found.

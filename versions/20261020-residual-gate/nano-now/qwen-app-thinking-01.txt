@@ -1,0 +1,25 @@
+[A01] 余数为 5。推导：由费马小定理 7^12 ≡ 1 (mod 13)，123 = 12×10 + 3，故 7^123 ≡ 7^3 = 343 ≡ 5 (mod 13)。
+[A02] 甲打破的。理由：若甲打破，则甲的话假、乙的话（“不是我”）真、丙的话（“不是甲”）假，恰一句真，符合；若乙打破则甲、丙皆真（两句）；若丙打破则乙、丙皆真（两句），均不符。
+[A03] 18/67。计算式：P = (0.02×0.9)/(0.02×0.9 + 0.98×0.05) = 0.018/0.067 = 18/67 ≈ 0.2687。
+[A04] 35 个。理由：把 4 个 1 插入互不相邻的位置，等价于从 10−4+1 = 7 个“空隙位”中选 4 个放 1，即 C(7,4) = 35。
+[A05] 最短路径 A→C→B→E→D，总权重 2+1+3+1 = 7（其余路径：A→B→D=9，A→B→E→D=8，A→C→D=10，A→C→B→D=8）。
+[A06] f(1)..f(8) = 1, 1, 2, 4, 7, 13, 24, 44；f(8) = 81。（逐项相加：f(4)=4+2+1=7，f(5)=7+4+2=13，f(6)=13+7+4=24，f(7)=24+13+7=44，f(8)=44+24+13=81。）
+[A07] [2, 2, 2]
+[0, 1, 2]
+[A08] {"items":["pear","apple","banana","kiwi"]}
+[A09] [1,3]
+[A10] 先手必胜，唯一能保证获胜的第一步是取 1 枚。理由：必败态为剩余石子数 n ∈ {0,2,7,9,14,16,…}（即 n mod 5 ∈ {0,2}），因为从这些 n 出发只能走到必胜态，而从其他 n 都能走到必败态。15 不是必败态，且只有 15−1=14 是必败态，故只能取 1 枚。
+[A11] 3882 条。方法：总数 C(16,8)=12870；设经过 (2,2)、(4,5)、(6,3) 的事件为 A、B、C，则 |A|=C(4,2)C(12,6)=5544，|B|=C(9,4)C(7,3)=4410，|C|=C(9,6)C(7,2)=1764，|A∩B|=C(4,2)C(5,2)C(7,3)=2100，|A∩C|=C(4,2)C(5,1)C(7,2)=630，|B∩C|=0（(4,5) 无法到 (6,3)），三交集为 0。坏路径 = 5544+4410+1764−2100−630 = 8988，合法 = 12870−8988 = 3882。
+[A12] 26 个。计数：首位末位不同分两类，由反转对称两类数量相等。考虑首位 0、末位 1：中间 6 位需恰有 3 个 1、不含 111，且第 6、7 位不能同为 1（否则与末位构成 111）。6 位恰 3 个 1 共 C(6,3)=20，含 111 的有 4 种（111000、011100、001110、000111），故 16 种；其中末两位为 11 的需第 5 位为 0、另 1 个 1 在第 2~4 位，共 3 种。得 16−3=13，乘 2 得 26。
+[B01] 7
+[B02] 739104826517394028561039485726827163940550283716493618294057948572610327491830566150293847482716395005938172647264910583
+[B03] HTHHTTHTHHTTHHTHTTTHHHTTHHTHTTHTTHTTHHHTTHHTHTTHTHTTHHTTHHHTHTHHTTHTTHHTHTTHHTH
+[B04] 3,6,1,4,4,2,5,1,6,3,2,2,5,4,6,1,3,5,2,6,4,1,3,5
+[B05] 狐狸
+[B06] 42
+[B07] 听起来你不是不想做，而是怕做出来的东西不够好——这其实说明你很在意结果。但“完美”是改出来的，不是想出来的。不如今天就做一件最小的事：把计划写成三行，或者只做五分钟，做完就停。先有一个粗糙的版本，后面才有东西可以打磨。要不要现在就告诉我你的计划是什么，我陪你把第一行写出来？
+[B08] 因为平均数只告诉你“重心在哪”，没告诉你数据是怎么分布的。比如两组成绩平均都是 70：一组大家基本都在 65 到 75 之间，很整齐；另一组一半人考 100、一半人考 40，同样平均 70，但体验完全不同。后者差异大、不稳定，还可能有极端值把平均数拉偏（比如一个人考了 0 分）。所以看数据时还要看分散程度（方差、极差）、中位数和有没有异常值，光看平均数容易被骗。
+[B09] 原句的“他”指代不明。可改为：“小林告诉小周，小林明天不能来。”若实际是小周不能来，则改为：“小林告诉小周，小周明天不能来。”
+[B10] 无法回答。材料仅说明“虚构城市澄岚城在2041年举行了一次选举”，未提供获胜者姓名、票数等信息，因此不存在支持该答案的原文。
+[B11] 无法同时满足：要求①必须出现“蓝色灯”，而该词本身含有“灯”字，与要求②“不得出现‘灯’字”直接矛盾，故不存在符合两条要求的答案。
+[B12] Because a simulation isn't actually random—it's a recipe. The computer follows rules, and rules have structure. When you roll a real die, tiny, unknowable details decide the outcome; when a program simulates it, a formula decides. That formula is designed so the results look unpredictable in the short run, but the formula itself repeats and spreads outcomes evenly over time. So two things happen: first, rare things are guaranteed to happen eventually—if you flip a coin enough, long streaks of heads must appear, and they look suspicious even though they're normal; second, randomness loves clusters. Truly random points don't space themselves neatly; they bunch up, leaving gaps, which our brains read as "patterns." Your brain is a pattern detector tuned for survival, so it spots shapes in noise. The simulation isn't hiding order—it's just that orderlessness, in large doses, naturally produces arrangements that look meaningful.

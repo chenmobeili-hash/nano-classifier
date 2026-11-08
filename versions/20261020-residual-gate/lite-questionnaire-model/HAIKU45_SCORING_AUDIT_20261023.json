@@ -1,0 +1,823 @@
+{
+  "date": "2026-10-23",
+  "scope": "仅复核当前有效库中尚未复核的Haiku4.5两份；不改变规则、权重、训练库或模型权重。",
+  "ground_truth": {
+    "A10_winning_moves": [
+      1
+    ],
+    "A11_paths": 3882,
+    "A12_count": 26
+  },
+  "samples": [
+    {
+      "source": "claudehaiku4.5-extended-01.txt",
+      "answer_sha256": "a631bc8ea97f030bb95b18a0a84670008996975f24d621c28016caaef26201f2",
+      "before": {
+        "legacy": 65.2,
+        "strict": 66.14,
+        "combined": 131.34,
+        "result_only": 52
+      },
+      "reviews": {
+        "A01": {
+          "score": 1,
+          "reason": "5正确，周期12及指数约化和7^3=343余5均正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A02": {
+          "score": 1,
+          "reason": "最终已明确更正为甲，末次三种真值分析正确；但开头答乙，过程中两次把丙案乙的真话误判为假。按明确更正的错误结论施加旧版80%、严格版70%上限。",
+          "consistency_review": {
+            "cap_fraction": 0.8,
+            "reason": "开头明确回答乙，最终明确改为甲；错误结论更正，按原有上限80%处理，严格版映射为70%。"
+          }
+        },
+        "A03": {
+          "score": 1,
+          "reason": "18/67及0.018/0.067贝叶斯计算正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A04": {
+          "score": 1,
+          "reason": "35正确；6个0形成7个间隙，从中选4放1的计数正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A05": {
+          "score": 1,
+          "reason": "路径A→C→B→E→D与总权重7均正确，所列边权和或Dijkstra距离正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A06": {
+          "score": 1,
+          "reason": "1,2,4,7,13,24,44,81的完整序列与f(8)=81正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A07": {
+          "score": 1.0,
+          "reason": "两行列表[2,2,2]、[0,1,2]内容正确，按既有内容80%与格式20%核对。 内容比例=1.0，只输出指定内容=True。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A08": {
+          "score": 1.0,
+          "reason": "items数组pear/apple/banana/kiwi顺序、类型和JSON交付均正确。 内容比例=1.0，只输出指定内容=True。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A09": {
+          "score": 1.0,
+          "reason": "仅取open项且升序得到[1,3]正确，JSON交付正确。 内容比例=1.0，只输出指定内容=True。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A10": {
+          "score": 0.2,
+          "reason": "先手必胜得20%；最后给取3到12，首步错误且未给全体正确取法。将14误判为必胜、12又当必败，核心胜负推理错误，取法及方法不得分。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A11": {
+          "score": 0.2,
+          "reason": "未给3882，只估2600–3000。12870、5544、4410正确；经(6,3)后仅剩向右2、向上5，应C(7,2)=21而非C(9,2)=36，单点应1764；交集未算。保留半方法20%，最终结果0。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A12": {
+          "score": 0.2,
+          "reason": "18–22错误，正确26。总数C(8,4)=70及扣除连续111/首尾相同的框架有效，但未完成排除计数；按已有同类未完成计数保留半方法20%。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        }
+      },
+      "result_reviews": {
+        "A01": {
+          "correct": true,
+          "reason": "仅核对最终结果：5正确，周期12及指数约化和7^3=343余5均正确。"
+        },
+        "A02": {
+          "correct": true,
+          "reason": "仅核对最终结果：最终已明确更正为甲，末次三种真值分析正确；但开头答乙，过程中两次把丙案乙的真话误判为假。按明确更正的错误结论施加旧版80%、严格版70%上限。"
+        },
+        "A03": {
+          "correct": true,
+          "reason": "仅核对最终结果：18/67及0.018/0.067贝叶斯计算正确。"
+        },
+        "A04": {
+          "correct": true,
+          "reason": "仅核对最终结果：35正确；6个0形成7个间隙，从中选4放1的计数正确。"
+        },
+        "A05": {
+          "correct": true,
+          "reason": "仅核对最终结果：路径A→C→B→E→D与总权重7均正确，所列边权和或Dijkstra距离正确。"
+        },
+        "A06": {
+          "correct": true,
+          "reason": "仅核对最终结果：1,2,4,7,13,24,44,81的完整序列与f(8)=81正确。"
+        },
+        "A07": {
+          "correct": true,
+          "reason": "仅核对最终结果：两行列表[2,2,2]、[0,1,2]内容正确，按既有内容80%与格式20%核对。 内容比例=1.0，只输出指定内容=True。"
+        },
+        "A08": {
+          "correct": true,
+          "reason": "仅核对最终结果：items数组pear/apple/banana/kiwi顺序、类型和JSON交付均正确。 内容比例=1.0，只输出指定内容=True。"
+        },
+        "A09": {
+          "correct": true,
+          "reason": "仅核对最终结果：仅取open项且升序得到[1,3]正确，JSON交付正确。 内容比例=1.0，只输出指定内容=True。"
+        },
+        "A10": {
+          "correct": false,
+          "reason": "先手必胜得20%；最后给取3到12，首步错误且未给全体正确取法。将14误判为必胜、12又当必败，核心胜负推理错误，取法及方法不得分。"
+        },
+        "A11": {
+          "correct": false,
+          "reason": "未给3882，只估2600–3000。12870、5544、4410正确；经(6,3)后仅剩向右2、向上5，应C(7,2)=21而非C(9,2)=36，单点应1764；交集未算。保留半方法20%，最终结果0。"
+        },
+        "A12": {
+          "correct": false,
+          "reason": "18–22错误，正确26。总数C(8,4)=70及扣除连续111/首尾相同的框架有效，但未完成排除计数；按已有同类未完成计数保留半方法20%。"
+        }
+      },
+      "after": {
+        "legacy": 65.2,
+        "strict": 66.14,
+        "combined": 131.34,
+        "result_only": 58,
+        "format": 80.0
+      },
+      "format_details": [
+        {
+          "name": "标签独占一行且使用[A01]形式",
+          "maximum": 20,
+          "points": 20.0,
+          "status": "checked",
+          "reason": "24/24个标签符合"
+        },
+        {
+          "name": "24题齐全且不重复",
+          "maximum": 15,
+          "points": 15.0,
+          "status": "checked",
+          "reason": "24/24题；异常题号："
+        },
+        {
+          "name": "题号顺序",
+          "maximum": 5,
+          "points": 5.0,
+          "status": "checked",
+          "reason": "须完整按A01至B12排列"
+        },
+        {
+          "name": "无额外开场及整卷围栏",
+          "maximum": 5,
+          "points": 5.0,
+          "status": "checked",
+          "reason": "检查题号前文本及整卷代码围栏；不猜测B12结尾是否为结束语"
+        },
+        {
+          "name": "A07仅输出指定内容",
+          "maximum": 6.666666666666667,
+          "points": 6.6667,
+          "status": "checked",
+          "reason": "不允许说明、代码围栏或额外内容"
+        },
+        {
+          "name": "A08仅输出指定内容",
+          "maximum": 6.666666666666667,
+          "points": 6.6667,
+          "status": "checked",
+          "reason": "不允许说明、代码围栏或额外内容"
+        },
+        {
+          "name": "A09仅输出指定内容",
+          "maximum": 6.666666666666667,
+          "points": 6.6667,
+          "status": "checked",
+          "reason": "不允许说明、代码围栏或额外内容"
+        },
+        {
+          "name": "B01/B05/B06单项输出",
+          "maximum": 10,
+          "points": 10.0,
+          "status": "checked",
+          "reason": "分别只输出范围内整数、中文名称、范围内整数；不验证动物语义"
+        },
+        {
+          "name": "B02长度和字符",
+          "maximum": 10,
+          "points": 0.0,
+          "status": "checked",
+          "reason": "须恰好120个指定字符；实有84字符；内部空白同样违规"
+        },
+        {
+          "name": "B03长度和字符",
+          "maximum": 10,
+          "points": 0.0,
+          "status": "checked",
+          "reason": "须恰好80个指定字符；实有74字符；内部空白同样违规"
+        },
+        {
+          "name": "B04骰子格式",
+          "maximum": 5,
+          "points": 5.0,
+          "status": "checked",
+          "reason": "24个1至6整数，以英文逗号分隔"
+        }
+      ]
+    },
+    {
+      "source": "claudehaiku4.5-extended-02.txt",
+      "answer_sha256": "2b314285dc26f793fb1d696e04d6ba32e071d33cfe68f62613a94ae07649dbdd",
+      "before": {
+        "legacy": 48.0,
+        "strict": 55.93,
+        "combined": 103.93,
+        "result_only": 38
+      },
+      "reviews": {
+        "A01": {
+          "score": 1,
+          "reason": "5正确，周期12及指数约化和7^3=343余5均正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A02": {
+          "score": 0.8,
+          "reason": "甲正确，甲案真值完整正确；另两种情况笼统称2句或0句真话不严谨，实际都恰为2句真话；保留半方法，合计80%。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A03": {
+          "score": 1,
+          "reason": "18/67及0.018/0.067贝叶斯计算正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A04": {
+          "score": 1,
+          "reason": "35正确；6个0形成7个间隙，从中选4放1的计数正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A05": {
+          "score": 1,
+          "reason": "路径A→C→B→E→D与总权重7均正确，所列边权和或Dijkstra距离正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A06": {
+          "score": 1,
+          "reason": "1,2,4,7,13,24,44,81的完整序列与f(8)=81正确。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A07": {
+          "score": 0.8,
+          "reason": "两行列表[2,2,2]、[0,1,2]内容正确，按既有内容80%与格式20%核对。 内容比例=1.0，只输出指定内容=False。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A08": {
+          "score": 1.0,
+          "reason": "items数组pear/apple/banana/kiwi顺序、类型和JSON交付均正确。 内容比例=1.0，只输出指定内容=True。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A09": {
+          "score": 1.0,
+          "reason": "仅取open项且升序得到[1,3]正确，JSON交付正确。 内容比例=1.0，只输出指定内容=True。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A10": {
+          "score": 0.4,
+          "reason": "先手胜得20%；取1或3中仅1正确，取法部分按一对一错给半分20%；12实际必胜，断言12与14均必败错误，方法0，合计40%。参照GLM5.3FLASH-06同类评分。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A11": {
+          "score": 0.2,
+          "reason": "6276错误，应3882。总数及前两个单点正确，但(6,3)后的C(5,2)应为C(7,2)；(2,2)到(6,3)仅(4,1)位移，应5种而非C(7,4)=35，交集应630。保留半容斥方法20%。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        },
+        "A12": {
+          "score": 0,
+          "reason": "18错误，应26；仅声称系统列举或递推而没有列举、状态、转移或子计数，不构成可复核方法，结论和方法均不得分。",
+          "consistency_review": {
+            "cap_fraction": 1,
+            "reason": "全文核对未发现需要额外封顶的已更正错误定论或未撤回冲突；持续存在的方法错误在内容比例中处理，不重复叠扣。"
+          }
+        }
+      },
+      "result_reviews": {
+        "A01": {
+          "correct": true,
+          "reason": "仅核对最终结果：5正确，周期12及指数约化和7^3=343余5均正确。"
+        },
+        "A02": {
+          "correct": true,
+          "reason": "仅核对最终结果：甲正确，甲案真值完整正确；另两种情况笼统称2句或0句真话不严谨，实际都恰为2句真话；保留半方法，合计80%。"
+        },
+        "A03": {
+          "correct": true,
+          "reason": "仅核对最终结果：18/67及0.018/0.067贝叶斯计算正确。"
+        },
+        "A04": {
+          "correct": true,
+          "reason": "仅核对最终结果：35正确；6个0形成7个间隙，从中选4放1的计数正确。"
+        },
+        "A05": {
+          "correct": true,
+          "reason": "仅核对最终结果：路径A→C→B→E→D与总权重7均正确，所列边权和或Dijkstra距离正确。"
+        },
+        "A06": {
+          "correct": true,
+          "reason": "仅核对最终结果：1,2,4,7,13,24,44,81的完整序列与f(8)=81正确。"
+        },
+        "A07": {
+          "correct": true,
+          "reason": "仅核对最终结果：两行列表[2,2,2]、[0,1,2]内容正确，按既有内容80%与格式20%核对。 内容比例=1.0，只输出指定内容=False。"
+        },
+        "A08": {
+          "correct": true,
+          "reason": "仅核对最终结果：items数组pear/apple/banana/kiwi顺序、类型和JSON交付均正确。 内容比例=1.0，只输出指定内容=True。"
+        },
+        "A09": {
+          "correct": true,
+          "reason": "仅核对最终结果：仅取open项且升序得到[1,3]正确，JSON交付正确。 内容比例=1.0，只输出指定内容=True。"
+        },
+        "A10": {
+          "correct": false,
+          "reason": "先手胜得20%；取1或3中仅1正确，取法部分按一对一错给半分20%；12实际必胜，断言12与14均必败错误，方法0，合计40%。参照GLM5.3FLASH-06同类评分。"
+        },
+        "A11": {
+          "correct": false,
+          "reason": "6276错误，应3882。总数及前两个单点正确，但(6,3)后的C(5,2)应为C(7,2)；(2,2)到(6,3)仅(4,1)位移，应5种而非C(7,4)=35，交集应630。保留半容斥方法20%。"
+        },
+        "A12": {
+          "correct": false,
+          "reason": "18错误，应26；仅声称系统列举或递推而没有列举、状态、转移或子计数，不构成可复核方法，结论和方法均不得分。"
+        }
+      },
+      "after": {
+        "legacy": 63.6,
+        "strict": 65.65,
+        "combined": 129.25,
+        "result_only": 58,
+        "format": 73.33
+      },
+      "format_details": [
+        {
+          "name": "标签独占一行且使用[A01]形式",
+          "maximum": 20,
+          "points": 20.0,
+          "status": "checked",
+          "reason": "24/24个标签符合"
+        },
+        {
+          "name": "24题齐全且不重复",
+          "maximum": 15,
+          "points": 15.0,
+          "status": "checked",
+          "reason": "24/24题；异常题号："
+        },
+        {
+          "name": "题号顺序",
+          "maximum": 5,
+          "points": 5.0,
+          "status": "checked",
+          "reason": "须完整按A01至B12排列"
+        },
+        {
+          "name": "无额外开场及整卷围栏",
+          "maximum": 5,
+          "points": 5.0,
+          "status": "checked",
+          "reason": "检查题号前文本及整卷代码围栏；不猜测B12结尾是否为结束语"
+        },
+        {
+          "name": "A07仅输出指定内容",
+          "maximum": 6.666666666666667,
+          "points": 0.0,
+          "status": "checked",
+          "reason": "不允许说明、代码围栏或额外内容"
+        },
+        {
+          "name": "A08仅输出指定内容",
+          "maximum": 6.666666666666667,
+          "points": 6.6667,
+          "status": "checked",
+          "reason": "不允许说明、代码围栏或额外内容"
+        },
+        {
+          "name": "A09仅输出指定内容",
+          "maximum": 6.666666666666667,
+          "points": 6.6667,
+          "status": "checked",
+          "reason": "不允许说明、代码围栏或额外内容"
+        },
+        {
+          "name": "B01/B05/B06单项输出",
+          "maximum": 10,
+          "points": 10.0,
+          "status": "checked",
+          "reason": "分别只输出范围内整数、中文名称、范围内整数；不验证动物语义"
+        },
+        {
+          "name": "B02长度和字符",
+          "maximum": 10,
+          "points": 0.0,
+          "status": "checked",
+          "reason": "须恰好120个指定字符；实有95字符；内部空白同样违规"
+        },
+        {
+          "name": "B03长度和字符",
+          "maximum": 10,
+          "points": 0.0,
+          "status": "checked",
+          "reason": "须恰好80个指定字符；实有73字符；内部空白同样违规"
+        },
+        {
+          "name": "B04骰子格式",
+          "maximum": 5,
+          "points": 5.0,
+          "status": "checked",
+          "reason": "24个1至6整数，以英文逗号分隔"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "两份A10/A11/A12最终结果均未全部正确，结果分均58；第一份A02明确更正为甲，结果分不扣更正，过程版仍封顶扣分。",
+    "B08第二份示例10/20/80/90/100均分60而非75，是开放题错误；现行规则不计B开放语义分，仅记录，不新增评分口径。",
+    "B02及B03未达到规定长度，按现行格式项扣分；第二份A07的解释文字按原局部格式及严格版格式分处理。"
+  ],
+  "training_signature_unchanged": "369405a7887a17b8b669ea2f9a3214ce9625fc62888f75bb0bf921fa1cea3966",
+  "reviewed_samples": 100,
+  "pending_review_samples": 0,
+  "ranking_rows": [
+    {
+      "rank": 1,
+      "model": "gpt6.1sol",
+      "samples": 3,
+      "combined": 200.0,
+      "legacy": 100.0,
+      "strict": 100.0,
+      "format": 100.0,
+      "result": 100.0,
+      "result_rank": 1,
+      "tier": "MAX 满分",
+      "pending_review": 0
+    },
+    {
+      "rank": 1,
+      "model": "gpt6astra",
+      "samples": 3,
+      "combined": 200.0,
+      "legacy": 100.0,
+      "strict": 100.0,
+      "format": 100.0,
+      "result": 100.0,
+      "result_rank": 1,
+      "tier": "MAX 满分",
+      "pending_review": 0
+    },
+    {
+      "rank": 3,
+      "model": "qwen3.8flash",
+      "samples": 6,
+      "combined": 198.74,
+      "legacy": 99.7,
+      "strict": 99.04,
+      "format": 92.22,
+      "result": 100.0,
+      "result_rank": 1,
+      "tier": "S 领先",
+      "pending_review": 0
+    },
+    {
+      "rank": 4,
+      "model": "claudeopus5.5",
+      "samples": 4,
+      "combined": 198.67,
+      "legacy": 99.3,
+      "strict": 99.37,
+      "format": 100.0,
+      "result": 100.0,
+      "result_rank": 1,
+      "tier": "S 领先",
+      "pending_review": 0
+    },
+    {
+      "rank": 5,
+      "model": "deepseekv4.1flash-strong",
+      "samples": 4,
+      "combined": 198.16,
+      "legacy": 99.65,
+      "strict": 98.51,
+      "format": 89.79,
+      "result": 100.0,
+      "result_rank": 1,
+      "tier": "S 领先",
+      "pending_review": 0
+    },
+    {
+      "rank": 6,
+      "model": "deepseekv4pro",
+      "samples": 3,
+      "combined": 197.23,
+      "legacy": 99.07,
+      "strict": 98.16,
+      "format": 90.0,
+      "result": 100.0,
+      "result_rank": 1,
+      "tier": "S 领先",
+      "pending_review": 0
+    },
+    {
+      "rank": 7,
+      "model": "claudesonnet5.5",
+      "samples": 4,
+      "combined": 196.42,
+      "legacy": 98.8,
+      "strict": 97.62,
+      "format": 88.33,
+      "result": 100.0,
+      "result_rank": 1,
+      "tier": "S 领先",
+      "pending_review": 0
+    },
+    {
+      "rank": 8,
+      "model": "gpt6sol",
+      "samples": 3,
+      "combined": 196.12,
+      "legacy": 98.13,
+      "strict": 97.99,
+      "format": 96.67,
+      "result": 100.0,
+      "result_rank": 1,
+      "tier": "A 较高",
+      "pending_review": 0
+    },
+    {
+      "rank": 9,
+      "model": "deepseek-app-thinking",
+      "samples": 3,
+      "combined": 196.07,
+      "legacy": 98.27,
+      "strict": 97.8,
+      "format": 93.61,
+      "result": 100.0,
+      "result_rank": 1,
+      "tier": "A 较高",
+      "pending_review": 0
+    },
+    {
+      "rank": 10,
+      "model": "deepseekv4.1flash1017",
+      "samples": 9,
+      "combined": 195.93,
+      "legacy": 98.09,
+      "strict": 97.84,
+      "format": 95.65,
+      "result": 100.0,
+      "result_rank": 1,
+      "tier": "A 较高",
+      "pending_review": 0
+    },
+    {
+      "rank": 11,
+      "model": "qwen3.8max",
+      "samples": 2,
+      "combined": 191.74,
+      "legacy": 95.5,
+      "strict": 96.23,
+      "format": 86.66,
+      "result": 97.0,
+      "result_rank": 12,
+      "tier": "A 较高",
+      "pending_review": 0
+    },
+    {
+      "rank": 12,
+      "model": "glm5.3",
+      "samples": 3,
+      "combined": 189.04,
+      "legacy": 94.93,
+      "strict": 94.11,
+      "format": 86.67,
+      "result": 94.67,
+      "result_rank": 13,
+      "tier": "A 较高",
+      "pending_review": 0
+    },
+    {
+      "rank": 13,
+      "model": "glm5.3flash",
+      "samples": 6,
+      "combined": 178.0,
+      "legacy": 89.37,
+      "strict": 88.63,
+      "format": 80.7,
+      "result": 88.33,
+      "result_rank": 15,
+      "tier": "A 较高",
+      "pending_review": 0
+    },
+    {
+      "rank": 14,
+      "model": "claudesonnet4.6",
+      "samples": 3,
+      "combined": 175.84,
+      "legacy": 90.33,
+      "strict": 85.5,
+      "format": 78.33,
+      "result": 98.0,
+      "result_rank": 11,
+      "tier": "B 中段",
+      "pending_review": 0
+    },
+    {
+      "rank": 15,
+      "model": "qwen-app-thinking",
+      "samples": 4,
+      "combined": 174.49,
+      "legacy": 87.85,
+      "strict": 86.64,
+      "format": 73.54,
+      "result": 85.0,
+      "result_rank": 16,
+      "tier": "B 中段",
+      "pending_review": 0
+    },
+    {
+      "rank": 16,
+      "model": "gpt-oss-120b",
+      "samples": 3,
+      "combined": 173.82,
+      "legacy": 87.6,
+      "strict": 86.22,
+      "format": 67.78,
+      "result": 92.67,
+      "result_rank": 14,
+      "tier": "B 中段",
+      "pending_review": 0
+    },
+    {
+      "rank": 17,
+      "model": "claudehaiku5.5",
+      "samples": 9,
+      "combined": 171.35,
+      "legacy": 85.82,
+      "strict": 85.53,
+      "format": 82.96,
+      "result": 84.44,
+      "result_rank": 18,
+      "tier": "B 中段",
+      "pending_review": 0
+    },
+    {
+      "rank": 18,
+      "model": "glm5.3flash-free",
+      "samples": 4,
+      "combined": 171.04,
+      "legacy": 86.05,
+      "strict": 84.99,
+      "format": 77.5,
+      "result": 85.0,
+      "result_rank": 16,
+      "tier": "B 中段",
+      "pending_review": 0
+    },
+    {
+      "rank": 19,
+      "model": "gpt6luna",
+      "samples": 3,
+      "combined": 153.57,
+      "legacy": 77.4,
+      "strict": 76.17,
+      "format": 67.78,
+      "result": 73.33,
+      "result_rank": 19,
+      "tier": "C 相对靠后",
+      "pending_review": 0
+    },
+    {
+      "rank": 20,
+      "model": "gpt5.6luna",
+      "samples": 4,
+      "combined": 151.75,
+      "legacy": 76.35,
+      "strict": 75.39,
+      "format": 73.12,
+      "result": 72.5,
+      "result_rank": 20,
+      "tier": "C 相对靠后",
+      "pending_review": 0
+    },
+    {
+      "rank": 21,
+      "model": "qwen-app-fast",
+      "samples": 6,
+      "combined": 136.06,
+      "legacy": 69.0,
+      "strict": 67.06,
+      "format": 61.94,
+      "result": 64.67,
+      "result_rank": 21,
+      "tier": "C 相对靠后",
+      "pending_review": 0
+    },
+    {
+      "rank": 22,
+      "model": "deepseek-app-nonthinking",
+      "samples": 2,
+      "combined": 134.17,
+      "legacy": 67.6,
+      "strict": 66.57,
+      "format": 60.0,
+      "result": 63.0,
+      "result_rank": 22,
+      "tier": "C 相对靠后",
+      "pending_review": 0
+    },
+    {
+      "rank": 23,
+      "model": "claudehaiku4.5-extended",
+      "samples": 2,
+      "combined": 130.29,
+      "legacy": 64.4,
+      "strict": 65.9,
+      "format": 76.66,
+      "result": 58.0,
+      "result_rank": 24,
+      "tier": "C 相对靠后",
+      "pending_review": 0
+    },
+    {
+      "rank": 24,
+      "model": "deepseekv4.1flash-weak",
+      "samples": 7,
+      "combined": 127.92,
+      "legacy": 64.06,
+      "strict": 63.86,
+      "format": 71.9,
+      "result": 61.43,
+      "result_rank": 23,
+      "tier": "C 相对靠后",
+      "pending_review": 0
+    }
+  ]
+}

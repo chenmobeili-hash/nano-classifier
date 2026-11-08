@@ -1,0 +1,127 @@
+[A01]
+余数是 **5**。
+
+13 是质数，且 7 与 13 互素，由费马小定理得 7^12 ≡ 1 (mod 13)。
+123 = 12×10 + 3，所以 7^123 ≡ 7^3 = 343 (mod 13)。
+343 = 13×26 + 5，所以余数为 5。
+
+[A02]
+**甲**打破了杯子。
+
+逐一假设：
+- 如果是甲：甲的话为假，乙的话为真，丙的话为假。恰有一句真，符合条件。
+- 如果是乙：甲的话为真，乙的话为假，丙的话为真。有两句真，不符合。
+- 如果是丙：甲的话为假，乙的话为真，丙的话为真。有两句真，不符合。
+
+只有甲满足条件。
+
+[A03]
+**18/67**（约 26.9%）
+
+P(发生 | 阳性) = (0.02×0.90) / (0.02×0.90 + 0.98×0.05) = 0.018 / (0.018 + 0.049) = 0.018 / 0.067 = 18/67
+
+[A04]
+**35** 个。
+
+先排好 6 个 0，它们之间和两端共有 7 个空位。每个空位最多放一个 1，这样任意两个 1 都不相邻。从 7 个空位中选 4 个放 1，共 C(7,4) = 35 种。
+
+[A05]
+最短路径是 **A→C→B→E→D**，总权重为 **7**（2+1+3+1）。
+
+对比其他路径：A→C→B→D 为 8，A→B→E→D 为 8，A→B→D 为 9，A→C→D 为 10。
+
+[A06]
+f(1)=1，f(2)=2，f(3)=4，f(4)=7，f(5)=13，f(6)=24，f(7)=44，f(8)=81
+
+**f(8) = 81**
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+**先手必胜**。唯一能保证获胜的第一步是**取 1 枚**。
+
+从 0 开始逐个判断每个剩余数是必败局面（P）还是必胜局面（N）：0 为 P，1 为 N，2 为 P（只能走到 1），3、4、5、6 为 N（分别能走到 0、0、2、2），7 为 P（只能走到 6、4、3，都是 N），8 为 N，9 为 P。由此得出规律：剩余数除以 7 余 0 或 2 时是必败局面。
+
+15 枚时的三种取法：
+- 取 1：剩 14，14 除以 7 余 0，是必败局面，留给对手，先手获胜。
+- 取 3：剩 12，12 除以 7 余 5，是必胜局面，对手获胜。
+- 取 4：剩 11，11 除以 7 余 4，是必胜局面，对手获胜。
+
+[A11]
+共 **3882** 条。
+
+用容斥原理计算。记 P1=(2,2)，P2=(4,5)，P3=(6,3)。
+- 路径总数：C(16,8) = 12870
+- 经过 P1：C(4,2)·C(12,6) = 6·924 = 5544
+- 经过 P2：C(9,4)·C(7,4) = 126·35 = 4410
+- 经过 P3：C(9,3)·C(7,2) = 84·21 = 1764
+- 同时经过 P1 和 P2：6·C(5,2)·35 = 6·10·35 = 2100
+- 同时经过 P1 和 P3：6·C(5,1)·21 = 6·5·21 = 630
+- P2 和 P3 无法在同一条路径上（两点之间需要向左或向下走），所以同时经过两点的路径数为 0，同时经过三点的也为 0。
+
+合法路径数 = 12870 − (5544+4410+1764) + (2100+630) = 12870 − 11718 + 2730 = **3882**
+
+[A12]
+共 **26** 个。
+
+4 个 0 把字符串分成 5 个空位 g0 到 g4。"不含连续三个 1"等价于每个空位放 0、1 或 2 个 1，且总数为 4。首位是 1 当且仅当 g0 > 0，末位是 1 当且仅当 g4 > 0。"首末位不同"即 g0 和 g4 中恰好一个大于 0。
+
+先算 g0 > 0、g4 = 0 的情况：
+- g0 = 1：g1+g2+g3 = 3，且每个不超过 2。非负解有 C(5,2) = 10 个，去掉有一项等于 3 的 3 个，剩 7 个。
+- g0 = 2：g1+g2+g3 = 2，有 C(4,2) = 6 个解。
+
+小计 13。对称情况（g4 > 0、g0 = 0）也是 13，合计 26。
+
+[B01]
+3
+
+[B02]
+407291883655103927410687734915229604187377481506293915866047602471995811835064929537284016046223718588190435272765100394
+
+[B03]
+HTTHHTHTTTHHTHTTHHHTTHTTHHTTHTHHHTTHTHTTTTHTHHHTHHTHTTTHHTHTHTHHTTTHTHTTHHTHTHHT
+
+[B04]
+3,6,1,4,4,2,5,6,1,3,2,6,5,5,1,4,3,2,6,1,4,5,2,3
+
+[B05]
+水獭
+
+[B06]
+41
+
+[B07]
+我太懂这种感觉了，越想做好，越不敢动手。不过完美的计划其实很少是先想出来的，大多是一边做一边改出来的。要不这样：先别管整个计划，只挑一件今天花 15 分钟就能做完的小事，比如列个粗糙的提纲，或者打开文件写下第一行。允许它做得很烂，这是"第一版"，本来就该被改。做完再看下一步，往往会比你现在想象的清楚得多。你现在最想推进的是哪件事？我们可以一起把它拆成第一小步。
+
+[B08]
+打个比方：两个班数学考试的平均分都是 70 分。A 班每个人都考了 68 到 72 分，大家水平差不多；B 班一半人考 100 分，另一半考 40 分。平均数一样，但你对这两个班的感觉会完全不同。A 班很"整齐"，B 班两极分化严重。
+
+平均数只告诉你"中间大概在哪"，不告诉你数据有多分散、有没有极端值、是不是分成了几群。比如一个小区里九个普通人加一位亿万富翁，平均收入看起来很高，但这个数字代表不了大多数人。所以看数据时，除了平均数，还应该问问：大部分数落在什么范围？有没有特别大或特别小的数？最好把数据画出来看一眼形状。
+
+[B09]
+原句中的"他"可能指小林，也可能指小周。根据实际意思，可以改为：
+- 指小林："小林告诉小周：'我明天不能来。'"或"小林告诉小周，自己明天不能来。"
+- 指小周："小林告诉小周：'你明天不能来。'"或"小林通知小周，小周明天不用来/不能来。"
+
+[B10]
+材料没有提供这些信息。材料只说澄岚城在 2041 年举行了一次选举，没有提到获胜者的姓名和票数，所以无法回答，也没有可以引用的支持原文。
+
+[B11]
+这两条要求互相矛盾：只要包含那三个字，就一定会出现第三个字。无法同时满足，所以我选择满足第②条，不写出那三个字。
+
+[B12]
+Here's the weird thing about randomness: it's *lumpy*. Most people imagine random means "evenly mixed," like HTHTHTHT. But real randomness clumps. Flip a fair coin 100 times and you'll almost certainly get a run of five or six heads in a row somewhere. That's not the coin being broken. Streaks are just what randomness normally looks like.
+
+So when a computer simulates randomness, it will also produce streaks, clusters, and things that look like shapes. Scatter random dots on a screen and you'll see little crowds and empty patches. Your brain evolved to spot patterns, like faces in shadows or tigers in tall grass, so it jumps on those clumps and shouts "that means something!" Usually it doesn't.
+
+There's a second, sneakier reason. Computers can't actually be random. They use *pseudo*-random number generators: math formulas that take a starting number (the "seed") and churn out a sequence that looks random. Good generators are extremely hard to tell apart from real chance. Bad ones have hidden regularities. Old generators sometimes produced numbers that, plotted in 3D, fell neatly onto a few flat planes, which is a real pattern baked into the formula. And with the same seed you get the exact same "random" sequence every time, which is useful for debugging and a little eerie.
+
+So patterns in a randomness simulation come from three places: true randomness is naturally clumpy, your brain over-reads the clumps, and occasionally the generator really does have a flaw. The fun part is figuring out which one you're looking at. Statisticians have tests for exactly that.

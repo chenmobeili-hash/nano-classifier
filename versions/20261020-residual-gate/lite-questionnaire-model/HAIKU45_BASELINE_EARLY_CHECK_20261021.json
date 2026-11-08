@@ -1,0 +1,53 @@
+{
+  "note": "Preliminary base fusion only; full nested gate evaluation runs separately.",
+  "rows": [
+    {
+      "source": "claudehaiku4.5-extended-01.txt",
+      "mode": "in_sample",
+      "top": "Claude",
+      "scores": {
+        "Claude": 0.8831447012140035,
+        "DeepSeek": 0.03816351070501297,
+        "GLM": 0.030315019254765038,
+        "GPT": 0.01283716812423937,
+        "Qwen": 0.03553960070197947
+      }
+    },
+    {
+      "source": "claudehaiku4.5-extended-01.txt",
+      "mode": "leave_one_out",
+      "top": "DeepSeek",
+      "scores": {
+        "Claude": 0.18663393960144284,
+        "DeepSeek": 0.403527131742424,
+        "GLM": 0.12782417666789123,
+        "GPT": 0.021210109996208697,
+        "Qwen": 0.26080464199203324
+      }
+    },
+    {
+      "source": "claudehaiku4.5-extended-02.txt",
+      "mode": "in_sample",
+      "top": "Claude",
+      "scores": {
+        "Claude": 0.9039651929081753,
+        "DeepSeek": 0.026273404396118912,
+        "GLM": 0.03074005444465018,
+        "GPT": 0.013463924917949855,
+        "Qwen": 0.02555742333310549
+      }
+    },
+    {
+      "source": "claudehaiku4.5-extended-02.txt",
+      "mode": "leave_one_out",
+      "top": "Claude",
+      "scores": {
+        "Claude": 0.3712798316428787,
+        "DeepSeek": 0.19103129027590635,
+        "GLM": 0.3027679081205637,
+        "GPT": 0.03643400845326772,
+        "Qwen": 0.09848696150738341
+      }
+    }
+  ]
+}

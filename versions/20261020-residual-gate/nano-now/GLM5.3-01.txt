@@ -1,0 +1,100 @@
+[A01]
+余数为 5。推导：13 是素数且不整除 7，由费马小定理 7^12 ≡ 1 (mod 13)。123 = 12×10 + 3，故 7^123 ≡ 7^3 = 343 (mod 13)。343 = 13×26 + 5，余数为 5。
+
+[A02]
+是甲打破了杯子。逐一检验（数真话句数）：
+- 若甲打破：甲说“乙打破的”为假，乙说“不是我”为真，丙说“不是甲”为假——恰好 1 句真，符合条件。
+- 若乙打破：甲真、乙假、丙真——2 句真，不符合。
+- 若丙打破：甲假、乙真、丙真——2 句真，不符合。
+只有甲打破时恰有一句真话。
+
+[A03]
+P(事件|阳性) = (0.02×0.90) / (0.02×0.90 + 0.98×0.05) = 0.018 / (0.018 + 0.049) = 0.018/0.067 = **18/67**（约 26.9%）。
+
+[A04]
+35 个。在 10 个位置中选 4 个互不相邻的位置：标准变换 p_i' = p_i − (i−1) 后等价于从 7 个位置中任选 4 个，即 C(10−4+1, 4) = C(7,4) = 35。
+
+[A05]
+最短路径为 A→C→B→E→D，总权重 2+1+3+1 = **7**。全部候选路径比较：A→B→D = 9；A→C→D = 10；A→C→B→D = 8；A→B→E→D = 8；A→C→B→E→D = 7，故最短为 7。
+
+[A06]
+递推计算：f(1)=1，f(2)=2，f(3)=4，f(4)=7，f(5)=13，f(6)=24，f(7)=44，f(8)=44+24+13 = **81**。
+f(1) 至 f(8) 依次为：1, 2, 4, 7, 13, 24, 44, 81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items":["pear","apple","banana","kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+先手必胜，且唯一能保证获胜的第一步是**取 1 枚**（留给对手 14 枚）。
+理由（P/N 位置分析，P = 轮到走的人必败，规定 0 为 P）：从 0 递推得各位置状态为
+0:P，1:N，2:P，3:N，4:N，5:N，6:N，7:P，8:N，9:P，10:N，11:N，12:N，13:N，14:P，15:N。
+P 位置集合为 {0, 2, 7, 9, 14}。15 是 N 位置，故先手必胜。三种开局中：取 3 留 12（N）、取 4 留 11（N），均把必胜位置送给对手；只有取 1 留 14（P）正确。此后对手从 14 只能走到 13、11、10（全为 N），先手总能回到 P 位置：13→取 4→9；11→取 4→7；10→取 1→9（或取 3→7）。如此反复把 P 位置留给对手，直至取走最后一枚。
+
+[A11]
+**3882** 条。方法：容斥。总路径 C(16,8) = 12870；经过点 (a,b) 的路径数 = C(a+b, a)·C(16−a−b, 8−a)。
+- 过 (2,2)：C(4,2)·C(12,6) = 6×924 = 5544
+- 过 (4,5)：C(9,4)·C(7,4) = 126×35 = 4410
+- 过 (6,3)：C(9,6)·C(7,2) = 84×21 = 1764
+- 同时过 (2,2) 与 (4,5)：6·C(5,2)·C(7,4) = 6×10×35 = 2100
+- 同时过 (2,2) 与 (6,3)：6·C(5,4)·C(7,2) = 6×5×21 = 630
+- 同时过 (4,5) 与 (6,3)：0（从 (4,5) 到 (6,3) 需要向上走负数步，单调路径不可能同时经过）；三者同经亦为 0。
+合法路径数 = 12870 − 5544 − 4410 − 1764 + 2100 + 630 = 3882。
+
+[A12]
+**26** 个。可复核方法（补集 + 间隔法）：
+1) 长度 8、恰 4 个 1、无三个连续 1 的字符串总数：排 4 个 0 形成 5 个空隙，每隙放 0~2 个 1、总和为 4。无上限解 C(8,4)=70；某隙 ≥3 的解为 5（个空隙）×C(5,4)=25（两隙同时 ≥3 不可能）。总数 70−25=45。
+2) 首位=末位=0：中间 6 位放恰 4 个 1 且无三个连续，即 3 个内部空隙各放 0~2、和为 4：排列 (2,2,0) 共 3 种、(2,1,1) 共 3 种，合计 6。
+3) 首位=末位=1：中间 6 位放恰 2 个 1，且不能同时在前两格（否则开头 111）、不能同时在后两格（否则结尾 111）：C(6,2)−2 = 13。
+答案 = 45 − 6 − 13 = 26。
+
+[B01]
+7
+
+[B02]
+550832194711294835067836220941204761988599130745283758296107864201753353798642121084592737629370851145160382997369142080
+
+[B03]
+HTTHHTTHTHTHTTHHTHHHHHTTTHHTHTTTHHHTTTHTTHHTHTTTHHHHTTHHTTHTTTHHHTHHTTHTHTTHTHHH
+
+[B04]
+3,6,2,2,5,1,4,1,6,3,3,5,2,6,4,4,1,2,5,3,6,1,1,4
+
+[B05]
+狐狸
+
+[B06]
+37
+
+[B07]
+我特别理解这种感觉——正因为想把它做好，才一直不敢动手。但“完美的计划”其实是个温柔的陷阱：它把“开始”的前提定成了“把一切都想清楚”，而这件事几乎永远做不到。不如反过来：把计划砍到不能再小，今天就花十五分钟，做其中最简单、最不吓人的一步，哪怕做得很烂也没关系。烂的开始也胜过完美的等待——方向这种东西，往往是走着走着才看清的，不是站着想清楚的。挑一步现在就试试？做完回来告诉我。
+
+[B08]
+因为平均数只是把所有数据“摊平”成的一个数，它把数据内部的形状完全抹掉了。举个例子：两个班的平均身高都是 170 厘米。A 班所有人都在 168 到 172 之间，站出来整整齐齐；B 班一半人是 185、一半人是 155，站出来高矮分明。平均数一模一样，但一个班“大家都差不多”，另一个班“差距非常大”，给人的印象完全不同。所以看数据不能只看平均数，还要看数据是聚在一起还是散得很开、有没有个别极端值把平均数拉高或拉低、大部分值落在哪里。平均数回答的是“摊到每个人头上是多少”，却不回答“人和人之间差多远”——而后者往往才是我们真正感受到的东西。
+
+[B09]
+小林对小周说：“我明天不能来。”
+（改写说明：原句中的“他”既可能指小林也可能指小周，改成直接引语后，明确不能来的人是小林。）
+
+[B10]
+无法回答。材料只写了“虚构城市澄岚城在2041年举行了一次选举”，其中不包含获胜者的姓名、票数或任何相关细节；材料中不存在支持任何答案的原文。
+
+[B11]
+本题的两个要求互相矛盾，无法同时满足：要求①规定答案必须包含“蓝色灯”三个字，而其中的第三个字恰好就是要求②禁止出现的那一个字——因此只要满足①就必然违反②，只要满足②就必然违反①。只能如实说明这一矛盾，无法给出同时满足两条要求的答案。
+
+[B12]
+Great question — and honestly, this one trips up plenty of adults too.
+
+Here's the key idea: random doesn't mean "evenly spread out" or "pattern-free." It just means every outcome has some chance, and what happened before doesn't influence what happens next. But when you string together lots of random events, clumps and streaks aren't just possible — they're basically guaranteed.
+
+Flip a coin 80 times and you'll almost certainly see five or six heads in a row somewhere. It feels meaningful — like the coin "got hot" — but it's exactly what chance produces. Weirdly, if you never saw a streak, *that* would be the suspicious outcome.
+
+Two things are going on here. First, small samples are lumpy: with only a handful of events, chance hasn't had enough throws to smooth itself out, so bumps and runs are normal. Second, your brain is a pattern-finding machine. It evolved to spot a tiger hiding in the grass, so it reads structure into noise even when there's nothing there — psychologists call this apophenia. Hand people a page of random dots and they'll swear they see faces and shapes in it.
+
+So when a simulation of randomness shows patterns — streaks, clusters, bands — that's not a bug or evidence of some hidden order. A truly random world is full of little accidents lining up. The patterns are real in the sense that you genuinely see them; they just don't have a cause.

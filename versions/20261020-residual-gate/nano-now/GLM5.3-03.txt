@@ -1,0 +1,52 @@
+[A01] 余数为 5。推导：7^2≡49≡10 (mod 13)，7^3≡10·7=70≡5，7^6≡5^2=25≡-1，故 7^12≡1。123=12×10+3，所以 7^123≡7^3≡5。
+
+[A02] 甲打破了杯子。逐一假设：若是甲，则三句话分别为假、真、假，恰好一句真，符合；若是乙，则真、假、真，两句真；若是丙，则假、真、真，两句真。只有甲的情况恰有一句真话。
+
+[A03] P(事件|阳性) = (0.02×0.9)/(0.02×0.9 + 0.98×0.05) = 0.018/0.067 = 18/67。
+
+[A04] 35 个。把 4 个不相邻的 1 放入 10 个位置，等价于在 6 个 0 形成的间隙中选 4 个位置插入 1，即 C(7,4)=35。
+
+[A05] 最短路径为 A→C→B→E→D，总权重 2+1+3+1=7。（A→C→B→D 和 A→B→E→D 均为 8，A→C→D 为 10。）
+
+[A06] f(1)=1, f(2)=2, f(3)=4, f(4)=7, f(5)=13, f(6)=24, f(7)=44, f(8)=81。
+
+[A07] [2,  2,  2]
+[0, 1, 2]
+
+[A08] {"items":["pear","apple","banana","kiwi"]}
+
+[A09] [1,3]
+
+[A10] 先手必胜，唯一保证获胜的第一步是取 1 枚（留下 14 枚）。用必败点分析（轮到取的人面对的数量）：0 是必败点；逐点计算可得必败点为 2, 7, 9, 14。15 不是必败点，且 15 减去允许的取法 {1,3,4} 中只有 15-1=14 落在必败点，所以第一步必须取 1 枚，此后每次都把必败点留给对方即可。
+
+[A11] 3882 条。方法：总数 C(16,8)=12870；过 (2,2) 的有 C(4,2)·C(12,6)=6×924=5544；过 (4,5) 的有 C(9,4)·C(7,3)=126×35=4410；过 (6,3) 的有 C(9,6)·C(7,2)=84×21=1764。容斥加回同时经过两点的：(2,2)→(4,5)：6×C(5,2)×C(7,3)=6×10×35=2100；(2,2)→(6,3)：6×C(5,1)×C(7,2)=6×5×21=630；(4,5) 与 (6,3) 坐标互斥不可同时经过。结果 12870−(5544+4410+1764)+(2100+630)=3882。
+
+[A12] 26 个。按首位和末位分两类，两类对称。考虑首位=1、末位=0：中间 6 位需放 3 个 1，整体不含 111。长度 6、含 3 个 1、不含 111 的字符串共 C(6,3)−4=16 个（减去 111000、011100、001110、000111）；其中以 11 开头的有 110010、110100、110001 共 3 个（因首位已是 1，会形成 111 起头），需排除，剩 13 个。末位=0 保证了结尾不会凑成 111。由对称性首位=0、末位=1 也是 13 个，合计 26。
+
+[B01] 4
+
+[B02] 7092364810528773019461385207941650382716495028374619203847561029384756291038475620193847501928374650192837465120398475620193847501928
+
+[B03] HTTHHTHTTHTHHHTTTHHTHTTTHHHTTHHTHTTHHTTTHTHHTHHTTHTHTTHHTTHTHHTTHHTTTHTHHTHTTHHTTHHTTHTHTTHHTHTTHHTTHTHHTHTTHTTHHTHHTTHTHTTHTHHTT
+
+[B04] 3,6,2,5,1,4,4,1,6,3,2,2,5,5,1,3,6,6,2,4,1,1,3,5
+
+[B05] 狐狸
+
+[B06] 57
+
+[B07] 计划做到“完美”再开始，其实是在等一个不会到来的信号——因为完美只有在做的过程中才知道长什么样。不如反过来：先做一个“够糟但能跑”的版本，比如只做计划里最小的那一步，给它 20 分钟，做完就算今天赢了。开始之后你会发现，剩下的计划会自己变清楚。
+
+[B08] 因为平均数只是一个“平衡点”，它不告诉你数据是怎么分布的。想象两组人的平均身高都是 1.7 米：一组人人都在 1.68 到 1.72 米之间，站在一起看起来整整齐齐；另一组一半是 1.5 米、一半是 1.9 米，站在一起高矮分明。数字的中心一样，但“形状”完全不同——一组挤在一起，另一组摊得很开。而且平均数还容易被个别极端值拉动：九个人月入五千，第十个人月入五百万，“平均”就成了五十多万，可这数字谁也代表不了。所以除了平均数，还要看数据的分散程度和有没有异常值，印象才会接近真相。
+
+[B09] 小林告诉小周：“我（小林）明天不能来。”
+
+[B10] 无法回答。材料仅提到“虚构城市澄岚城在2041年举行了一次选举”，未给出获胜者姓名和票数，不存在支持任何答案的原文。
+
+[B11] 本题两个要求互相矛盾，无法同时满足：要求①规定答案必须包含“蓝色灯”三个字，而这三个字本身含有“灯”，与要求②“不得出现‘灯’字”冲突。因此不存在能同时满足两条要求的答案。
+
+[B12] Here's the thing about randomness: it's lumpy. Our brains expect "random" to mean "evenly spread out" — like if you flip a coin 100 times, you'd guess the heads and tails alternate nicely, HTHTHT and so on. But real randomness doesn't work that way. Each flip has no memory, so nothing stops the coin from landing heads five times in a row. In fact, if you flip a coin 100 times, you should *expect* runs like that — streaks and clusters are a natural part of randomness, not evidence of a pattern behind it.
+
+So when a simulation of random events produces something that looks like a pattern — a cluster of wins, a stretch of "lucky" rolls, a shape that seems meaningful — that's usually just randomness doing its thing. With enough attempts, even unlikely-looking arrangements become near-certain somewhere. It's like how the stars are scattered at random, yet we see bears and hunters in the constellations: the sky didn't arrange itself into shapes, we're the ones who are extremely good at finding shapes.
+
+That skill — pattern-finding — evolved because spotting a tiger in the grass was worth the occasional false alarm. The trade-off is that we also spot "patterns" in noise. So the interesting question when you see a pattern isn't "wow, what caused this?" but "how often would something like this happen by chance alone?" Run the simulation a thousand times, and you'll often find your surprising pattern shows up regularly in pure noise. That's the tell.

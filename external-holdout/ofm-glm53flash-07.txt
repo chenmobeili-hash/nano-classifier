@@ -1,0 +1,95 @@
+[A01]
+5
+7⁶ = 77² mod 13 … 推导：7²=49≡10，7³≡10×7=70≡5，7⁴≡5×7=35≡9，7⁵≡9×7=63≡11，7⁶≡11×7=77≡12≡−1，故 7¹²≡1。123=12×10+3，所以 7¹²³≡7³≡5 (mod 13)。
+
+[A02]
+是甲打破的。
+逐一假设：若甲打破，则甲话（“乙打破”）为假，乙话（“不是我”）为真，丙话（“不是甲”）为假——恰好一真，符合。若乙打破：甲真、乙假、丙真，两真。若丙打破：甲假、乙真、丙真，两真。均不符，故恰一真只有“甲打破”这一情形。
+
+[A03]
+P(发生|阳性) = P(阳性|发生)P(发生) / [P(阳性|发生)P(发生)+P(阳性|未发生)P(未发生)] = 0.02×0.9 / (0.02×0.9 + 0.98×0.05) = 0.018 / 0.067 = 18/67。
+
+[A04]
+35。
+在10个位置中选4个放1且互不相邻，等价于把4个1插入由6个0构成的7个空隙（含两端）中且每隙至多一个：C(7,4)=35。
+
+[A05]
+最短路径为 A→C→B→E→D，总权重 2+1+3+1=7。
+（对照 A→B→E→D=8，A→C→D=10。）
+
+[A06]
+f(1)=1, f(2)=2, f(3)=4, f(4)=7, f(5)=13, f(6)=24, f(7)=44, f(8)=81。所以 f(8)=81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items":["pear","apple","banana","kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+先手必胜；唯一能保证获胜的第一步是取1枚，留下14枚。
+理由：设 P 位局面（轮到走者必败）为 n≡0 或 n≡2 (mod 7)（n=0 显然必败；n=2 时取1、3、4都会留下1等必胜位）。14≡0 (mod 7)，是 P 位；从15出发，取1到14（P位），取3到12、取4到11都不是 P 位，故只有取1这一种保证获胜的开局。之后每次取k使剩余数 ≡0 或 2 (mod 7) 即可（15→取1余14→对手取x后 14−x∈{13,11,10}，取相应.moveTo 9或7……按此策略维持即可）。
+
+[A11]
+12744 条。
+方法：总路径 C(16,8)=12870。用容斥减去经过禁点的路径数。
+P(过(2,2)) = C(4,2)=6；P(过(4,5)) = C(9,4)=126；P(过(6,3)) = C(9,3)=84。
+两禁点组合：(2,2)→(4,5)：C(5,3)=10，计 6×10=60；(2,2)→(6,3)：C(5,1)=5，计 6×5=30；(4,5)→(6,3) 需要 y 下降，为0。三禁点组合为0。
+经过至少一个禁点的路径数 = (6+126+84) − (60+30+0) + 0 = 126。
+合法路径 = 12870 − 126 = 12744。
+
+[A12]
+26。
+计数方法：首位≠末位分两种情形 (s₁=0,s₈=1) 和 (s₁=1,s₈=0)，由串的左右反转变换一一对应，两种情形数目相等，设为 X，答案=2X。
+算 X：s₁=0、s₈=1 时，其余3个1放在位置2–7中，共 C(6,3)=20 种取法。需排除含连续三个1的：恰等于连续三元组的有 {2,3,4},{3,4,5},{4,5,6},{5,6,7} 共4组；另含6和7（与末位8构成111）的有 {2,6,7},{3,6,7},{4,6,7},{5,6,7}，其中 {5,6,7} 已计，不重复的加3组。共排除7组，X=20−7=13。
+答案 = 2×13 = 26。
+
+[B01]
+7
+
+[B02]
+403829175662048193758261940573826104938572619483057261948375291046382756194830572618493065729284103
+
+[B03]
+HTTHHTTHTHHHTTHTHTHHHTHTHHTTHTTHTHHHTHTTTHTHTHHHTTHTTHHTHTTHTHHHTTHHTTTHHTHTHTTHT
+
+[B04]
+3,6,1,4,4,2,6,5,3,1,6,2,5,5,3,1,4,6,2,3,4,5,1,5
+
+[B05]
+猫头鹰
+
+[B06]
+42
+
+[B07]
+听起来你卡住的不是计划本身，而是“必须一次做到完美”这个前提。要不这样：把计划砍到最小的一步——小到不好意思拒绝自己的那种，比如今天只写下第一个要做的动作，或者花十分钟做个粗糙的初版。完成的烂开始，比等待中的完美计划更接近你想要的那个结果。你担心做不好，恰恰说明你在乎；但方向感是走出来的，不是想出来的。就从十分钟开始，好吗？
+
+[B08]
+平均数只告诉你“总的说，中等水平在哪”，却不告诉你数据是怎么散开的。举个例子：两个宿舍平均分都是75分。甲宿舍全班都在70–80之间，人人差不多；乙宿舍一半人考95分、一半人考55分，平均也是75。数字上完全一样，但印象完全不同：一个像整齐的队伍，一个像两极分化。关键在于“波动大小”（在统计里叫离散程度）：平均数把高低相互抵消了，抵消之后，这些高低差异本身就不见了。所以同样的平均数背后，可能藏着稳定性与波动、均衡与悬殊的巨大差别——只看平均数，就像只听一首歌的和弦却听不见节奏，很多东西被抹平了。
+
+[B09]
+更清楚的改法（需明确“他”指谁）：可以这样写——
+『小林告诉小周：“我明天不能来。”』（指小林不来）
+或
+『小林告诉小周：“你明天不能来。”』（指小周不能来）
+或
+『小林向小周转述：他（第三人）明天不能来。』
+原句的问题在于“他”可能指小林或另一个在场者，产生歧义，改写时要把不能来的人直接点明。
+
+[B10]
+材料中没有任何信息可以回答这个问题。材料只说明“虚构城市澄岚城在2041年举行了一次选举”，没有提及任何候选人、投票过程或结果。无法给出获胜者姓名与票数；支持原文仅有一句：『虚构城市澄岚城在2041年举行了一次选举』，该句不含关于获胜者的内容。
+
+[B11]
+两条要求无法同时满足：①要求恰好出现三次“蓝色灯”，而这三个字中必然包含“灯”字，这直接违反②“不得出现‘灯’字”。二者在逻辑上互相排斥，任何答案都至少违反其中一条。若必须选一个写出来，可示例如满足①的版本——『傍晚的蓝色灯亮了，蓝色灯下有人等车，远处又亮起一盏蓝色灯』——但请注意此例含有“灯”字，即说明②不可能被同时满足。
+
+[B12]
+Here's the fun secret: randomness is really good at accidentally looking like a plan. If you flip a coin ten times, a run of five heads in a row isn't a message from the universe — it's just one of the many shapes ten flips can take, and somebody has to win the "all shapes" lottery. With enough chances, the unlikely ones show up.
+
+Think of it like rain on a window. Each drop lands wherever physics and chance say, no pattern intended — yet you'll see streaks, gaps, little clusters that look almost designed. Your brain, which evolved to find faces in clouds and danger in shadows, can't help reading stories into them. That's not a bug in the coin or the rain; it's the way patterns are distributed: randomly, but not uniformly smoothly.
+
+There's also a mathematical reason. In a truly random sequence, some structures *must* appear — runs, near-symmetries, clusters. So when you spot one, you've found exactly the thing randomness was guaranteed to produce somewhere. The trick a good simulation teaches you is humility: before you say "look, a pattern!", ask how likely that pattern is under pure chance. If the answer is "pretty likely, given enough tries," then the pattern is just chance wearing a costume. Learning to tell costumes apart from real causes is honestly one of the most useful superpowers a curious teenager can pick up.

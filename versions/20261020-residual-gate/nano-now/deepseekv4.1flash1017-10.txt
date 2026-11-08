@@ -1,0 +1,86 @@
+[A01]
+7²=49≡10≡−3 (mod 13)，7⁶≡(−3)³=−27≡−1，故 7¹²≡1。123=12×10+3，所以 7¹²³≡7³=343≡5 (mod 13)。余数为 **5**。
+
+[A02]
+**甲打破了杯子。** 逐一假设：若甲打破，则甲的话“乙打破的”为假，乙的话“不是我”为真，丙的话“不是甲”为假，正好一真；若乙打破，则甲真、乙假、丙真，两句真；若丙打破，则甲假、乙真、丙真，两句真。只有“甲打破”满足恰有一句真。
+
+[A03]
+由条件概率与全概率公式：
+P(E|+) = P(+|E)P(E) / [P(+|E)P(E)+P(+|¬E)P(¬E)] = (0.9×0.02)/(0.9×0.02+0.05×0.98) = 0.018/0.067 = **18/67**（约 0.2687）。
+
+[A04]
+4 个 1 互不相邻，等价于从 10 个位置中选出 4 个互不相邻的位置，其数量为 C(10−4+1,4)=C(7,4)=**35**。
+
+[A05]
+用 Dijkstra 算法：A=0，C=2，B=3（经 C 比 A→B=4 更优），E=6，D=7（经 E 比 B→D=8、C→D=10 更优）。最短路径为 **A→C→B→E→D**，总权重 **7**。
+
+[A06]
+逐项递推：f(1)=1，f(2)=1+1+0=2，f(3)=2+1+1=4，f(4)=4+2+1=7，f(5)=7+4+2=13，f(6)=13+7+4=24，f(7)=24+13+7=44，f(8)=44+24+13=**81**。
+f(1) 至 f(8)：1, 2, 4, 7, 13, 24, 44, 81；f(8)=81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items":["pear","apple","banana","kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+**先手必胜，且唯一能保证取胜的第一步是取 1 枚。** 必败态为 0、2、7、9、14……（面对这些数目时，减去 1、3、4 都会把必胜态留给对手）。初始 15 枚，取 1 枚后剩 14 枚，落入必败态；若取 3 枚剩 12、取 4 枚剩 11，都是必胜态，因此只有取 1 枚。
+
+[A11]
+记 P1=(2,2)、P2=(4,5)、P3=(6,3)。从 (0,0) 到 (8,8) 无限制路径数为 C(16,8)=12870。经过某点 (a,b) 的路径数为 C(a+b,a)·C(16−a−b,8−a)。
+经过障碍的路径数：P1：6×924=5544；P2：126×35=4410；P3：84×21=1764。
+同时经过两个障碍的路径数：N(P1∩P2)=6×10×35=2100；N(P1∩P3)=6×5×21=630；N(P2∩P3)=0（(4,5) 无法只向右上走到 (6,3)）；三者同时经过也为 0。
+容斥：12870−5544−4410−1764+2100+630=**3882**。
+
+[A12]
+按“首位与末位不同”分两类：
+①首位 0、末位 1：中间 6 位恰有 3 个 1，共 C(6,3)=20 种；其中出现“111”的 7 种（{2,3,4}、{3,4,5}、{4,5,6}、{5,6,7}，以及 6、7 为 1 时与末位 1 构成“111”的 {6,7,2}、{6,7,3}、{6,7,4}），合法 13 种。
+②首位 1、末位 0：对称，合法 13 种（禁用 {2,3,4}、{3,4,5}、{4,5,6}、{5,6,7} 与以首位 1 开头的 {2,3,4}、{2,3,5}、{2,3,6}、{2,3,7} 的并集，共 7 种）。
+总数 13+13=**26**。
+
+[B01]
+7
+
+[B02]
+482910637591730528462638451907748190356259302746183057284916831956274067240958131406859237926471835051830476294702918365
+
+[B03]
+HTHHTTHTHTTHHTHTTHHHTTHTHHTHTTHTHTTHHTHTTTHHTTHTHHHTTHTHHTTHTHTHHTTTHHHHTTHTHTTH
+
+[B04]
+4,2,6,1,5,3,6,2,4,1,3,5,6,6,2,1,4,3,5,2,6,4,1,3
+
+[B05]
+猫
+
+[B06]
+73
+
+[B07]
+这大概率并不是懒，而是把“开始”这道门槛设得太高了。试着把计划砍成“丑但能跑”的版本：只写下一步、只花五分钟、允许以后返工。今天先做一个最小动作就好：打开文档写三行、发出一条消息、画一张草图，哪怕做得粗糙也算数。完美是迭代出来的，不是开场就有的；先让它存在，再让它变好。
+
+[B08]
+平均数只告诉你“数据整体重心在哪”，不告诉你“数据散成什么样”。比如两个班平均分都是 75：甲班大多在 70~80 分之间，乙班一半人 50 分、一半人 100 分。平均分一模一样，但甲班让人觉得整齐、稳定，乙班让人觉得两极分化。所以除了平均数，还得看极差、中位数、标准差这些指标，它们描述的是数据“抱团还是撕裂”，以及极端值有多远。
+
+[B09]
+小林告诉小周，小林明天不能来。
+
+[B10]
+材料无法提供获胜者姓名和票数：全文只有一句，只说“举行了一次选举”，没有出现任何候选人、得票数或选举结果，因此这两项信息在材料中不存在，也没有能支持它们的原文。唯一可引用的原文是“虚构城市澄岚城在2041年举行了一次选举”，它只能支持“举行了选举”这一事实，不能推出获胜者与票数。
+
+[B11]
+本题的两条要求互相矛盾，无法同时满足：①要求答案中恰好出现由“蓝”“色”以及表示照明器具的那个汉字组成的三个汉字，而②恰恰禁止该字出现。二者不能同时成立，故不存在同时满足①②的答案；本答案选择遵守②，不写出被禁的那个字。
+
+[B12]
+Here's the trick: randomness is a property of *how* a sequence is produced, not of what it looks like. Flip a fair coin 80 times and you'll almost certainly see streaks — HHHHH, TTTT — and lopsided stretches where heads dominate the first half and tails the second. The coin isn't "remembering" anything. It's just that there are vastly more messy sequences than tidy alternating ones, so messy is what you usually get.
+
+Your brain is the other half of the story. It's a pattern-detection machine tuned to spot faces and signals, so it happily reads a short streak as a "trend" and a gap as "due". That's the gambler's fallacy: after five heads, tails isn't overdue — the next flip is still fifty-fifty.
+
+There's a third layer in simulations. Computers usually use pseudo-random generators: deterministic formulas that produce sequences statistically indistinguishable from random ones. Good ones are fine, but a weak generator can leak hidden structure — patterns you'd never expect from "true" randomness.
+
+So a simulation can look patterned because short random runs genuinely cluster, because we over-read those clusters, and because the generator itself may have quirks. Real randomness is lumpier and streakier than intuition expects — that's exactly what makes it random.

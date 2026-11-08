@@ -1,0 +1,78 @@
+[A01]
+余数为 5。推导：7 的幂 mod 13 循环长度为 12（7^12≡1），123 = 12×10 + 3，所以 7^123 ≡ 7^3 = 343 = 26×13+5 ≡ 5 (mod 13)。
+
+[A02]
+丙打破了杯子。……不对，逐一验证：若甲打破，甲说“乙打破的”为假，乙说“不是我”为真，丙说“不是甲”为假——恰有一真，成立。若乙打破：甲真、乙假、丙真（两句真），矛盾。若丙打破：甲假、乙真、丙真（两句真），矛盾。所以是甲打破了杯子（甲说假、乙丙都说真？不对——此时只有乙那句为真）。结论：甲打破杯子，只有乙的话是真的。
+
+[A03]
+P(发生|阳性) = 0.02×0.90 / (0.02×0.90 + 0.98×0.05) = 0.018/0.067 = 18/67。
+
+[A04]
+35 个。把 4 个 1 插入不相邻的间隙法：在 6 个 0 形成的 7 个空隙中选 4 个放 1，得 C(7,4) = 35；等价地，无相邻 1 的 k 个 1 在长度 n 中有 C(n-k+1, k) = C(7,4) = 35。
+
+[A05]
+最短路径为 A→C→B→E→D，总权重 = 2+1+3+1 = 7。（A→C→B→D 为 8，A→C→D 为 10，A→B→D 为 9。）
+
+[A06]
+f(8) = 81。列表：f(1)=1, f(2)=2, f(3)=4, f(4)=7, f(5)=13, f(6)=24, f(7)=44, f(8)=81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+先手必胜。理由：用余数 P 局分析——无子可取（0 枚）是必败态，必败态为 0, 2, 7, 9, 14（模 7 为 0 或 2，且小局验证：14 是必败态，因为 14−1=13、14−3=11、14−4=10 都是必胜态）。15−1 = 14 是必败态，所以先手取 1 枚即可获胜；15−3=12、15−4=11 均是必胜态。能保证获胜的第一步取法只有一种：取 1 枚。
+
+[A11]
+合法路径共 6456 条。方法：避开单个点的方案数 = 总路径 − 经过它的路径。总路径 C(16,8)=12870。经 A=(2,2)：C(4,2)×C(12,4)=6×495=2970，得 9900。再减经 B=(4,5) 且避开 A 的：C(9,4)−C(4,2)×C(5,3)=126−60=66，后段 C(7,3)=35，共 66×35=2310，得 7590。再减经 C=(6,3) 且避开 A 的（B 在 C 上方，前段不可能经 B）：84−30=54，后段 C(7,2)=21，共 54×21=1134，得 6456。（B、C 互不包含，无经两点的路径需容斥。）
+
+[A12]
+27 个。方法：先数不含 111 且恰有 4 个 1 的长度 8 串，按 1 的游程结构（1+1+1+1、2+1+1、2+2）用间隙法得 5+30+10=45；再减首末相同的串：首末均为 0 时中间 6 位含 4 个 1 无 111，共 5 种；首末均为 1 时中间 6 位取 2 个 1，共 C(6,2)−2=13 种（排除 111 出现在端点，即去掉 {2,3} 和 {6,7}）。45−(5+13)=27。
+
+[B01]
+7
+
+[B02]
+385902176459381257300471886329915461035782978612054733890181426693057401258269331846205718394628555137920684537
+
+[B03]
+TTHTHHHTTHTHTHHTTHTHHHTHHTTHTHTHHHTTHTHHTTHTHTHHTTTHTHHTHTHTTHHTTHTHTHTHHHTHTTHHTTHTHHTT
+
+[B04]
+3,6,2,5,5,1,6,4,3,1,2,6,5,4,4,1,3,6,2,5,1,4,6,2
+
+[B05]
+章鱼
+
+[B06]
+42
+
+[B07]
+我太懂这种感觉了——“等一切都想清楚再开始”往往就是拖着不开始的变体喊法。其实你不需要完美的计划，只需要一个足够小、小到不会失败的第一步：今天只做 10 分钟，或者只写第一句话。做完之后你会发现，行动本身会修正计划，比空想靠谱得多。要不要现在就挑 10 分钟试一下？我可以帮你把第一步拆得更具体。
+
+[B08]
+因为平均数只概括“中心位置”，却丢掉了数据的“展开程度”（波动）和分布形态。举例：两组人平均月收入都是 8000 元，第一组大家都在 7000–9000 之间，第二组大多数人是 3000，只有极少数人是 30000——平均一算同样是 8000，但给人的感受天差地别。第二组的平均值被极端值拉高了，掩盖了大多数人的真实处境。所以除了平均数，还要看方差、分布形态（是否有极端值、是否偏斜）这些信息。这就是为什么报表里平均数好看，现实中很多人的体验却很差。
+
+[B09]
+小林告诉小周：“他（小林自己）明天不能来。”（明确用名字指代，消除“他”的歧义；若实际意思是另一个人不能来，可改为“小林告诉小周：那个人明天不能来”。）
+
+[B10]
+材料中没有提供这次选举获胜者的姓名和票数；支持该判断的原文是：“虚构城市澄岚城在2041年举行了一次选举”——原文只提到举行了选举，并未写到任何候选人、票数或结果。无法给出获胜者信息。
+
+[B11]
+本题答案：色。处理说明：要求①需恰好包含“蓝色灯”三个字，要求②不得出现“灯”字，两者互斥（包含①必然出现“灯”），故无法同时满足；按要求第5条如实说明，仅写出不含“灯”的“蓝色”相关内容作为折中。
+
+[B12]
+Randomness doesn't mean "no patterns" — it means the patterns you see were never planned. Imagine flipping a fair coin 100 times. You'll almost certainly get runs: six or seven heads in a row. People usually take that as evidence of "streaks" or a lucky mood, but in any long random sequence, clusters are actually the norm, not the exception. If the coin never produced runs, that would be far stranger and would hint at something non-random.
+
+There's also our own pattern-hungry brain at work. Humans evolved to spot faces in shadows and shapes in clouds, so when a simulation spits out dots that drift, clump, or form a wave-ish line, we immediately say "look, a trend!" The simulation didn't intend the trend; our eyes drew it.
+
+A third ingredient is limited data. In small samples, random chance can lean heavily one way — maybe the simulated dice roll mostly 4s for a while. Probability guarantees that over a huge number of trials things even out (the law of large numbers), but in the short run, streaks and imbalances are not just possible, they're expected.
+
+So the honest answer is: a simulation of randomness produces patterns because (1) uniform randomness inherently clusters, (2) we're wired to find meaning in noise, and (3) short runs haven't had time to smooth out. The pattern isn't hidden order smuggled in by the machine — it's what genuine randomness looks like when we finally get to see it laid out plainly. Once you internalize that, you stop asking "why did it cluster?" and start asking the better question: "is this cluster actually more than chance would produce?"

@@ -1,0 +1,78 @@
+[A01]
+余数是 5。7^12 ≡ 1 (mod 13)（费马小定理，13为素数且13∤7），123 = 12×10 + 3，故 7^123 ≡ 7^3 = 343 = 26×13 + 5 ≡ 5 (mod 13)。
+
+[A02]
+是甲打破的。逐一假设：若甲打破，则甲的话假、乙的话（“不是我”）真、丙的话（“不是甲”）假，恰有一句真，符合。若乙打破，甲真、乙假、丙真，两句真，不符。若丙打破，甲假、乙真、丙真，两句真，不符。故唯甲打破时恰有一句真话。
+
+[A03]
+条件概率 = (0.02×0.90) / (0.02×0.90 + 0.98×0.05) = 0.018 / (0.018 + 0.049) = 0.018/0.067 = 18/67。
+
+[A04]
+35 个。将4个1放入10个位置且互不相邻，等价于把4个1插入6个0所形成的7个空隙（含两端）中选4个，即 C(7,4) = 35。
+
+[A05]
+最短路径为 A→C→B→E→D，总权重 2+1+3+1 = 7。比较其他路径：A→B→D = 9，A→C→B→D = 8，A→C→D = 10，故7最小。
+
+[A06]
+f(8) = 81。列表：f(1)=1，f(2)=2，f(3)=4，f(4)=7，f(5)=13，f(6)=24，f(7)=44，f(8)=81。（逐项用 f(n)=f(n-1)+f(n-2)+f(n-3)，负项取0。）
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+先手必胜。取法：先取1枚。理由：以“剩余石子数”分析必败点（轮到面对该数者必败）：0 和 2 是必败点（0显然；2只能取1，留1给对方获胜）。由此可推必败点依次为 0, 2, 7, 12, 14…（验证：面对7，取1/3/4后剩6/4/3，均为对方可胜；面对14，取后剩13/11/10，均为对方可胜）。15枚时先手取1枚，给对方留下14（必败点），之后每轮把剩余数恢复到必败点序列即可保证获胜。（其余第一步：取3剩12、取4剩11，均给对方留下可胜局面。）
+
+[A11]
+3882 条。用容斥原理：总路径 C(16,8)=12870。经过单点：过(2,2)：C(4,2)×C(12,6)=6×924=5544；过(4,5)：C(9,4)×C(7,3)=126×35=4410；过(6,3)：C(9,6)×C(7,5)=84×21=1764。同时过两点：过(2,2)和(4,5)：6×C(5,2)×35=6×10×35=2100；过(2,2)和(6,3)：6×C(5,1)×21=630；(4,5)和(6,3)需向下走，为0。三点同时：0。合法数 = 12870 − (5544+4410+1764) + (2100+630) = 12870 − 11718 + 2730 = 3882。
+
+[A12]
+26 个。分两种情形（每种中位置2–7共6位、恰含3个1）：
+- 首位1、末位0：需禁止子串 x1x2x3=111，即 x2=x3=1 的组合（4种），以及 x2..x7 内三个1连续（{2,3,4},{3,4,5},{4,5,6},{5,6,7} 共4种，其中{2,3,4}重复计一次）。禁止集合共 4+4−1=7，故 C(6,3)−7 = 20−7 = 13。
+- 首位0、末位1：对称地禁止 x6=x7=1（配合末位）及三个1连续，同样 20−7 = 13。
+合计 13+13 = 26。
+
+[B01]
+7
+
+[B02]
+4083172569182736049515283746192837465019827364501928374650192834756102938475619283746501928374650
+
+[B03]
+HTTTHHTTHTTHHTHTTHHTHTTHHTHTTHTHHTTHTHTTHHTHTTHTHTTHHTHTTHHTTHTHTHHTTHTTHHTHT
+
+[B04]
+3, 5, 1, 6, 2, 4, 4, 1, 6, 3, 2, 5, 1, 4, 6, 2, 5, 3, 6, 1, 2, 4, 3, 5
+
+[B05]
+企鹅
+
+[B06]
+47
+
+[B07]
+我特别理解这种感觉——想把每一步都想清楚再开始，结果“开始”本身一直被推迟。其实完美的计划往往是做出来的，不是想出来的。不如现在就挑一个最小、最容易完成的动作，比如花10分钟搭个雏形，或者只写第一句话。先让事情“存在”，哪怕很粗糙，你就有东西可以修改了。明天开始不如今天随手开始，试试看？
+
+[B08]
+因为平均数只概括了数据的“中心”，却没有反映数据的“分散程度”。举例：两组人各5人，第一组收入是 4900、5000、5000、5000、5100，第二组是 0、1000、5000、9000、10000，两组平均都是5000。第一组里大家都差不多，第二组里贫富差距巨大，生活在两组里的感受截然不同。此外，平均数还容易被极端值拉偏：一个亿万富翁走进小酒吧，会让“人均财富”飙升，但谁也不会觉得酒吧里的人变富了。所以同样（或相近）的平均数背后，可能藏着完全不同的分布形状，给人的印象自然天差地别。
+
+[B09]
+更清楚的写法取决于“他”指谁，可改为：
+- “小林告诉小周：小林明天不能来。”（如果指小林）
+- “小林告诉小周：小周明天不能来。”（如果指小周，这种说法略显奇怪，通常应写作“小林通知小周，小周明天不能来”或根据实际语境调整）
+建议直接点名或根据上下文补足主语，例如：“小林告诉小周，自己明天不能来。”（指小林时）。
+
+[B10]
+材料中没有提供任何关于获胜者的信息。材料原文只有一句：“虚构城市澄岚城在2041年举行了一次选举”，其中既没有获胜者姓名，也没有票数。因此根据材料无法回答该问题。
+
+[B11]
+本题的两个要求互相矛盾，无法满足：要求①必须包含三个“蓝色灯”，而“蓝色灯”一词本身就含有“灯”字，要求②又禁止出现“灯”字。二者不可能同时成立，故本题答案只能是指出这一矛盾，任何“同时满足”的答案都不存在。
+
+[B12]
+Here's the funny thing about randomness: our brains are pattern-hunting machines, and true randomness doesn't look the way we expect it to look. If you flip a fair coin 80 times, almost everyone's "fake random" sequence alternates H and T too neatly — but a real sequence will contain streaks like HHHHH. Those streaks aren't evidence of cheating; they're guaranteed. With enough flips, some run of six heads in a row is more likely to appear somewhere than not. The same goes for lotteries: someone wins, and if the same person wins twice, that's surprising — but across millions of players and thousands of draws, some unlikely coincidence is bound to show up to *someone*. This is the law of truly large numbers at work: with enough opportunities, even wildly improbable events become expected. So when a simulation produces clusters, streaks, or near-misses, that's not the machine failing at randomness — it's what randomness genuinely looks like when you have a big enough sample. The patterns are real; the meaning we attach to them usually isn't.

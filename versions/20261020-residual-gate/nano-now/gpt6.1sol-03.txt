@@ -1,0 +1,120 @@
+[A01]
+余数是5。因为 \(7^3\equiv5\pmod{13}\)，所以 7⁶≡-1、\(7^{12}\equiv1\pmod{13}\)。由 123=12×10+3，得 \(7^{123}\equiv5\pmod{13}\)。
+
+[A02]
+甲打破了杯子。此时甲、乙、丙的话分别为假、真、假，恰有一句真话。若是乙或丙打破的，都会有两句真话。
+
+[A03]
+\[
+P(\text{发生}\mid\text{阳性})
+=\frac{0.02\times0.90}{0.02\times0.90+0.98\times0.05}
+=\frac{18}{67}.
+\]
+
+[A04]
+35个。设四个1的位置为 p₁<p₂<p₃<p₄，相邻位置至少相差2。将它们分别减去 0,1,2,3，就对应于从7个位置中任选4个，因此有 \(\binom74=35\) 个。
+
+[A05]
+最短路径为 A→C→B→E→D，总权重为 2+1+3+1=7。
+
+[A06]
+f(1) 至 f(8) 依次为：
+1,2,4,7,13,24,44,81。
+
+所以 f(8)=81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items":["pear","apple","banana","kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+先手必胜，唯一能保证获胜的第一步是取1枚。
+
+按递推规则：能走到必败局面的局面为必胜，否则为必败。0至15枚中的必败局面是 0,2,7,9,14 枚。取1枚可留给对方14枚；取3或4枚则分别留下12或11枚，均为对方的必胜局面。
+
+[A11]
+3882条。
+
+记三个禁点为 P=(2,2)、Q=(4,5)、R=(6,3)。两点间的单调路径数为横纵步数之和的二项式系数。用容斥原理：
+
+\[
+\begin{aligned}
+N={}&\binom{16}{8}
+-\binom42\binom{12}{6}
+-\binom94\binom74
+-\binom96\binom72\\
+&+\binom42\binom52\binom74
++\binom42\binom54\binom72\\
+={}&12870-5544-4410-1764+2100+630\\
+={}&3882.
+\end{aligned}
+\]
+
+由于 Q 与 R 无法出现在同一条单调路径上，其交集及三点交集均为零。
+
+[A12]
+26个。
+
+首尾为01和10的情况通过反转一一对应，只需数首位0、末位1的情况，再乘2。
+
+四个0将字符串唯一写成
+0 1ᵃ 0 1ᵇ 0 1ᶜ 0 1ᵈ,
+其中 a,b,c∈{0,1,2}，d∈{1,2}，且 a+b+c+d=4。
+
+当 d=1 时，前三项和为3，有 (1,1,1) 及 (0,1,2) 的六种排列，共7种；当 d=2 时，前三项和为2，有 (2,0,0) 和 (1,1,0) 各三种排列，共6种。因此总数为 2(7+6)=26。
+
+[B01]
+7
+
+[B02]
+580317946200869415377218850394963042771541690023868527341160309658427917408399526402178083997351264023580671947814920056
+
+[B03]
+HTTHTHHHTTTHHHHTHTHTTTHTTTHHTHHHTHTHHHHTTTTHTHTTHHHTHHTTTTHTTHHTHHHTHHTTHTTHTHTT
+
+[B04]
+3,6,2,2,5,1,4,6,6,3,1,5,2,4,4,1,6,3,5,5,2,6,1,3
+
+[B05]
+水獭
+
+[B06]
+43
+
+[B07]
+你可能太想把这件事做好了，所以第一步也变得很重。试试今天只做十分钟：打开文件，写下最想解决的问题，再随手列三个想法，粗糙一点也可以。十分钟到了就允许自己停下。先有一点实际进展，你才更容易知道计划哪里需要调整。
+
+[B08]
+平均数只告诉你整体的一个中心位置，没有告诉你数据分布得多散。
+
+比如两组分数分别是“50、50、50”和“0、50、100”，平均数都是50。第一组人人一样，第二组差距很大。如果你关心大家表现是否稳定、有没有人特别困难，两组给你的印象自然完全不同。
+
+[B09]
+若指小林不能来：“小林告诉小周：‘我明天不能来。’”
+
+若指小周不能来：“小林告诉小周：‘你明天不能来。’”
+
+[B10]
+获胜者姓名：材料未提供。
+票数：材料未提供。
+材料原文：“虚构城市澄岚城在2041年举行了一次选举”。
+
+这句话只能支持选举的地点和年份，无法确定获胜者或票数。
+
+[B11]
+两项要求互相矛盾，无法同时满足。
+
+[B12]
+Randomness doesn’t mean every result has to look mixed up. It means the next outcome isn’t reliably predictable. A fair coin can still land heads five times in a row.
+
+In fact, that exact sequence, HHHHH, has the same probability as HTHTH: 1 in 32. The first one just catches our attention because we recognize it as a streak.
+
+When a simulation produces lots of outcomes, it creates lots of opportunities for streaks, clusters, and coincidences. We also tend to notice a pattern after seeing it, even though many different patterns could have caught our eye.
+
+Some patterns can reveal a problem with a simulation. But a pattern alone isn’t proof: the useful question is whether it happens more often than chance would reasonably predict.

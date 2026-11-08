@@ -1,0 +1,73 @@
+[A01]
+5。7¹²≡1 (mod 13)（费马小定理），123=12×10+3，故 7¹²³≡7³=343≡343−26×13=343−338=5。
+
+[A02]
+甲打破了杯子。若乙打破：甲真、丙真（两句真）；若丙打破：甲假、乙真、丙假，也恰一真——再核丙说“不是甲”，丙打破时此话为真，则两真，矛盾；重新核查：丙打破时甲假、乙真、丙真→两句真。唯有甲打破时：甲假、乙真（“不是我”）、丙真?丙说“不是甲打破的”为假→恰一句真。所以唯一满足者是甲。
+
+[A03]
+P(发生|阳性) = (0.02×0.9)/(0.02×0.9+0.98×0.05) = 0.018/(0.018+0.049) = 0.018/0.067 = 18/67。
+
+[A04]
+C(7,4)=35。把4个1排好后每两个1之间及两端至少要填一个0：4个1需占4位，剩余0至少3个作为间隔，位置数为 4+1=7 个可选槽位（4个1之间的3个必须为0），等效于从10−4+1=7个位置中选4个放1，即 C(7,4)=35。
+
+[A05]
+A→C→B→E→D，总权重 2+1+3+1=7。验证：A→B(4)→D(5)=9；A→C(2)→D(8)=10；故最短为7。
+
+[A06]
+f(1)=1, f(2)=2, f(3)=4, f(4)=7, f(5)=13, f(6)=24, f(7)=44, f(8)=81。（逐项加前三项可复核；初始 f(0)=1，负项为0。）
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+先手必胜。必败位置（轮到谁走谁输）为 0, 2, 7, 9, 14；15 減 1 得 14（必败位），所以唯一必胜的第一步是取 1 枚。理由：取1后剩14，是对手必败态；此后对手每取 1/3/4，我可相应取到下一必败位（如从14…等资源地保持落在 9、7、2、0 链上），最终拿到最后一枚。
+
+[A11]
+设 dp 到各点；用容斥公式：总路径 C(16,8)=12870。经 (2,2)：C(4,2)×C(12,6)=6×924=5544；经 (4,5)：C(9,4)×C(7,3)=126×35=4410；经 (6,3)：C(9,3)×C(7,2)... 实际 (6,3)→(8,8) 为 C(7,5)=21，84×21=1764。经 (2,2)&(4,5)：6×C(5,2)×C(7,3)=6×10×35=2100；经 (2,2)&(6,3)：6×C(5,1)×C(7,5)=6×5×21=630；其余组合因坐标非递增为0，三重亦0。
+结果 = 12870 − 5544 − 4410 − 1764 + 2100 + 630 = 3882 条。
+
+[A12]
+26。方法：分两类。①首=1末=0：中间6位中恰3个1，共 C(6,3)=20，减去“含连续三个1或开头即111”的那些：开头 b2b3 同时为1的有4种（第3个1在位4–7），其中位2,3,4全1即三连；另外三连恰好出现的有4种（位置2-3-4、3-4-5、4-5-6、5-6-7 各一种），去重后坏例共 7 种，好例 13。②首=0末=1：反向对称，同样 13。合计 26。
+
+[B01]
+7
+
+[B02]
+48392017564829103576482910357648291035762849561738291046582739104856273849105628473910548276391048572
+
+[B03]
+HTTTHHTHTTHHTTHHTTHTHHHTHTTHTHTHHTHTTTHHTHTHTTHHTTTHTHHTHTTTHTHHHTHTTHTHHTTHTHTHHTHTT
+
+[B04]
+4, 2, 6, 1, 5, 3, 3, 6, 2, 1, 4, 5, 6, 3, 1, 2, 5, 4, 2, 6, 1, 3, 4, 5
+
+[B05]
+雪豹
+
+[B06]
+73
+
+[B07]
+我特别理解那种感觉——计划写得越详细，好像欠的债就越多，反而更不敢动手。要不要试试换个思路：别管完美，先给自己定一个“烂开始”，比如只花十分钟做个最粗糙的版本，做完就允许自己停下。你会发现一旦动起来，那张完美的计划反而变成助力而不是压力。明早就试这十分钟，怎么样？
+
+[B08]
+平均数只告诉你数据的“中心”在哪，却不说数据“散开”的程度。比如两组平均都是50：一组是 49、50、51，另一组是 10、50、90。第一组人人都接近50，很稳定；第二组忽高忽低，看着就“不太对劲”。所以我们感受到的差异其实来自波动大小（离散程度），这是平均数这个单一数字无法传达的信息。
+
+[B09]
+小林告诉小周：“小林明天不能来。”（明确“他”指谁，即可改写为：小林明天不能来，小林把这件事告诉了小周。）
+
+[B10]
+材料中没有任何信息能回答这个问题：Materials只提到"虚构城市澄岚城在2041年举行了一次选举"，没有获胜者姓名、票数，也没有支持任何答案的原文。无法给出该答案。
+
+[B11]
+本题的两条要求互相矛盾：要求①必须包含三个“蓝色灯”，而这个词本身含有“灯”；要求②禁止出现“灯”字。 невозможно同时满足。如按要求5处理冲突，如实说明：无法给出同时满足两条的答案。
+
+[B12]
+Randomness is surprising to our brains because we expect it to look "evenly scattered" — so when a simulation produces clusters, streaks, or near-symmetric shapes, it feels like a hidden pattern or even a trick. It isn't. True randomness is clumpy by nature: if you flip a coin 100 times, a run of six heads in a row is actually quite likely somewhere in the sequence. Our eyes are pattern-seeking machines, evolved to spot faces and order, so they light up on any structure and whisper "that can't be chance." A simulation also uses deterministic math under the hood — a pseudo-random number generator — so technically every pattern is reproducible, which makes the illusion stronger. The real lesson is that a small sample of randomness often looks ordered, and the disorder we expect only shows up over huge amounts of data. So when a random simulation "makes a picture," it's usually our pattern detector, not the simulation, doing the interesting work.

@@ -1,0 +1,89 @@
+[A01]
+7^12≡1 (mod 13)（费马小定理），123=12×10+3，故 7^123≡7^3=343≡343−13×26=5 (mod 13)。余数：5。
+
+[A02]
+题目条件不足以唯一确定，有两个解都满足“恰有一句真话”：
+- 若甲打破：甲说“乙打破的”假，乙说“不是我”真，丙说“不是甲”假 → 恰一句真。
+- 若丙打破：甲假，乙真，丙说“不是甲”真 → 两句真，不成立。
+修正：逐一验算三种情形——甲打破：真话仅“乙说不是我”→1真，成立；乙打破：甲真、丙真→2真，不成立；丙打破：乙真、丙真→2真，不成立。
+因此唯一成立的是：甲打破了杯子。（说明：我先前枚举时误把“丙打破”下丙的话算成假，实际“不是甲打破的”在丙打破时为真，故只有甲打破一种情形恰有一句真话。）
+
+[A03]
+P(发生|阳性)= (0.02×0.90)/(0.02×0.90+0.98×0.05) = 0.018/(0.018+0.049) = 0.018/0.067 = 18/67 ≈ 26.87%。
+
+[A04]
+要求4个1互不相邻，相当于在10个位置中选4个且两两之间至少隔1个0。令所选位置为 x1<x2<x3<x4，做变换 yi=xi−(i−1)，则 1≤y1<y2<y3<y4≤10−3=7，即等价于从7个位置中任选4个：C(7,4)=35。答案：35。
+
+[A05]
+所有A到D的路径：A→B→D = 4+5 = 9；A→C→B→D = 2+1+5 = 8；A→C→D = 2+8 = 10；A→C→B→E→D = 2+1+3+1 = 7；A→B→E→D = 4+3+1 = 8。最短为 A→C→B→E→D，总权重 7。
+
+[A06]
+f(0)=1，f(1)=f(0)+0+0=1，f(2)=f(1)+f(0)=2，f(3)=f(2)+f(1)+f(0)=4，f(4)=4+2+1=7，f(5)=7+4+2=13，f(6)=13+7+4=24，f(7)=24+13+7=44，f(8)=44+24+13=81。
+f(1)至f(8)：1, 2, 4, 7, 13, 24, 44, 81；f(8)=81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]（第一组的lambda闭包共享同一个 i，循环结束后 i=2；第二组用默认参数在定义时绑定当期值。）
+
+[A08]
+{"items":["pear","apple","banana","kiwi"]}
+
+[A09]
+[1,3]
+
+[A10]
+是，先手必胜，且唯一能保证获胜的第一步是取 1 枚。
+理由：设剩 n 枚时的必败局面（P局面）为 n∈{0,2,7,9,14,16,…}，即 n mod 7 ∈ {0,2}；其余为必胜局面。用递推校验：0 枚必败；1、3、4 枚可一步到达 0（必胜）；2 枚只能走到 1（留给对方必胜），故必败；依此类推每步可减少1、3、4，而 {1,3,4} 中恰有一个 ≡ 0 或 2 的模7余数（1↔0），使“n mod 7∈{0,2} 为必败”这一集合在双方轮换下闭合，故判断成立。15 mod 7 = 1 属必胜局面；一步可取 14、12、11，其中只有 14 mod 7 = 0 是必败局面，所以取 1 枚是唯一必胜首步（取3留12≡5、取4留11≡4 均给对方留必胜局面）。
+
+[A11]
+用容斥：无障碍总路径 C(16,8)=12870。
+三个禁点两两互不可达（不存在同时经过其中两个的路径），故只需减去各自经过的路径数：
+经(2,2)：C(4,2)×C(12,6)=6×924=5544；
+经(4,5)：C(9,4)×C(7,3)=126×35=4410；
+经(6,3)：C(9,6)×C(7,5)=84×21=1764。
+合法路径 = 12870−5544−4410−1764 = 1152。
+
+[A12]
+首位末位不同 ⇒ 两类各半，且每类内中间6位需放3个1。
+以“1开头0结尾”为例：中间6位选3位放1，C(6,3)=20，减去出现连续三个1的情形（1,2,3／2,3,4／3,4,5／4,5,6 四个位置块）=20−4=16。
+“0开头1结尾”对称同为16。合计 16+16=32。
+
+[B01]
+7
+
+[B02]
+4821907365012948573620184937561029384756102938475601928374655019283746591028374650192837465501928374650293847561029384756102938
+
+[B03]
+HTHHTHTTHHHTHTTTHTHHHTTTHHTHTTHHHTHTTTHTHHHTTHHTHTTTHHTHTTHHTTHHTHTTTHTHH
+
+[B04]
+3,1,5,6,2,4,4,1,6,3,5,2,2,6,1,4,3,5,6,1,2,4,5,3
+
+[B05]
+鲸鱼
+
+[B06]
+42
+
+[B07]
+先停一下，别急着“想清楚全部再动手”～完美计划其实是个陷阱，因为它永远差最后一块拼图。试试把这件事砍到最小的一步：只写标题、只做5分钟、只画个草图都算数。做完之后你会发现，真正卡住你的从来不是能力，而是“还没开始”这件事本身。今天先迈半步，明天再修也不迟呀。
+
+[B08]
+平均数只告诉你“整体的重心在哪”，不告诉你“大家离重心多远、怎么排布”。比如两组人平均身高都是170：一组全是168到172，看起来整齐一致；另一组一半是155、一半是185，同样是170，但你站在里面会觉得高矮差得离谱。再比如平均分都是75：一组人人75上下，另一组多数90、少数30，观感完全不同。另外平均数很怕极端值：一个年薪千万的人能把整组“平均”拉高，让人误以为大家都很富。所以看数据时，还要看波动（极差、标准差）、分布形状（是否对称、有没有双峰）和个别极端值。
+
+[B09]
+原句“他”指代不明，可改为：“小林告诉小周：小林明天不能来。”或“小林告诉小周：小周明天不能来。”按语境选其一即可。
+
+[B10]
+材料中并未记载获胜者姓名和票数，无法给出；材料中唯一可引的原文是：“虚构城市澄岚城在2041年举行了一次选举”。据此无法推断人名与票数。
+
+[B11]
+无法满足：要求①必须恰好包含三个汉字“蓝色灯”，而该短语本身含有“灯”字，因此必然与要求②“不得出现‘灯’字”冲突。两条要求不能同时成立，故无可给出的答案。
+
+[B12]
+Here's the thing: randomness doesn't mean "no pattern" — it means "no pattern that lets you predict the next step." A pattern showing up is not evidence that the process is rigged. Flip a coin 100 times and you will very likely see runs of four or five heads in a row. That feels special, but it's just arithmetic: with 100 flips there are about 97 places a run of four could start, so even a small chance per spot adds up fast.
+
+Same with dice and lotteries. If you roll a die 60 times, getting each number exactly 10 times is actually pretty unlikely — the counts wobble around 10 by a few, and that wobble is the normal behavior, not a bug. What randomness forbids is a *reliable* pattern, like "after two heads, tails is due." The coin has no memory; the probability is still 1/2.
+
+The trap is that humans are amazing at finding patterns and terrible at judging how surprising they are. You notice the one streak and forget the 99 boring stretches. So watch for clusters, streaks, and coincidences — but ask "how many chances were there for this to happen?" before deciding the universe is sending a message. Usually the honest answer is: with enough chances, something like this was almost guaranteed. That's not mystery, that's just how many tries you get.

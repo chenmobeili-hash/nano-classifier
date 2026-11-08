@@ -1,0 +1,86 @@
+[A01]
+余数是 5。7² ≡ 10，7³ ≡ 70 ≡ 5，7⁶ ≡ 25 ≡ −1，所以 7¹² ≡ 1（mod 13）。123 = 12×10 + 3，因此 7¹²³ ≡ 7³ ≡ 5。
+
+[A02]
+甲。如果是甲打破的，甲的话为假，乙的话为真，丙的话为假，恰好一句为真。如果是乙，甲和丙的话都为真，有两句；如果是丙，乙和丙的话都为真，也有两句。
+
+[A03]
+18/67。P = (0.02×0.9) / (0.02×0.9 + 0.98×0.05) = 0.018 / (0.018 + 0.049) = 0.018/0.067 = 18/67。
+
+[A04]
+35。先放好 6 个 0，它们形成 7 个空位；把 4 个 1 放进不同空位，就保证任意两个 1 不相邻，所以有 C(7,4) = 35 种。
+
+[A05]
+最短路径是 A→C→B→E→D，总权重 2+1+3+1 = 7。
+
+[A06]
+f(8) = 81。f(1) 到 f(8) 依次为 1, 2, 4, 7, 13, 24, 44, 81。
+
+[A07]
+[2, 2, 2]
+[0, 1, 2]
+
+[A08]
+{"items": ["pear", "apple", "banana", "kiwi"]}
+
+[A09]
+[1, 3]
+
+[A10]
+先手必胜，唯一的取胜第一步是取 1 枚。每次能取 1、3 或 4 枚时，剩余石子数除以 7 余 0 或 2 的局面是必败局面：从这样的局面走一步只能到余 1、3、4、5、6 的局面，而从其他余数总能走一步回到余 0 或 2 的局面。15 除以 7 余 1，取 1 枚后剩 14（余 0），留给对手的是必败局面。取 3 枚剩 12（余 5），取 4 枚剩 11（余 4），都不是必败局面，对手可以反过来取胜。
+
+[A11]
+共 3882 条。用容斥原理计算，记 P=(2,2)、Q=(4,5)、R=(6,3)。
+
+总路径数 C(16,8) = 12870。
+经过 P 的有 C(4,2)·C(12,6) = 6·924 = 5544 条。
+经过 Q 的有 C(9,4)·C(7,4) = 126·35 = 4410 条。
+经过 R 的有 C(9,3)·C(7,2) = 84·21 = 1764 条。
+同时经过 P、Q 的有 6·C(5,2)·C(7,4) = 6·10·35 = 2100 条。
+同时经过 P、R 的有 6·C(5,1)·C(7,2) = 6·5·21 = 630 条。
+Q 和 R 无法出现在同一条路径上（从 (4,5) 到不了 (6,3)），所以经过 Q 且经过 R 的为 0 条，三点都经过的也为 0 条。
+合法路径数 = 12870 − (5544 + 4410 + 1764 − 2100 − 630) = 12870 − 8988 = 3882。
+
+[A12]
+26。4 个 0 形成 5 个空位，设各空位里 1 的个数为 x₁ 到 x₅，每个取 0、1 或 2（这样就不会出现连续三个 1），总和为 4。首位是 1 当且仅当 x₁ ≥ 1，末位是 1 当且仅当 x₅ ≥ 1，所以“首末位不同”就是 x₁、x₅ 中恰好一个 ≥ 1。
+先数 x₅ = 0 且 x₁ ≥ 1 的情况：x₁ 到 x₄ 的总和为 4 有 19 种（(1+x+x²)⁴ 中 x⁴ 的系数）。再减去 x₁ 也为 0 的情况，即 x₂ 到 x₄ 的总和为 4，有 6 种（(1+x+x²)³ 中 x⁴ 的系数），得到 13 种。由对称性，x₁ = 0 且 x₅ ≥ 1 的情况也是 13 种，合计 13 × 2 = 26。
+
+[B01]
+6
+
+[B02]
+730194826552083917406318825946107734920571683014497265381903628475019357442086159730264881953076214485329067103859247166
+
+[B03]
+HTTHHTHTTTHHTHTHHHTTHTTHTHHTTTHTHHTHHTTHTTTHHHTHTHTTHHTTHTHHHTTTHTHTTHHTHTTHTHHT
+
+[B04]
+4,1,6,3,3,5,2,6,1,4,5,2,6,6,3,1,2,5,4,3,6,1,5,2
+
+[B05]
+水獭
+
+[B06]
+58
+
+[B07]
+我太懂这种感觉了，越想做好就越难开始。要不先给自己定一个“够用就行”的版本：今天就花二十分钟，把第一步写下来做掉，哪怕很粗糙也没关系。计划是边做边改出来的，先动起来，完美可以留到第二版再说。你现在最小的一步是什么？要不现在就做它。
+
+[B08]
+平均数只告诉你“中间大概在哪”，却不告诉你数据有多分散。比如两个班平均分都是 70：一个班人人都在 68 到 72 分之间，另一个班一半人 40 分、一半人 100 分。平均数一样，但第一个班很整齐，第二个班两极分化，给人的感觉完全不同。所以除了平均数，还要看数据分散的程度和有没有极端值。
+
+[B09]
+“他”指谁有歧义，可以按意思改成：“小林告诉小周：‘我明天不能来。’”或者：“小林告诉小周：‘你明天不能来。’”
+
+[B10]
+材料里没有给出获胜者的姓名和票数，所以无法回答。材料原文只有一句：“虚构城市澄岚城在2041年举行了一次选举”，这句话只说明选举举行过，没有提到结果。
+
+[B11]
+这两条要求互相矛盾：答案要恰好包含“蓝色灯”三个字，就一定会出现“灯”字，所以不可能同时满足。只能满足其中一条：要么写“蓝色灯”（满足①，违反②），要么写“蓝色”（满足②，违反①）。
+
+[B12]
+Here's the funny thing about randomness: it's lumpier than you'd expect. If you flip a fair coin 100 times, you'll almost certainly get a run of five or six heads in a row somewhere, and it'll look like the coin is "on a streak." Your brain is a pattern-detecting machine, so it flags that streak as meaningful, but it's exactly what randomness does.
+
+Computer simulations add a second layer. Most of them don't use true randomness at all; they use pseudo-random number generators, which are deterministic formulas that churn out numbers that look random. A good one hides its structure really well, but a weak one can leave fingerprints: numbers repeating after a cycle, or points that line up in stripes if you plot them in 3D.
+
+So when a simulation shows a pattern, ask two questions. Is this just the normal clumpiness of chance that my brain is over-reading? Or is it a real artifact of how the "randomness" was made? Sometimes it's one, sometimes the other, and figuring out which is half the fun.

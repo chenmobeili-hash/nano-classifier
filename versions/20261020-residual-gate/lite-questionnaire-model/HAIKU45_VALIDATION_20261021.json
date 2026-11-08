@@ -1,0 +1,855 @@
+{
+  "new_samples": {
+    "sample": [
+      {
+        "source": "claudehaiku4.5-extended-01.txt",
+        "expected": "Claude",
+        "model": "claudehaiku4.5-extended",
+        "selection": {
+          "enabled": false,
+          "validation_count": 33,
+          "fixes": 0,
+          "breaks": 0,
+          "base_nll": 1.1661953726352856,
+          "residual_nll": 1.1649751038910414,
+          "rule": ">=12 samples, >=3 families, >=1 fix, zero breaks, non-increasing weighted NLL",
+          "training_sources": [
+            "claudehaiku4.5-extended-02.txt",
+            "claudehaiku5.5-01.txt",
+            "claudehaiku5.5-02.txt",
+            "claudehaiku5.5-03.txt",
+            "claudehaiku5.5-04.txt",
+            "claudehaiku5.5-05.txt",
+            "claudehaiku5.5-06.txt",
+            "claudehaiku5.5-07.txt",
+            "claudehaiku5.5-08.txt",
+            "claudehaiku5.5-09.txt",
+            "claudeopus5.5-01.txt",
+            "claudeopus5.5-02.txt",
+            "claudeopus5.5-03.txt",
+            "claudeopus5.5-04.txt",
+            "claudesonnet5.5-01.txt",
+            "claudesonnet5.5-02.txt",
+            "claudesonnet5.5-03.txt",
+            "claudesonnet5.5-04.txt",
+            "deepseek-app-nonthinking-01.txt",
+            "deepseek-app-nonthinking-02.txt",
+            "deepseek-app-thinking-01.txt",
+            "deepseek-app-thinking-02.txt",
+            "deepseek-app-thinking-03.txt",
+            "deepseekv4.1flash-strong-01.txt",
+            "deepseekv4.1flash-strong-02.txt",
+            "deepseekv4.1flash-strong-03.txt",
+            "deepseekv4.1flash-strong-04.txt",
+            "deepseekv4pro-01.txt",
+            "deepseekv4pro-02.txt",
+            "deepseekv4pro-03.txt",
+            "GLM5.3FLASH-01.txt",
+            "GLM5.3FLASH-02.txt",
+            "GLM5.3FLASH-03.txt",
+            "GLM5.3FLASH-04.txt",
+            "GLM5.3FLASH-05.txt",
+            "GLM5.3FLASH-06.txt",
+            "GLM5.3FLASH-FREE-01.txt",
+            "GLM5.3FLASH-FREE-02.txt",
+            "GLM5.3FLASH-FREE-03.txt",
+            "GLM5.3FLASH-FREE-04.txt",
+            "gpt-oss-120b-01.txt",
+            "gpt-oss-120b-02.txt",
+            "gpt-oss-120b-03.txt",
+            "gpt6astra-01.txt",
+            "gpt6astra-02.txt",
+            "gpt6astra-03.txt",
+            "gpt6luna-01.txt",
+            "gpt6luna-02.txt",
+            "gpt6luna-03.txt",
+            "gpt6sol-01.txt",
+            "gpt6sol-02.txt",
+            "gpt6sol-03.txt",
+            "qwen-app-fast-01.txt",
+            "qwen-app-fast-02.txt",
+            "qwen-app-fast-03.txt",
+            "qwen-app-fast-04.txt",
+            "qwen-app-fast-05.txt",
+            "qwen-app-fast-06.txt",
+            "qwen3.8flash-01.txt",
+            "qwen3.8flash-02.txt",
+            "qwen3.8flash-03.txt",
+            "qwen3.8flash-05.txt",
+            "qwen3.8flash-06.txt",
+            "qwen3.8flash-07.txt",
+            "qwen3.8max-01.txt",
+            "qwen3.8max-02.txt"
+          ],
+          "validation_sources": [
+            "claudesonnet4.6-01.txt",
+            "claudesonnet4.6-02.txt",
+            "claudesonnet4.6-03.txt",
+            "deepseekv4.1flash-weak-01.txt",
+            "deepseekv4.1flash-weak-02.txt",
+            "deepseekv4.1flash-weak-03.txt",
+            "deepseekv4.1flash-weak-04.txt",
+            "deepseekv4.1flash-weak-05.txt",
+            "deepseekv4.1flash-weak-06.txt",
+            "deepseekv4.1flash-weak-07.txt",
+            "deepseekv4.1flash1017-01.txt",
+            "deepseekv4.1flash1017-02.txt",
+            "deepseekv4.1flash1017-04.txt",
+            "deepseekv4.1flash1017-05.txt",
+            "deepseekv4.1flash1017-06.txt",
+            "deepseekv4.1flash1017-07.txt",
+            "deepseekv4.1flash1017-08.txt",
+            "deepseekv4.1flash1017-09.txt",
+            "deepseekv4.1flash1017-10.txt",
+            "GLM5.3-01.txt",
+            "GLM5.3-02.txt",
+            "GLM5.3-03.txt",
+            "gpt5.6luna-01.txt",
+            "gpt5.6luna-02.txt",
+            "gpt5.6luna-03.txt",
+            "gpt5.6luna-04.txt",
+            "gpt6.1sol-01.txt",
+            "gpt6.1sol-02.txt",
+            "gpt6.1sol-03.txt",
+            "qwen-app-thinking-01.txt",
+            "qwen-app-thinking-02.txt",
+            "qwen-app-thinking-03.txt",
+            "qwen-app-thinking-04.txt"
+          ],
+          "inner_gate_training": {
+            "parameters_allocated": 56,
+            "parameters_trainable": 56,
+            "initial_loss": 0.991049314707413,
+            "final_loss": 0.9893278694738131,
+            "base_correct": 48,
+            "residual_correct": 48,
+            "max_absolute_delta": 0.057929786564132994
+          }
+        },
+        "baseline": {
+          "top": "DeepSeek",
+          "correct": false,
+          "margin": 0.1427224897503906,
+          "scores": [
+            0.18663393960144287,
+            0.40352713174242394,
+            0.1278241766678912,
+            0.021210109996208693,
+            0.26080464199203335
+          ]
+        },
+        "gated": {
+          "top": "DeepSeek",
+          "correct": false,
+          "margin": 0.11736259056619319,
+          "scores": [
+            0.18988343262227458,
+            0.38903947625064955,
+            0.12861883883883007,
+            0.020781366603789413,
+            0.27167688568445636
+          ]
+        },
+        "uniform": {
+          "top": "DeepSeek",
+          "correct": false,
+          "margin": 0.11736259053143028,
+          "scores": [
+            0.18988343262556726,
+            0.38903947622841195,
+            0.12861883884496417,
+            0.02078136660407488,
+            0.2716768856969817
+          ]
+        },
+        "linear": {
+          "top": "DeepSeek",
+          "correct": false,
+          "margin": 0.11524625725651427,
+          "scores": [
+            0.19143122654904332,
+            0.3847011250280538,
+            0.13166077226261932,
+            0.02275200838874408,
+            0.26945486777153954
+          ]
+        },
+        "selected": {
+          "top": "DeepSeek",
+          "correct": false,
+          "margin": 0.1427224897503906,
+          "scores": [
+            0.18663393960144287,
+            0.40352713174242394,
+            0.1278241766678912,
+            0.021210109996208693,
+            0.26080464199203335
+          ]
+        }
+      },
+      {
+        "source": "claudehaiku4.5-extended-02.txt",
+        "expected": "Claude",
+        "model": "claudehaiku4.5-extended",
+        "selection": {
+          "enabled": false,
+          "validation_count": 33,
+          "fixes": 0,
+          "breaks": 0,
+          "base_nll": 1.0466273628291098,
+          "residual_nll": 1.0472464838059317,
+          "rule": ">=12 samples, >=3 families, >=1 fix, zero breaks, non-increasing weighted NLL",
+          "training_sources": [
+            "claudehaiku4.5-extended-01.txt",
+            "claudehaiku5.5-01.txt",
+            "claudehaiku5.5-02.txt",
+            "claudehaiku5.5-03.txt",
+            "claudehaiku5.5-04.txt",
+            "claudehaiku5.5-05.txt",
+            "claudehaiku5.5-06.txt",
+            "claudehaiku5.5-07.txt",
+            "claudehaiku5.5-08.txt",
+            "claudehaiku5.5-09.txt",
+            "claudeopus5.5-01.txt",
+            "claudeopus5.5-02.txt",
+            "claudeopus5.5-03.txt",
+            "claudeopus5.5-04.txt",
+            "claudesonnet5.5-01.txt",
+            "claudesonnet5.5-02.txt",
+            "claudesonnet5.5-03.txt",
+            "claudesonnet5.5-04.txt",
+            "deepseek-app-nonthinking-01.txt",
+            "deepseek-app-nonthinking-02.txt",
+            "deepseek-app-thinking-01.txt",
+            "deepseek-app-thinking-02.txt",
+            "deepseek-app-thinking-03.txt",
+            "deepseekv4.1flash-strong-01.txt",
+            "deepseekv4.1flash-strong-02.txt",
+            "deepseekv4.1flash-strong-03.txt",
+            "deepseekv4.1flash-strong-04.txt",
+            "deepseekv4pro-01.txt",
+            "deepseekv4pro-02.txt",
+            "deepseekv4pro-03.txt",
+            "GLM5.3FLASH-01.txt",
+            "GLM5.3FLASH-02.txt",
+            "GLM5.3FLASH-03.txt",
+            "GLM5.3FLASH-04.txt",
+            "GLM5.3FLASH-05.txt",
+            "GLM5.3FLASH-06.txt",
+            "GLM5.3FLASH-FREE-01.txt",
+            "GLM5.3FLASH-FREE-02.txt",
+            "GLM5.3FLASH-FREE-03.txt",
+            "GLM5.3FLASH-FREE-04.txt",
+            "gpt-oss-120b-01.txt",
+            "gpt-oss-120b-02.txt",
+            "gpt-oss-120b-03.txt",
+            "gpt6astra-01.txt",
+            "gpt6astra-02.txt",
+            "gpt6astra-03.txt",
+            "gpt6luna-01.txt",
+            "gpt6luna-02.txt",
+            "gpt6luna-03.txt",
+            "gpt6sol-01.txt",
+            "gpt6sol-02.txt",
+            "gpt6sol-03.txt",
+            "qwen-app-fast-01.txt",
+            "qwen-app-fast-02.txt",
+            "qwen-app-fast-03.txt",
+            "qwen-app-fast-04.txt",
+            "qwen-app-fast-05.txt",
+            "qwen-app-fast-06.txt",
+            "qwen3.8flash-01.txt",
+            "qwen3.8flash-02.txt",
+            "qwen3.8flash-03.txt",
+            "qwen3.8flash-05.txt",
+            "qwen3.8flash-06.txt",
+            "qwen3.8flash-07.txt",
+            "qwen3.8max-01.txt",
+            "qwen3.8max-02.txt"
+          ],
+          "validation_sources": [
+            "claudesonnet4.6-01.txt",
+            "claudesonnet4.6-02.txt",
+            "claudesonnet4.6-03.txt",
+            "deepseekv4.1flash-weak-01.txt",
+            "deepseekv4.1flash-weak-02.txt",
+            "deepseekv4.1flash-weak-03.txt",
+            "deepseekv4.1flash-weak-04.txt",
+            "deepseekv4.1flash-weak-05.txt",
+            "deepseekv4.1flash-weak-06.txt",
+            "deepseekv4.1flash-weak-07.txt",
+            "deepseekv4.1flash1017-01.txt",
+            "deepseekv4.1flash1017-02.txt",
+            "deepseekv4.1flash1017-04.txt",
+            "deepseekv4.1flash1017-05.txt",
+            "deepseekv4.1flash1017-06.txt",
+            "deepseekv4.1flash1017-07.txt",
+            "deepseekv4.1flash1017-08.txt",
+            "deepseekv4.1flash1017-09.txt",
+            "deepseekv4.1flash1017-10.txt",
+            "GLM5.3-01.txt",
+            "GLM5.3-02.txt",
+            "GLM5.3-03.txt",
+            "gpt5.6luna-01.txt",
+            "gpt5.6luna-02.txt",
+            "gpt5.6luna-03.txt",
+            "gpt5.6luna-04.txt",
+            "gpt6.1sol-01.txt",
+            "gpt6.1sol-02.txt",
+            "gpt6.1sol-03.txt",
+            "qwen-app-thinking-01.txt",
+            "qwen-app-thinking-02.txt",
+            "qwen-app-thinking-03.txt",
+            "qwen-app-thinking-04.txt"
+          ],
+          "inner_gate_training": {
+            "parameters_allocated": 56,
+            "parameters_trainable": 56,
+            "initial_loss": 1.09693394039209,
+            "final_loss": 1.0916102093678421,
+            "base_correct": 44,
+            "residual_correct": 45,
+            "max_absolute_delta": 0.10183242872363604
+          }
+        },
+        "baseline": {
+          "top": "Claude",
+          "correct": true,
+          "margin": 0.0685119235223155,
+          "scores": [
+            0.37127983164287903,
+            0.19103129027590646,
+            0.30276790812056353,
+            0.03643400845326773,
+            0.09848696150738333
+          ]
+        },
+        "gated": {
+          "top": "Claude",
+          "correct": true,
+          "margin": 0.08919308310756358,
+          "scores": [
+            0.3893960430593803,
+            0.17555930338525225,
+            0.30020295995181673,
+            0.03509109085248399,
+            0.09975060275106658
+          ]
+        },
+        "uniform": {
+          "top": "Claude",
+          "correct": true,
+          "margin": 0.08919308312068136,
+          "scores": [
+            0.38939604307168957,
+            0.1755593033795626,
+            0.3002029599510082,
+            0.035091090852417094,
+            0.09975060274532252
+          ]
+        },
+        "linear": {
+          "top": "Claude",
+          "correct": true,
+          "margin": 0.08391366127744676,
+          "scores": [
+            0.37962076664908045,
+            0.18007630806709152,
+            0.2957071053716337,
+            0.039628076989770986,
+            0.10496774292242315
+          ]
+        },
+        "selected": {
+          "top": "Claude",
+          "correct": true,
+          "margin": 0.0685119235223155,
+          "scores": [
+            0.37127983164287903,
+            0.19103129027590646,
+            0.30276790812056353,
+            0.03643400845326773,
+            0.09848696150738333
+          ]
+        }
+      }
+    ],
+    "model": [
+      {
+        "source": "claudehaiku4.5-extended-01.txt",
+        "expected": "Claude",
+        "model": "claudehaiku4.5-extended",
+        "selection": {
+          "enabled": true,
+          "validation_count": 33,
+          "fixes": 1,
+          "breaks": 0,
+          "base_nll": 1.1832973783139515,
+          "residual_nll": 1.179629521994609,
+          "rule": ">=12 samples, >=3 families, >=1 fix, zero breaks, non-increasing weighted NLL",
+          "training_sources": [
+            "claudehaiku5.5-01.txt",
+            "claudehaiku5.5-02.txt",
+            "claudehaiku5.5-03.txt",
+            "claudehaiku5.5-04.txt",
+            "claudehaiku5.5-05.txt",
+            "claudehaiku5.5-06.txt",
+            "claudehaiku5.5-07.txt",
+            "claudehaiku5.5-08.txt",
+            "claudehaiku5.5-09.txt",
+            "claudeopus5.5-01.txt",
+            "claudeopus5.5-02.txt",
+            "claudeopus5.5-03.txt",
+            "claudeopus5.5-04.txt",
+            "claudesonnet5.5-01.txt",
+            "claudesonnet5.5-02.txt",
+            "claudesonnet5.5-03.txt",
+            "claudesonnet5.5-04.txt",
+            "deepseek-app-nonthinking-01.txt",
+            "deepseek-app-nonthinking-02.txt",
+            "deepseek-app-thinking-01.txt",
+            "deepseek-app-thinking-02.txt",
+            "deepseek-app-thinking-03.txt",
+            "deepseekv4.1flash-strong-01.txt",
+            "deepseekv4.1flash-strong-02.txt",
+            "deepseekv4.1flash-strong-03.txt",
+            "deepseekv4.1flash-strong-04.txt",
+            "deepseekv4pro-01.txt",
+            "deepseekv4pro-02.txt",
+            "deepseekv4pro-03.txt",
+            "GLM5.3FLASH-01.txt",
+            "GLM5.3FLASH-02.txt",
+            "GLM5.3FLASH-03.txt",
+            "GLM5.3FLASH-04.txt",
+            "GLM5.3FLASH-05.txt",
+            "GLM5.3FLASH-06.txt",
+            "GLM5.3FLASH-FREE-01.txt",
+            "GLM5.3FLASH-FREE-02.txt",
+            "GLM5.3FLASH-FREE-03.txt",
+            "GLM5.3FLASH-FREE-04.txt",
+            "gpt-oss-120b-01.txt",
+            "gpt-oss-120b-02.txt",
+            "gpt-oss-120b-03.txt",
+            "gpt6astra-01.txt",
+            "gpt6astra-02.txt",
+            "gpt6astra-03.txt",
+            "gpt6luna-01.txt",
+            "gpt6luna-02.txt",
+            "gpt6luna-03.txt",
+            "gpt6sol-01.txt",
+            "gpt6sol-02.txt",
+            "gpt6sol-03.txt",
+            "qwen-app-fast-01.txt",
+            "qwen-app-fast-02.txt",
+            "qwen-app-fast-03.txt",
+            "qwen-app-fast-04.txt",
+            "qwen-app-fast-05.txt",
+            "qwen-app-fast-06.txt",
+            "qwen3.8flash-01.txt",
+            "qwen3.8flash-02.txt",
+            "qwen3.8flash-03.txt",
+            "qwen3.8flash-05.txt",
+            "qwen3.8flash-06.txt",
+            "qwen3.8flash-07.txt",
+            "qwen3.8max-01.txt",
+            "qwen3.8max-02.txt"
+          ],
+          "validation_sources": [
+            "claudesonnet4.6-01.txt",
+            "claudesonnet4.6-02.txt",
+            "claudesonnet4.6-03.txt",
+            "deepseekv4.1flash-weak-01.txt",
+            "deepseekv4.1flash-weak-02.txt",
+            "deepseekv4.1flash-weak-03.txt",
+            "deepseekv4.1flash-weak-04.txt",
+            "deepseekv4.1flash-weak-05.txt",
+            "deepseekv4.1flash-weak-06.txt",
+            "deepseekv4.1flash-weak-07.txt",
+            "deepseekv4.1flash1017-01.txt",
+            "deepseekv4.1flash1017-02.txt",
+            "deepseekv4.1flash1017-04.txt",
+            "deepseekv4.1flash1017-05.txt",
+            "deepseekv4.1flash1017-06.txt",
+            "deepseekv4.1flash1017-07.txt",
+            "deepseekv4.1flash1017-08.txt",
+            "deepseekv4.1flash1017-09.txt",
+            "deepseekv4.1flash1017-10.txt",
+            "GLM5.3-01.txt",
+            "GLM5.3-02.txt",
+            "GLM5.3-03.txt",
+            "gpt5.6luna-01.txt",
+            "gpt5.6luna-02.txt",
+            "gpt5.6luna-03.txt",
+            "gpt5.6luna-04.txt",
+            "gpt6.1sol-01.txt",
+            "gpt6.1sol-02.txt",
+            "gpt6.1sol-03.txt",
+            "qwen-app-thinking-01.txt",
+            "qwen-app-thinking-02.txt",
+            "qwen-app-thinking-03.txt",
+            "qwen-app-thinking-04.txt"
+          ],
+          "inner_gate_training": {
+            "parameters_allocated": 56,
+            "parameters_trainable": 56,
+            "initial_loss": 0.9938885513255032,
+            "final_loss": 0.9930834129501002,
+            "base_correct": 42,
+            "residual_correct": 41,
+            "max_absolute_delta": 0.035638714242633006
+          }
+        },
+        "baseline": {
+          "top": "DeepSeek",
+          "correct": false,
+          "margin": 0.20832958355714526,
+          "scores": [
+            0.14255953577522665,
+            0.45437208728568823,
+            0.1354713516447422,
+            0.021554521565799956,
+            0.24604250372854297
+          ]
+        },
+        "gated": {
+          "top": "DeepSeek",
+          "correct": false,
+          "margin": 0.19129116346468134,
+          "scores": [
+            0.14465810883567076,
+            0.44462622233480303,
+            0.1359964453094908,
+            0.021384164649913773,
+            0.2533350588701217
+          ]
+        },
+        "uniform": {
+          "top": "DeepSeek",
+          "correct": false,
+          "margin": 0.19129116349806147,
+          "scores": [
+            0.14465810883098745,
+            0.44462622235390903,
+            0.13599644530910016,
+            0.02138416465015596,
+            0.25333505885584756
+          ]
+        },
+        "linear": {
+          "top": "DeepSeek",
+          "correct": false,
+          "margin": 0.18832754053929507,
+          "scores": [
+            0.146259350378452,
+            0.4408921830553328,
+            0.13770885360510504,
+            0.022574970445072416,
+            0.2525646425160377
+          ]
+        },
+        "selected": {
+          "top": "DeepSeek",
+          "correct": false,
+          "margin": 0.19129116346468134,
+          "scores": [
+            0.14465810883567076,
+            0.44462622233480303,
+            0.1359964453094908,
+            0.021384164649913773,
+            0.2533350588701217
+          ]
+        }
+      },
+      {
+        "source": "claudehaiku4.5-extended-02.txt",
+        "expected": "Claude",
+        "model": "claudehaiku4.5-extended",
+        "selection": {
+          "enabled": true,
+          "validation_count": 33,
+          "fixes": 1,
+          "breaks": 0,
+          "base_nll": 1.1832973783139515,
+          "residual_nll": 1.179629521994609,
+          "rule": ">=12 samples, >=3 families, >=1 fix, zero breaks, non-increasing weighted NLL",
+          "training_sources": [
+            "claudehaiku5.5-01.txt",
+            "claudehaiku5.5-02.txt",
+            "claudehaiku5.5-03.txt",
+            "claudehaiku5.5-04.txt",
+            "claudehaiku5.5-05.txt",
+            "claudehaiku5.5-06.txt",
+            "claudehaiku5.5-07.txt",
+            "claudehaiku5.5-08.txt",
+            "claudehaiku5.5-09.txt",
+            "claudeopus5.5-01.txt",
+            "claudeopus5.5-02.txt",
+            "claudeopus5.5-03.txt",
+            "claudeopus5.5-04.txt",
+            "claudesonnet5.5-01.txt",
+            "claudesonnet5.5-02.txt",
+            "claudesonnet5.5-03.txt",
+            "claudesonnet5.5-04.txt",
+            "deepseek-app-nonthinking-01.txt",
+            "deepseek-app-nonthinking-02.txt",
+            "deepseek-app-thinking-01.txt",
+            "deepseek-app-thinking-02.txt",
+            "deepseek-app-thinking-03.txt",
+            "deepseekv4.1flash-strong-01.txt",
+            "deepseekv4.1flash-strong-02.txt",
+            "deepseekv4.1flash-strong-03.txt",
+            "deepseekv4.1flash-strong-04.txt",
+            "deepseekv4pro-01.txt",
+            "deepseekv4pro-02.txt",
+            "deepseekv4pro-03.txt",
+            "GLM5.3FLASH-01.txt",
+            "GLM5.3FLASH-02.txt",
+            "GLM5.3FLASH-03.txt",
+            "GLM5.3FLASH-04.txt",
+            "GLM5.3FLASH-05.txt",
+            "GLM5.3FLASH-06.txt",
+            "GLM5.3FLASH-FREE-01.txt",
+            "GLM5.3FLASH-FREE-02.txt",
+            "GLM5.3FLASH-FREE-03.txt",
+            "GLM5.3FLASH-FREE-04.txt",
+            "gpt-oss-120b-01.txt",
+            "gpt-oss-120b-02.txt",
+            "gpt-oss-120b-03.txt",
+            "gpt6astra-01.txt",
+            "gpt6astra-02.txt",
+            "gpt6astra-03.txt",
+            "gpt6luna-01.txt",
+            "gpt6luna-02.txt",
+            "gpt6luna-03.txt",
+            "gpt6sol-01.txt",
+            "gpt6sol-02.txt",
+            "gpt6sol-03.txt",
+            "qwen-app-fast-01.txt",
+            "qwen-app-fast-02.txt",
+            "qwen-app-fast-03.txt",
+            "qwen-app-fast-04.txt",
+            "qwen-app-fast-05.txt",
+            "qwen-app-fast-06.txt",
+            "qwen3.8flash-01.txt",
+            "qwen3.8flash-02.txt",
+            "qwen3.8flash-03.txt",
+            "qwen3.8flash-05.txt",
+            "qwen3.8flash-06.txt",
+            "qwen3.8flash-07.txt",
+            "qwen3.8max-01.txt",
+            "qwen3.8max-02.txt"
+          ],
+          "validation_sources": [
+            "claudesonnet4.6-01.txt",
+            "claudesonnet4.6-02.txt",
+            "claudesonnet4.6-03.txt",
+            "deepseekv4.1flash-weak-01.txt",
+            "deepseekv4.1flash-weak-02.txt",
+            "deepseekv4.1flash-weak-03.txt",
+            "deepseekv4.1flash-weak-04.txt",
+            "deepseekv4.1flash-weak-05.txt",
+            "deepseekv4.1flash-weak-06.txt",
+            "deepseekv4.1flash-weak-07.txt",
+            "deepseekv4.1flash1017-01.txt",
+            "deepseekv4.1flash1017-02.txt",
+            "deepseekv4.1flash1017-04.txt",
+            "deepseekv4.1flash1017-05.txt",
+            "deepseekv4.1flash1017-06.txt",
+            "deepseekv4.1flash1017-07.txt",
+            "deepseekv4.1flash1017-08.txt",
+            "deepseekv4.1flash1017-09.txt",
+            "deepseekv4.1flash1017-10.txt",
+            "GLM5.3-01.txt",
+            "GLM5.3-02.txt",
+            "GLM5.3-03.txt",
+            "gpt5.6luna-01.txt",
+            "gpt5.6luna-02.txt",
+            "gpt5.6luna-03.txt",
+            "gpt5.6luna-04.txt",
+            "gpt6.1sol-01.txt",
+            "gpt6.1sol-02.txt",
+            "gpt6.1sol-03.txt",
+            "qwen-app-thinking-01.txt",
+            "qwen-app-thinking-02.txt",
+            "qwen-app-thinking-03.txt",
+            "qwen-app-thinking-04.txt"
+          ],
+          "inner_gate_training": {
+            "parameters_allocated": 56,
+            "parameters_trainable": 56,
+            "initial_loss": 0.9938885513255032,
+            "final_loss": 0.9930834129501002,
+            "base_correct": 42,
+            "residual_correct": 41,
+            "max_absolute_delta": 0.035638714242633006
+          }
+        },
+        "baseline": {
+          "top": "GLM",
+          "correct": false,
+          "margin": 0.08156809158938366,
+          "scores": [
+            0.26332222804306904,
+            0.2411075682641124,
+            0.3448903196324527,
+            0.03615940618190089,
+            0.11452047787846507
+          ]
+        },
+        "gated": {
+          "top": "GLM",
+          "correct": false,
+          "margin": 0.07625705680879785,
+          "scores": [
+            0.2690281537028582,
+            0.23001177273205575,
+            0.34528521051165606,
+            0.03540270797390239,
+            0.12027215507952745
+          ]
+        },
+        "uniform": {
+          "top": "GLM",
+          "correct": false,
+          "margin": 0.07625705682493672,
+          "scores": [
+            0.269028153692064,
+            0.23001177274369922,
+            0.34528521051700073,
+            0.03540270797536083,
+            0.12027215507187536
+          ]
+        },
+        "linear": {
+          "top": "GLM",
+          "correct": false,
+          "margin": 0.07216743202911857,
+          "scores": [
+            0.26742514124100875,
+            0.23129693505665547,
+            0.3395925732701273,
+            0.03838711260967667,
+            0.1232982378225319
+          ]
+        },
+        "selected": {
+          "top": "GLM",
+          "correct": false,
+          "margin": 0.07625705680879785,
+          "scores": [
+            0.2690281537028582,
+            0.23001177273205575,
+            0.34528521051165606,
+            0.03540270797390239,
+            0.12027215507952745
+          ]
+        }
+      }
+    ]
+  },
+  "paired_original98": {
+    "sample": {
+      "baseline": {
+        "before_correct": 90,
+        "after_correct": 88,
+        "tested": 98,
+        "fixes": [],
+        "breaks": [
+          "deepseek-app-thinking-03.txt",
+          "deepseekv4.1flash-weak-02.txt"
+        ]
+      },
+      "gated": {
+        "before_correct": 90,
+        "after_correct": 88,
+        "tested": 98,
+        "fixes": [],
+        "breaks": [
+          "deepseek-app-thinking-03.txt",
+          "deepseekv4.1flash-weak-02.txt"
+        ]
+      },
+      "selected": {
+        "before_correct": 90,
+        "after_correct": 88,
+        "tested": 98,
+        "fixes": [],
+        "breaks": [
+          "deepseek-app-thinking-03.txt",
+          "deepseekv4.1flash-weak-02.txt"
+        ]
+      }
+    },
+    "model": {
+      "baseline": {
+        "before_correct": 59,
+        "after_correct": 62,
+        "tested": 98,
+        "fixes": [
+          "claudehaiku5.5-03.txt",
+          "claudehaiku5.5-05.txt",
+          "claudehaiku5.5-08.txt",
+          "claudehaiku5.5-09.txt"
+        ],
+        "breaks": [
+          "deepseekv4.1flash1017-05.txt"
+        ]
+      },
+      "gated": {
+        "before_correct": 61,
+        "after_correct": 63,
+        "tested": 98,
+        "fixes": [
+          "claudehaiku5.5-03.txt",
+          "claudehaiku5.5-05.txt",
+          "claudehaiku5.5-08.txt",
+          "claudehaiku5.5-09.txt"
+        ],
+        "breaks": [
+          "deepseek-app-thinking-02.txt",
+          "deepseekv4.1flash1017-05.txt"
+        ]
+      },
+      "selected": {
+        "before_correct": 59,
+        "after_correct": 62,
+        "tested": 98,
+        "fixes": [
+          "claudehaiku5.5-03.txt",
+          "claudehaiku5.5-05.txt",
+          "claudehaiku5.5-08.txt",
+          "claudehaiku5.5-09.txt"
+        ],
+        "breaks": [
+          "deepseekv4.1flash1017-05.txt"
+        ]
+      }
+    }
+  },
+  "external_changes": {
+    "baseline": [
+      {
+        "source": "cmdc-glm53flash-01.txt",
+        "expected": "GLM",
+        "before": "Qwen",
+        "after": "GLM"
+      }
+    ],
+    "gated": [
+      {
+        "source": "cmdc-glm53flash-01.txt",
+        "expected": "GLM",
+        "before": "Qwen",
+        "after": "GLM"
+      }
+    ],
+    "selected": [
+      {
+        "source": "cmdc-glm53flash-01.txt",
+        "expected": "GLM",
+        "before": "Qwen",
+        "after": "GLM"
+      }
+    ]
+  }
+}
