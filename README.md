@@ -1,4 +1,4 @@
-# nano-classfier 最新版（精简整理包）
+# nano-classifier 最新版（精简整理包）
 
 **简体中文** ｜ [English](README.en.md)
 
@@ -13,7 +13,7 @@
 | 依赖 | Python 3、NumPy（`numpy>=1.26,<3`），不需要 GPU、不需要联网 |
 | 大小 | 包含训练与评估脚本的完整最新版；旧版本快照未纳入 |
 
-本包是 `20261020-residual-gate` 的完整副本：推理、训练、评估、参考库、榜单与说明都在包内，路径相对本包计算。删除原来的 `nano-classfier` 后，双击 `最新版_粘贴答案测试.bat` 仍可启动。更早的版本目录、zip 与历史备份没有并入。
+本包是 `20261020-residual-gate` 的完整副本：推理、训练、评估、参考库、榜单与说明都在包内，路径相对本包计算。删除原来的 `nano-classifier` 后，双击 `最新版_粘贴答案测试.bat` 仍可启动。更早的版本目录、zip 与历史备份没有并入。
 
 ---
 
@@ -50,7 +50,7 @@ python -m pip install -r versions\20261020-residual-gate\lite-questionnaire-mode
 ## 2. 目录结构
 
 ```
-nano-classfier-最新版/
+nano-classifier-最新版/
 ├── README.md                       ← 本文件（使用说明／文件清单）
 ├── README.en.md                    ← 英文版（English version）
 ├── CURRENT_VERSION.json            ← 机器可读的当前版本标识

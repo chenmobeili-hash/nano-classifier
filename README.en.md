@@ -1,4 +1,4 @@
-# nano-classfier Latest Version (Consolidated Package)
+# nano-classifier Latest Version (Consolidated Package)
 
 [简体中文](README.md) ｜ **English**
 
@@ -13,7 +13,7 @@ A lightweight black-box model-family attribution tool driven by a fixed question
 | Dependencies | Python 3, NumPy (`numpy>=1.26,<3`); no GPU, no network required |
 | Size | Complete latest version with training and evaluation scripts; older version snapshots not included |
 
-This package is a complete copy of `20261020-residual-gate`: inference, training, evaluation, reference library, rankings, and documentation are all included, with paths resolved relative to this package. After deleting the original `nano-classfier`, double-clicking `最新版_粘贴答案测试.bat` still works. Earlier version directories, zips, and historical backups are not included.
+This package is a complete copy of `20261020-residual-gate`: inference, training, evaluation, reference library, rankings, and documentation are all included, with paths resolved relative to this package. After deleting the original `nano-classifier`, double-clicking `最新版_粘贴答案测试.bat` still works. Earlier version directories, zips, and historical backups are not included.
 
 ---
 
@@ -50,7 +50,7 @@ Verification: `--json` on `nano-now/gpt6sol-01.txt` should report GPT as the top
 ## 2. Directory Layout
 
 ```
-nano-classfier-最新版/
+nano-classifier-最新版/
 ├── README.md                       ← this file (usage / file list)
 ├── README.en.md                    ← English version
 ├── CURRENT_VERSION.json            ← machine-readable current version identifier
