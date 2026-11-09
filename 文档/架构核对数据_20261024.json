@@ -1,7 +1,7 @@
 {
   "date": "2026-10-24",
-  "root": "C:\\Users\\betraysilence\\Music\\nano-classfier",
-  "runtime": "C:\\Users\\betraysilence\\Music\\nano-classfier\\versions\\20261020-residual-gate\\lite-questionnaire-model",
+  "root": "C:\\Users\\betraysilence\\Music\\nano-classifier",
+  "runtime": "C:\\Users\\betraysilence\\Music\\nano-classifier\\versions\\20261020-residual-gate\\lite-questionnaire-model",
   "signature": "369405a7887a17b8b669ea2f9a3214ce9625fc62888f75bb0bf921fa1cea3966",
   "families": {
     "Claude": 22,

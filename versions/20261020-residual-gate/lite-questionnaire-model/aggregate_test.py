@@ -10,17 +10,17 @@ import sys, itertools
 from pathlib import Path
 import numpy as np
 
-TUNING = Path(r'C:\Users\betraysilence\Music\nano-classfier\versions\20261019-glm-tuning\lite-questionnaire-model')
+TUNING = Path(r'C:\Users\betraysilence\Music\nano-classifier\versions\20261019-glm-tuning\lite-questionnaire-model')
 sys.path.insert(0, str(TUNING))
 from classifier import load_references, read_answer, DEFAULT_REFERENCES
 from feature_profiles import blocks
 from neural_core import load_network, vector as nn_vector, transform, forward, GROUP_WEIGHTS
 
 SAMPLES = {
-    'A': r'C:\Users\betraysilence\Music\nano-classfier\不确定新增不新增的模型\ofm-glm53flash-01.txt',
-    'B': r'C:\Users\betraysilence\Music\nano-classfier\不确定新增不新增的模型\ofm-glm53flash-02.txt',
+    'A': r'C:\Users\betraysilence\Music\nano-classifier\不确定新增不新增的模型\ofm-glm53flash-01.txt',
+    'B': r'C:\Users\betraysilence\Music\nano-classifier\不确定新增不新增的模型\ofm-glm53flash-02.txt',
     'C': r'C:\Users\betraysilence\Documents\CRYSTALiA\.codex\新增 文字文件 (2).txt',
-    'D': r'C:\Users\betraysilence\Music\nano-classfier\不确定新增不新增的模型\codex-tol-02.txt',
+    'D': r'C:\Users\betraysilence\Music\nano-classifier\不确定新增不新增的模型\codex-tol-02.txt',
 }
 WEIGHTS = {'style': .342, 'behavior': .207, 'sequence': .207, 'choices': .144, 'extra': .10}
 

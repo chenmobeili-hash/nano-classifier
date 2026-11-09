@@ -22,7 +22,7 @@ from classifier import DEFAULT_REFERENCES, load_references, read_answer
 import nlp_core
 from nlp_classifier import identify_nlp
 
-STAGE = Path(r'C:\Users\betraysilence\Music\nano-classfier\不确定新增不新增的模型')
+STAGE = Path(r'C:\Users\betraysilence\Music\nano-classifier\不确定新增不新增的模型')
 CASES = [
     ('ofm-glm53flash-06.txt', 'GLM'), ('ofm-glm53flash-07.txt', 'GLM'),
     ('ofm-glm53flash-08.txt', 'GLM'), ('ofm-glm53flash-09.txt', 'GLM'),

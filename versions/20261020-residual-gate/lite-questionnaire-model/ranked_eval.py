@@ -9,7 +9,7 @@
 import sys
 import numpy as np
 
-TUNING = r'C:\Users\betraysilence\Music\nano-classfier\versions\20261019-glm-tuned\lite-questionnaire-model'
+TUNING = r'C:\Users\betraysilence\Music\nano-classifier\versions\20261019-glm-tuned\lite-questionnaire-model'
 sys.path.insert(0, TUNING)
 from classifier import load_references, DEFAULT_REFERENCES
 from neural_core import train_network, predict_scores

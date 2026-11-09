@@ -2,13 +2,13 @@
 import sys
 from pathlib import Path
 
-TUNING = Path(r'C:\Users\betraysilence\Music\nano-classfier\versions\20261019-glm-tuned\lite-questionnaire-model')
+TUNING = Path(r'C:\Users\betraysilence\Music\nano-classifier\versions\20261019-glm-tuned\lite-questionnaire-model')
 sys.path.insert(0, str(TUNING))
 from classifier import read_answer, load_references, DEFAULT_REFERENCES
 import neural_core
 from neural_core import load_network, predict_scores
 
-STAGE = Path(r'C:\Users\betraysilence\Music\nano-classfier\不确定新增不新增的模型')
+STAGE = Path(r'C:\Users\betraysilence\Music\nano-classifier\不确定新增不新增的模型')
 CASES = [
     ('ofm-glm53flash-01', STAGE / 'ofm-glm53flash-01.txt', 'GLM', 'high'),
     ('ofm-glm53flash-02', STAGE / 'ofm-glm53flash-02.txt', 'GLM', 'low'),

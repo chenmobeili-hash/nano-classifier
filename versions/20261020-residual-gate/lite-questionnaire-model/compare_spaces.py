@@ -13,10 +13,10 @@ from classifier import load_references, DEFAULT_REFERENCES, read_answer
 from feature_profiles import distances
 
 SAMPLES = [
-    ('A ofm high', r'C:\Users\betraysilence\Music\nano-classfier\不确定新增不新增的模型\ofm-glm53flash-01.txt'),
-    ('B ofm low ', r'C:\Users\betraysilence\Music\nano-classfier\不确定新增不新增的模型\ofm-glm53flash-02.txt'),
+    ('A ofm high', r'C:\Users\betraysilence\Music\nano-classifier\不确定新增不新增的模型\ofm-glm53flash-01.txt'),
+    ('B ofm low ', r'C:\Users\betraysilence\Music\nano-classifier\不确定新增不新增的模型\ofm-glm53flash-02.txt'),
     ('C codex(2)', r'C:\Users\betraysilence\Documents\CRYSTALiA\.codex\新增 文字文件 (2).txt'),
-    ('D codex-tol', r'C:\Users\betraysilence\Music\nano-classfier\不确定新增不新增的模型\codex-tol-02.txt'),
+    ('D codex-tol', r'C:\Users\betraysilence\Music\nano-classifier\不确定新增不新增的模型\codex-tol-02.txt'),
 ]
 
 # 旧 131 维基线空间实测值：(最近GLM, 最近非GLM)

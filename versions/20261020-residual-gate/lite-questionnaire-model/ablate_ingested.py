@@ -6,14 +6,14 @@
 import sys, shutil, itertools
 from pathlib import Path
 
-TUNING = Path(r'C:\Users\betraysilence\Music\nano-classfier\versions\20261019-glm-tuned\lite-questionnaire-model')
+TUNING = Path(r'C:\Users\betraysilence\Music\nano-classifier\versions\20261019-glm-tuned\lite-questionnaire-model')
 sys.path.insert(0, str(TUNING))
 from classifier import read_answer, load_references, identify
 from neural_core import train_network
 
 BASE = TUNING.parent / 'backup-before-worstfit-ingest' / 'nano-now'   # 78 份原始库
 WORK = TUNING.parent / '_ablate'
-STAGE = Path(r'C:\Users\betraysilence\Music\nano-classfier\不确定新增不新增的模型')
+STAGE = Path(r'C:\Users\betraysilence\Music\nano-classifier\不确定新增不新增的模型')
 INGESTED = {
     'cmdc-01': STAGE / 'cmdc-glm53flash-01.txt',
     'ofm-01': STAGE / 'ofm-glm53flash-01.txt',

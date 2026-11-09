@@ -7,14 +7,14 @@ import sys, shutil
 from pathlib import Path
 import numpy as np
 
-TUNING = Path(r'C:\Users\betraysilence\Music\nano-classfier\versions\20261019-glm-tuned\lite-questionnaire-model')
+TUNING = Path(r'C:\Users\betraysilence\Music\nano-classifier\versions\20261019-glm-tuned\lite-questionnaire-model')
 sys.path.insert(0, str(TUNING))
 from classifier import read_answer, load_references
 from neural_core import train_network, predict_scores
 
 BASE = TUNING.parent / 'nano-now'
 WORK = TUNING.parent / '_value_ingest'
-STAGE = Path(r'C:\Users\betraysilence\Music\nano-classfier\不确定新增不新增的模型')
+STAGE = Path(r'C:\Users\betraysilence\Music\nano-classifier\不确定新增不新增的模型')
 ADD = {
     'ofm-13': ('ofm-glm53flash-13.txt', 'GLM5.3FLASH-FREE-04.txt'),
     'qwen-free-02': ('qwen-free-02.txt', 'QWEN-FREE-01.txt'),

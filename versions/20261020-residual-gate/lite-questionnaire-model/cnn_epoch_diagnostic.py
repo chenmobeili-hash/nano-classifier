@@ -15,7 +15,7 @@ from pathlib import Path
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--cnn-version', default=r'C:\Users\betraysilence\Music\nano-classfier\versions\20261020-cnn-experiment\lite-questionnaire-model')
+    parser.add_argument('--cnn-version', default=r'C:\Users\betraysilence\Music\nano-classifier\versions\20261020-cnn-experiment\lite-questionnaire-model')
     parser.add_argument('--output', default='CNN_EPOCH_DIAGNOSTIC.json')
     args = parser.parse_args()
     sys.path.insert(0, args.cnn_version)

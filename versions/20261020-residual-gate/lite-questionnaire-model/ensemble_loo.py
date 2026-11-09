@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 import numpy as np
 
-TUNING = Path(r'C:\Users\betraysilence\Music\nano-classfier\versions\20261019-glm-tuned\lite-questionnaire-model')
+TUNING = Path(r'C:\Users\betraysilence\Music\nano-classifier\versions\20261019-glm-tuned\lite-questionnaire-model')
 sys.path.insert(0, str(TUNING))
 from classifier import load_references, DEFAULT_REFERENCES
 from neural_core import train_network, predict_scores

@@ -9,7 +9,7 @@ import codex_local_attn as A
 from classifier import load_references,DEFAULT_REFERENCES,read_answer,inventory
 TARGET=.968421052631579
 VARIANTS={'local':True,'uniform':False}
-STAGE=Path(r'C:\Users\betraysilence\Music\nano-classfier\不确定新增不新增的模型')
+STAGE=Path(r'C:\Users\betraysilence\Music\nano-classifier\不确定新增不新增的模型')
 CASES=[(f'{prefix}.txt','GLM') for prefix in ('ofm-glm53flash-06','ofm-glm53flash-07','ofm-glm53flash-08','ofm-glm53flash-09','cmdc-glm53flash-01','cmdc-glm53flash-03','zcode-glm53flash-01')]+[('probe-01.txt','Claude'),('codex-sonnet55-01.txt','Claude'),('ofm-deepseek41flash-01.txt','DeepSeek'),('qwen-free-01.txt','Qwen')]
 
 def summary(rows,v,threshold=None):

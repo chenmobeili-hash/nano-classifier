@@ -5,17 +5,17 @@
 import sys, shutil, json
 from pathlib import Path
 
-TUNING = Path(r'C:\Users\betraysilence\Music\nano-classfier\versions\20261019-glm-tuning\lite-questionnaire-model')
+TUNING = Path(r'C:\Users\betraysilence\Music\nano-classifier\versions\20261019-glm-tuning\lite-questionnaire-model')
 sys.path.insert(0, str(TUNING))
 from classifier import load_references, identify, read_answer, DEFAULT_REFERENCES
 from neural_core import train_network
 
 FAMILY_OF = {'GLM': 'GLM'}
 SAMPLES = {
-    'A ofm-high': r'C:\Users\betraysilence\Music\nano-classfier\不确定新增不新增的模型\ofm-glm53flash-01.txt',
-    'B ofm-low': r'C:\Users\betraysilence\Music\nano-classfier\不确定新增不新增的模型\ofm-glm53flash-02.txt',
+    'A ofm-high': r'C:\Users\betraysilence\Music\nano-classifier\不确定新增不新增的模型\ofm-glm53flash-01.txt',
+    'B ofm-low': r'C:\Users\betraysilence\Music\nano-classifier\不确定新增不新增的模型\ofm-glm53flash-02.txt',
     'C codex2': r'C:\Users\betraysilence\Documents\CRYSTALiA\.codex\新增 文字文件 (2).txt',
-    'D codex-tol': r'C:\Users\betraysilence\Music\nano-classfier\不确定新增不新增的模型\codex-tol-02.txt',
+    'D codex-tol': r'C:\Users\betraysilence\Music\nano-classifier\不确定新增不新增的模型\codex-tol-02.txt',
 }
 WORK = TUNING.parent / '_folds'
 

@@ -12,7 +12,7 @@ import sys, shutil, re
 from pathlib import Path
 import numpy as np
 
-TUNING = Path(r'C:\Users\betraysilence\Music\nano-classfier\versions\20261019-glm-tuned\lite-questionnaire-model')
+TUNING = Path(r'C:\Users\betraysilence\Music\nano-classifier\versions\20261019-glm-tuned\lite-questionnaire-model')
 sys.path.insert(0, str(TUNING))
 from classifier import read_answer, load_references
 from neural_core import train_network, predict_scores
@@ -20,7 +20,7 @@ from neural_core import train_network, predict_scores
 BASE = TUNING.parent / 'nano-now'
 WORK = TUNING.parent / '_qwen_ingest_test'
 SRC = Path(r'C:\Users\betraysilence\Documents\CRYSTALiA\.codex')
-STAGE = Path(r'C:\Users\betraysilence\Music\nano-classfier\不确定新增不新增的模型')
+STAGE = Path(r'C:\Users\betraysilence\Music\nano-classifier\不确定新增不新增的模型')
 NEW = [('qwen/新增 文字文件 (3).txt', 'qwen-probe-03.txt'), ('qwen/新增 文字文件 (4).txt', 'qwen-probe-04.txt')]
 
 WATCH = {

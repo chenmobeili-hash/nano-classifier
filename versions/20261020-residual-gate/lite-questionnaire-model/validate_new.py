@@ -9,7 +9,7 @@
 import sys, re, statistics
 from pathlib import Path
 
-TUNING = Path(r'C:\Users\betraysilence\Music\nano-classfier\versions\20261019-glm-tuned\lite-questionnaire-model')
+TUNING = Path(r'C:\Users\betraysilence\Music\nano-classifier\versions\20261019-glm-tuned\lite-questionnaire-model')
 sys.path.insert(0, str(TUNING))
 from classifier import read_answer, load_references, identify, DEFAULT_REFERENCES
 from feature_profiles import normalized_answers
@@ -18,7 +18,7 @@ from sequence_features import sequence_feature_map
 from glm_evidence import glm_evidence
 from neural_core import load_network
 
-STAGE = Path(r'C:\Users\betraysilence\Music\nano-classfier\不确定新增不新增的模型')
+STAGE = Path(r'C:\Users\betraysilence\Music\nano-classifier\不确定新增不新增的模型')
 CODEX = Path(r'C:\Users\betraysilence\Documents\CRYSTALiA\.codex')
 
 NEW = [

@@ -22,7 +22,7 @@ from classifier import DEFAULT_REFERENCES, inventory, load_references, read_answ
 
 TARGET_COVERAGE = .968421052631579
 VARIANTS = {'none': (False, None), 'band1': (True, 1), 'band2': (True, 2), 'global': (True, None)}
-STAGE = Path(r'C:\Users\betraysilence\Music\nano-classfier\不确定新增不新增的模型')
+STAGE = Path(r'C:\Users\betraysilence\Music\nano-classifier\不确定新增不新增的模型')
 CASES = [
     ('ofm-glm53flash-06.txt', 'GLM'), ('ofm-glm53flash-07.txt', 'GLM'),
     ('ofm-glm53flash-08.txt', 'GLM'), ('ofm-glm53flash-09.txt', 'GLM'),

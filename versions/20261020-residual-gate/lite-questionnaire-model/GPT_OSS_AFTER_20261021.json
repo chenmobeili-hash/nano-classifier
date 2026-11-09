@@ -27,7 +27,7 @@
   "samples": [
     {
       "source": "gpt-oss-120b-01.txt",
-      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\GPT-OSS\\新增 文字文件.txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classifier\\不确定新增不新增的模型\\GPT-OSS\\新增 文字文件.txt",
       "included_in_training": true,
       "analysis": {
         "baseline": {
@@ -1339,7 +1339,7 @@
     },
     {
       "source": "gpt-oss-120b-02.txt",
-      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\GPT-OSS\\新增 文字文件 (2).txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classifier\\不确定新增不新增的模型\\GPT-OSS\\新增 文字文件 (2).txt",
       "included_in_training": true,
       "analysis": {
         "baseline": {
@@ -2693,7 +2693,7 @@
     },
     {
       "source": "gpt-oss-120b-03.txt",
-      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\GPT-OSS\\新增 文字文件 (3).txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classifier\\不确定新增不新增的模型\\GPT-OSS\\新增 文字文件 (3).txt",
       "included_in_training": true,
       "analysis": {
         "baseline": {
@@ -4009,7 +4009,7 @@
     },
     {
       "source": "20B.txt",
-      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\GPT-OSS\\20B.txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classifier\\不确定新增不新增的模型\\GPT-OSS\\20B.txt",
       "included_in_training": false,
       "analysis": {
         "baseline": {

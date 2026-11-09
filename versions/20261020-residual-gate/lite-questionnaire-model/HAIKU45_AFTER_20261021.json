@@ -27,7 +27,7 @@
   "samples": [
     {
       "source": "claudehaiku4.5-extended-01.txt",
-      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\claude-haiku4.5-extended\\新增 文字文件.txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classifier\\不确定新增不新增的模型\\claude-haiku4.5-extended\\新增 文字文件.txt",
       "analysis": {
         "baseline": {
           "top": "Claude",
@@ -1367,7 +1367,7 @@
     },
     {
       "source": "claudehaiku4.5-extended-02.txt",
-      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classfier\\不确定新增不新增的模型\\claude-haiku4.5-extended\\新增 文字文件 (2).txt",
+      "original_source": "C:\\Users\\betraysilence\\Music\\nano-classifier\\不确定新增不新增的模型\\claude-haiku4.5-extended\\新增 文字文件 (2).txt",
       "analysis": {
         "baseline": {
           "top": "Claude",
